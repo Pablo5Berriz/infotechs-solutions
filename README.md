@@ -1,5 +1,4 @@
 # infotechs-solutions
-Site web professionnel d’une startup informatique spécialisée en développement web, automatisation IA, logiciels et services numériques.
 Infotechs Solutions est le site web officiel d’une startup informatique offrant des services numériques aux entreprises, organismes et particuliers. Le projet présente les services, l’expertise, les réalisations, les solutions et les moyens de contact de l’entreprise.
 
 Le site vise à positionner Infotechs Solutions comme une entreprise spécialisée en développement web, applications, automatisation IA, logiciels, accompagnement technique et transformation numérique.
