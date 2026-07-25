@@ -1,0 +1,842 @@
+{
+  "summary": {
+    "checks": 119,
+    "overflows": [],
+    "invalidH1": []
+  },
+  "rows": [
+    {
+      "width": 320,
+      "route": "/",
+      "overflow": false,
+      "h1": 1,
+      "title": "Infotechs Solutions | Développement web et automatisation IA pour PME"
+    },
+    {
+      "width": 320,
+      "route": "/services",
+      "overflow": false,
+      "h1": 1,
+      "title": "Services web, automatisation et applications sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/services/creation-sites-web",
+      "overflow": false,
+      "h1": 1,
+      "title": "Création de sites web | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/services/automatisation-ia",
+      "overflow": false,
+      "h1": 1,
+      "title": "Automatisation et IA | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/services/applications-web-sur-mesure",
+      "overflow": false,
+      "h1": 1,
+      "title": "Applications web sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/realisations",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concepts de projets numériques | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/realisations/site-web-garage-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de site web pour garage local | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/realisations/plateforme-reservation",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de plateforme de réservation | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/realisations/application-gestion-interne",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application de gestion interne | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/realisations/automatisation-administrative",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’automatisation administrative | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/realisations/tableau-bord-pme",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de tableau de bord pour PME | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/realisations/application-mobile-service-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application mobile de service local | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/a-propos",
+      "overflow": false,
+      "h1": 1,
+      "title": "À propos d’Infotechs Solutions | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/contact",
+      "overflow": false,
+      "h1": 1,
+      "title": "Contact | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/confidentialite",
+      "overflow": false,
+      "h1": 1,
+      "title": "Politique de confidentialité | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/mentions-legales",
+      "overflow": false,
+      "h1": 1,
+      "title": "Mentions légales | Infotechs Solutions"
+    },
+    {
+      "width": 320,
+      "route": "/route-inconnue-qa",
+      "overflow": false,
+      "h1": 1,
+      "title": "Page introuvable | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/",
+      "overflow": false,
+      "h1": 1,
+      "title": "Infotechs Solutions | Développement web et automatisation IA pour PME"
+    },
+    {
+      "width": 360,
+      "route": "/services",
+      "overflow": false,
+      "h1": 1,
+      "title": "Services web, automatisation et applications sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/services/creation-sites-web",
+      "overflow": false,
+      "h1": 1,
+      "title": "Création de sites web | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/services/automatisation-ia",
+      "overflow": false,
+      "h1": 1,
+      "title": "Automatisation et IA | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/services/applications-web-sur-mesure",
+      "overflow": false,
+      "h1": 1,
+      "title": "Applications web sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/realisations",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concepts de projets numériques | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/realisations/site-web-garage-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de site web pour garage local | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/realisations/plateforme-reservation",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de plateforme de réservation | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/realisations/application-gestion-interne",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application de gestion interne | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/realisations/automatisation-administrative",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’automatisation administrative | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/realisations/tableau-bord-pme",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de tableau de bord pour PME | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/realisations/application-mobile-service-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application mobile de service local | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/a-propos",
+      "overflow": false,
+      "h1": 1,
+      "title": "À propos d’Infotechs Solutions | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/contact",
+      "overflow": false,
+      "h1": 1,
+      "title": "Contact | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/confidentialite",
+      "overflow": false,
+      "h1": 1,
+      "title": "Politique de confidentialité | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/mentions-legales",
+      "overflow": false,
+      "h1": 1,
+      "title": "Mentions légales | Infotechs Solutions"
+    },
+    {
+      "width": 360,
+      "route": "/route-inconnue-qa",
+      "overflow": false,
+      "h1": 1,
+      "title": "Page introuvable | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "overflow": false,
+      "h1": 1,
+      "title": "Infotechs Solutions | Développement web et automatisation IA pour PME"
+    },
+    {
+      "width": 390,
+      "route": "/services",
+      "overflow": false,
+      "h1": 1,
+      "title": "Services web, automatisation et applications sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/services/creation-sites-web",
+      "overflow": false,
+      "h1": 1,
+      "title": "Création de sites web | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/services/automatisation-ia",
+      "overflow": false,
+      "h1": 1,
+      "title": "Automatisation et IA | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/services/applications-web-sur-mesure",
+      "overflow": false,
+      "h1": 1,
+      "title": "Applications web sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/realisations",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concepts de projets numériques | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/realisations/site-web-garage-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de site web pour garage local | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/realisations/plateforme-reservation",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de plateforme de réservation | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/realisations/application-gestion-interne",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application de gestion interne | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/realisations/automatisation-administrative",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’automatisation administrative | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/realisations/tableau-bord-pme",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de tableau de bord pour PME | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/realisations/application-mobile-service-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application mobile de service local | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/a-propos",
+      "overflow": false,
+      "h1": 1,
+      "title": "À propos d’Infotechs Solutions | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/contact",
+      "overflow": false,
+      "h1": 1,
+      "title": "Contact | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/confidentialite",
+      "overflow": false,
+      "h1": 1,
+      "title": "Politique de confidentialité | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/mentions-legales",
+      "overflow": false,
+      "h1": 1,
+      "title": "Mentions légales | Infotechs Solutions"
+    },
+    {
+      "width": 390,
+      "route": "/route-inconnue-qa",
+      "overflow": false,
+      "h1": 1,
+      "title": "Page introuvable | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "overflow": false,
+      "h1": 1,
+      "title": "Infotechs Solutions | Développement web et automatisation IA pour PME"
+    },
+    {
+      "width": 768,
+      "route": "/services",
+      "overflow": false,
+      "h1": 1,
+      "title": "Services web, automatisation et applications sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/services/creation-sites-web",
+      "overflow": false,
+      "h1": 1,
+      "title": "Création de sites web | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/services/automatisation-ia",
+      "overflow": false,
+      "h1": 1,
+      "title": "Automatisation et IA | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/services/applications-web-sur-mesure",
+      "overflow": false,
+      "h1": 1,
+      "title": "Applications web sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/realisations",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concepts de projets numériques | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/realisations/site-web-garage-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de site web pour garage local | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/realisations/plateforme-reservation",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de plateforme de réservation | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/realisations/application-gestion-interne",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application de gestion interne | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/realisations/automatisation-administrative",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’automatisation administrative | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/realisations/tableau-bord-pme",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de tableau de bord pour PME | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/realisations/application-mobile-service-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application mobile de service local | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/a-propos",
+      "overflow": false,
+      "h1": 1,
+      "title": "À propos d’Infotechs Solutions | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/contact",
+      "overflow": false,
+      "h1": 1,
+      "title": "Contact | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/confidentialite",
+      "overflow": false,
+      "h1": 1,
+      "title": "Politique de confidentialité | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/mentions-legales",
+      "overflow": false,
+      "h1": 1,
+      "title": "Mentions légales | Infotechs Solutions"
+    },
+    {
+      "width": 768,
+      "route": "/route-inconnue-qa",
+      "overflow": false,
+      "h1": 1,
+      "title": "Page introuvable | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "overflow": false,
+      "h1": 1,
+      "title": "Infotechs Solutions | Développement web et automatisation IA pour PME"
+    },
+    {
+      "width": 1024,
+      "route": "/services",
+      "overflow": false,
+      "h1": 1,
+      "title": "Services web, automatisation et applications sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/services/creation-sites-web",
+      "overflow": false,
+      "h1": 1,
+      "title": "Création de sites web | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/services/automatisation-ia",
+      "overflow": false,
+      "h1": 1,
+      "title": "Automatisation et IA | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/services/applications-web-sur-mesure",
+      "overflow": false,
+      "h1": 1,
+      "title": "Applications web sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/realisations",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concepts de projets numériques | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/realisations/site-web-garage-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de site web pour garage local | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/realisations/plateforme-reservation",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de plateforme de réservation | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/realisations/application-gestion-interne",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application de gestion interne | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/realisations/automatisation-administrative",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’automatisation administrative | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/realisations/tableau-bord-pme",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de tableau de bord pour PME | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/realisations/application-mobile-service-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application mobile de service local | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/a-propos",
+      "overflow": false,
+      "h1": 1,
+      "title": "À propos d’Infotechs Solutions | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/contact",
+      "overflow": false,
+      "h1": 1,
+      "title": "Contact | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/confidentialite",
+      "overflow": false,
+      "h1": 1,
+      "title": "Politique de confidentialité | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/mentions-legales",
+      "overflow": false,
+      "h1": 1,
+      "title": "Mentions légales | Infotechs Solutions"
+    },
+    {
+      "width": 1024,
+      "route": "/route-inconnue-qa",
+      "overflow": false,
+      "h1": 1,
+      "title": "Page introuvable | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "overflow": false,
+      "h1": 1,
+      "title": "Infotechs Solutions | Développement web et automatisation IA pour PME"
+    },
+    {
+      "width": 1280,
+      "route": "/services",
+      "overflow": false,
+      "h1": 1,
+      "title": "Services web, automatisation et applications sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/services/creation-sites-web",
+      "overflow": false,
+      "h1": 1,
+      "title": "Création de sites web | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/services/automatisation-ia",
+      "overflow": false,
+      "h1": 1,
+      "title": "Automatisation et IA | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/services/applications-web-sur-mesure",
+      "overflow": false,
+      "h1": 1,
+      "title": "Applications web sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/realisations",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concepts de projets numériques | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/realisations/site-web-garage-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de site web pour garage local | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/realisations/plateforme-reservation",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de plateforme de réservation | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/realisations/application-gestion-interne",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application de gestion interne | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/realisations/automatisation-administrative",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’automatisation administrative | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/realisations/tableau-bord-pme",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de tableau de bord pour PME | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/realisations/application-mobile-service-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application mobile de service local | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/a-propos",
+      "overflow": false,
+      "h1": 1,
+      "title": "À propos d’Infotechs Solutions | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/contact",
+      "overflow": false,
+      "h1": 1,
+      "title": "Contact | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/confidentialite",
+      "overflow": false,
+      "h1": 1,
+      "title": "Politique de confidentialité | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/mentions-legales",
+      "overflow": false,
+      "h1": 1,
+      "title": "Mentions légales | Infotechs Solutions"
+    },
+    {
+      "width": 1280,
+      "route": "/route-inconnue-qa",
+      "overflow": false,
+      "h1": 1,
+      "title": "Page introuvable | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "overflow": false,
+      "h1": 1,
+      "title": "Infotechs Solutions | Développement web et automatisation IA pour PME"
+    },
+    {
+      "width": 1440,
+      "route": "/services",
+      "overflow": false,
+      "h1": 1,
+      "title": "Services web, automatisation et applications sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/services/creation-sites-web",
+      "overflow": false,
+      "h1": 1,
+      "title": "Création de sites web | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/services/automatisation-ia",
+      "overflow": false,
+      "h1": 1,
+      "title": "Automatisation et IA | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/services/applications-web-sur-mesure",
+      "overflow": false,
+      "h1": 1,
+      "title": "Applications web sur mesure | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/realisations",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concepts de projets numériques | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/realisations/site-web-garage-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de site web pour garage local | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/realisations/plateforme-reservation",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de plateforme de réservation | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/realisations/application-gestion-interne",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application de gestion interne | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/realisations/automatisation-administrative",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’automatisation administrative | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/realisations/tableau-bord-pme",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept de tableau de bord pour PME | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/realisations/application-mobile-service-local",
+      "overflow": false,
+      "h1": 1,
+      "title": "Concept d’application mobile de service local | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/a-propos",
+      "overflow": false,
+      "h1": 1,
+      "title": "À propos d’Infotechs Solutions | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/contact",
+      "overflow": false,
+      "h1": 1,
+      "title": "Contact | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/confidentialite",
+      "overflow": false,
+      "h1": 1,
+      "title": "Politique de confidentialité | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/mentions-legales",
+      "overflow": false,
+      "h1": 1,
+      "title": "Mentions légales | Infotechs Solutions"
+    },
+    {
+      "width": 1440,
+      "route": "/route-inconnue-qa",
+      "overflow": false,
+      "h1": 1,
+      "title": "Page introuvable | Infotechs Solutions"
+    }
+  ]
+}
