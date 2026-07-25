@@ -1,0 +1,72 @@
+<svg width="1160" height="600" viewBox="0 0 1160 600" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Infotechs Solutions — Concept A, palette violette affinée</title>
+<desc>Trois panneaux : lockup horizontal sur fond sombre, lockup horizontal sur fond clair, et test de lisibilité du symbole seul a 64/48/32/24/16 px.</desc>
+
+<rect x="0" y="0" width="1160" height="600" fill="#EDEBE6"/>
+
+<rect x="40" y="40" width="540" height="240" rx="20" fill="#121316"/>
+<g transform="translate(150,158)">
+  <polygon points="0,-42 0,42 -42,0" fill="#6C4FD1"/>
+  <polygon points="0,-42 0,42 42,0" fill="#D6488F"/>
+  <line x1="0" y1="-42" x2="0" y2="42" stroke="#F4F1EA" stroke-width="2"/>
+  <circle cx="0" cy="0" r="8" fill="#F4F1EA" stroke="#121316" stroke-width="1.5"/>
+</g>
+<text x="216" y="148" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#F4F1EA">Infotechs</text>
+<text x="216" y="182" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#B7B2C4">Solutions</text>
+<text x="60" y="304" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5F5E5A">Lockup principal — fond sombre — texte aligne a gauche (corrige)</text>
+
+<rect x="600" y="40" width="520" height="240" rx="20" fill="#FFFFFF" stroke="#DAD7CE" stroke-width="1"/>
+<g transform="translate(700,158)">
+  <polygon points="0,-42 0,42 -42,0" fill="#6C4FD1"/>
+  <polygon points="0,-42 0,42 42,0" fill="#D6488F"/>
+  <line x1="0" y1="-42" x2="0" y2="42" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="0" cy="0" r="8" fill="#FFFFFF" stroke="#6C4FD1" stroke-width="1.5"/>
+</g>
+<text x="766" y="148" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#14151A">Infotechs</text>
+<text x="766" y="182" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#6B6A67">Solutions</text>
+<text x="620" y="304" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5F5E5A">Variante fond clair — pour documents, papeterie, partenaires</text>
+
+<rect x="40" y="340" width="1080" height="220" rx="20" fill="#121316"/>
+<text x="60" y="378" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#9B9690">Test de lisibilite du symbole seul (usage favicon / icone d'app)</text>
+
+<g transform="translate(150,470) scale(0.762)">
+  <polygon points="0,-42 0,42 -42,0" fill="#6C4FD1"/>
+  <polygon points="0,-42 0,42 42,0" fill="#D6488F"/>
+  <line x1="0" y1="-42" x2="0" y2="42" stroke="#F4F1EA" stroke-width="2.5"/>
+  <circle cx="0" cy="0" r="8" fill="#F4F1EA"/>
+</g>
+<text x="150" y="545" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#9B9690" text-anchor="middle">64 px</text>
+
+<g transform="translate(360,470) scale(0.571)">
+  <polygon points="0,-42 0,42 -42,0" fill="#6C4FD1"/>
+  <polygon points="0,-42 0,42 42,0" fill="#D6488F"/>
+  <line x1="0" y1="-42" x2="0" y2="42" stroke="#F4F1EA" stroke-width="2.5"/>
+  <circle cx="0" cy="0" r="8" fill="#F4F1EA"/>
+</g>
+<text x="360" y="545" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#9B9690" text-anchor="middle">48 px</text>
+
+<g transform="translate(570,470) scale(0.381)">
+  <polygon points="0,-42 0,42 -42,0" fill="#6C4FD1"/>
+  <polygon points="0,-42 0,42 42,0" fill="#D6488F"/>
+  <line x1="0" y1="-42" x2="0" y2="42" stroke="#F4F1EA" stroke-width="2.5"/>
+  <circle cx="0" cy="0" r="8" fill="#F4F1EA"/>
+</g>
+<text x="570" y="545" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#9B9690" text-anchor="middle">32 px</text>
+
+<g transform="translate(760,470) scale(0.286)">
+  <polygon points="0,-42 0,42 -42,0" fill="#6C4FD1"/>
+  <polygon points="0,-42 0,42 42,0" fill="#D6488F"/>
+  <line x1="0" y1="-42" x2="0" y2="42" stroke="#F4F1EA" stroke-width="3"/>
+  <circle cx="0" cy="0" r="8" fill="#F4F1EA"/>
+</g>
+<text x="760" y="545" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#9B9690" text-anchor="middle">24 px</text>
+
+<g transform="translate(940,470) scale(0.190)">
+  <polygon points="0,-42 0,42 -42,0" fill="#6C4FD1"/>
+  <polygon points="0,-42 0,42 42,0" fill="#D6488F"/>
+  <line x1="0" y1="-42" x2="0" y2="42" stroke="#F4F1EA" stroke-width="3.5"/>
+  <circle cx="0" cy="0" r="8" fill="#F4F1EA"/>
+</g>
+<text x="940" y="545" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#9B9690" text-anchor="middle">16 px (reel)</text>
+
+</svg>

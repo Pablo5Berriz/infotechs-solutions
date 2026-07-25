@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb693",
+                    "primary-fixed-dim": "#ffb77b",
+                    "outline-variant": "#524439",
+                    "error-container": "#93000a",
+                    "background": "#131313",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-secondary-container": "#87c1d8",
+                    "tertiary": "#ffb693",
+                    "surface": "#131313",
+                    "primary-container": "#c8803f",
+                    "on-secondary-fixed-variant": "#014d61",
+                    "on-secondary-fixed": "#001f29",
+                    "secondary": "#95cfe7",
+                    "inverse-surface": "#e5e2e1",
+                    "secondary-container": "#065064",
+                    "on-surface": "#e5e2e1",
+                    "on-primary-fixed-variant": "#6d3a00",
+                    "on-background": "#e5e2e1",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container": "#20201f",
+                    "on-surface-variant": "#d8c3b4",
+                    "on-tertiary": "#562000",
+                    "tertiary-container": "#ea6b1e",
+                    "secondary-fixed-dim": "#95cfe7",
+                    "inverse-on-surface": "#313030",
+                    "surface-container-highest": "#353535",
+                    "surface-tint": "#ffb77b",
+                    "inverse-primary": "#8c4f10",
+                    "secondary-fixed": "#b9eaff",
+                    "surface-bright": "#393939",
+                    "primary-fixed": "#ffdcc2",
+                    "on-error-container": "#ffdad6",
+                    "error": "#ffb4ab",
+                    "surface-variant": "#353535",
+                    "on-tertiary-fixed": "#351000",
+                    "on-tertiary-container": "#4b1b00",
+                    "surface-container-high": "#2a2a2a",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-primary-fixed": "#2e1500",
+                    "primary": "#ffb77b",
+                    "on-primary-container": "#432100",
+                    "on-tertiary-fixed-variant": "#7a3000",
+                    "on-secondary": "#003544",
+                    "on-primary": "#4d2700",
+                    "on-error": "#690005",
+                    "surface-dim": "#131313",
+                    "outline": "#a08d80"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "base": "4px",
+                    "xl": "80px",
+                    "lg": "48px",
+                    "md": "24px",
+                    "gutter": "24px",
+                    "sm": "16px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "code-sm": ["Geist"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "label-md": ["Geist"],
+                    "display-sm": ["Hanken Grotesk"],
+                    "body-lg": ["Geist"],
+                    "body-md": ["Geist"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-sm": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Geist', sans-serif;
+            width: 390px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+        .copper-glow {
+            box-shadow: 0 0 15px rgba(255, 183, 123, 0.2);
+        }
+        .schematic-line {
+            height: 1px;
+            background: linear-gradient(90deg, #ffb77b 0%, rgba(255, 183, 123, 0) 100%);
+        }
+        .nav-active {
+            color: #ffb77b !important;
+            font-weight: 700;
+            border-bottom: 2px solid #ffb77b;
+            padding-bottom: 4px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="dark bg-background text-on-background">
+<!-- Header (Shared Component: TopNavBar) -->
+<header class="w-full sticky top-0 z-50 bg-background border-b border-outline-variant px-gutter h-20 flex justify-between items-center">
+<div class="font-headline-lg text-headline-lg font-bold text-primary tracking-tighter">
+            Infotechs Solutions
+        </div>
+<button class="p-2 transition-all duration-200 active:scale-95" id="mobile-menu-trigger">
+<span class="material-symbols-outlined text-primary text-3xl">menu</span>
+</button>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="px-gutter pt-lg pb-md">
+<div class="flex flex-col gap-xs">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface uppercase tracking-tight">
+                    Contact
+                </h1>
+<div class="schematic-line w-24"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm">
+                Propulsez votre infrastructure technologique vers de nouveaux sommets. Discutons de votre vision.
+            </p>
+</section>
+<!-- Locations -->
+<section class="px-gutter flex flex-col gap-sm mb-lg">
+<div class="grid grid-cols-1 gap-xs">
+<div class="bg-surface-container-low border border-outline-variant p-sm rounded-lg flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Montérégie Office</p>
+<p class="font-body-md text-body-md text-on-surface">Brossard, QC, Canada</p>
+</div>
+</div>
+<div class="bg-surface-container-low border border-outline-variant p-sm rounded-lg flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Québec Office</p>
+<p class="font-body-md text-body-md text-on-surface">Québec, QC, Canada</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Demo Warning -->
+<section class="px-gutter mb-md">
+<div class="bg-surface-container-high border-l-4 border-primary p-sm flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary">info</span>
+<p class="font-code-sm text-code-sm text-on-surface-variant italic">
+                    Ce formulaire est en mode démonstration. Aucune donnée n'est réellement envoyée ni stockée.
+                </p>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="px-gutter pb-xl">
+<form class="flex flex-col gap-md" onsubmit="event.preventDefault();">
+<!-- Nom -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Nom</label>
+<input class="bg-surface-container-lowest border-0 border-b border-secondary-container focus:border-primary text-on-surface font-body-md p-sm transition-colors outline-none" placeholder="Votre nom complet" type="text"/>
+</div>
+<!-- Entreprise -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Entreprise <span class="text-xs lowercase opacity-60">(optionnel)</span></label>
+<input class="bg-surface-container-lowest border-0 border-b border-secondary-container focus:border-primary text-on-surface font-body-md p-sm transition-colors outline-none" placeholder="Nom de l'organisation" type="text"/>
+</div>
+<!-- Courriel -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Courriel</label>
+<input class="bg-surface-container-lowest border-0 border-b border-secondary-container focus:border-primary text-on-surface font-body-md p-sm transition-colors outline-none" placeholder="adresse@exemple.com" type="email"/>
+</div>
+<!-- Téléphone -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Téléphone <span class="text-xs lowercase opacity-60">(optionnel)</span></label>
+<input class="bg-surface-container-lowest border-0 border-b border-secondary-container focus:border-primary text-on-surface font-body-md p-sm transition-colors outline-none" placeholder="+1 (000) 000-0000" type="tel"/>
+</div>
+<!-- Type de projet -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Type de projet</label>
+<select class="bg-surface-container-lowest border-0 border-b border-secondary-container focus:border-primary text-on-surface font-body-md p-sm transition-colors outline-none appearance-none">
+<option>Architecture Cloud</option>
+<option>Développement Logiciel</option>
+<option>Cybersécurité</option>
+<option>Intelligence Artificielle</option>
+</select>
+</div>
+<!-- Budget & Délai Group -->
+<div class="grid grid-cols-1 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Budget</label>
+<input class="bg-surface-container-lowest border-0 border-b border-secondary-container focus:border-primary text-on-surface font-body-md p-sm transition-colors outline-none" placeholder="e.g. 50k - 100k" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Délai</label>
+<input class="bg-surface-container-lowest border-0 border-b border-secondary-container focus:border-primary text-on-surface font-body-md p-sm transition-colors outline-none" placeholder="e.g. 3 mois" type="text"/>
+</div>
+</div>
+<!-- Message with Validation Error -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Message</label>
+<textarea class="bg-surface-container-lowest border-0 border-b border-error text-on-surface font-body-md p-sm transition-colors outline-none resize-none" rows="4">Salut</textarea>
+<span class="text-error text-xs font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">error</span>
+                        Message trop court
+                    </span>
+</div>
+<!-- CTA -->
+<button class="bg-primary text-on-primary font-label-md text-label-md p-md mt-sm copper-glow uppercase tracking-widest font-bold transition-all duration-200 active:scale-95 flex justify-center items-center gap-sm">
+                    Envoyer la demande
+                    <span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</section>
+</main>
+<!-- Footer (Shared Component: Footer) -->
+<footer class="w-full bg-surface border-t border-outline-variant py-lg px-gutter flex flex-col gap-lg">
+<div class="flex flex-col gap-md">
+<div class="font-headline-lg text-headline-lg font-bold text-primary">
+                Infotechs Solutions
+            </div>
+<nav class="flex flex-col gap-sm">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary transition-colors" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary transition-colors" href="#">Réalisations</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary transition-colors" href="#">Expertise</a>
+<a class="font-label-md text-label-md text-primary font-bold" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex flex-col gap-sm pt-md border-t border-outline-variant/30">
+<p class="font-body-md text-body-md text-on-surface-variant">Montérégie Office</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Québec Office</p>
+<div class="flex gap-md mt-xs">
+<a class="font-code-sm text-code-sm text-on-surface-variant underline opacity-60" href="#">Privacy Policy</a>
+<a class="font-code-sm text-code-sm text-on-surface-variant underline opacity-60" href="#">Terms of Service</a>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant/40 mt-sm">
+                © 2026 Infotechs Solutions. All rights reserved.
+            </p>
+</div>
+</footer>
+<!-- Mobile Menu Overlay (Hidden) -->
+<div class="fixed inset-0 bg-background z-[100] translate-x-full transition-transform duration-500 ease-in-out p-gutter flex flex-col gap-xl" id="mobile-menu">
+<div class="flex justify-between items-center">
+<div class="font-headline-lg text-headline-lg font-bold text-primary tracking-tighter">
+                Infotechs Solutions
+            </div>
+<button id="close-menu">
+<span class="material-symbols-outlined text-primary text-3xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-lg">
+<a class="font-display-sm text-display-sm text-on-surface uppercase tracking-tighter opacity-40 hover:opacity-100 transition-opacity" href="#">Services</a>
+<a class="font-display-sm text-display-sm text-on-surface uppercase tracking-tighter opacity-40 hover:opacity-100 transition-opacity" href="#">Réalisations</a>
+<a class="font-display-sm text-display-sm text-on-surface uppercase tracking-tighter opacity-40 hover:opacity-100 transition-opacity" href="#">Expertise</a>
+<a class="font-display-sm text-display-sm text-primary uppercase tracking-tighter" href="#">Contact</a>
+</nav>
+<div class="mt-auto pb-lg">
+<div class="schematic-line w-full mb-md opacity-20"></div>
+<button class="w-full bg-primary text-on-primary p-md font-bold uppercase tracking-widest">Démarrer un projet</button>
+</div>
+</div>
+<script>
+        const menuTrigger = document.getElementById('mobile-menu-trigger');
+        const closeMenu = document.getElementById('close-menu');
+        const menu = document.getElementById('mobile-menu');
+
+        menuTrigger.addEventListener('click', () => {
+            menu.classList.remove('translate-x-full');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menu.classList.add('translate-x-full');
+        });
+
+        // Simple input focus effects
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').classList.replace('text-on-surface-variant', 'text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label').classList.replace('text-primary', 'text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>

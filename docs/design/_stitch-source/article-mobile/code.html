@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Infotechs Solutions - Article</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#7a3000",
+                        "on-primary-fixed-variant": "#6d3a00",
+                        "on-tertiary": "#562000",
+                        "primary-container": "#c8803f",
+                        "on-primary": "#4d2700",
+                        "on-error": "#690005",
+                        "tertiary-container": "#ea6b1e",
+                        "inverse-on-surface": "#313030",
+                        "background": "#131313",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-highest": "#353535",
+                        "inverse-primary": "#8c4f10",
+                        "surface-variant": "#353535",
+                        "on-background": "#e5e2e1",
+                        "secondary-fixed": "#b9eaff",
+                        "primary-fixed-dim": "#ffb77b",
+                        "on-secondary-container": "#87c1d8",
+                        "primary-fixed": "#ffdcc2",
+                        "outline": "#a08d80",
+                        "on-surface-variant": "#d8c3b4",
+                        "on-secondary-fixed": "#001f29",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#2e1500",
+                        "on-primary-container": "#432100",
+                        "secondary-container": "#065064",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary": "#003544",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-secondary-fixed-variant": "#014d61",
+                        "error-container": "#93000a",
+                        "primary": "#ffb77b",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary": "#95cfe7",
+                        "surface": "#131313",
+                        "secondary-fixed-dim": "#95cfe7",
+                        "surface-dim": "#131313",
+                        "surface-bright": "#393939",
+                        "outline-variant": "#524439",
+                        "on-tertiary-fixed": "#351000",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-tint": "#ffb77b",
+                        "tertiary": "#ffb693",
+                        "surface-container": "#20201f",
+                        "on-tertiary-container": "#4b1b00",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "sm": "16px",
+                        "xs": "8px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Geist"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-sm": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "body-md": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "code-sm": ["Geist"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-sm": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .article-content h2 {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffb77b;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1c1b1b;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ffb77b;
+            border-radius: 2px;
+        }
+        .copper-glow {
+            box-shadow: 0 0 15px rgba(255, 183, 123, 0.2);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+<!-- TopNavBar (JSON Managed) -->
+<header class="bg-background dark:bg-background w-full top-0 sticky z-50 border-b border-outline-variant dark:border-outline-variant">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-sm">
+<div class="font-headline-lg text-headline-lg text-primary dark:text-primary tracking-tighter">
+                Infotechs Solutions
+            </div>
+<button class="md:hidden text-primary" id="menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex gap-md">
+<span class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer">Services</span>
+<span class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-300 cursor-pointer">Réalisations</span>
+<span class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer">Expertise</span>
+<span class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer">Contact</span>
+</div>
+</nav>
+</header>
+<main class="flex-grow">
+<!-- Hero Editorial Compact -->
+<section class="relative pt-lg px-gutter pb-md border-b border-outline-variant">
+<div class="flex flex-col gap-sm">
+<div class="flex items-center gap-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span>AUTOMATISATION &amp; IA</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight">
+                    L'architecture des nœuds : Vers une automatisation intelligente des workflows
+                </h1>
+</div>
+</section>
+<!-- Main Image -->
+<section class="w-full aspect-[1.79] overflow-hidden bg-surface-container-low border-b border-outline-variant">
+<img alt="Illustration technique de nœuds d'automatisation" class="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXCwv3ngKCd9LirM9Gw6efM6N0xXBIfbZebhzThrcaSTfHfZh0-TsXtBRFj__ApXZBt8H-_j3LPa74AgwvBvU2VvCFGPokK3uzDP22OkBikaL_lhjE5XhyQRveNESesAa9oWm09K-PcML1bBMJW66fPF3Fg9vHmHEPcDYh-3oudSBgQI2Sn2DomRzWYpmyxZq2ITYDJPAXFROLVrduFmnENnuVF8SBE8rZSegQaf4RChVyY3uf1n52Pq59OYuxhdKXfgeT-OTiNM"/>
+</section>
+<!-- Mobile Content Layout -->
+<div class="px-gutter py-lg flex flex-col gap-lg">
+<!-- Sommaire Accordéon -->
+<aside class="bg-surface-container-low border border-outline-variant p-md rounded">
+<button class="w-full flex justify-between items-center text-primary" onclick="toggleAccordion('summary')">
+<span class="font-label-md text-label-md">SOMMAIRE DE L'ARTICLE</span>
+<span class="material-symbols-outlined transition-transform" id="accordion-icon">expand_more</span>
+</button>
+<div class="hidden mt-md" id="summary-content">
+<ul class="flex flex-col gap-sm border-l border-outline-variant pl-md">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#intro">01. Fondations systémiques</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#tech">02. Orchestration des micro-services</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#future">03. Impact sur l'efficience opérationnelle</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#conclusion">04. Synthèse stratégique</a></li>
+</ul>
+</div>
+</aside>
+<!-- Body Text -->
+<article class="article-content font-body-md text-body-md text-on-surface-variant">
+<p id="intro">
+                    Dans l'écosystème numérique actuel, la simple exécution de tâches ne suffit plus. L'innovation réside dans la capacité d'un système à auto-gérer ses flux. L'approche par <span class="text-primary font-semibold">nœuds décisionnels</span> permet une flexibilité sans précédent, transformant des processus linéaires rigides en structures organiques capables de s'adapter aux variations de données en temps réel.
+                </p>
+<h2 id="tech">L'orchestration au service de la précision</h2>
+<p>
+                    L'utilisation de protocoles d'échanges asynchrones garantit que chaque étape du workflow reçoit l'information nécessaire sans surcharge cognitive du système central. C'est ici que la métaphore de l'architecture "Digital Copper" prend tout son sens : des flux de lumière (données) circulant sur des circuits parfaitement tracés.
+                </p>
+<div class="my-lg border-l-2 border-primary pl-md italic text-primary bg-surface-container-low py-md">
+                    "L'automatisation n'est pas la suppression de l'humain, mais la libération de son potentiel créatif au profit de la supervision stratégique."
+                </div>
+<h2 id="future">L'efficience par le design minimaliste</h2>
+<p>
+                    Réduire les frictions techniques passe par une épuration des interfaces et une rationalisation des chemins de données. En minimisant les interactions inutiles, Infotechs Solutions propose des infrastructures où chaque milliseconde gagnée se traduit par un avantage concurrentiel tangible pour nos partenaires.
+                </p>
+</article>
+<!-- CTA Section -->
+<section class="mt-md p-lg bg-primary-container text-on-primary-container rounded flex flex-col gap-md copper-glow">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-bold">Prêt à optimiser vos flux ?</h3>
+<p class="font-body-md text-body-md opacity-90">Nos experts en architecture logicielle vous accompagnent dans la définition de votre stratégie d'automatisation.</p>
+<button class="bg-background text-primary py-sm px-lg font-label-md text-label-md uppercase tracking-widest hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-xs">
+<span>Démarrer un projet</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</section>
+<!-- Articles Liés (Bento-ish on mobile) -->
+<section class="flex flex-col gap-md">
+<h4 class="font-label-md text-label-md text-primary tracking-widest uppercase">Articles Similaires</h4>
+<div class="grid grid-cols-1 gap-sm">
+<div class="border border-outline-variant p-sm flex gap-sm items-center cursor-pointer hover:border-primary group transition-all">
+<div class="w-20 h-20 bg-surface-container-high flex-shrink-0">
+<div class="w-full h-full bg-gradient-to-br from-outline-variant to-background opacity-50"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary mb-1">TECH</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface line-clamp-2">L'intelligence artificielle au cœur de la cybersécurité</span>
+</div>
+</div>
+<div class="border border-outline-variant p-sm flex gap-sm items-center cursor-pointer hover:border-primary group transition-all">
+<div class="w-20 h-20 bg-surface-container-high flex-shrink-0">
+<div class="w-full h-full bg-gradient-to-tr from-outline-variant to-background opacity-50"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary mb-1">STRATÉGIE</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface line-clamp-2">Pourquoi externaliser votre architecture cloud ?</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer (JSON Managed) -->
+<footer class="bg-surface-container-low dark:bg-surface-container-low w-full mt-auto border-t border-outline-variant dark:border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter py-lg flex flex-col md:flex-row justify-between gap-lg">
+<div class="flex flex-col gap-sm">
+<div class="font-headline-lg text-headline-lg text-primary">Infotechs Solutions</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Solutions technologiques de pointe pour les entreprises ambitieuses.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-md md:gap-xl">
+<div class="flex flex-col gap-xs">
+<span class="font-label-md text-label-md text-primary font-bold">Bureaux</span>
+<span class="font-body-md text-body-md text-on-surface-variant cursor-pointer hover:text-tertiary transition-colors">Brossard Office</span>
+<span class="font-body-md text-body-md text-on-surface-variant cursor-pointer hover:text-tertiary transition-colors">Québec Office</span>
+</div>
+<div class="flex flex-col gap-xs">
+<span class="font-label-md text-label-md text-primary font-bold">Légal</span>
+<span class="font-body-md text-body-md text-on-surface-variant cursor-pointer hover:text-tertiary transition-colors">Confidentialité</span>
+<span class="font-body-md text-body-md text-on-surface-variant cursor-pointer hover:text-tertiary transition-colors">Conditions d'utilisation</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-md border-t border-outline-variant/30 text-center md:text-left">
+<span class="font-body-md text-body-md text-on-surface-variant opacity-60">Copyright 2026 Infotechs Solutions</span>
+</div>
+</footer>
+<script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id + '-content');
+            const icon = document.getElementById('accordion-icon');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Simple smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky header behavior
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            header.style.transition = 'transform 0.3s ease-in-out';
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body></html>

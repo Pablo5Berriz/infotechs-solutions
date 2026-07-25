@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>À Propos | Infotechs Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Hanken+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        
+        .copper-glow {
+            box-shadow: 0 0 15px rgba(255, 183, 123, 0.15);
+        }
+
+        .schematic-line {
+            background: linear-gradient(90deg, transparent, #ffb77b, transparent);
+            height: 1px;
+            width: 100%;
+        }
+
+        .blueprint-bg {
+            background-image: radial-gradient(#524439 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            overflow-x: hidden;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#ffb77b",
+                      "outline-variant": "#524439",
+                      "outline": "#a08d80",
+                      "on-error-container": "#ffdad6",
+                      "surface-tint": "#ffb77b",
+                      "on-primary": "#4d2700",
+                      "inverse-surface": "#e5e2e1",
+                      "secondary-fixed": "#b9eaff",
+                      "on-secondary": "#003544",
+                      "surface-bright": "#393939",
+                      "inverse-primary": "#8c4f10",
+                      "surface-container-highest": "#353535",
+                      "tertiary-container": "#ea6b1e",
+                      "on-primary-fixed": "#2e1500",
+                      "surface": "#131313",
+                      "primary-fixed": "#ffdcc2",
+                      "error": "#ffb4ab",
+                      "surface-dim": "#131313",
+                      "on-surface": "#e5e2e1",
+                      "on-secondary-fixed": "#001f29",
+                      "surface-container-lowest": "#0e0e0e",
+                      "tertiary-fixed": "#ffdbcc",
+                      "on-tertiary": "#562000",
+                      "on-tertiary-container": "#4b1b00",
+                      "error-container": "#93000a",
+                      "surface-variant": "#353535",
+                      "secondary": "#95cfe7",
+                      "on-secondary-container": "#87c1d8",
+                      "on-primary-fixed-variant": "#6d3a00",
+                      "on-primary-container": "#432100",
+                      "secondary-fixed-dim": "#95cfe7",
+                      "surface-container-high": "#2a2a2a",
+                      "secondary-container": "#065064",
+                      "primary": "#ffb77b",
+                      "on-surface-variant": "#d8c3b4",
+                      "surface-container-low": "#1c1b1b",
+                      "on-secondary-fixed-variant": "#014d61",
+                      "surface-container": "#20201f",
+                      "on-tertiary-fixed-variant": "#7a3000",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-background": "#e5e2e1",
+                      "background": "#131313",
+                      "on-error": "#690005",
+                      "primary-container": "#c8803f",
+                      "on-tertiary-fixed": "#351000",
+                      "inverse-on-surface": "#313030",
+                      "tertiary": "#ffb693"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "xl": "80px",
+                      "gutter": "24px",
+                      "lg": "48px",
+                      "base": "4px",
+                      "xs": "8px",
+                      "md": "24px",
+                      "sm": "16px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Geist"],
+                      "display-lg": ["Hanken Grotesk"],
+                      "headline-lg": ["Hanken Grotesk"],
+                      "display-sm": ["Hanken Grotesk"],
+                      "headline-lg-mobile": ["Hanken Grotesk"],
+                      "label-md": ["Geist"],
+                      "code-sm": ["Geist"],
+                      "body-md": ["Geist"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-sm": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="bg-surface border-b border-outline-variant w-full h-20 sticky top-0 z-50">
+<div class="flex justify-between items-center px-gutter w-full max-w-container-max mx-auto h-full">
+<div class="font-display-sm text-display-sm font-bold text-primary">
+                Infotechs Solutions
+            </div>
+<div class="hidden md:flex items-center space-x-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Réalisations</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Expertise</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">À Propos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-sm py-xs font-label-md text-label-md uppercase tracking-widest active:scale-95 transition-transform copper-glow">
+                Démarrer un projet
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative overflow-hidden pt-xl pb-lg blueprint-bg">
+
+<div class="relative z-10 max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-md">
+<div class="md:col-span-8">
+<span class="inline-block text-primary font-label-md text-label-md uppercase tracking-[0.2em] mb-sm">Studio Technologique Québécois</span>
+<h1 class="font-display-lg text-display-lg mb-md text-on-surface">
+                    L'excellence technique au service de <span class="text-primary">l'innovation locale.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg">
+                    Basée à Brossard et Québec, Infotechs Solutions est un studio technologique en pleine ascension. Notre équipe, jeune et rigoureuse, transforme des architectures complexes en solutions fluides et performantes.
+                </p>
+</div>
+<div class="md:col-span-4 flex flex-col justify-end border-l border-outline-variant pl-md">
+<div class="mb-md">
+<div class="text-primary font-display-sm text-display-sm mb-xs">2026</div>
+<div class="text-on-surface-variant font-label-md text-label-md uppercase">Vision de demain</div>
+</div>
+<div class="schematic-line mb-md opacity-30"></div>
+<div class="text-on-surface-variant font-body-md text-body-md italic">
+                    "La rigueur d'un cabinet de conseil, l'agilité d'un studio créatif."
+                </div>
+</div>
+</div>
+</header>
+<!-- Values Section (Bento Grid) -->
+<section class="py-xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Value 1 -->
+<div class="border border-outline-variant p-lg flex flex-col justify-between hover:border-primary transition-colors group">
+<div>
+<span class="material-symbols-outlined text-primary mb-md" style="font-size: 40px;">precision_manufacturing</span>
+<h3 class="font-headline-lg text-headline-lg mb-sm">Rigueur</h3>
+<p class="text-on-surface-variant font-body-md">Chaque ligne de code est pesée. Nous appliquons des standards d'ingénierie stricts pour garantir la pérennité de vos systèmes.</p>
+</div>
+<div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500 mt-md"></div>
+</div>
+<!-- Value 2 -->
+<div class="border border-outline-variant p-lg flex flex-col justify-between hover:border-primary transition-colors group">
+<div>
+<span class="material-symbols-outlined text-primary mb-md" style="font-size: 40px;">visibility</span>
+<h3 class="font-headline-lg text-headline-lg mb-sm">Transparence</h3>
+<p class="text-on-surface-variant font-body-md">Aucune boîte noire. Nous documentons chaque décision architecturale et communiquons avec une honnêteté radicale.</p>
+</div>
+<div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500 mt-md"></div>
+</div>
+<!-- Value 3 -->
+<div class="border border-outline-variant p-lg flex flex-col justify-between hover:border-primary transition-colors group">
+<div>
+<span class="material-symbols-outlined text-primary mb-md" style="font-size: 40px;">location_on</span>
+<h3 class="font-headline-lg text-headline-lg mb-sm">Proximité</h3>
+<p class="text-on-surface-variant font-body-md">Ancrés au Québec, nous comprenons les enjeux de notre écosystème. Une présence locale pour un impact global.</p>
+</div>
+<div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500 mt-md"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology Section (Technical Schematic Layout) -->
+<section class="py-xl bg-surface-container-lowest border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-xl">
+<h2 class="font-display-sm text-display-sm mb-xs">Notre Méthodologie</h2>
+<div class="schematic-line max-w-[200px] mx-auto opacity-50"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 relative">
+<!-- Logic flow line for desktop -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-outline-variant -translate-y-1/2 z-0"></div>
+<!-- Step 1 -->
+<div class="md:col-span-4 relative z-10 px-md py-lg bg-surface-container-lowest text-center">
+<div class="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center mx-auto mb-md bg-surface">
+<span class="font-headline-lg text-primary">01</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg mb-sm">Analyse</h4>
+<p class="text-on-surface-variant font-body-md">Audit technique et définition des objectifs stratégiques. Nous déconstruisons vos besoins pour bâtir sur du roc.</p>
+</div>
+<!-- Step 2 -->
+<div class="md:col-span-4 relative z-10 px-md py-lg bg-surface-container-lowest text-center">
+<div class="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center mx-auto mb-md bg-surface">
+<span class="font-headline-lg text-primary">02</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg mb-sm">Conception</h4>
+<p class="text-on-surface-variant font-body-md">Architecture logicielle et prototypage haute fidélité. La forme suit la fonction dans un design modulaire.</p>
+</div>
+<!-- Step 3 -->
+<div class="md:col-span-4 relative z-10 px-md py-lg bg-surface-container-lowest text-center">
+<div class="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center mx-auto mb-md bg-surface">
+<span class="font-headline-lg text-primary">03</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg mb-sm">Livraison</h4>
+<p class="text-on-surface-variant font-body-md">Déploiement continu et optimisation post-lancement. Nous assurons la stabilité et la montée en charge.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Expertise Section -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="relative">
+<div class="aspect-square bg-surface-container-high border border-outline-variant overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="A highly detailed 3D technical blueprint render of a complex server architecture, featuring glowing copper data streams and dark graphite modules. The scene is shot with a macro lens, emphasizing precision and structural integrity. Minimalist lighting creates sharp shadows and highlights the metallic reflections of the copper wires, embodying the Infotechs Solutions aesthetic of premium technological minimalism." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZfifD1C0U6kRFmSseTvIsRWjzH3N4wpoyNJH82VVyRo8Ahkg37CIC7DnuYsQ_gvmLTasBnGvmlhYW89_3OKGtu7YeDB7GPAKCWTPjlgrxSeC2f0fOPiKz7xglBryWRLYnyLbl4CajD8SGdPFIJYAecLd-KLBBn2eQPNU7LWC4_B9Hohm0NqEGI-ugvITZZ2ej5F33CcPKjoTCPfzE9qIfwJH0hkmzlSgeAf9PcCd6NKDxh7Xz5O-oIkbJeG0l96ic9QjDKULLlsg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<div class="absolute -bottom-xs -right-xs w-48 h-48 border-r-2 border-b-2 border-primary"></div>
+</div>
+<div class="space-y-lg">
+<h2 class="font-display-sm text-display-sm">Expertise de <span class="text-primary">Pointe</span></h2>
+<div class="space-y-md">
+<div class="flex gap-md">
+<div class="flex-none">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px;">cloud</span>
+</div>
+<div>
+<h5 class="font-headline-lg text-headline-lg-mobile mb-xs">Architecture Cloud</h5>
+<p class="text-on-surface-variant font-body-md">Scalabilité infinie et haute disponibilité via AWS, Azure et Google Cloud. Infrastructures as Code (IaC).</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-none">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px;">terminal</span>
+</div>
+<div>
+<h5 class="font-headline-lg text-headline-lg-mobile mb-xs">Génie Logiciel</h5>
+<p class="text-on-surface-variant font-body-md">Développement sur mesure de systèmes complexes. Performance, sécurité et maintenabilité au cœur du code.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-none">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px;">settings_suggest</span>
+</div>
+<div>
+<h5 class="font-headline-lg text-headline-lg-mobile mb-xs">Automatisation</h5>
+<p class="text-on-surface-variant font-body-md">Élimination des tâches répétitives et optimisation des workflows industriels et numériques.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action (Asymmetric Layout) -->
+<section class="pb-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="bg-primary text-on-primary p-xl grid grid-cols-1 md:grid-cols-12 gap-lg items-center relative overflow-hidden copper-glow">
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined" style="font-size: 300px;">hub</span>
+</div>
+<div class="md:col-span-8 relative z-10">
+<h2 class="font-display-sm text-display-sm text-on-primary mb-md">Prêt à bâtir l'infrastructure de votre succès ?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80">Collaborons pour transformer vos défis techniques en avantages compétitifs durables.</p>
+</div>
+<div class="md:col-span-4 relative z-10 flex md:justify-end">
+<a class="inline-block bg-on-primary text-primary px-lg py-sm font-label-md text-label-md uppercase tracking-widest hover:scale-105 active:scale-95 transition-all" href="#">
+                        Travaillons ensemble
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full pt-lg pb-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md px-gutter w-full max-w-container-max mx-auto">
+<div class="flex flex-col space-y-md">
+<div class="font-headline-lg text-headline-lg font-bold text-primary">Infotechs Solutions</div>
+<p class="text-on-surface-variant font-body-md max-w-xs">
+                    L'ingénierie logicielle d'élite, au service des entreprises du Québec.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-sm">
+<div class="flex flex-col space-y-xs">
+<h6 class="text-primary font-label-md uppercase tracking-wider mb-xs">Bureaux</h6>
+<span class="text-on-surface-variant font-body-md">Brossard Office</span>
+<span class="text-on-surface-variant font-body-md">Québec Office</span>
+</div>
+<div class="flex flex-col space-y-xs">
+<h6 class="text-primary font-label-md uppercase tracking-wider mb-xs">Navigation</h6>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Réalisations</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Expertise</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Contact</a>
+</div>
+</div>
+<div class="flex flex-col justify-between items-start md:items-end">
+<div class="flex space-x-md mb-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+<div class="text-on-surface-variant font-body-md text-sm">
+                    © 2026 Infotechs Solutions. Tous droits réservés.
+                </div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for the cards
+        document.querySelectorAll('.border-outline-variant').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.transition = 'transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>

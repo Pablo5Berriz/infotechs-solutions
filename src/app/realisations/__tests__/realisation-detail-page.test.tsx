@@ -1,0 +1,8 @@
+import{renderToStaticMarkup}from"react-dom/server";import{describe,expect,it}from"vitest";import ProjectDetailPage,{generateMetadata,generateStaticParams}from"@/app/realisations/[slug]/page";import sitemap from"@/app/sitemap";import{portfolioProjects}from"@/lib/project-portfolio";
+describe("routes réalisations 002D",()=>{
+it("génère exactement les slugs publiés",()=>{expect(generateStaticParams()).toEqual(portfolioProjects.map(({slug})=>({slug})))});
+it("rend chaque projet avec contenu, statut et breadcrumb",async()=>{for(const p of portfolioProjects){const page=await ProjectDetailPage({params:Promise.resolve({slug:p.slug})});const m=renderToStaticMarkup(page);expect(m.match(/<h1/g)).toHaveLength(1);expect(m).toContain(p.title);expect(m).toContain("CONCEPT DÉMONSTRATIF");expect(m).toContain('aria-current="page"')}});
+it("retourne 404 pour un slug inconnu",async()=>{await expect(ProjectDetailPage({params:Promise.resolve({slug:"inconnu"})})).rejects.toMatchObject({digest:"NEXT_HTTP_ERROR_FALLBACK;404"})});
+it("fournit des métadonnées distinctes et prudentes",async()=>{const all=await Promise.all(portfolioProjects.map(p=>generateMetadata({params:Promise.resolve({slug:p.slug})})));expect(new Set(all.map(x=>x.title)).size).toBe(6);for(const m of all)expect(String(m.description)).toMatch(/Concept/i)});
+it("publie exactement les six projets au sitemap sans doublon",()=>{const urls=sitemap().map(x=>x.url).filter(x=>x.includes("/realisations/"));expect(urls).toEqual(portfolioProjects.map(p=>`https://infotechssolutions.ca${p.href}`));expect(new Set(urls).size).toBe(6)});
+});

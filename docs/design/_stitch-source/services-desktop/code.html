@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Infotechs Solutions</title>
+<!-- Google Fonts: Hanken Grotesk & Geist -->
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-secondary-fixed-variant": "#014d61",
+                    "surface-container": "#20201f",
+                    "background": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "secondary-container": "#065064",
+                    "outline": "#a08d80",
+                    "inverse-on-surface": "#313030",
+                    "on-surface": "#e5e2e1",
+                    "secondary": "#95cfe7",
+                    "surface-container-low": "#1c1b1b",
+                    "inverse-primary": "#8c4f10",
+                    "on-secondary-container": "#87c1d8",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#6d3a00",
+                    "error": "#ffb4ab",
+                    "outline-variant": "#524439",
+                    "surface-bright": "#393939",
+                    "surface": "#131313",
+                    "on-background": "#e5e2e1",
+                    "surface-tint": "#ffb77b",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-dim": "#131313",
+                    "on-primary": "#4d2700",
+                    "on-tertiary-fixed": "#351000",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-container": "#432100",
+                    "primary-fixed-dim": "#ffb77b",
+                    "surface-variant": "#353535",
+                    "secondary-fixed-dim": "#95cfe7",
+                    "on-error": "#690005",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary": "#562000",
+                    "on-primary-fixed": "#2e1500",
+                    "primary": "#ffb77b",
+                    "tertiary-container": "#ea6b1e",
+                    "on-secondary": "#003544",
+                    "on-tertiary-fixed-variant": "#7a3000",
+                    "on-surface-variant": "#d8c3b4",
+                    "on-secondary-fixed": "#001f29",
+                    "secondary-fixed": "#b9eaff",
+                    "primary-container": "#c8803f",
+                    "surface-container-highest": "#353535",
+                    "tertiary": "#ffb693",
+                    "on-tertiary-container": "#4b1b00",
+                    "tertiary-fixed": "#ffdbcc",
+                    "primary-fixed": "#ffdcc2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "gutter": "24px",
+                    "sm": "16px",
+                    "md": "24px",
+                    "container-max": "1280px",
+                    "lg": "48px",
+                    "xl": "80px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "code-sm": ["Geist"],
+                    "label-md": ["Geist"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "display-sm": ["Hanken Grotesk"],
+                    "body-lg": ["Geist"],
+                    "body-md": ["Geist"]
+            },
+            "fontSize": {
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-sm": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .copper-glow {
+            box-shadow: 0 0 20px rgba(255, 183, 123, 0.15);
+        }
+        .schematic-line {
+            background: linear-gradient(90deg, transparent, #ffb77b, transparent);
+        }
+        .service-card:hover .service-icon {
+            transform: translateY(-4px);
+            color: #ffb77b;
+        }
+        .transition-all { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- 1. Header (TopNavBar) -->
+<header class="fixed top-0 w-full z-50 bg-background border-b border-outline-variant">
+<nav class="flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto h-16">
+<div class="font-display-sm text-[24px] font-bold text-primary tracking-tight">
+                Infotechs Solutions
+            </div>
+<div class="hidden md:flex items-center gap-md">
+<a class="font-body-md text-primary border-b-2 border-primary pb-1 transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Réalisations</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Expertise</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-sm py-xs font-label-md rounded-DEFAULT hover:opacity-90 active:scale-95 transition-all">
+                Démarrer un projet
+            </button>
+</nav>
+</header>
+<main class="pt-16">
+<!-- 2. Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden border-b border-outline-variant">
+<div class="absolute inset-0 z-0">
+
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-md w-full">
+<div class="md:col-span-8">
+<div class="inline-flex items-center gap-xs px-xs py-[2px] border border-primary/30 rounded-full mb-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-primary tracking-widest text-[10px] uppercase">Solutions de Haute Précision</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-md">
+                        Expertise Logicielle &amp; <br/>
+<span class="text-primary">Systèmes Critiques</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Nous concevons des architectures logicielles robustes pour les entreprises visionnaires du Québec. Notre approche allie rigueur mathématique et performance technologique.
+                    </p>
+</div>
+</div>
+<!-- Structural vertical line decoration -->
+<div class="absolute right-[10%] top-0 w-px h-full bg-outline-variant/30 hidden md:block"></div>
+</section>
+<!-- 3. Services Section (Bento Grid Style) -->
+<section class="py-xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg mb-sm">Nos Domaines d'Intervention</h2>
+<div class="w-24 h-1 bg-primary mb-md"></div>
+</div>
+<div class="font-label-md text-on-surface-variant tracking-wider uppercase">Architecture de systèmes // 2026</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md">
+<!-- Service 1: Web & Applications -->
+<div class="md:col-span-4 group service-card">
+<div class="h-full border border-outline-variant p-md bg-surface-container-low transition-all hover:border-primary/50 relative overflow-hidden">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-[48px] text-on-surface-variant service-icon transition-all mb-lg">web</span>
+<h3 class="font-headline-lg text-[24px] mb-sm">Web &amp; Applications</h3>
+<p class="font-body-md text-on-surface-variant mb-xl">Développement de plateformes SaaS et écosystèmes web haute performance, centrés sur l'évolutivité.</p>
+<div class="mt-auto pt-md border-t border-outline-variant flex flex-wrap gap-xs">
+<span class="px-xs py-[2px] border border-outline-variant text-code-sm font-code-sm uppercase">React</span>
+<span class="px-xs py-[2px] border border-outline-variant text-code-sm font-code-sm uppercase">Next.js</span>
+<span class="px-xs py-[2px] border border-outline-variant text-code-sm font-code-sm uppercase">Node.js</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service 2: Flux de travail automatisés -->
+<div class="md:col-span-4 group service-card">
+<div class="h-full border border-outline-variant p-md bg-surface-container-low transition-all hover:border-primary/50 relative overflow-hidden">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-[48px] text-on-surface-variant service-icon transition-all mb-lg">settings_suggest</span>
+<h3 class="font-headline-lg text-[24px] mb-sm">Flux de travail automatisés</h3>
+<p class="font-body-md text-on-surface-variant mb-xl">Optimisation des processus opérationnels par l'automatisation intelligente et l'intégration continue.</p>
+<div class="mt-auto pt-md border-t border-outline-variant flex flex-wrap gap-xs">
+<span class="px-xs py-[2px] border border-outline-variant text-code-sm font-code-sm uppercase">Python</span>
+<span class="px-xs py-[2px] border border-outline-variant text-code-sm font-code-sm uppercase">Cloud Arch</span>
+<span class="px-xs py-[2px] border border-outline-variant text-code-sm font-code-sm uppercase">Process Mining</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service 3: Sur mesure -->
+<div class="md:col-span-4 group service-card">
+<div class="h-full border border-primary p-md bg-surface-container-high transition-all relative overflow-hidden copper-glow">
+<div class="absolute top-0 right-0 w-24 h-24 opacity-10">
+<span class="material-symbols-outlined text-[96px] text-primary rotate-45">developer_board</span>
+</div>
+<div class="flex flex-col h-full relative z-10">
+<span class="material-symbols-outlined text-[48px] text-primary service-icon transition-all mb-lg">terminal</span>
+<h3 class="font-headline-lg text-[24px] mb-sm">Sur mesure</h3>
+<p class="font-body-md text-on-surface-variant mb-xl">Architectures spécifiques répondant aux défis uniques de votre industrie, garantissant sécurité et faible latence.</p>
+<div class="mt-auto pt-md border-t border-outline-variant flex flex-wrap gap-xs">
+<span class="px-xs py-[2px] border border-primary text-primary text-code-sm font-code-sm uppercase">C++</span>
+<span class="px-xs py-[2px] border border-primary text-primary text-code-sm font-code-sm uppercase">Rust</span>
+<span class="px-xs py-[2px] border border-primary text-primary text-code-sm font-code-sm uppercase">Embedded</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Process Section -->
+<section class="py-xl bg-surface-container-lowest border-y border-outline-variant relative">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-xl">
+<h2 class="font-display-sm text-display-sm mb-xs">Méthodologie de Réalisation</h2>
+<p class="font-body-md text-on-surface-variant">Un cycle de développement itératif et rigoureux.</p>
+</div>
+<div class="relative">
+<!-- Connector line -->
+<div class="absolute top-1/2 left-0 w-full h-px schematic-line hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center mb-md relative">
+<span class="font-display-sm text-[24px] text-primary">01</span>
+</div>
+<h3 class="font-headline-lg text-[20px] mb-xs uppercase tracking-widest">Analyse</h3>
+<p class="font-body-md text-on-surface-variant px-sm">Immersion totale dans votre écosystème pour un diagnostic précis des besoins.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center mb-md relative">
+<span class="font-display-sm text-[24px] text-primary">02</span>
+</div>
+<h3 class="font-headline-lg text-[20px] mb-xs uppercase tracking-widest">Conception</h3>
+<p class="font-body-md text-on-surface-variant px-sm">Design système méticuleux et prototypage rapide pour valider les flux critiques.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center mb-md relative">
+<span class="font-display-sm text-[24px] text-primary">03</span>
+</div>
+<h3 class="font-headline-lg text-[20px] mb-xs uppercase tracking-widest">Livraison</h3>
+<p class="font-body-md text-on-surface-variant px-sm">Déploiement continu et intégration sécurisée dans votre environnement de production.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Final CTA -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="relative bg-surface-container-low border border-outline-variant p-xl overflow-hidden">
+<!-- Background texture/pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffb77b 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="text-center md:text-left">
+<h2 class="font-display-sm text-display-sm mb-sm">Prêt à moderniser votre infrastructure ?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Discutons de vos défis technologiques et créons ensemble la solution qui propulsera votre entreprise.</p>
+</div>
+<button class="bg-primary text-on-primary px-xl py-md font-label-md rounded-DEFAULT hover:bg-primary-container transition-all copper-glow flex items-center gap-sm">
+                            Nous Contacter
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 6. Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter py-xl grid grid-cols-1 md:grid-cols-12 gap-md">
+<div class="md:col-span-4">
+<div class="font-display-sm text-[24px] font-bold text-on-surface mb-sm">
+                    Infotechs Solutions
+                </div>
+<p class="font-body-md text-on-surface-variant mb-md max-w-xs">
+                    L'excellence en ingénierie logicielle au service des industries de pointe.
+                </p>
+<div class="flex gap-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">terminal</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-primary mb-md uppercase tracking-widest">Navigation</h4>
+<ul class="space-y-xs">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Services</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Réalisations</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Expertise</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-primary mb-md uppercase tracking-widest">Légal</h4>
+<ul class="space-y-xs">
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Mentions Légales</a></li>
+<li><a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Politique de confidentialité</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 flex flex-col md:items-end justify-between">
+<div class="text-left md:text-right">
+<p class="font-body-md text-on-surface-variant">Bureaux à Montréal, QC</p>
+<p class="font-code-sm text-code-sm text-primary mt-xs">status: functional // v2.0.4</p>
+</div>
+<div class="font-body-md text-on-surface-variant mt-lg md:mt-0">
+                    © 2026 Infotechs Solutions. Tous droits réservés.
+                </div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Subtle background animation logic or additional interactivity can be added here
+        console.log("Infotechs Solutions UI Loaded: Services Page");
+    </script>
+</body></html>

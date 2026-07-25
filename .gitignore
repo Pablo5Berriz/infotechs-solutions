@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +40,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local design sources and intermediate visual-capture artifacts
+/screenshots/
+/docs/design/_stitch-source/**/source.zip
+/docs/design/design-review-001-report.md
+/docs/design/screens/implementation-002a/clip-test-*.png
+/docs/design/screens/implementation-002a/part-*.png
+/docs/design/screens/implementation-002a/r2part-*.png
+/docs/design/screens/implementation-002a/viewport-test-*.png
+/docs/design/screens/implementation-002e/*-meta.json
+/docs/design/screens/implementation-002e/direct-*.png
+/docs/design/screens/implementation-002e/exact-*.png
+/docs/design/screens/implementation-002e/long-check.png
+/docs/design/screens/implementation-002e/viewport-check.png
+/docs/design/screens/implementation-002e/final-chunks-*/
+/docs/design/screens/implementation-002e/segments-*/
+/docs/design/screens/implementation-002f/_chunks-*/

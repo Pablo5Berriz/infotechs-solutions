@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Infotechs Solutions | Systèmes Numériques Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#353535",
+                    "on-error": "#690005",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-tertiary": "#562000",
+                    "on-primary-fixed": "#2e1500",
+                    "on-primary-fixed-variant": "#6d3a00",
+                    "surface-container": "#20201f",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-primary": "#4d2700",
+                    "tertiary-container": "#ea6b1e",
+                    "on-background": "#e5e2e1",
+                    "secondary": "#95cfe7",
+                    "surface-container-high": "#2a2a2a",
+                    "tertiary": "#ffb693",
+                    "primary": "#ffb77b",
+                    "error-container": "#93000a",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container-low": "#1c1b1b",
+                    "on-secondary-fixed": "#001f29",
+                    "secondary-fixed-dim": "#95cfe7",
+                    "primary-fixed-dim": "#ffb77b",
+                    "surface-container-highest": "#353535",
+                    "outline": "#a08d80",
+                    "on-tertiary-fixed": "#351000",
+                    "surface-bright": "#393939",
+                    "primary-container": "#c8803f",
+                    "background": "#131313",
+                    "on-tertiary-fixed-variant": "#7a3000",
+                    "secondary-fixed": "#b9eaff",
+                    "on-secondary-fixed-variant": "#014d61",
+                    "error": "#ffb4ab",
+                    "on-tertiary-container": "#4b1b00",
+                    "on-secondary": "#003544",
+                    "inverse-primary": "#8c4f10",
+                    "surface-tint": "#ffb77b",
+                    "primary-fixed": "#ffdcc2",
+                    "outline-variant": "#524439",
+                    "surface-dim": "#131313",
+                    "secondary-container": "#065064",
+                    "on-surface-variant": "#d8c3b4",
+                    "on-secondary-container": "#87c1d8",
+                    "surface": "#131313",
+                    "on-primary-container": "#432100",
+                    "on-surface": "#e5e2e1",
+                    "on-error-container": "#ffdad6",
+                    "inverse-on-surface": "#313030"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "md": "24px",
+                    "sm": "16px",
+                    "lg": "48px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "label-md": ["Geist"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "display-sm": ["Hanken Grotesk"],
+                    "code-sm": ["Geist"],
+                    "body-lg": ["Geist"],
+                    "body-md": ["Geist"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-sm": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .copper-glow {
+            box-shadow: 0 0 20px rgba(255, 183, 123, 0.15);
+        }
+        .copper-border {
+            border: 1px solid rgba(255, 183, 123, 0.2);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(255, 183, 123, 0.05) 0%, transparent 70%);
+        }
+        .node-connector {
+            background: linear-gradient(90deg, transparent, #ffb77b, transparent);
+            height: 1px;
+            opacity: 0.3;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            border-color: #ffb77b;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary selection:text-on-primary-container">
+<!-- Header Section -->
+<header class="w-full sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant dark:border-outline-variant">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary tracking-tighter">Infotechs Solutions</span>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-primary dark:text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Réalisations</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Expertise</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary-container px-sm py-xs font-label-md text-label-md font-bold rounded hover:opacity-90 transition-all duration-200 active:scale-95 copper-glow">
+                Démarrer un projet
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden py-xl">
+<div class="absolute inset-0 z-0">
+<img alt="Modular nodes and light flows" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida/AP1WRLtixPh0-305impwN7ty_Ud1XVDwUhCaU2hdIeMBCRsnPRvXF_X8EA9zddJv6TkK-wCLOuO3WyeEGkqBYJiie714UmWwPSr3MayqUsw3DlsKeKixvN0FJXt7pxiyhmewGxNj4A9PdPMDtPL7xjzuwkxGQkjCXHn4reggnGgG-RPIXpATXeowgkBHaayVf2iYxROjVJfG_on5EHUgcXSW7BYySzeyq9mBDvRqtFbWqWbtlRZ5Q_oRAT4N1A"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-md items-center">
+<div class="md:col-span-8 lg:col-span-7 space-y-lg">
+<div class="flex items-center gap-xs">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-primary font-label-md text-label-md tracking-widest">STUDIO TECH QUÉBÉCOIS</span>
+</div>
+<h1 class="font-display-lg text-display-lg max-w-4xl">
+                        Nous concevons les systèmes numériques qui font <span class="text-primary">avancer votre entreprise.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                        Accélérez la transformation de votre PME avec des architectures logicielles sur mesure, robustes et pensées pour l'excellence opérationnelle.
+                    </p>
+<div class="flex flex-wrap gap-md pt-sm">
+<button class="bg-primary text-on-primary-container px-lg py-sm font-label-md text-label-md font-bold rounded copper-glow transition-all active:scale-95">
+                            Nos Services
+                        </button>
+<button class="border border-outline text-on-surface px-lg py-sm font-label-md text-label-md font-bold rounded hover:bg-surface-variant transition-all active:scale-95">
+                            Voir le Portfolio
+                        </button>
+</div>
+</div>
+</div>
+<!-- Atmospheric Schema Overlay -->
+<div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-outline-variant to-transparent opacity-50"></div>
+</section>
+<!-- Services Section (Bento Style) -->
+<section class="py-xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg mb-sm">Services Stratégiques</h2>
+<div class="w-16 h-1 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container border border-outline-variant p-lg rounded-lg hover-lift group">
+<div class="mb-md text-primary">
+<span class="material-symbols-outlined text-4xl">qr_code_2</span>
+</div>
+<h3 class="font-headline-lg text-[24px] mb-md group-hover:text-primary transition-colors">Web &amp; Applications</h3>
+<p class="text-on-surface-variant font-body-md mb-lg">Plateformes SaaS et écosystèmes web haute performance, optimisés pour la croissance et l'évolutivité.</p>
+<ul class="space-y-base text-sm font-label-md text-on-surface/70">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> React / Next.js Expert</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Architectures Cloud</li>
+</ul>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container border border-primary p-lg rounded-lg hover-lift group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-sm opacity-10">
+<span class="material-symbols-outlined text-8xl">account_tree</span>
+</div>
+<div class="mb-md text-primary">
+<span class="material-symbols-outlined text-4xl">account_tree</span>
+</div>
+<h3 class="font-headline-lg text-[24px] mb-md group-hover:text-primary transition-colors">Flux de travail</h3>
+<p class="text-on-surface-variant font-body-md mb-lg">Automatisation intelligente de vos processus d'affaires pour éliminer les goulots d'étranglement.</p>
+<ul class="space-y-base text-sm font-label-md text-on-surface/70">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Intégrations API complexes</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Systèmes ERP sur mesure</li>
+</ul>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container border border-outline-variant p-lg rounded-lg hover-lift group">
+<div class="mb-md text-primary">
+<span class="material-symbols-outlined text-4xl">terminal</span>
+</div>
+<h3 class="font-headline-lg text-[24px] mb-md group-hover:text-primary transition-colors">Sur mesure</h3>
+<p class="text-on-surface-variant font-body-md mb-lg">Développement de logiciels spécifiques répondant à des besoins métier uniques et critiques.</p>
+<ul class="space-y-base text-sm font-label-md text-on-surface/70">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Audit technologique</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Maintenance évolutive</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Prop / Schematic Section -->
+<section class="py-xl relative">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="space-y-md">
+<h2 class="font-display-sm text-display-sm">Excellence technologique pour les PME de la Montérégie.</h2>
+<p class="text-on-surface-variant font-body-lg">
+                            Basés au Québec, nous comprenons les défis locaux. Nous ne nous contentons pas de coder; nous bâtissons les piliers de votre souveraineté numérique à travers une approche rigoureuse et transparente.
+                        </p>
+<div class="grid grid-cols-2 gap-md pt-md">
+<div class="border-l border-primary pl-md">
+<span class="font-display-sm text-primary block">100%</span>
+<span class="text-label-md font-label-md opacity-60">Code Local</span>
+</div>
+<div class="border-l border-primary pl-md">
+<span class="font-display-sm text-primary block">24/7</span>
+<span class="text-label-md font-label-md opacity-60">Support Critique</span>
+</div>
+</div>
+</div>
+<div class="relative aspect-video rounded border border-outline-variant bg-surface-container-low p-sm overflow-hidden">
+<!-- Abstract Schematic Visualization -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+<div class="w-full h-full hero-gradient animate-pulse"></div>
+</div>
+<div class="relative z-10 w-full h-full flex flex-col items-center justify-center text-center p-lg">
+<div class="p-lg rounded-full border border-primary/30 mb-md">
+<span class="material-symbols-outlined text-primary text-6xl">verified_user</span>
+</div>
+<p class="font-code-sm text-code-sm text-primary tracking-widest uppercase">Sécurité &amp; Performance</p>
+<p class="font-body-md mt-sm text-on-surface-variant">Architecture de nœuds sécurisés et redondants.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-xl bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-center max-w-lg">Un processus structuré pour des résultats prévisibles</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant">
+<div class="p-lg border-b md:border-b-0 md:border-r border-outline-variant group hover:bg-surface-container transition-colors">
+<span class="font-display-sm text-outline-variant group-hover:text-primary transition-colors block mb-sm">01.</span>
+<h4 class="font-headline-lg text-[20px] mb-sm">Analyse</h4>
+<p class="text-on-surface-variant text-sm">Immersion dans vos processus actuels pour identifier les opportunités de gains d'efficacité réels.</p>
+</div>
+<div class="p-lg border-b md:border-b-0 md:border-r border-outline-variant group hover:bg-surface-container transition-colors">
+<span class="font-display-sm text-outline-variant group-hover:text-primary transition-colors block mb-sm">02.</span>
+<h4 class="font-headline-lg text-[20px] mb-sm">Conception</h4>
+<p class="text-on-surface-variant text-sm">Design système et prototypage agile. Vous validez chaque itération structurelle.</p>
+</div>
+<div class="p-lg group hover:bg-surface-container transition-colors">
+<span class="font-display-sm text-outline-variant group-hover:text-primary transition-colors block mb-sm">03.</span>
+<h4 class="font-headline-lg text-[20px] mb-sm">Livraison</h4>
+<p class="text-on-surface-variant text-sm">Déploiement continu, tests unitaires rigoureux et formation complète de vos équipes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Preview Section -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg">Projets Sélectionnés</h2>
+<p class="text-on-surface-variant mt-xs">Aperçu de notre expertise en résolution de problèmes complexes.</p>
+</div>
+<a class="text-primary font-label-md text-label-md flex items-center gap-2 group" href="#">
+                        Tous les projets 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<!-- Project Card 1 -->
+<div class="space-y-md group cursor-pointer">
+<div class="relative aspect-video bg-surface-container-high rounded-lg overflow-hidden border border-outline-variant">
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute top-md left-md">
+<span class="bg-primary/20 text-primary border border-primary/40 px-sm py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">CONCEPT DÉMONSTRATIF</span>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">visibility</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-lg text-[24px]">Concept de plateforme logistique</h3>
+<p class="text-on-surface-variant mt-xs">Optimisation des flux de distribution en temps réel pour le secteur manufacturier.</p>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="space-y-md group cursor-pointer">
+<div class="relative aspect-video bg-surface-container-high rounded-lg overflow-hidden border border-outline-variant">
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+<div class="absolute top-md left-md">
+<span class="bg-primary/20 text-primary border border-primary/40 px-sm py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">CONCEPT DÉMONSTRATIF</span>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">visibility</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-lg text-[24px]">Gestion de ressources critiques</h3>
+<p class="text-on-surface-variant mt-xs">Tableau de bord haute fidélité pour le suivi énergétique et la maintenance prédictive.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Expertise Tech Stack -->
+<section class="py-lg bg-surface">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-lg">Technologies Maîtresses</p>
+<div class="flex flex-wrap justify-center gap-sm">
+<span class="px-md py-xs border border-outline-variant rounded font-code-sm text-code-sm text-on-surface-variant hover:border-primary transition-colors">Node.js</span>
+<span class="px-md py-xs border border-outline-variant rounded font-code-sm text-code-sm text-on-surface-variant hover:border-primary transition-colors">React</span>
+<span class="px-md py-xs border border-outline-variant rounded font-code-sm text-code-sm text-on-surface-variant hover:border-primary transition-colors">TypeScript</span>
+<span class="px-md py-xs border border-outline-variant rounded font-code-sm text-code-sm text-on-surface-variant hover:border-primary transition-colors">PostgreSQL</span>
+<span class="px-md py-xs border border-outline-variant rounded font-code-sm text-code-sm text-on-surface-variant hover:border-primary transition-colors">AWS</span>
+<span class="px-md py-xs border border-outline-variant rounded font-code-sm text-code-sm text-on-surface-variant hover:border-primary transition-colors">Docker</span>
+<span class="px-md py-xs border border-outline-variant rounded font-code-sm text-code-sm text-on-surface-variant hover:border-primary transition-colors">GraphQL</span>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="bg-primary-container text-on-primary-container p-xl rounded-xl relative overflow-hidden copper-glow">
+<div class="absolute top-0 right-0 p-lg opacity-20 hidden lg:block">
+<span class="material-symbols-outlined text-[200px]">hub</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-display-sm text-display-sm mb-md">Prêt à moderniser votre infrastructure ?</h2>
+<p class="font-body-lg mb-lg opacity-90">Réservez une consultation technique gratuite pour évaluer vos besoins et découvrir nos solutions personnalisées.</p>
+<div class="flex flex-col sm:flex-row gap-md">
+<button class="bg-background text-primary px-xl py-md font-bold rounded copper-glow hover:bg-surface-container transition-all">
+                                Prendre Rendez-vous
+                            </button>
+<button class="border border-background/20 text-on-primary-container px-xl py-md font-bold rounded hover:bg-white/10 transition-all">
+                                Nos Coordonnées
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="w-full mt-xl border-t border-outline-variant dark:border-outline-variant bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md py-lg px-gutter max-w-container-max mx-auto">
+<div class="md:col-span-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary block mb-md">Infotechs Solutions</span>
+<p class="text-on-surface-variant text-sm font-body-md max-w-xs">Le partenaire technologique stratégique pour les entreprises visionnaires du Québec.</p>
+</div>
+<div class="md:col-span-3">
+<h5 class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-md">Bureaux</h5>
+<ul class="space-y-xs text-on-surface-variant text-sm">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-1 text-primary">location_on</span>
+<span>Montérégie Office<br/>Brossard, QC</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-1 text-primary">location_on</span>
+<span>Québec Office<br/>Ville de Québec, QC</span>
+</li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h5 class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-md">Navigation</h5>
+<ul class="space-y-xs text-on-surface-variant text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Expertise</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Réalisations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blogue</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h5 class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-md">Légal</h5>
+<ul class="space-y-xs text-on-surface-variant text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="md:col-span-12 pt-lg mt-lg border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-md">
+<span class="text-on-surface-variant text-xs font-label-md">© 2026 Infotechs Solutions. All rights reserved.</span>
+<div class="flex gap-md">
+<a class="opacity-60 hover:opacity-100 transition-opacity" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="opacity-60 hover:opacity-100 transition-opacity" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and subtle scroll effects
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100');
+                        entry.target.classList.remove('translate-y-4');
+                    }
+                });
+            }, observerOptions);
+
+            // Apply fade-in effect to main sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>

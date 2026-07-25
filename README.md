@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Infotechs Solutions
 
-## Getting Started
+Site web officiel de la startup informatique Infotechs Solutions, basé à Saint-Louis-de-Gonzague en Montérégie.
 
-First, run the development server:
+## Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Hook Form + Zod
+- Lucide React
+
+## Lancement local
+
+```bash
+npm install
+npm run dev
+```
+
+Ouvrir ensuite `http://localhost:3000`.
+
+Copier `.env.example` vers `.env.local` pour configurer les coordonnées publiques ou les futures intégrations.
+
+## Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `src/app` contient les pages, routes dynamiques, sitemap et robots.
+- `src/components` contient la navigation, le footer, les cartes, animations et formulaire.
+- `src/lib/data.ts` centralise les services, projets, ressources, FAQ, témoignages et informations SEO.
+- `public/images` contient les assets visuels du site.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pages livrées
 
-## Learn More
+- Accueil
+- Services
+- Détail service
+- Réalisations filtrables
+- Détail projet
+- À propos
+- Contact avec formulaire validé côté client
+- Ressources
+- Mentions légales / confidentialité
+- Politique de confidentialité séparée
 
-To learn more about Next.js, take a look at the following resources:
+## SEO et performance
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+La première version inclut:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Métadonnées Next.js
+- Open Graph
+- JSON-LD `LocalBusiness`
+- `sitemap.xml`
+- `robots.txt`
+- URLs propres
+- Structure Hn propre
+- Contenu SEO en français pour PME, Montérégie et Québec
+- Image hero locale optimisée par Next/Image
 
-## Deploy on Vercel
+## Connexions futures prévues
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Envoi du formulaire via Resend ou stockage dans Supabase.
+- CMS pour ressources, projets et services: Sanity, Strapi ou Supabase.
+- Plausible ou Google Analytics.
+- Assistant IA ou espace client.
+- Version anglaise via architecture multilingue Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Formulaire
+
+La V1 ne transmet pas encore les demandes. Le formulaire valide les champs côté client et une route `POST /api/contact` prépare la validation serveur.
+
+Variables prévues:
+
+- `RESEND_API_KEY`
+- `CONTACT_FORM_FROM`
+- `CONTACT_FORM_TO`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `SUPABASE_CONTACT_TABLE`
+
+Tant qu'aucun fournisseur n'est configuré, la route retourne `501` avec un message explicite.
+
+## Audit npm
+
+Ne pas exécuter `npm audit fix --force`. Le correctif actuellement proposé force un changement cassant de Next.js. Surveiller les versions stables de Next.js et mettre à jour dès qu'un correctif stable règle la vulnérabilité PostCSS.

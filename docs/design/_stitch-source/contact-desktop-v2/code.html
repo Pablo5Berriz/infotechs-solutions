@@ -1,0 +1,428 @@
+<!DOCTYPE html><html class="dark" lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact | Infotechs Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&amp;family=Geist:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb693",
+                    "primary-fixed-dim": "#ffb77b",
+                    "outline-variant": "#524439",
+                    "error-container": "#93000a",
+                    "background": "#131313",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-secondary-container": "#87c1d8",
+                    "tertiary": "#ffb693",
+                    "surface": "#131313",
+                    "primary-container": "#c8803f",
+                    "on-secondary-fixed-variant": "#014d61",
+                    "on-secondary-fixed": "#001f29",
+                    "secondary": "#95cfe7",
+                    "inverse-surface": "#e5e2e1",
+                    "secondary-container": "#065064",
+                    "on-surface": "#e5e2e1",
+                    "on-primary-fixed-variant": "#6d3a00",
+                    "on-background": "#e5e2e1",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container": "#20201f",
+                    "on-surface-variant": "#d8c3b4",
+                    "on-tertiary": "#562000",
+                    "tertiary-container": "#ea6b1e",
+                    "secondary-fixed-dim": "#95cfe7",
+                    "inverse-on-surface": "#313030",
+                    "surface-container-highest": "#353535",
+                    "surface-tint": "#ffb77b",
+                    "inverse-primary": "#8c4f10",
+                    "secondary-fixed": "#b9eaff",
+                    "surface-bright": "#393939",
+                    "primary-fixed": "#ffdcc2",
+                    "on-error-container": "#ffdad6",
+                    "error": "#ffb4ab",
+                    "surface-variant": "#353535",
+                    "on-tertiary-fixed": "#351000",
+                    "on-tertiary-container": "#4b1b00",
+                    "surface-container-high": "#2a2a2a",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-primary-fixed": "#2e1500",
+                    "primary": "#ffb77b",
+                    "on-primary-container": "#432100",
+                    "on-tertiary-fixed-variant": "#7a3000",
+                    "on-secondary": "#003544",
+                    "on-primary": "#4d2700",
+                    "on-error": "#690005",
+                    "surface-dim": "#131313",
+                    "outline": "#a08d80"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "base": "4px",
+                    "xl": "80px",
+                    "lg": "48px",
+                    "md": "24px",
+                    "gutter": "24px",
+                    "sm": "16px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "code-sm": ["Geist"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "label-md": ["Geist"],
+                    "display-sm": ["Hanken Grotesk"],
+                    "body-lg": ["Geist"],
+                    "body-md": ["Geist"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-sm": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Geist', sans-serif;
+        }
+        .copper-glow {
+            box-shadow: 0 0 20px rgba(184, 115, 51, 0.2);
+        }
+        .schematic-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ffb77b, transparent);
+        }
+        .form-input {
+            background-color: #0e0e0e;
+            border: none;
+            border-bottom: 1px solid #524439;
+            transition: all 0.3s ease;
+        }
+        .form-input:focus {
+            border-bottom: 1px solid #ffb77b;
+            ring: 0;
+            outline: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-background border-b border-outline-variant">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg font-bold text-primary tracking-tighter">
+                Infotechs Solutions
+            </div>
+<div class="hidden md:flex gap-md items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Réalisations</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Expertise</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-md py-xs rounded-lg font-label-md text-label-md hover:opacity-90 transition-all duration-200 ease-in-out active:scale-95">
+                Démarrer un projet
+            </button>
+</div>
+</nav>
+<main class="relative overflow-hidden">
+<!-- Decorative Grid Background -->
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(rgb(255, 183, 123) 0.5px, transparent 0.5px); background-size: 24px 24px; background-position: 9.90625px 7.47769px;">
+</div>
+<!-- Hero Section -->
+<section class="relative pt-xl pb-lg px-gutter max-w-container-max mx-auto z-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-lg">
+<div class="max-w-2xl">
+<div class="flex items-center gap-base mb-xs">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-primary font-label-md text-label-md tracking-widest uppercase">Contact</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-background leading-none mb-sm">
+                        Démarrer un <span class="text-primary">projet</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Prêt à transformer votre vision technologique en réalité ? Nos experts sont à votre disposition pour analyser vos besoins et bâtir l'avenir.
+                    </p>
+</div>
+
+</div>
+<div class="schematic-line w-full"></div>
+</section>
+<!-- Main Content Area: Asymmetric Layout -->
+<section class="relative px-gutter max-w-container-max mx-auto z-10 grid grid-cols-1 md:grid-cols-12 gap-lg pb-xl">
+<!-- Left Column: Contact Details & Info -->
+<div class="md:col-span-4 flex flex-col gap-lg">
+<!-- Demo Warning Card -->
+<div class="bg-primary-container/10 border border-primary-container p-md rounded-xl relative overflow-hidden">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold mb-1">Mode Démonstration</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-tight">
+                                Ce formulaire est en mode démonstration. Aucune donnée n'est réellement envoyée ni stockée.
+                            </p>
+</div>
+</div>
+<div class="absolute bottom-0 right-0 p-xs opacity-10">
+<span class="material-symbols-outlined text-9xl">labs</span>
+</div>
+</div>
+<!-- Locations -->
+<div class="flex flex-col gap-md">
+<h3 class="font-headline-lg text-headline-lg text-on-background">Nos bureaux</h3>
+<div class="group border border-outline-variant p-md rounded-lg bg-surface-container-low hover:border-primary transition-colors duration-300 cursor-default">
+<div class="flex justify-between items-start mb-sm">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Siège Social</span>
+</div>
+<p class="font-headline-lg text-headline-lg font-bold">Brossard, QC</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Canada</p>
+</div>
+<div class="group border border-outline-variant p-md rounded-lg bg-surface-container-low hover:border-primary transition-colors duration-300 cursor-default">
+<div class="flex justify-between items-start mb-sm">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bureau Régional</span>
+</div>
+<p class="font-headline-lg text-headline-lg font-bold">Québec, QC</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Canada</p>
+</div>
+</div>
+<!-- Schematic Visual -->
+<div class="hidden md:block border-l border-outline-variant pl-md py-md mt-auto">
+<div class="w-full h-32 opacity-20 relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/40 to-transparent"></div>
+<div class="absolute top-0 left-0 w-full h-full border-b border-r border-outline-variant border-dashed"></div>
+<span class="absolute bottom-2 left-2 font-code-sm text-code-sm text-primary uppercase tracking-widest">System architecture v.2024</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="md:col-span-8 bg-surface-container rounded-xl border border-outline-variant p-lg shadow-2xl">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-md" id="contactForm">
+<!-- Nom -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant flex justify-between" for="nom">
+                            Nom <span class="text-primary">*</span>
+</label>
+<input class="form-input p-xs text-on-surface font-body-md" id="nom" placeholder="Jean Dupont" required="" type="text">
+</div>
+<!-- Entreprise -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="entreprise">
+                            Entreprise
+                        </label>
+<input class="form-input p-xs text-on-surface font-body-md" id="entreprise" placeholder="Ex: Solutions Tech Inc." type="text">
+</div>
+<!-- Courriel -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant flex justify-between" for="courriel">
+                            Courriel <span class="text-primary">*</span>
+</label>
+<input class="form-input p-xs text-on-surface font-body-md" id="courriel" placeholder="email@exemple.com" required="" type="email">
+</div>
+<!-- Téléphone -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="telephone">
+                            Téléphone
+                        </label>
+<input class="form-input p-xs text-on-surface font-body-md" id="telephone" placeholder="+1 (000) 000-0000" type="tel">
+</div>
+<!-- Type de projet -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="type_projet">
+                            Type de projet
+                        </label>
+<select class="form-input p-xs text-on-surface font-body-md appearance-none bg-transparent" id="type_projet">
+<option class="bg-surface text-on-surface" value="software">Développement Logiciel</option>
+<option class="bg-surface text-on-surface" value="cloud">Infrastructure Cloud</option>
+<option class="bg-surface text-on-surface" value="cyber">Cybersécurité</option>
+<option class="bg-surface text-on-surface" value="other">Autre</option>
+</select>
+</div>
+<!-- Budget & Délai -->
+<div class="grid grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="budget">Budget</label>
+<input class="form-input p-xs text-on-surface font-body-md" id="budget" placeholder="Ex: 50k - 100k" type="text">
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="delai">Délai</label>
+<input class="form-input p-xs text-on-surface font-body-md" id="delai" placeholder="Ex: 6 mois" type="text">
+</div>
+</div>
+<!-- Message with validation state -->
+<div class="md:col-span-2 flex flex-col gap-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface-variant" for="message">
+                                Message <span class="text-primary">*</span>
+</label>
+<span class="font-code-sm text-code-sm text-on-surface-variant" id="charCount">0 / 20 min</span>
+</div>
+<textarea class="form-input p-xs text-on-surface font-body-md resize-none border border-outline-variant focus:border-primary" id="message" placeholder="Décrivez votre projet en quelques mots..." required="" rows="4"></textarea>
+<div class="hidden flex items-center gap-xs mt-1 text-error" id="validationError">
+<span class="material-symbols-outlined text-[16px]">error</span>
+<span class="font-code-sm text-code-sm">Message trop court (Minimum 20 caractères)</span>
+</div>
+</div>
+<!-- Submit -->
+<div class="md:col-span-2 pt-md border-t border-outline-variant mt-md flex items-center justify-between">
+<p class="font-code-sm text-code-sm text-on-surface-variant opacity-60">
+                            * Champs obligatoires
+                        </p>
+<button class="group relative bg-primary text-on-primary px-xl py-sm rounded-lg font-label-md text-label-md font-bold overflow-hidden transition-all duration-300 hover:scale-[1.02] active:scale-95 copper-glow" type="submit">
+<span class="relative z-10">Envoyer le message</span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Map Section Visual -->
+<section class="bg-surface-container-low py-xl border-t border-outline-variant">
+<div class="px-gutter max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="relative aspect-video rounded-xl overflow-hidden border border-outline-variant group">
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-700"></div>
+<img class="w-full h-full object-cover filter grayscale brightness-50 contrast-125 group-hover:brightness-75 transition-all duration-700" data-alt="A highly stylized dark-mode map visualization of Montreal and Quebec City regions. The map uses deep charcoal tones with luminous copper points indicating office locations in Brossard and Quebec. Grid lines and technical schematic overlays add a sophisticated engineering aesthetic. The mood is precise, professional, and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5TwpyalEVgthqj2EJtCk9fyCra9EKrLIXZWVgE_zkKCYV7IoutfFSrB6YiWRP6GF4Qz4nxULuM0e3qT0mnDsm-G8_FWLOLY6MlwdTAOjHEQCsJbhlI0lFtYZRu23g_bnFVehq14hsUXbv1gzaFJ4GgZdK3VnCJJEDbDcy7-cNOcUl009m02jLxc0SiC293_cmgMNNrIx2yvr2n61iW_5zkY6yX2WyUdyw_LyfIGhcf7vVk4sYfbaD5UM_Mb314B0O0F2fVupDWsI">
+<div class="absolute bottom-md left-md z-20 flex gap-sm">
+<div class="bg-surface/80 backdrop-blur-md border border-outline-variant px-sm py-xs rounded-lg">
+<p class="font-code-sm text-code-sm text-primary">LOC_01: 45.4674° N, 73.4542° W</p>
+</div>
+</div>
+</div>
+<div class="space-y-md">
+<h2 class="font-display-sm text-display-sm text-on-background">Proximité <br><span class="text-primary">&amp; Expertise</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Présents au cœur des deux pôles technologiques majeurs du Québec, nous offrons une proximité stratégique et une compréhension approfondie du tissu économique local. Notre approche repose sur un accompagnement personnalisé et une réactivité exemplaire pour garantir le succès de vos transformations numériques les plus complexes.</p>
+
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full mt-xl border-t border-outline-variant bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md py-lg px-gutter max-w-container-max mx-auto">
+<div class="md:col-span-4">
+<div class="font-headline-lg text-headline-lg font-bold text-primary mb-sm">
+                    Infotechs Solutions
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Solutions technologiques de pointe pour les entreprises ambitieuses.
+                </p>
+</div>
+<div class="md:col-span-2">
+<p class="font-label-md text-label-md text-on-surface font-bold mb-sm">Bureaux</p>
+<ul class="space-y-xs font-body-md text-body-md text-on-surface-variant">
+<li class="hover:text-tertiary transition-colors cursor-pointer">Montérégie Office</li>
+<li class="hover:text-tertiary transition-colors cursor-pointer">Québec Office</li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<p class="font-label-md text-label-md text-on-surface font-bold mb-sm">Services</p>
+<ul class="space-y-xs font-body-md text-body-md text-on-surface-variant">
+<li class="hover:text-tertiary transition-colors cursor-pointer">Logiciels</li>
+<li class="hover:text-tertiary transition-colors cursor-pointer">Cloud</li>
+</ul>
+</div>
+<div class="md:col-span-4 flex flex-col justify-between items-end">
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-100 opacity-60">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-100 opacity-60">public</span>
+</div>
+<div class="text-right">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        © 2026 Infotechs Solutions. All rights reserved.
+                    </p>
+<div class="flex gap-md mt-base justify-end">
+<span class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary cursor-pointer">Privacy Policy</span>
+<span class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary cursor-pointer">Terms of Service</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Form Validation Interaction
+        const form = document.getElementById('contactForm');
+        const messageInput = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+        const validationError = document.getElementById('validationError');
+
+        messageInput.addEventListener('input', (e) => {
+            const length = e.target.value.length;
+            charCount.textContent = `${length} / 20 min`;
+            
+            if (length > 0 && length < 20) {
+                validationError.classList.remove('hidden');
+                messageInput.classList.add('border-error');
+                messageInput.classList.remove('border-outline-variant');
+            } else {
+                validationError.classList.add('hidden');
+                messageInput.classList.remove('border-error');
+                messageInput.classList.add('border-outline-variant');
+            }
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const length = messageInput.value.length;
+            
+            if (length < 20) {
+                validationError.classList.remove('hidden');
+                messageInput.focus();
+                return;
+            }
+
+            // Success state animation for demo
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Envoi en cours...';
+            btn.disabled = true;
+            btn.style.opacity = '0.7';
+
+            setTimeout(() => {
+                btn.innerHTML = 'Message envoyé !';
+                btn.classList.replace('bg-primary', 'bg-green-600');
+                
+                setTimeout(() => {
+                    form.reset();
+                    btn.innerHTML = originalText;
+                    btn.classList.replace('bg-green-600', 'bg-primary');
+                    btn.disabled = false;
+                    btn.style.opacity = '1';
+                    charCount.textContent = '0 / 20 min';
+                }, 3000);
+            }, 1500);
+        });
+
+        // Simple Parallax Effect for Grid
+        window.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX / window.innerWidth) * 20;
+            const moveY = (e.clientY / window.innerHeight) * 20;
+            document.querySelector('.absolute.inset-0.z-0').style.backgroundPosition = `${moveX}px ${moveY}px`;
+        });
+    </script>
+
+
+</body></html>

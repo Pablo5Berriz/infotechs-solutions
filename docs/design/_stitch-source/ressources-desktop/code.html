@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ressources | Infotechs Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Hanken+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#7a3000",
+                        "on-primary-fixed-variant": "#6d3a00",
+                        "on-tertiary": "#562000",
+                        "primary-container": "#c8803f",
+                        "on-primary": "#4d2700",
+                        "on-error": "#690005",
+                        "tertiary-container": "#ea6b1e",
+                        "inverse-on-surface": "#313030",
+                        "background": "#131313",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-highest": "#353535",
+                        "inverse-primary": "#8c4f10",
+                        "surface-variant": "#353535",
+                        "on-background": "#e5e2e1",
+                        "secondary-fixed": "#b9eaff",
+                        "primary-fixed-dim": "#ffb77b",
+                        "on-secondary-container": "#87c1d8",
+                        "primary-fixed": "#ffdcc2",
+                        "outline": "#a08d80",
+                        "on-surface-variant": "#d8c3b4",
+                        "on-secondary-fixed": "#001f29",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#2e1500",
+                        "on-primary-container": "#432100",
+                        "secondary-container": "#065064",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary": "#003544",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-secondary-fixed-variant": "#014d61",
+                        "error-container": "#93000a",
+                        "primary": "#ffb77b",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary": "#95cfe7",
+                        "surface": "#131313",
+                        "secondary-fixed-dim": "#95cfe7",
+                        "surface-dim": "#131313",
+                        "surface-bright": "#393939",
+                        "outline-variant": "#524439",
+                        "on-tertiary-fixed": "#351000",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-tint": "#ffb77b",
+                        "tertiary": "#ffb693",
+                        "surface-container": "#20201f",
+                        "on-tertiary-container": "#4b1b00",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "sm": "16px",
+                        "xs": "8px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Geist"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-sm": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "body-md": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "code-sm": ["Geist"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-sm": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Geist', sans-serif;
+        }
+        .article-card {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid #2a2a2a;
+        }
+        .article-card:hover {
+            border-color: #ffb77b;
+            transform: translateY(-4px);
+        }
+        .filter-btn.active {
+            color: #ffb77b;
+            border-bottom: 2px solid #ffb77b;
+        }
+        .luminous-button {
+            box-shadow: 0 0 15px rgba(255, 183, 123, 0.2);
+        }
+        .luminous-button:hover {
+            box-shadow: 0 0 25px rgba(255, 183, 123, 0.4);
+        }
+        .grid-line-h {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #524439, transparent);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-background border-b border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter py-sm flex justify-between items-center">
+<a class="font-headline-lg text-headline-lg text-primary tracking-tighter" href="/">Infotechs Solutions</a>
+<nav class="hidden md:flex items-center space-x-lg">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Réalisations</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Expertise</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-md py-xs font-label-md text-label-md rounded hover:opacity-90 transition-all cursor-pointer active:opacity-80">
+                Démarrer un projet
+            </button>
+</div>
+</header>
+<main class="flex-grow max-w-container-max mx-auto w-full px-gutter py-xl">
+<!-- Header Section -->
+<div class="mb-xl">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-md">Ressources <span class="text-primary">Techniques</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Explorez nos analyses approfondies sur l'automatisation, le cloud et la cybersécurité. Une vision stratégique de l'infrastructure moderne pour propulser votre innovation.
+            </p>
+</div>
+<!-- Filter Bar -->
+<div class="flex flex-wrap items-center gap-md border-b border-outline-variant/30 mb-lg pb-base">
+<button class="filter-btn active font-label-md text-label-md uppercase tracking-widest px-xs py-sm transition-all hover:text-primary" id="filter-all" onclick="filterArticles('all')">Tous</button>
+<button class="filter-btn font-label-md text-label-md uppercase tracking-widest px-xs py-sm transition-all hover:text-primary" id="filter-auto" onclick="filterArticles('Automatisation')">Automatisation</button>
+<button class="filter-btn font-label-md text-label-md uppercase tracking-widest px-xs py-sm transition-all hover:text-primary" id="filter-infra" onclick="filterArticles('Infrastructure')">Infrastructure</button>
+<button class="filter-btn font-label-md text-label-md uppercase tracking-widest px-xs py-sm transition-all hover:text-primary" id="filter-secu" onclick="filterArticles('Sécurité')">Sécurité</button>
+</div>
+<!-- Article Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg" id="articles-grid">
+<!-- Article 1 -->
+<article class="article-card flex flex-col bg-surface-container-low overflow-hidden rounded-lg group" data-category="Automatisation">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Automatisation des flux de travail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXCwv3ngKCd9LirM9Gw6efM6N0xXBIfbZebhzThrcaSTfHfZh0-TsXtBRFj__ApXZBt8H-_j3LPa74AgwvBvU2VvCFGPokK3uzDP22OkBikaL_lhjE5XhyQRveNESesAa9oWm09K-PcML1bBMJW66fPF3Fg9vHmHEPcDYh-3oudSBgQI2Sn2DomRzWYpmyxZq2ITYDJPAXFROLVrduFmnENnuVF8SBE8rZSegQaf4RChVyY3uf1n52Pq59OYuxhdKXfgeT-OTiNM"/>
+</div>
+<div class="p-md flex flex-col h-full">
+<span class="font-code-sm text-code-sm text-primary uppercase mb-xs tracking-tighter">Automatisation</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-sm leading-tight">Automatisation des flux de travail</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Optimisation systémique des processus opérationnels par l'intégration de nœuds décisionnels intelligents et de pipelines de données fluides.</p>
+<a class="font-label-md text-label-md text-primary flex items-center gap-xs group-hover:translate-x-2 transition-transform" href="#">
+                        Lire l'article <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="article-card flex flex-col bg-surface-container-low overflow-hidden rounded-lg group" data-category="Infrastructure">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Architecture cloud moderne" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU1J8ITRF8M4mcOOazr0HpKtl9s2TUc1-oNYk4tX2Gx-3Z9EaSNnG5dMq-R4LuTQSjBaf0Lnm0JVpHs39KRTbiEroP08BUE1EJakpPQz606ml5ZR-KrXHfxmw22yZOiLT3KOK_XBy6GaBroJZzqLYIIao9kiJio4Xr8Jtn2hKMkce4lE3JgiAkjNFvMo0WCBxID94aLaNhjy3IIJD7KY09qVrA8PriuT8gS-Y9tQRj0wgy5gqGQcEtfrKkoztK6NFupgQLi0OYj3A"/>
+</div>
+<div class="p-md flex flex-col h-full">
+<span class="font-code-sm text-code-sm text-primary uppercase mb-xs tracking-tighter">Infrastructure</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-sm leading-tight">Architecture cloud moderne</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Conception de systèmes résilients basés sur des micro-services interconnectés et une scalabilité horizontale automatique.</p>
+<a class="font-label-md text-label-md text-primary flex items-center gap-xs group-hover:translate-x-2 transition-transform" href="#">
+                        Lire l'article <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="article-card flex flex-col bg-surface-container-low overflow-hidden rounded-lg group" data-category="Sécurité">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Bonnes pratiques de sécurité" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMVNBBWGPAB81wPQR5WkFFqzNA87SGPbIcKXirRHQ_sV0WXTex8rBMi4mgUbzLmjLezz_aGi6QE04LUJzPDr616qfJefR-2IQBN50mleesELN7p15dZ8v65Q3ynjCdN-9w5bMx5dCEU5asT3vwoaqWIbbsj4FLSSY1eNl5N2iBJ9KG5ADYE40zIrHUpUVDEs1a9Hk0PNdptWszHuRA_HaiFM1XEO4CamQSMVjLc7PAbGPdCb5dCw_9WrJ9VF91bLpBv0zXwWCqyh8"/>
+</div>
+<div class="p-md flex flex-col h-full">
+<span class="font-code-sm text-code-sm text-primary uppercase mb-xs tracking-tighter">Sécurité</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-sm leading-tight">Bonnes pratiques de sécurité</h3>
+<h4 class="sr-only">Cyberprotection proactive</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Mise en œuvre d'un périmètre de défense multi-couches intégrant le Zero Trust et le chiffrement de bout en bout des actifs numériques.</p>
+<a class="font-label-md text-label-md text-primary flex items-center gap-xs group-hover:translate-x-2 transition-transform" href="#">
+                        Lire l'article <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Empty State (Hidden by default) -->
+<div class="hidden py-xl flex flex-col items-center justify-center text-center" id="empty-state">
+<span class="material-symbols-outlined text-[64px] text-outline-variant mb-md">search_off</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Aucun résultat trouvé</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg max-w-sm">Désolé, nous n'avons pas d'articles correspondant à cette catégorie pour le moment. Essayez une autre sélection.</p>
+<button class="bg-surface-container-high text-primary border border-primary/30 px-lg py-sm font-label-md text-label-md rounded hover:bg-surface-container-highest transition-colors" onclick="filterArticles('all')">
+                Voir tous les articles
+            </button>
+</div>
+<!-- Pagination -->
+<div class="mt-xl pt-lg border-t border-outline-variant/30 flex justify-center items-center gap-md">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div class="flex items-center gap-sm">
+<span class="w-8 h-8 flex items-center justify-center font-label-md text-label-md bg-primary text-on-primary rounded-sm">1</span>
+<span class="w-8 h-8 flex items-center justify-center font-label-md text-label-md text-on-surface-variant hover:text-primary cursor-pointer transition-colors">2</span>
+<span class="w-8 h-8 flex items-center justify-center font-label-md text-label-md text-on-surface-variant">...</span>
+</div>
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter py-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-lg">
+<div>
+<p class="font-headline-lg text-headline-lg text-primary mb-xs">Infotechs Solutions</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Copyright 2026 Infotechs Solutions</p>
+</div>
+<div class="grid grid-cols-2 gap-x-xl gap-y-sm">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors duration-300 cursor-pointer" href="#">Brossard Office</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors duration-300 cursor-pointer" href="#">Québec Office</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors duration-300 cursor-pointer" href="#">Confidentialité</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors duration-300 cursor-pointer" href="#">Conditions d'utilisation</a>
+</div>
+</div>
+</footer>
+<script>
+        function filterArticles(category) {
+            const articles = document.querySelectorAll('.article-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            const grid = document.getElementById('articles-grid');
+            const emptyState = document.getElementById('empty-state');
+            let found = false;
+
+            // Update UI buttons
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Filter logic
+            articles.forEach(article => {
+                if (category === 'all' || article.getAttribute('data-category') === category) {
+                    article.style.display = 'flex';
+                    found = true;
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+
+            // Toggle empty state
+            if (!found) {
+                grid.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+            } else {
+                grid.classList.remove('hidden');
+                emptyState.classList.add('hidden');
+            }
+        }
+    </script>
+</body></html>
