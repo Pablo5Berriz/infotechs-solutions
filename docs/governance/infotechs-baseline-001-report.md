@@ -1,7 +1,7 @@
 # INFOTECHS-BASELINE-001 — Rapport de baseline Git
 
 Date : 24 juillet 2026  
-Statut : **STOP — ANOMALIE DÉTECTÉE**  
+Statut : **TERMINÉ — VALIDÉ TECHNIQUEMENT, EN ATTENTE DE CLÔTURE PM**  
 Nature : gouvernance Git et traçabilité uniquement
 
 ## 1. SHA initial
@@ -318,6 +318,11 @@ PRODUCTION : NO GO
 Date : 24 juillet 2026  
 Lot : `INFOTECHS-BASELINE-001-R2-TYPECHECK`
 
+```text
+STATUT R2 :
+TERMINÉ — VALIDATIONS PASS
+```
+
 ### 1. Diagnostic exact de `TS2345`
 
 Extrait avant correction :
@@ -452,10 +457,10 @@ Le contrôle des chemins indexés confirme :
 ### 12. Nombre de fichiers commités
 
 ```text
-265 fichiers préparés dans l'index contrôlé.
+265 fichiers commités après contrôle de l'index — 258 ajoutés, 7 modifiés.
 ```
 
-Le nombre final du commit doit rester 265; toute variation interdit le commit.
+Commit de baseline : `8129e41 chore(baseline): freeze validated MVP design lots`.
 
 ### 13. Exclusions confirmées
 
@@ -468,11 +473,20 @@ Le nombre final du commit doit rester 265; toute variation interdit le commit.
 
 ### 14. SHA final
 
-Le SHA final est celui du commit contenant le présent rapport et doit être obtenu par `git rev-parse HEAD` après le commit. Il ne peut pas être inscrit littéralement dans son propre contenu sans modifier récursivement l'identifiant du commit.
+```text
+COMMIT DE BASELINE :
+8129e41 chore(baseline): freeze validated MVP design lots
+
+SHA FINAL DE BASELINE :
+8129e41df61492f3ded9577abeb6d314b684d5b3
+```
 
 ### 15. État final du working tree
 
-Avant commit : tous les changements candidats sont indexés, aucun changement non indexé et aucun fichier non suivi visible. Après commit, `git status --short` doit être vide; le résultat définitif est retourné par le contrôle Git post-commit et dans la réponse d'exécution.
+```text
+WORKING TREE APRÈS COMMIT : PROPRE
+MODIFICATION FONCTIONNELLE : AUCUNE
+```
 
 ## R1 — Restauration et reprise
 
@@ -658,4 +672,20 @@ SHA : INCHANGÉ
 INFOTECHS-DESIGN-COMPLETION-003A : NON OUVERT
 INFOTECHS-QA-001 : NO GO
 PRODUCTION : NO GO
+```
+
+## Décision finale consolidée
+
+```text
+INFOTECHS-BASELINE-001 : TERMINÉ
+INFOTECHS-BASELINE-001-R1 : STOP HISTORIQUE — INSTALLATION RESTAURÉE
+INFOTECHS-BASELINE-001-R2-TYPECHECK : TERMINÉ
+BASELINE SHA : 8129e41df61492f3ded9577abeb6d314b684d5b3
+SECRETS : PASS
+LINT : PASS
+TESTS : PASS — 103/103
+TYPE-CHECK : PASS
+BUILD : PASS — 24/24
+WORKING TREE POST-BASELINE : PROPRE
+MODIFICATION FONCTIONNELLE : AUCUNE
 ```
