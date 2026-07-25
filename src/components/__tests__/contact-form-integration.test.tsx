@@ -33,4 +33,10 @@ describe("interface de transmission Contact", () => {
     expect(markup).not.toMatch(/réponse sous|dans les 24|devis automatique/i);
     expect(markup).toContain("Aucun délai de réponse automatique n’est promis");
   });
+
+  it("lie le consentement aux finalités et à la politique de confidentialité", () => {
+    expect(markup).toContain("examiner et traiter ma demande");
+    expect(markup).toContain('href="/confidentialite"');
+    expect(markup).not.toMatch(/marketing|infolettre|profilage|analytics|partage commercial/i);
+  });
 });

@@ -1,0 +1,44 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { renderToStaticMarkup } from "react-dom/server";
+import { describe, expect, it } from "vitest";
+import LegalPage, { metadata } from "@/app/mentions-legales/page";
+
+const markup = renderToStaticMarkup(<LegalPage />);
+const publicSources = [
+  "src/app/confidentialite/page.tsx",
+  "src/app/mentions-legales/page.tsx",
+  "src/app/contact/page.tsx",
+  "src/components/contact-form.tsx",
+  "src/components/site-header.tsx",
+  "src/components/site-footer.tsx",
+].map((path) => readFileSync(resolve(process.cwd(), path), "utf8")).join("\n");
+
+describe("mentions légales du MVP", () => {
+  it("publie un H1 unique et les métadonnées locales", () => {
+    expect(markup.match(/<h1/g)).toHaveLength(1);
+    expect(metadata.alternates).toEqual({ canonical: "/mentions-legales" });
+    expect(metadata.openGraph).toMatchObject({ url: "/mentions-legales", title: "Mentions légales | Infotechs Solutions" });
+  });
+
+  it("identifie l’activité et un moyen de contact sans donnée inventée", () => {
+    expect(markup).toContain("Infotechs Solutions");
+    expect(markup).toContain("entreprise de services informatiques");
+    expect(markup).toContain('href="/contact#devis"');
+    expect(markup).not.toMatch(/\bNEQ\b|numéro d’entreprise|directeur de publication|hébergé par|certification détenue/i);
+  });
+
+  it("décrit la propriété intellectuelle, la responsabilité et le droit applicable avec prudence", () => {
+    for (const text of ["Propriété intellectuelle", "Limitation de responsabilité", "Droit applicable", "règles du Québec et du Canada qui lui sont applicables"]) expect(markup).toContain(text);
+  });
+
+  it("qualifie exactement les concepts du portfolio", () => {
+    expect(markup).toContain("concepts démonstratifs, pas des mandats clients");
+    expect(markup).toContain("ne prouvent aucun résultat commercial");
+  });
+
+  it("retire les textes temporaires et contradictions du périmètre public", () => {
+    expect(publicSources).not.toMatch(/courriel (sera|serait).+(ajouté|à venir)|téléphone à venir|Supabase|téléversement|Google Analytics|Plausible|devis automatique|réponse (sous|dans)/i);
+    expect(publicSources).not.toContain('href="/ressources"');
+  });
+});

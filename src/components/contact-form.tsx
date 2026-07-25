@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Info, LoaderCircle, Send } from "lucide-react";
 import { cloneElement, useState, type ReactElement } from "react";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
 import { contactNeedTypes, contactSchema, type ContactFormValues } from "@/lib/contact-schema";
 
 const inputClass =
@@ -97,7 +98,7 @@ export function ContactForm() {
       <div className="mt-6">
         <label className="flex min-h-11 cursor-pointer items-start gap-3 text-sm leading-6 text-text-400">
           <input type="checkbox" required aria-required="true" className="mt-1 h-5 w-5 shrink-0 accent-copper-500" aria-invalid={Boolean(errors.consent)} aria-describedby={errors.consent ? "consent-error" : undefined} {...register("consent")} />
-          <span>Je consens à transmettre ces informations à Infotechs Solutions afin que ma demande puisse être examinée.</span>
+          <span>Je consens à transmettre ces informations à Infotechs Solutions et à leur utilisation pour examiner et traiter ma demande, conformément à la <Link href="/confidentialite" className="font-semibold text-copper-500 underline underline-offset-4">politique de confidentialité</Link>.</span>
         </label>
         {errors.consent ? <p id="consent-error" role="alert" className="mt-2 text-sm font-medium text-red-400">{errors.consent.message}</p> : null}
       </div>
