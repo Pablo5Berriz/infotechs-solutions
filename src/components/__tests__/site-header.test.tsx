@@ -46,10 +46,10 @@ describe("SiteHeader", () => {
     expect(markup).not.toContain('/ressources');
   });
 
-  it("emploie des CTA compatibles avec une interface non transmettrice", () => {
+  it("emploie des CTA compatibles avec la transmission réelle", () => {
     const markup = renderToStaticMarkup(<SiteHeader />);
-    expect(markup).toContain("Explorer le formulaire");
-    expect(markup).toContain("Préparer votre demande");
+    expect(markup).toContain("Nous contacter");
+    expect(markup).toContain("Transmettre une demande");
     expect(markup).not.toMatch(/Planifier un appel|Demander un devis/);
   });
 });

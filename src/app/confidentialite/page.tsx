@@ -25,23 +25,23 @@ export default function PrivacyPage() {
           </p>
           <h2>Données du formulaire</h2>
           <p>
-            Le formulaire de cette V1 valide les champs dans le navigateur, mais ne transmet pas encore les données à un service externe. Une intégration future pourra utiliser Resend, Supabase ou un CRM.
+            Le formulaire recueille le nom, l’organisation facultative, le courriel, le téléphone facultatif, le type de besoin, la description et le consentement. Des données techniques minimales peuvent aussi être traitées pour limiter les abus.
           </p>
-          <h2>Utilisation prévue</h2>
+          <h2>Finalité et transmission</h2>
           <p>
-            Une fois connecté, le formulaire servira uniquement à traiter les demandes de devis, demandes d&apos;information et suivis de projet. Les données ne seront pas revendues.
+            Ces informations servent uniquement à recevoir, examiner et suivre une demande adressée à Infotechs Solutions. Elles sont transmises par l’API transactionnelle de Resend aux destinataires autorisés d’Infotechs Solutions et ne sont pas revendues.
           </p>
-          <h2>Fichiers transmis</h2>
+          <h2>Stockage</h2>
           <p>
-            Le champ de téléversement est prévu pour des documents utiles au cadrage du projet. Les fichiers sensibles ou non nécessaires ne devraient pas être transmis.
+            Le site n’enregistre pas les demandes dans une base de données, un CRM ou un outil d’analytics. La transmission courriel implique toutefois le traitement technique du message par Resend et sa réception dans la boîte courriel configurée par Infotechs Solutions.
           </p>
-          <h2>Mesure d&apos;audience</h2>
+          <h2>Sécurité et conservation</h2>
           <p>
-            Le site prévoit une intégration future d&apos;outils comme Plausible ou Google Analytics. Une mention explicite devra être ajoutée avant activation.
+            Le formulaire applique une validation serveur, une limite de taille, un contrôle anti-abus et une limitation de débit. Infotechs Solutions conservera les messages seulement pendant la durée nécessaire à l’examen et au suivi de la demande; la durée juridique définitive doit être validée dans INFOTECHS-LEGAL-001.
           </p>
-          <h2>Conservation</h2>
+          <h2>Exercer vos droits</h2>
           <p>
-            La durée de conservation sera définie lors du branchement réel du formulaire et documentée selon le service choisi.
+            Pour demander l’accès, la rectification ou la suppression des informations transmises, utilisez le formulaire Contact en précisant qu’il s’agit d’une demande relative à la confidentialité. Une coordonnée officielle sera publiée après validation juridique.
           </p>
         </div>
       </div>

@@ -49,7 +49,7 @@ describe("SiteFooter", () => {
     expect(markup).not.toContain("Ressources");
     expect(markup).not.toContain('/ressources');
     expect(markup).not.toMatch(/Demander un devis|première orientation/);
-    expect(markup).toContain("Préparer votre demande");
+    expect(markup).toContain("Transmettre une demande");
   });
 
   it("ne publie aucune coordonnée temporaire", () => {

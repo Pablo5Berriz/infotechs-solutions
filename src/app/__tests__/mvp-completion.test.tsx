@@ -51,8 +51,8 @@ describe("complétude structurelle du MVP 003A", () => {
   it("conserve Contact comme interface explicite de préparation", () => {
     const contactSource = readFileSync(resolve(process.cwd(), "src/app/contact/page.tsx"), "utf8");
     const formSource = readFileSync(resolve(process.cwd(), "src/components/contact-form.tsx"), "utf8");
-    expect(contactSource).toContain("Préparer votre demande");
-    expect(contactSource).toContain("La transmission sera activée seulement lorsqu’un canal réel et validé sera connecté.");
-    expect(formSource).toContain("aucune donnée n’est transmise ni stockée");
+    expect(contactSource).toContain("Transmettre votre demande");
+    expect(contactSource).toContain("Le formulaire transmet ces informations à Infotechs Solutions");
+    expect(formSource).toContain("Transmettre la demande");
   });
 });

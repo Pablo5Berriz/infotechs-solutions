@@ -57,13 +57,13 @@ export function SiteFooter() {
         <div>
           <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-copper-500">Conversion</h2>
           <p className="mt-4 text-sm leading-6 text-text-400">
-            Structurez votre contexte, vos utilisateurs et vos priorités avant une future prise de contact.
+            Présentez votre contexte, vos utilisateurs et vos priorités pour transmettre une demande à Infotechs Solutions.
           </p>
           <Link
             href="/contact#devis"
             className="mt-5 inline-flex h-(--button-md-height) items-center rounded-sm bg-copper-500 px-4 text-sm font-semibold text-[#14151a]"
           >
-            Préparer votre demande
+            Transmettre une demande
           </Link>
         </div>
       </div>

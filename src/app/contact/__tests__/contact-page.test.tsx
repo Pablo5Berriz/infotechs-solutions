@@ -44,12 +44,12 @@ describe("ContactPage", () => {
   it("rend les CTA et le lien secondaire vers Services", () => {
     expect(markup).toContain('href="#demande"');
     expect(markup).toContain('href="/services"');
-    expect(markup).toContain("Préparer la discussion");
+    expect(markup).toContain("Transmettre une demande");
   });
 
   it("explique honnêtement l’absence de transmission", () => {
-    expect(markup).toContain("aucune donnée n’est transmise ni stockée");
-    expect(markup).toContain("Aucun message ne quittera ce navigateur");
+    expect(markup).toContain("Transmettre la demande");
+    expect(markup).toContain("Aucun délai de réponse automatique n’est promis");
     expect(markup).not.toMatch(/réponse en moins|devis gratuit|disponibilité immédiate/i);
   });
 

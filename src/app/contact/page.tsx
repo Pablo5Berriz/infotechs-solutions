@@ -78,11 +78,11 @@ export default function ContactPage() {
               Décrivons votre besoin avant de choisir une solution.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-text-400">
-              Cette page prépare une discussion sur votre contexte, vos utilisateurs et vos objectifs. Elle ne remplace ni le cadrage ni une proposition adaptée.
+              Transmettez votre contexte, vos utilisateurs et vos objectifs afin qu’Infotechs Solutions puisse examiner votre demande. Cette étape ne remplace ni le cadrage ni une proposition adaptée.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a href="#demande" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-copper-500 px-5 py-3 font-semibold text-[#14151a]">
-                Préparer votre demande <ArrowDown className="h-4 w-4" aria-hidden="true" />
+                Transmettre votre demande <ArrowDown className="h-4 w-4" aria-hidden="true" />
               </a>
               <Link href="/services" className="inline-flex min-h-11 items-center justify-center rounded-sm border border-bg-800 px-5 py-3 font-semibold hover:border-copper-500">
                 Explorer les services
@@ -92,7 +92,7 @@ export default function ContactPage() {
           <aside className="border-l-2 border-copper-500 bg-bg-900/80 p-6 sm:p-8" aria-labelledby="contact-usage-title">
             <p className="font-mono text-xs uppercase tracking-[.2em] text-copper-500">Quand utiliser cette interface</p>
             <h2 id="contact-usage-title" className="mt-4 text-2xl font-semibold">Quand un besoin mérite d’être clarifié.</h2>
-            <p className="mt-4 leading-7 text-text-400">Utilisez-la pour structurer une première demande liée à un site web, une automatisation ou une application web.</p>
+            <p className="mt-4 leading-7 text-text-400">Utilisez ce formulaire pour transmettre une première demande liée à un site web, une automatisation ou une application web.</p>
           </aside>
         </div>
       </section>
@@ -113,7 +113,7 @@ export default function ContactPage() {
             <div className="mt-8 border-t border-bg-800 pt-6 text-sm leading-6 text-text-400">
               <p className="font-semibold text-text-100">{site.name}</p>
               <p className="mt-2">Ancrage : {site.location}</p>
-              <p className="mt-3">Aucune adresse de bureau, aucun téléphone et aucun courriel public ne sont affichés tant qu’ils ne sont pas confirmés.</p>
+              <p className="mt-3">Le formulaire constitue le canal officiel pour transmettre une demande. Aucune coordonnée non confirmée n’est publiée.</p>
             </div>
           </div>
           <ContactForm />
@@ -163,9 +163,9 @@ export default function ContactPage() {
           <div className="rounded-sm bg-copper-500 px-6 py-10 text-[#14151a] sm:px-10 lg:px-12 lg:py-12">
             <p className="font-mono text-xs uppercase tracking-[.2em]">Point de départ</p>
             <h2 className="mt-4 max-w-4xl text-3xl font-semibold sm:text-4xl">Contexte, utilisateurs, objectifs et contraintes : commencez par les faits utiles.</h2>
-            <p className="mt-4 max-w-2xl leading-7 text-black/70">L’interface vous aide à organiser ces informations. La transmission sera activée seulement lorsqu’un canal réel et validé sera connecté.</p>
+            <p className="mt-4 max-w-2xl leading-7 text-black/70">Le formulaire transmet ces informations à Infotechs Solutions pour examen, sans garantir de délai de réponse ni de résultat commercial.</p>
             <a href="#demande" className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-sm bg-bg-950 px-5 py-3 font-semibold text-text-100">
-              Préparer la discussion <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              Transmettre une demande <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </a>
           </div>
         </div>
