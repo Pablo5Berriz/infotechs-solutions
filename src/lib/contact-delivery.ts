@@ -2,18 +2,33 @@ import { randomUUID } from "node:crypto";
 import type { ContactFormValues } from "@/lib/contact-schema";
 
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailPattern = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/;
 
 export type ContactDeliveryResult = { ok: true; providerId: string } | { ok: false; reason: "configuration" | "provider" };
+
+function isSafeEmail(value?: string) {
+  return Boolean(value && emailPattern.test(value) && !/[\r\n]/.test(value));
+}
+
+function isSafeFromAddress(value?: string) {
+  if (!value || /[\r\n]/.test(value)) return false;
+  if (emailPattern.test(value)) return true;
+
+  const match = value.match(/^([^<>]+)\s*<([^<>]+)>$/);
+  if (!match) return false;
+
+  const displayName = match[1].trim();
+  const email = match[2].trim();
+  return displayName.length > 0 && emailPattern.test(email);
+}
 
 function getConfig() {
   const apiKey = process.env.RESEND_API_KEY?.trim();
   const from = process.env.CONTACT_FORM_FROM?.trim();
   const to = process.env.CONTACT_FORM_TO?.trim();
-  const validAddress = (value?: string) => Boolean(value && emailPattern.test(value) && !/[\r\n]/.test(value));
 
-  if (!apiKey || !validAddress(from) || !validAddress(to)) return null;
-  return { apiKey, from: from!, to: to! };
+  if (!apiKey || !isSafeFromAddress(from) || !isSafeEmail(to)) return null;
+  return { apiKey, from, to };
 }
 
 export async function deliverContactRequest(values: ContactFormValues, reference: string): Promise<ContactDeliveryResult> {

@@ -48,6 +48,36 @@ describe("POST /api/contact", () => {
     expect(String(init.body)).not.toContain("re_test_only");
   });
 
+  it("accepte un expéditeur Resend avec nom d’affichage", async () => {
+    process.env.CONTACT_FORM_FROM = "Infotechs Solutions <contact@infotechssolutions.ca>";
+    process.env.CONTACT_FORM_TO = "solutionsinfos2023@gmail.com";
+    const provider = vi.spyOn(globalThis, "fetch").mockResolvedValue(new Response(JSON.stringify({ id: "email_display_name" }), { status: 200 }));
+
+    const response = await POST(request(validPayload));
+
+    expect(response.status).toBe(202);
+    const init = provider.mock.calls[0][1] as RequestInit;
+    expect(JSON.parse(String(init.body))).toMatchObject({
+      from: "Infotechs Solutions <contact@infotechssolutions.ca>",
+      to: ["solutionsinfos2023@gmail.com"],
+    });
+  });
+
+  it.each([
+    "Infotechs Solutions <contact@infotechssolutions.ca>\r\nBcc: attacker@example.com",
+    "Infotechs Solutions <>",
+    "<contact@infotechssolutions.ca>",
+    "Infotechs Solutions contact@infotechssolutions.ca",
+  ])("refuse un expéditeur Resend invalide : %s", async (from) => {
+    process.env.CONTACT_FORM_FROM = from;
+    const provider = vi.spyOn(globalThis, "fetch");
+
+    const response = await POST(request(validPayload));
+
+    expect(response.status).toBe(503);
+    expect(provider).not.toHaveBeenCalled();
+  });
+
   it("refuse un JSON invalide", async () => expect((await POST(request("{"))).status).toBe(400));
   it("refuse un payload incomplet", async () => expect((await POST(request({ name: "Marie" }))).status).toBe(400));
   it("refuse un champ inconnu", async () => expect((await POST(request({ ...validPayload, admin: true }))).status).toBe(400));
