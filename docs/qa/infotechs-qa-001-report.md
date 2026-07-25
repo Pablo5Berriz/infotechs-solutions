@@ -300,3 +300,115 @@ PRODUCTION : NO GO
 ## 24. État Git final
 
 Seuls le présent rapport, les captures et les exports d’audit sont autorisés dans l’unique commit documentaire `docs(qa): complete MVP transversal review`. Le SHA final et la preuve de working tree propre sont consignés dans le retour d’exécution, car un commit ne peut contenir son propre SHA.
+
+## 25. R1 — Correction reduced motion
+
+### 25.1 Diagnostic
+
+Le défaut reproduit lors de QA-001 provenait du composant `Reveal` de l’accueil. En mode normal, Framer Motion applique un état initial `opacity: 0` et une translation verticale, puis révèle le contenu à son entrée dans le viewport. La branche conditionnelle basée sur `useReducedMotion()` supprimait cette animation lorsque la préférence était déjà connue, mais ne constituait pas une garantie suffisante pendant l’hydratation et l’observation du viewport. La règle CSS globale réduisait les durées sans rétablir explicitement l’état final visible.
+
+### 25.2 Cause racine
+
+La combinaison de l’état initial animé, du cycle d’hydratation et du déclenchement `whileInView` pouvait laisser un bloc essentiel à `opacity: 0` avec une transformation résiduelle. `prefers-reduced-motion: reduce` neutralisait le temps de transition, mais pas cet état initial. Le contenu pouvait donc rester invisible alors que le mouvement était effectivement réduit.
+
+### 25.3 Correction
+
+Tous les rendus de `Reveal`, animés ou non, portent désormais la classe stable `reveal-content`. Dans `@media (prefers-reduced-motion: reduce)`, cette classe force l’état final accessible : `opacity: 1 !important` et `transform: none !important`. La branche React réduite reste un `div` non animé. Le comportement normal conserve l’animation progressive existante.
+
+### 25.4 Fichiers modifiés ou créés
+
+- `src/components/reveal.tsx` — classe stable commune aux deux branches;
+- `src/app/globals.css` — garde CSS reduced motion vers l’état final visible;
+- `src/components/__tests__/reveal.test.tsx` — quatre tests ciblés;
+- `docs/qa/screens/r1/` — quatre captures comparatives;
+- `docs/qa/exports/r1/axe/` — résultat axe Home;
+- `docs/qa/exports/r1/lighthouse/` — rapports Lighthouse Home mobile et desktop;
+- `docs/qa/infotechs-qa-001-report.md` — présent closeout R1.
+
+Aucune dépendance, configuration de messagerie, page métier ou autre composant public n’a été modifié.
+
+### 25.5 Tests automatisés
+
+Quatre tests ont été ajoutés : rendu réduit visible sans opacité ni translation initiale, conservation de l’animation normale, conservation des classes appelantes et présence de la garde CSS. Résultat consolidé : **148/148 tests réussis dans 26 fichiers**.
+
+### 25.6 Validation technique
+
+```text
+npx tsc --noEmit : PASS
+npm run lint      : PASS
+npm run test      : PASS — 148/148
+npm run build     : PASS — 22/22 routes
+```
+
+### 25.7 Validation reduced motion
+
+Chrome a été exécuté avec l’émulation navigateur native `reducedMotion: reduce`, aux largeurs 390 et 1280 px.
+
+```text
+Reveal immédiatement visible                 PASS — 16/16, 0 masqué
+Hero, paragraphe, CTA et diagramme visibles  PASS
+Transition des onglets instantanée           PASS — panneau actif opacity 1, 0 animation active
+Ligne du processus entièrement affichée      PASS — scale final, aucune transformation résiduelle
+Translation des cartes neutralisée           PASS — transform none
+Aucun contenu invisible                      PASS
+Aucun layout shift perceptible               PASS — inspection des captures
+Aucun scroll horizontal                      PASS
+```
+
+Contrôle transversal en mode réduit : accueil, Services, Réalisations, À propos et Contact répondent 200 avec leur `h1` visible; la route inconnue répond 404 avec sa page dédiée visible. Aucun débordement horizontal n’a été mesuré.
+
+Le mode `no-preference` a également été contrôlé à 390 et 1280 px. Après déclenchement des reveals, 16/16 blocs atteignent `opacity: 1` et `transform: none`; l’animation progressive normale est donc conservée.
+
+### 25.8 Axe Home
+
+`axe-core 4.12.1` dans Chrome headless : **PASS — 0 violation**. L’export JSON est conservé dans `docs/qa/exports/r1/axe/`.
+
+### 25.9 Clavier et responsive Home
+
+À 390 px et en mode réduit : ouverture du menu avec `Enter`, focus transféré sur le premier lien, fermeture avec `Escape` et restitution du focus au bouton — **PASS**. Les vues 390 et 1280 px ne présentent aucun débordement. Le contenu, les CTA, les onglets, le processus et le footer restent lisibles.
+
+### 25.10 Lighthouse Home
+
+| Profil | Performance | Accessibilité | Bonnes pratiques | SEO |
+|---|---:|---:|---:|---:|
+| Mobile | 91 | 100 | 100 | 100 |
+| Desktop | 99 | 100 | 100 | 100 |
+
+Les deux rapports JSON sont conservés dans `docs/qa/exports/r1/lighthouse/`.
+
+### 25.11 Cross-browser
+
+Smoke test Home à 390 px, en `no-preference` et `reduce` : Chrome, Firefox et WebKit répondent 200, affichent le `h1` et ne présentent aucun débordement. En mode réduit, les trois moteurs mesurent zéro `Reveal` masqué. Safari réel demeure hors environnement Windows; WebKit constitue la couverture moteur disponible.
+
+### 25.12 Captures R1
+
+- `docs/qa/screens/r1/home-reduced-motion-390.png`;
+- `docs/qa/screens/r1/home-reduced-motion-1280.png`;
+- `docs/qa/screens/r1/home-normal-motion-390.png`;
+- `docs/qa/screens/r1/home-normal-motion-1280.png`.
+
+Inspection visuelle : **PASS**. Les captures réduites montrent l’intégralité des sections sans contenu absent; les captures normales stabilisées confirment l’absence de régression de composition.
+
+### 25.13 Anomalies restantes
+
+Le blocage reduced motion de QA-001 est clos. Les constats de production déjà documentés restent inchangés : vulnérabilités héritées, stratégie d’en-têtes de sécurité, recette Resend réelle, confiance dans les en-têtes proxy/rate limiting et validation juridique humaine. Aucun de ces constats n’est corrigé ou reclassé par R1.
+
+### 25.14 Recommandation mise à jour
+
+```text
+CORRECTION REDUCED MOTION : PASS
+TYPE-CHECK : PASS
+LINT : PASS
+TESTS : PASS — 148/148
+BUILD : PASS — 22/22
+AXE HOME : PASS — 0 VIOLATION
+CLAVIER HOME : PASS
+RESPONSIVE HOME : PASS
+LIGHTHOUSE HOME : PASS
+CROSS-BROWSER : PASS AVEC LIMITE SAFARI RÉEL DOCUMENTÉE
+CAPTURES : PASS — 4/4
+
+RECOMMANDATION : GO CLÔTURE INFOTECHS-QA-001-R1
+QA TRANSVERSALE : GO SOUS LES RÉSERVES DÉJÀ DOCUMENTÉES
+PRODUCTION : NO GO
+```

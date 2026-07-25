@@ -141,6 +141,11 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .reveal-content {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
   *,
   *::before,
   *::after {
