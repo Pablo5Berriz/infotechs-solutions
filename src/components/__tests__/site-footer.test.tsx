@@ -43,4 +43,18 @@ describe("SiteFooter", () => {
     expect(markup).not.toContain("/services/refonte-sites-web");
     expect(markup).not.toContain("/services/maintenance-optimisation");
   });
+
+  it("retire Ressources et les promesses de conversion indisponibles", () => {
+    const markup = renderToStaticMarkup(<SiteFooter />);
+    expect(markup).not.toContain("Ressources");
+    expect(markup).not.toContain('/ressources');
+    expect(markup).not.toMatch(/Demander un devis|première orientation/);
+    expect(markup).toContain("Préparer votre demande");
+  });
+
+  it("ne publie aucune coordonnée temporaire", () => {
+    const markup = renderToStaticMarkup(<SiteFooter />);
+    expect(markup).not.toContain("Courriel à confirmer");
+    expect(markup).not.toContain("Téléphone à venir");
+  });
 });

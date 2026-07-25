@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: { absolute: "Contact | Infotechs Solutions" },
   description:
     "Présentez votre contexte, vos utilisateurs et vos objectifs à Infotechs Solutions pour amorcer une discussion de cadrage.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact | Infotechs Solutions",
+    description: "Préparez les informations utiles pour structurer votre besoin numérique.",
+    url: "/contact",
+  },
 };
 
 const preparationItems = [

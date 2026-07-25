@@ -14,6 +14,7 @@ vi.mock("next/link", () => ({
 }));
 
 const { SiteHeader } = await import("@/components/site-header");
+const { navItems } = await import("@/lib/data");
 
 describe("SiteHeader", () => {
   it("exposes the required ARIA attributes on the mobile menu button", () => {
@@ -36,5 +37,19 @@ describe("SiteHeader", () => {
   it("renders the primary navigation with a label for assistive technology", () => {
     const markup = renderToStaticMarkup(<SiteHeader />);
     expect(markup).toContain('aria-label="Navigation principale"');
+  });
+
+  it("retire Ressources des navigations desktop et mobile", () => {
+    const markup = renderToStaticMarkup(<SiteHeader />);
+    expect(navItems.map((item) => item.href)).toEqual(["/", "/services", "/realisations", "/a-propos", "/contact"]);
+    expect(markup).not.toContain("Ressources");
+    expect(markup).not.toContain('/ressources');
+  });
+
+  it("emploie des CTA compatibles avec une interface non transmettrice", () => {
+    const markup = renderToStaticMarkup(<SiteHeader />);
+    expect(markup).toContain("Explorer le formulaire");
+    expect(markup).toContain("Préparer votre demande");
+    expect(markup).not.toMatch(/Planifier un appel|Demander un devis/);
   });
 });

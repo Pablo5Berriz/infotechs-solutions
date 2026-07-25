@@ -4,6 +4,12 @@ import { site } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Mentions légales",
   description: "Mentions légales du site Infotechs Solutions.",
+  alternates: { canonical: "/mentions-legales" },
+  openGraph: {
+    title: "Mentions légales | Infotechs Solutions",
+    description: "Mentions légales du site Infotechs Solutions.",
+    url: "/mentions-legales",
+  },
 };
 
 export default function LegalPage() {

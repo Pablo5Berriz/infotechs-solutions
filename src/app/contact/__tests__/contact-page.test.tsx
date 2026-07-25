@@ -10,6 +10,8 @@ describe("ContactPage", () => {
     expect(markup.match(/<h1/g)).toHaveLength(1);
     expect(metadata.title).toEqual({ absolute: "Contact | Infotechs Solutions" });
     expect(metadata.description).toContain("discussion de cadrage");
+    expect(metadata.alternates).toEqual({ canonical: "/contact" });
+    expect(metadata.openGraph).toMatchObject({ url: "/contact", title: "Contact | Infotechs Solutions" });
   });
 
   it("rend le formulaire et tous ses libellés", () => {

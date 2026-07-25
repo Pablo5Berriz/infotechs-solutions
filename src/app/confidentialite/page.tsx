@@ -3,7 +3,13 @@ import { site } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Politique de confidentialité",
-  description: "Politique de confidentialité d'Infotechs Solutions pour les demandes de contact, fichiers transmis et futures intégrations analytics.",
+  description: "Politique de confidentialité du site Infotechs Solutions.",
+  alternates: { canonical: "/confidentialite" },
+  openGraph: {
+    title: "Politique de confidentialité | Infotechs Solutions",
+    description: "Politique de confidentialité du site Infotechs Solutions.",
+    url: "/confidentialite",
+  },
 };
 
 export default function PrivacyPage() {

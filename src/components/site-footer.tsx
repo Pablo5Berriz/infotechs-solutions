@@ -23,18 +23,12 @@ export function SiteFooter() {
               <a href={`mailto:${site.email}`} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-copper-500">
                 <Mail className="h-4 w-4" aria-hidden="true" /> {site.email}
               </a>
-            ) : (
-              <span className="flex items-center gap-2">
-                <Mail className="h-4 w-4" aria-hidden="true" /> Courriel à confirmer
-              </span>
-            )}
+            ) : null}
             {site.phone ? (
               <a href={`tel:${site.phone}`} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-copper-500">
                 {site.phone}
               </a>
-            ) : (
-              <span>Téléphone à venir</span>
-            )}
+            ) : null}
             <span className="flex items-center gap-2">
               <MapPin className="h-4 w-4" aria-hidden="true" /> {site.location}
             </span>
@@ -63,13 +57,13 @@ export function SiteFooter() {
         <div>
           <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-copper-500">Conversion</h2>
           <p className="mt-4 text-sm leading-6 text-text-400">
-            Décrivez votre projet et recevez une première orientation claire sur la meilleure approche.
+            Structurez votre contexte, vos utilisateurs et vos priorités avant une future prise de contact.
           </p>
           <Link
             href="/contact#devis"
             className="mt-5 inline-flex h-(--button-md-height) items-center rounded-sm bg-copper-500 px-4 text-sm font-semibold text-[#14151a]"
           >
-            Demander un devis
+            Préparer votre demande
           </Link>
         </div>
       </div>
