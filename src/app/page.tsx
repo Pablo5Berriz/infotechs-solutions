@@ -4,9 +4,12 @@ import { BadgeConcept } from "@/components/badge-concept";
 import { ButtonLink } from "@/components/button-link";
 import { ProcessTimeline, ServiceTabs } from "@/components/home-interactions";
 import { Reveal } from "@/components/reveal";
-import { projects, whyUs } from "@/lib/data";
+import { whyUs } from "@/lib/data";
+import { portfolioProjects } from "@/lib/project-portfolio";
+import { siteConfig } from "@/lib/site-config";
 
-const technologies = ["Next.js", "React", "TypeScript", "PostgreSQL", "Docker"];
+const projects = portfolioProjects;
+const technologies = siteConfig.publishedTechnologies;
 
 function SectionIntro({ eyebrow, title, text }: { eyebrow: string; title: string; text?: string }) {
   return <div className="max-w-3xl"><p className="font-mono text-xs uppercase tracking-[0.2em] text-copper-500">{eyebrow}</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">{title}</h2>{text && <p className="mt-5 max-w-2xl leading-7 text-text-400">{text}</p>}</div>;

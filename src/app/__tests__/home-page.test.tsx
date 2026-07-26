@@ -6,6 +6,8 @@ const source = readFileSync(resolve(process.cwd(), "src/app/page.tsx"), "utf8");
 
 describe("page d’accueil 002B", () => {
   it("affiche trois badges de concept", () => {
+    expect(source).toContain('import { portfolioProjects } from "@/lib/project-portfolio"');
+    expect(source).toContain("const projects = portfolioProjects");
     expect(source).toContain("projects.slice(0,3)");
     expect(source).toContain("<BadgeConcept />");
   });
@@ -28,6 +30,7 @@ describe("page d’accueil 002B", () => {
   it("ne revendique ni statistiques ni certifications non vérifiées", () => {
     expect(source).not.toMatch(/objectif Lighthouse|certification|clients satisfaits|projets livrés/i);
     expect(source).not.toMatch(/AWS|GraphQL/);
+    expect(source).not.toMatch(/PostgreSQL|Docker/);
   });
 
   it("utilise le container centralisé et la hauteur réelle du header", () => {

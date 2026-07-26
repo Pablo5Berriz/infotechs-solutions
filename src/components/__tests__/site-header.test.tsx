@@ -14,7 +14,7 @@ vi.mock("next/link", () => ({
 }));
 
 const { SiteHeader } = await import("@/components/site-header");
-const { navItems } = await import("@/lib/data");
+const { navItems } = await import("@/lib/site-config");
 
 describe("SiteHeader", () => {
   it("exposes the required ARIA attributes on the mobile menu button", () => {

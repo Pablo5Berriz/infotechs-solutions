@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Mail, MapPin } from "lucide-react";
-import { navItems, site } from "@/lib/data";
+import { navItems, site } from "@/lib/site-config";
 import { serviceOfferings } from "@/lib/service-offerings";
 
 // Aucune coordonnée fictive : le téléphone n'est affiché que si site.phone est

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk, JetBrains_Mono, Public_Sans } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { site } from "@/lib/data";
+import { site } from "@/lib/site-config";
 import { buildLocalBusinessSchema } from "@/lib/schema-org";
 import "./globals.css";
 

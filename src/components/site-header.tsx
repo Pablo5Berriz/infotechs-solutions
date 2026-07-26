@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { navItems } from "@/lib/data";
+import { navItems } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
 // Marque temporaire pour ce lot (INFOTECHS-DESIGN-IMPLEMENTATION-002A) :

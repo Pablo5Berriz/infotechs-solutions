@@ -20,6 +20,8 @@ export type ServiceOffering = {
   deliverables: string[];
   considerations: string[];
   relatedServiceIds: string[];
+  technologies: string[];
+  status: "published" | "draft";
   seo: { title: string; description: string };
 };
 
@@ -47,6 +49,8 @@ export const serviceOfferings: ServiceOffering[] = [
     deliverables: ["Architecture de pages", "Interfaces responsive", "Composants réutilisables", "Intégration du contenu convenu", "Formulaires prévus au cadrage", "Documentation de mise en service"],
     considerations: ["Le volume et l’état du contenu doivent être évalués.", "Les besoins juridiques spécialisés nécessitent une validation externe.", "Le référencement dépend aussi du contenu, du marché et du suivi après lancement."],
     relatedServiceIds: ["automation", "custom"],
+    technologies: ["Next.js", "React", "TypeScript"],
+    status: "published",
     seo: { title: "Création de sites web", description: "Conception et refonte de sites web professionnels, accessibles et maintenables pour PME et organisations au Québec." },
   },
   {
@@ -72,6 +76,8 @@ export const serviceOfferings: ServiceOffering[] = [
     deliverables: ["Cartographie du processus", "Règles et scénarios validés", "Automatisation configurée", "Points de contrôle humain", "Documentation d’utilisation", "Plan de maintenance"],
     considerations: ["Certaines décisions doivent rester humaines.", "Les données sensibles nécessitent une analyse spécifique.", "La pertinence dépend du volume, de la stabilité et du coût actuel du processus."],
     relatedServiceIds: ["web", "custom"],
+    technologies: [],
+    status: "published",
     seo: { title: "Automatisation et IA", description: "Automatisation prudente de processus, formulaires, documents et suivis pour PME, avec validation humaine et documentation." },
   },
   {
@@ -97,6 +103,8 @@ export const serviceOfferings: ServiceOffering[] = [
     deliverables: ["Analyse fonctionnelle", "Prototype des parcours", "Application responsive", "Gestion des accès prévue", "Fonctions métier priorisées", "Documentation et plan de mise en service"],
     considerations: ["Le projet exige un cadrage et des priorités explicites.", "Les choix fonctionnels impliquent des arbitrages.", "La validation doit être progressive.", "Un plan de maintenance doit être défini."],
     relatedServiceIds: ["web", "automation"],
+    technologies: ["React", "TypeScript"],
+    status: "published",
     seo: { title: "Applications web sur mesure", description: "Conception d’applications métier, portails et outils internes adaptés aux opérations des PME et organisations." },
   },
 ];

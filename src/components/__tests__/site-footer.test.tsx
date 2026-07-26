@@ -10,7 +10,7 @@ vi.mock("next/link", () => ({
 }));
 
 const { SiteFooter } = await import("@/components/site-footer");
-const { navItems } = await import("@/lib/data");
+const { navItems } = await import("@/lib/site-config");
 const { serviceOfferings } = await import("@/lib/service-offerings");
 
 describe("SiteFooter", () => {

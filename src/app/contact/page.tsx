@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowDown, ArrowRight, Check, ClipboardList, MessageSquareText, Route } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
-import { site } from "@/lib/data";
+import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: { absolute: "Contact | Infotechs Solutions" },

@@ -1,4 +1,4 @@
-export type ProjectStatus = "client-project" | "internal-project" | "concept" | "prototype" | "in-development";
+export type ProjectStatus = "concept" | "client";
 
 export type PortfolioProject = {
   id: string; slug: string; title: string; status: ProjectStatus; category: string; summary: string; description: string; href: string;
@@ -19,6 +19,6 @@ export const portfolioProjects: PortfolioProject[] = [
   concept({ id:"mobile", slug:"application-mobile-service-local", title:"Application mobile pour service local", category:"Application mobile", summary:"Concept mobile pour déposer une demande, consulter son statut et recevoir des informations utiles.", description:"Ce scénario explore une relation de service sur téléphone sans prétendre représenter une application publiée.", challenge:["Réduire les étapes d’une demande mobile.","Rendre le statut immédiatement compréhensible.","Prévoir les notifications sans dépendance excessive."], approach:["Navigation courte adaptée au pouce.","États et prochaines actions visibles.","Progression conçue pour les petits écrans."], deliverables:["Parcours mobile","Écrans de demande","Suivi de statut","États de notification"], capabilities:["UX mobile","Parcours de service","Notifications","Accessibilité"], limitations:["Prototype visuel non publié en boutique.","Aucun utilisateur client testé.","Aucune technologie mobile arrêtée."], relatedProjectIds:["reservation","garage"], seo:{title:"Concept d’application mobile de service local",description:"Concept démonstratif d’application mobile pour demandes et suivis d’un service local."} }),
 ];
 
-export const projectStatusLabels: Record<ProjectStatus,string> = {"client-project":"Projet client","internal-project":"Projet interne","concept":"CONCEPT DÉMONSTRATIF","prototype":"Prototype fonctionnel","in-development":"Projet en développement"};
+export const projectStatusLabels: Record<ProjectStatus,string> = {concept:"CONCEPT DÉMONSTRATIF",client:"PROJET CLIENT"};
 export const getPortfolioProject=(slug:string)=>portfolioProjects.find((project)=>project.slug===slug);
 export const getRelatedProjects=(project:PortfolioProject)=>project.relatedProjectIds.map(id=>portfolioProjects.find(item=>item.id===id)).filter((item):item is PortfolioProject=>Boolean(item));

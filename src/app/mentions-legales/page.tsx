@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/data";
+import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: { absolute: "Mentions légales | Infotechs Solutions" },

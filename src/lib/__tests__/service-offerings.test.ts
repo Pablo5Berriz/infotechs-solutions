@@ -15,6 +15,7 @@ describe("catalogue des services 002C", () => {
     expect(new Set(serviceOfferings.map(({ slug }) => slug)).size).toBe(3);
     expect(new Set(serviceOfferings.map(({ href }) => href)).size).toBe(3);
     for (const service of serviceOfferings) {
+      expect(service.status).toBe("published");
       expect(service.href).toBe(`/services/${service.slug}`);
       expect(getServiceOffering(service.slug)).toBe(service);
     }
@@ -38,6 +39,8 @@ describe("catalogue des services 002C", () => {
       expect(service.idealFor.length).toBeGreaterThanOrEqual(4);
       expect(service.seo.title).toBeTruthy();
       expect(service.seo.description).toBeTruthy();
+      expect(service).not.toHaveProperty("price");
+      expect(service).not.toHaveProperty("timeline");
     }
   });
 });

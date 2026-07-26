@@ -1,4 +1,4 @@
-import type { site as siteData } from "@/lib/data";
+import type { site as siteData } from "@/lib/site-config";
 
 type SiteInfo = Pick<typeof siteData, "name" | "url" | "email" | "phone" | "description">;
 

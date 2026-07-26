@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { site } from "@/lib/data";
+import { site } from "@/lib/site-config";
 import { portfolioProjects } from "@/lib/project-portfolio";
 import { serviceOfferings } from "@/lib/service-offerings";
 
