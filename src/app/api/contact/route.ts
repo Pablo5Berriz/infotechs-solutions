@@ -2,13 +2,9 @@ import { NextResponse } from "next/server";
 import { contactSchema } from "@/lib/contact-schema";
 import { createContactReference, deliverContactRequest } from "@/lib/contact-delivery";
 import { contactRateLimit } from "@/lib/contact-rate-limit";
+import { resolveContactClientIdentity } from "@/lib/contact-client-identity";
 
 const MAX_BODY_BYTES = 16_384;
-
-function clientIdentifier(request: Request) {
-  const forwarded = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim();
-  return `${forwarded || request.headers.get("x-real-ip") || "unknown"}|${request.headers.get("user-agent") || "unknown"}`;
-}
 
 async function readPayload(request: Request) {
   const declaredLength = Number(request.headers.get("content-length") || 0);
@@ -30,7 +26,7 @@ async function readPayload(request: Request) {
 
 export async function POST(request: Request) {
   const reference = createContactReference();
-  const rate = contactRateLimit(clientIdentifier(request));
+  const rate = contactRateLimit(resolveContactClientIdentity(request));
   if (!rate.allowed) {
     return NextResponse.json(
       { ok: false, message: "Trop de tentatives. Réessayez plus tard.", reference },

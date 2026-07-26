@@ -1,5 +1,9 @@
 import { z } from "zod";
 
+// Keep client-side validation compatible with a CSP that deliberately omits
+// `unsafe-eval`. Zod otherwise probes JIT support with the Function constructor.
+z.config({ jitless: true });
+
 export const contactNeedTypes = ["Site web", "Automatisation", "Application web", "Autre besoin"] as const;
 
 export const contactSchema = z.object({

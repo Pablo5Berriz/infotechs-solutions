@@ -16,7 +16,7 @@ const validPayload = {
 function request(body: string | object, ip = "203.0.113.10", contentType = "application/json") {
   return new Request("http://localhost/api/contact", {
     method: "POST",
-    headers: { "content-type": contentType, "x-forwarded-for": ip, "user-agent": "vitest" },
+    headers: { "content-type": contentType, "x-infotechs-client-ip": ip, "user-agent": "vitest" },
     body: typeof body === "string" ? body : JSON.stringify(body),
   });
 }
@@ -27,6 +27,7 @@ describe("POST /api/contact", () => {
     process.env.RESEND_API_KEY = "re_test_only";
     process.env.CONTACT_FORM_FROM = "noreply@example.com";
     process.env.CONTACT_FORM_TO = "inbox@example.com";
+    process.env.CONTACT_TRUSTED_PROXY_MODE = "trusted";
     vi.spyOn(console, "info").mockImplementation(() => undefined);
     vi.spyOn(console, "error").mockImplementation(() => undefined);
   });
@@ -36,6 +37,7 @@ describe("POST /api/contact", () => {
     delete process.env.RESEND_API_KEY;
     delete process.env.CONTACT_FORM_FROM;
     delete process.env.CONTACT_FORM_TO;
+    delete process.env.CONTACT_TRUSTED_PROXY_MODE;
   });
 
   it("accepte une requête valide après succès du fournisseur", async () => {
@@ -102,6 +104,15 @@ describe("POST /api/contact", () => {
     const response = await POST(request(validPayload));
     expect(response.status).toBe(429);
     expect(response.headers.get("retry-after")).toBeTruthy();
+    expect(await response.text()).not.toContain("203.0.113.10");
+  });
+
+  it("isole deux identités clientes", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(async () => new Response(JSON.stringify({ id: "email_123" }), { status: 200 }));
+    for (let index = 0; index < 5; index += 1) {
+      expect((await POST(request(validPayload, "203.0.113.20"))).status).toBe(202);
+    }
+    expect((await POST(request(validPayload, "203.0.113.21"))).status).toBe(202);
   });
 
   it("retourne 502 sans faux succès si le fournisseur est indisponible", async () => {
