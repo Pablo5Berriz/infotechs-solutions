@@ -4,12 +4,12 @@
 
 ```text
 LOT : INFOTECHS-SECURITY-001
-PHASE COURANTE : H2 — PROXY TRUST ET RATE LIMIT
-STATUT : H2 ACCEPTÉ — CONSOLIDATION FINALE EN COURS
+PHASE COURANTE : CONSOLIDATION FINALE
+STATUT : TERMINÉ — EN ATTENTE DE CLÔTURE PM
 PRODUCTION : NO GO
 ```
 
-Baseline Git : `c48512b0a4fd4923f73bd9bf9cf7781c526a7710` sur `master`. Aucun commit n'a été créé pendant les phases T1 à H1.
+Baseline Git : `c48512b0a4fd4923f73bd9bf9cf7781c526a7710` sur `master`. Aucun commit n'avait été créé pendant les phases T1 à H1 ; la remédiation consolidée a ensuite été intégrée au SHA `f0ee6c8da94e40aa17792dc863bcddbc6da1c560`.
 
 ```text
 VALIDATION CUMULÉE :
@@ -185,11 +185,11 @@ Le formulaire est visible aux deux largeurs, les polices atteignent l'état `loa
 - HSTS reste à configurer à la couche Cloudflare/reverse proxy après validation du domaine et de HTTPS.
 - `unsafe-inline` reste nécessaire pour les scripts et styles dans l'architecture statique actuelle ; une stratégie nonce/hash demanderait un lot séparé.
 - La confiance proxy et le rate limiting relèvent de H2 et ne sont pas couverts ici.
-- Les changements de dépendances et H1 ne sont pas encore commités.
+- État historique au jalon H1 : les changements de dépendances et H1 attendaient encore leur consolidation dans un commit Security unique.
 
 ```text
 RECOMMANDATION H1 : GO POUR VALIDATION PM
-INFOTECHS-SECURITY-001 : EN COURS
+INFOTECHS-SECURITY-001 : EN COURS AU JALON H1
 INFOTECHS-DEPLOYMENT-001 : NON OUVERT
 PRODUCTION : NO GO
 ```
@@ -290,7 +290,47 @@ Aucun nouvel envoi Resend réel n'a été effectué.
 
 ```text
 RECOMMANDATION H2 : GO POUR VALIDATION PM
-INFOTECHS-SECURITY-001 : EN COURS
+INFOTECHS-SECURITY-001 : H2 ACCEPTÉ — CONSOLIDATION EFFECTUÉE
 INFOTECHS-DEPLOYMENT-001 : NON OUVERT
+PRODUCTION : NO GO
+```
+
+## 14. Clôture finale
+
+```text
+SHA INITIAL :
+c48512b0a4fd4923f73bd9bf9cf7781c526a7710
+
+SHA DE LA REMÉDIATION SECURITY :
+f0ee6c8da94e40aa17792dc863bcddbc6da1c560
+
+COMMIT :
+fix(security): harden public application baseline
+
+VALIDATIONS FINALES :
+Type-check : PASS
+Lint : PASS
+Tests : PASS — 179/179 dans 29 fichiers
+Build : PASS — 22/22
+Diff check : PASS
+Secret scan : PASS
+
+AUDIT COMPLET :
+12 HIGH — risques documentés uniquement
+
+AUDIT PRODUCTION :
+3 HIGH — Next/PostCSS/Sharp documentés
+
+HSTS :
+DIFFÉRÉ À LA COUCHE PRODUCTION
+
+PROXY TRUST :
+OFF PAR DÉFAUT
+
+RATE LIMIT :
+VALIDÉ POUR UNE INSTANCE UNIQUE
+
+RECOMMANDATION :
+GO POUR CLÔTURE PM DU LOT SECURITY
 PRODUCTION : NO GO
 ```
