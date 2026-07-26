@@ -1,11 +1,36 @@
 export type NavigationItem = { label: string; href: string };
 
+export type BusinessHours = {
+  daysLabel: string;
+  hoursLabel: string;
+  schemaDays: string[];
+  opens: string;
+  closes: string;
+  timezone: "America/Toronto";
+};
+
+export type BusinessAddress = {
+  natureLabel: string;
+  streetAddress: string;
+  locality: string;
+  localityLabel: string;
+  region: string;
+  regionCode: "QC";
+  countryCode: "CA";
+  appointmentOnly: true;
+};
+
+export type PublicPhone = {
+  display: string;
+  href: `tel:${string}`;
+  schema: `+${string}`;
+};
+
 export type SiteContact = {
   email?: string;
-  phone?: string;
-  address?: string;
-  region: string;
-  businessHours?: string;
+  phone: PublicPhone;
+  address: BusinessAddress;
+  businessHours: BusinessHours;
 };
 
 export type SiteConfig = {
@@ -35,8 +60,29 @@ export const siteConfig: SiteConfig = {
   ],
   contact: {
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || undefined,
-    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || undefined,
-    region: "Saint-Louis-de-Gonzague, Montérégie, Québec",
+    phone: {
+      display: "514 208-3644",
+      href: "tel:+15142083644",
+      schema: "+15142083644",
+    },
+    address: {
+      natureLabel: "Adresse d’affaires — visites sur rendez-vous",
+      streetAddress: "164 rue Principale",
+      locality: "Saint-Louis-de-Gonzague",
+      localityLabel: "Saint-Louis-de-Gonzague (Québec)",
+      region: "Montérégie",
+      regionCode: "QC",
+      countryCode: "CA",
+      appointmentOnly: true,
+    },
+    businessHours: {
+      daysLabel: "Lundi au vendredi",
+      hoursLabel: "9 h à 17 h",
+      schemaDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+      timezone: "America/Toronto",
+    },
   },
   navigation: [
     { label: "Accueil", href: "/" },
@@ -52,8 +98,8 @@ export const siteConfig: SiteConfig = {
 export const site = {
   ...siteConfig,
   email: siteConfig.contact.email || "",
-  phone: siteConfig.contact.phone || "",
-  location: siteConfig.contact.region,
+  phone: siteConfig.contact.phone.schema,
+  location: `${siteConfig.contact.address.locality}, ${siteConfig.contact.address.region}, Québec`,
 };
 
 export const navItems = siteConfig.navigation;

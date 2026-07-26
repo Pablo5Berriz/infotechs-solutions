@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowDown, ArrowRight, Check, ClipboardList, MessageSquareText, Route } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
-import { site } from "@/lib/site-config";
+import { site, siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: { absolute: "Contact | Infotechs Solutions" },
@@ -67,6 +67,7 @@ const contactFaq = [
 ];
 
 export default function ContactPage() {
+  const { contact } = siteConfig;
   return (
     <>
       <section className="relative overflow-hidden border-b border-bg-800">
@@ -112,8 +113,12 @@ export default function ContactPage() {
             </ul>
             <div className="mt-8 border-t border-bg-800 pt-6 text-sm leading-6 text-text-400">
               <p className="font-semibold text-text-100">{site.name}</p>
-              <p className="mt-2">Ancrage : {site.location}</p>
-              <p className="mt-3">Le formulaire constitue le canal officiel pour transmettre une demande. Aucune coordonnée non confirmée n’est publiée.</p>
+              <dl className="mt-4 grid gap-4">
+                <div><dt className="font-semibold text-text-100">Adresse d’affaires</dt><dd>{contact.address.streetAddress}<br />{contact.address.localityLabel}<br />{contact.address.natureLabel}</dd></div>
+                <div><dt className="font-semibold text-text-100">Téléphone</dt><dd><a className="inline-flex min-h-11 items-center text-copper-500 hover:text-text-100" href={contact.phone.href}>{contact.phone.display}</a></dd></div>
+                <div><dt className="font-semibold text-text-100">Heures</dt><dd>{contact.businessHours.daysLabel}<br />{contact.businessHours.hoursLabel}</dd></div>
+              </dl>
+              <p className="mt-4">Le formulaire reste le canal recommandé pour transmettre une demande détaillée. Les visites se font uniquement sur rendez-vous.</p>
             </div>
           </div>
           <ContactForm />

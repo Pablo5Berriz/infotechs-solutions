@@ -38,6 +38,14 @@ describe("confidentialité technique du canal Contact", () => {
     expect(markup).not.toMatch(/téléversement|Supabase|CRM non utilisé|Google Analytics|Plausible/i);
   });
 
+  it("décrit le rate limiter conformément aux modes de confiance Security H2", () => {
+    expect(markup).not.toContain("agent utilisateur");
+    expect(markup).toContain("une identité réseau validée ou un identifiant conservateur de remplacement");
+    expect(markup).toContain("une clé hachée temporaire");
+    expect(markup).toContain("L’adresse réseau brute n’est pas conservée dans le limiteur");
+    expect(markup).not.toMatch(/adresse (?:IP|réseau) brute (?:est|soit) (?:stockée|conservée)/i);
+  });
+
   it("n’intègre ni stockage, ni CRM, ni analytics dans la livraison", () => {
     expect(deliverySource).not.toMatch(/supabase|prisma|mongoose|analytics|crm/i);
     expect(deliverySource).toContain("https://api.resend.com/emails");

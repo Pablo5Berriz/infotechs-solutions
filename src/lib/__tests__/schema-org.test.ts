@@ -1,29 +1,48 @@
 import { describe, expect, it } from "vitest";
 import { buildLocalBusinessSchema, containsPlaceholderValue } from "@/lib/schema-org";
+import { siteConfig } from "@/lib/site-config";
 
 const baseSite = {
   name: "Infotechs Solutions",
   url: "https://infotechssolutions.ca",
   email: "",
-  phone: "",
+  phone: siteConfig.contact.phone.schema,
   description: "Description du site.",
+  contact: siteConfig.contact,
 };
 
 describe("buildLocalBusinessSchema", () => {
-  it("omits email and telephone when not configured", () => {
+  it("omits an unconfigured email and publishes the normalized phone", () => {
     const schema = buildLocalBusinessSchema(baseSite);
     expect(schema).not.toHaveProperty("email");
-    expect(schema).not.toHaveProperty("telephone");
+    expect(schema.telephone).toBe("+15142083644");
   });
 
-  it("includes email and telephone only when both are configured", () => {
+  it("includes a configured email without changing the canonical phone", () => {
     const schema = buildLocalBusinessSchema({
       ...baseSite,
       email: "contact@infotechssolutions.ca",
-      phone: "+1 450 000 0000",
     });
     expect(schema.email).toBe("contact@infotechssolutions.ca");
-    expect(schema.telephone).toBe("+1 450 000 0000");
+    expect(schema.telephone).toBe("+15142083644");
+  });
+
+  it("publishes the canonical address and business hours without a postal code", () => {
+    const schema = buildLocalBusinessSchema(baseSite);
+    expect(schema.address).toEqual({
+      "@type": "PostalAddress",
+      streetAddress: "164 rue Principale",
+      addressLocality: "Saint-Louis-de-Gonzague",
+      addressRegion: "QC",
+      addressCountry: "CA",
+    });
+    expect(schema.address).not.toHaveProperty("postalCode");
+    expect(schema.openingHoursSpecification).toEqual({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    });
   });
 
   it("never produces placeholder values, regardless of configuration", () => {
@@ -31,7 +50,6 @@ describe("buildLocalBusinessSchema", () => {
     const withContact = buildLocalBusinessSchema({
       ...baseSite,
       email: "contact@infotechssolutions.ca",
-      phone: "+1 450 000 0000",
     });
     expect(containsPlaceholderValue(withoutContact)).toBe(false);
     expect(containsPlaceholderValue(withContact)).toBe(false);

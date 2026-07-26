@@ -27,7 +27,7 @@ export default function LegalPage() {
           <section className={sectionClass}>
             <h2 className="text-2xl font-semibold text-text-100">Éditeur du site</h2>
             <p className="mt-4">
-              Le site est édité par {site.name}, entreprise de services informatiques offrant notamment la conception de sites web, d’automatisations ciblées et d’applications web. L’entreprise est ancrée à {site.location}; cette mention décrit son territoire d’ancrage et non une adresse commerciale ouverte au public.
+              Le site est édité par {site.name}, entreprise de services informatiques offrant notamment la conception de sites web, d’automatisations ciblées et d’applications web. L’adresse publiée est une adresse d’affaires. Les visites se font uniquement sur rendez-vous.
             </p>
             <p className="mt-4">Pour communiquer avec l’éditeur, utilisez le <Link className="font-semibold text-copper-500 underline underline-offset-4" href="/contact#devis">formulaire Contact</Link>.</p>
           </section>

@@ -53,12 +53,18 @@ describe("ContactPage", () => {
     expect(markup).not.toMatch(/réponse en moins|devis gratuit|disponibilité immédiate/i);
   });
 
-  it("n’affiche aucune coordonnée temporaire ou inventée", () => {
+  it("publie les coordonnées d’affaires validées sans valeur temporaire", () => {
     expect(markup).not.toContain("Courriel à confirmer");
     expect(markup).not.toContain("Téléphone à venir");
     expect(markup).not.toContain("450 000");
     expect(markup).not.toContain("mailto:");
-    expect(markup).not.toContain("tel:");
+    expect(markup).toContain('href="tel:+15142083644"');
+    expect(markup).toContain("514 208-3644");
+    expect(markup).toContain("164 rue Principale");
+    expect(markup).toContain("Saint-Louis-de-Gonzague (Québec)");
+    expect(markup).toContain("Lundi au vendredi");
+    expect(markup).toContain("9 h à 17 h");
+    expect(markup).toContain("Adresse d’affaires — visites sur rendez-vous");
   });
 
   it("présente les trois étapes et une FAQ limitée à quatre questions", () => {

@@ -57,4 +57,13 @@ describe("SiteFooter", () => {
     expect(markup).not.toContain("Courriel à confirmer");
     expect(markup).not.toContain("Téléphone à venir");
   });
+
+  it("publie les coordonnées validées avec des liens accessibles", () => {
+    const markup = renderToStaticMarkup(<SiteFooter />);
+    for (const text of ["Adresse d’affaires — visites sur rendez-vous", "164 rue Principale", "Saint-Louis-de-Gonzague (Québec)", "514 208-3644", "Lundi au vendredi", "9 h à 17 h"]) {
+      expect(markup).toContain(text);
+    }
+    expect(markup).toContain('href="tel:+15142083644"');
+    expect(markup).not.toMatch(/\b[A-Z]\d[A-Z][ -]?\d[A-Z]\d\b/);
+  });
 });

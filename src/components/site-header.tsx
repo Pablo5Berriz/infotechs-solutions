@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { navItems } from "@/lib/site-config";
+import { navItems, siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
 // Marque temporaire pour ce lot (INFOTECHS-DESIGN-IMPLEMENTATION-002A) :
@@ -75,18 +75,12 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center lg:flex">
           <Link
-            href="/contact"
-            className="inline-flex h-(--button-md-height) items-center rounded-sm border border-bg-800 px-4 text-sm font-semibold text-text-100 transition-colors duration-150 ease-out hover:border-copper-500 hover:text-copper-500"
-          >
-            Nous contacter
-          </Link>
-          <Link
-            href="/contact#devis"
+            href={siteConfig.primaryCta.href}
             className="inline-flex h-(--button-md-height) items-center rounded-sm bg-copper-500 px-4 text-sm font-semibold text-[#14151a] transition-shadow duration-150 ease-out hover:shadow-[0_0_24px_rgba(226,121,61,0.25)]"
           >
-            Transmettre une demande
+            {siteConfig.primaryCta.label}
           </Link>
         </div>
 
@@ -125,11 +119,11 @@ export function SiteHeader() {
               );
             })}
             <Link
-              href="/contact#devis"
+              href={siteConfig.primaryCta.href}
               onClick={closeMenu}
               className="mt-3 inline-flex h-(--button-md-height) items-center justify-center rounded-sm bg-copper-500 px-4 text-center text-sm font-semibold text-[#14151a]"
             >
-              Transmettre une demande
+              {siteConfig.primaryCta.label}
             </Link>
           </nav>
         </div>

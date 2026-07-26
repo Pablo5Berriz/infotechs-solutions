@@ -48,10 +48,10 @@ describe("consolidation des contenus 004A", () => {
     expect(siteConfig.publishedTechnologies).toEqual(["Next.js", "React", "TypeScript"]);
   });
 
-  it("prépare les coordonnées sans publier les futures valeurs", () => {
-    expect(siteConfig.contact.region).toBeTruthy();
-    expect(siteConfig.contact.address).toBeUndefined();
-    expect(siteConfig.contact.businessHours).toBeUndefined();
+  it("centralise les coordonnées publiées dans la configuration", () => {
+    expect(siteConfig.contact.address.streetAddress).toBe("164 rue Principale");
+    expect(siteConfig.contact.phone.schema).toBe("+15142083644");
+    expect(siteConfig.contact.businessHours.timezone).toBe("America/Toronto");
   });
 
   it("ne conserve pas les anciennes collections dans data.ts", () => {

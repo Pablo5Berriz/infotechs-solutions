@@ -1,12 +1,12 @@
 import type { site as siteData } from "@/lib/site-config";
 
-type SiteInfo = Pick<typeof siteData, "name" | "url" | "email" | "phone" | "description">;
+type SiteInfo = Pick<typeof siteData, "name" | "url" | "email" | "phone" | "description" | "contact">;
 
 /**
  * Builds the LocalBusiness JSON-LD payload conditionally.
  *
  * Rules (see docs/production-readiness-audit.md, section 3):
- * - Never inject a phone number that is not configured.
+ * - Publish only the normalized phone and structured address from site-config.
  * - Never inject an email address that is not configured.
  * - Never inject placeholder strings ("Téléphone à venir", "Courriel à confirmer", etc.)
  *   into structured data — those are acceptable in visible UI copy, never in JSON-LD.
@@ -21,12 +21,19 @@ export function buildLocalBusinessSchema(site: SiteInfo) {
     name: site.name,
     url: site.url,
     ...(site.email ? { email: site.email } : {}),
-    ...(site.phone ? { telephone: site.phone } : {}),
+    telephone: site.contact.phone.schema,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Saint-Louis-de-Gonzague",
-      addressRegion: "QC",
-      addressCountry: "CA",
+      streetAddress: site.contact.address.streetAddress,
+      addressLocality: site.contact.address.locality,
+      addressRegion: site.contact.address.regionCode,
+      addressCountry: site.contact.address.countryCode,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: site.contact.businessHours.schemaDays,
+      opens: site.contact.businessHours.opens,
+      closes: site.contact.businessHours.closes,
     },
     areaServed: ["Montérégie", "Québec"],
     description: site.description,

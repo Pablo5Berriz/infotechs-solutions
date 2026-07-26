@@ -30,7 +30,7 @@ export default function PrivacyPage() {
           <section className={sectionClass}>
             <h2 className="text-2xl font-semibold text-text-100">Exploitant et responsable</h2>
             <p className="mt-4">
-              {site.name} exploite le site et est responsable des renseignements personnels qu’elle détient. L’entreprise est ancrée à {site.location}; cette indication ne constitue pas une adresse de bureau ouverte au public.
+              {site.name} exploite le site et est responsable des renseignements personnels qu’elle détient. L’adresse publiée est une adresse d’affaires. Les visites se font uniquement sur rendez-vous.
             </p>
             <p className="mt-4">
               Le titre de la fonction responsable est <strong className="text-text-100">Responsable de la protection des renseignements personnels</strong>. Toute question, demande d’exercice d’un droit ou plainte peut lui être adressée au moyen du <Link className="font-semibold text-copper-500 underline underline-offset-4" href="/contact#devis">formulaire Contact</Link>, en indiquant « Confidentialité » dans la description.
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
               <li>consentement à la transmission et au traitement — obligatoire.</li>
             </ul>
             <p className="mt-4">
-              Pour limiter les abus, l’adresse réseau transmise par le reverse proxy et l’agent utilisateur servent à produire une clé hachée temporaire de limitation de débit. Un champ piège anti-robot est aussi vérifié. Ces éléments ne sont pas ajoutés au courriel envoyé à Infotechs Solutions.
+              Pour limiter les abus, une identité réseau validée ou un identifiant conservateur de remplacement sert à produire une clé hachée temporaire de limitation de débit. L’adresse réseau brute n’est pas conservée dans le limiteur. Un champ piège anti-robot est également vérifié. Ces éléments ne sont pas ajoutés au courriel envoyé à Infotechs Solutions.
             </p>
           </section>
 

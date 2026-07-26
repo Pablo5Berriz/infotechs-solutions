@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { Mail, MapPin } from "lucide-react";
-import { navItems, site } from "@/lib/site-config";
+import { Clock3, Mail, MapPin, Phone } from "lucide-react";
+import { navItems, siteConfig } from "@/lib/site-config";
 import { serviceOfferings } from "@/lib/service-offerings";
 
-// Aucune coordonnée fictive : le téléphone n'est affiché que si site.phone est
-// renseigné (variable d'environnement), et aucun réseau social n'est inventé.
-// Voir docs/design/implementation-002a-baseline.md pour le contexte de ce lot.
-
 export function SiteFooter() {
+  const { contact } = siteConfig;
   return (
     <footer className="bg-bg-950 text-text-100">
       <div className="mx-auto grid max-w-(--container-max) gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.3fr_0.7fr_0.9fr_0.9fr] lg:px-8">
@@ -19,19 +16,22 @@ export function SiteFooter() {
             Développement web, applications sur mesure, automatisation IA et accompagnement numérique pour PME en Montérégie et au Québec.
           </p>
           <div className="mt-6 grid gap-3 text-sm text-text-400">
-            {site.email ? (
-              <a href={`mailto:${site.email}`} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-copper-500">
-                <Mail className="h-4 w-4" aria-hidden="true" /> {site.email}
+            {contact.email ? (
+              <a href={`mailto:${contact.email}`} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-copper-500">
+                <Mail className="h-4 w-4" aria-hidden="true" /> {contact.email}
               </a>
             ) : null}
-            {site.phone ? (
-              <a href={`tel:${site.phone}`} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-copper-500">
-                {site.phone}
-              </a>
-            ) : null}
-            <span className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" aria-hidden="true" /> {site.location}
-            </span>
+            <a href={contact.phone.href} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-copper-500">
+              <Phone className="h-4 w-4" aria-hidden="true" /> {contact.phone.display}
+            </a>
+            <div className="flex gap-2 leading-6">
+              <MapPin className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
+              <span>{contact.address.natureLabel}<br />{contact.address.streetAddress}<br />{contact.address.localityLabel}</span>
+            </div>
+            <div className="flex gap-2 leading-6">
+              <Clock3 className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
+              <span>{contact.businessHours.daysLabel}<br />{contact.businessHours.hoursLabel}</span>
+            </div>
           </div>
         </div>
         <div>
@@ -60,10 +60,10 @@ export function SiteFooter() {
             Présentez votre contexte, vos utilisateurs et vos priorités pour transmettre une demande à Infotechs Solutions.
           </p>
           <Link
-            href="/contact#devis"
+            href={siteConfig.primaryCta.href}
             className="mt-5 inline-flex h-(--button-md-height) items-center rounded-sm bg-copper-500 px-4 text-sm font-semibold text-[#14151a]"
           >
-            Transmettre une demande
+            {siteConfig.primaryCta.label}
           </Link>
         </div>
       </div>

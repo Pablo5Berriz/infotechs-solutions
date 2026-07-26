@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
 
@@ -15,6 +17,7 @@ vi.mock("next/link", () => ({
 
 const { SiteHeader } = await import("@/components/site-header");
 const { navItems } = await import("@/lib/site-config");
+const headerSource = readFileSync(resolve(process.cwd(), "src/components/site-header.tsx"), "utf8");
 
 describe("SiteHeader", () => {
   it("exposes the required ARIA attributes on the mobile menu button", () => {
@@ -48,8 +51,14 @@ describe("SiteHeader", () => {
 
   it("emploie des CTA compatibles avec la transmission réelle", () => {
     const markup = renderToStaticMarkup(<SiteHeader />);
-    expect(markup).toContain("Nous contacter");
+    expect(markup).not.toContain("Nous contacter");
     expect(markup).toContain("Transmettre une demande");
     expect(markup).not.toMatch(/Planifier un appel|Demander un devis/);
+  });
+
+  it("dérive les CTA desktop et mobile de la configuration", () => {
+    expect(headerSource.match(/siteConfig\.primaryCta\.href/g)).toHaveLength(2);
+    expect(headerSource.match(/siteConfig\.primaryCta\.label/g)).toHaveLength(2);
+    expect(headerSource).not.toContain('href="/contact#devis"');
   });
 });
