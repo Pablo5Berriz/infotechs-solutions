@@ -34,9 +34,10 @@ describe("ContactPage", () => {
     }
   });
 
-  it("aligne les types de besoins avec le périmètre 002C", () => {
+  it("aligne les types de besoins avec le périmètre 004C-2", () => {
     for (const type of contactNeedTypes) expect(markup).toContain(`value="${type}"`);
-    for (const legacyType of ["Application mobile", "SaaS", "Maintenance ou refonte", "Conseil informatique"]) {
+    expect(markup).toContain("service transversal d’audit et de cadrage");
+    for (const legacyType of ["Application mobile", "SaaS", "Maintenance", "Maintenance et évolution", "Maintenance ou refonte", "Conseil informatique"]) {
       expect(markup).not.toContain(`value="${legacyType}"`);
     }
   });

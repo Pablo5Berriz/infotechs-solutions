@@ -25,6 +25,9 @@ describe("ServiceTabs", () => {
       expect(html).toContain(`id="service-panel-${service.id}"`);
       expect(html).toContain(`aria-labelledby="service-tab-${service.id}"`);
     }
+    expect(featuredServices.map(({ id }) => id)).toEqual(["web", "automation", "custom"]);
+    expect(html).not.toContain("Audit et cadrage");
+    expect(html).not.toContain("Maintenance et évolution");
   });
 
   it("active le premier onglet par défaut", () => {

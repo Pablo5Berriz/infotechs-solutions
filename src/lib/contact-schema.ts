@@ -4,7 +4,7 @@ import { z } from "zod";
 // `unsafe-eval`. Zod otherwise probes JIT support with the Function constructor.
 z.config({ jitless: true });
 
-export const contactNeedTypes = ["Site web", "Automatisation", "Application web", "Autre besoin"] as const;
+export const contactNeedTypes = ["Site web", "Automatisation", "Application web", "Audit et cadrage", "Autre besoin"] as const;
 
 export const contactSchema = z.object({
   name: z.string().trim().min(2, "Indiquez votre nom.").max(100, "Le nom est trop long."),

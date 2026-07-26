@@ -12,8 +12,8 @@ const validPayload = {
 };
 
 describe("contactSchema", () => {
-  it("accepte les quatre types de besoins compatibles avec 002C", () => {
-    expect(contactNeedTypes).toEqual(["Site web", "Automatisation", "Application web", "Autre besoin"]);
+  it("accepte les cinq types de besoins compatibles avec 004C-2", () => {
+    expect(contactNeedTypes).toEqual(["Site web", "Automatisation", "Application web", "Audit et cadrage", "Autre besoin"]);
     for (const projectType of contactNeedTypes) {
       expect(contactSchema.safeParse({ ...validPayload, projectType }).success).toBe(true);
     }
@@ -50,7 +50,7 @@ describe("contactSchema", () => {
   });
 
   it("rejette les anciennes catégories", () => {
-    for (const projectType of ["Application mobile", "SaaS", "Maintenance ou refonte", "Conseil informatique"]) {
+    for (const projectType of ["Application mobile", "SaaS", "Maintenance", "Maintenance et évolution", "Maintenance ou refonte", "Conseil informatique"]) {
       expect(contactSchema.safeParse({ ...validPayload, projectType }).success).toBe(false);
     }
   });

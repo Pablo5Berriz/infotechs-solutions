@@ -35,13 +35,17 @@ describe("SiteFooter", () => {
     expect(markup).not.toMatch(/facebook\.com|instagram\.com|linkedin\.com|twitter\.com|x\.com/i);
   });
 
-  it("links only to the three published service offerings", () => {
+  it("links only to the four published service offerings in canonical order", () => {
     const markup = renderToStaticMarkup(<SiteFooter />);
     for (const service of serviceOfferings) expect(markup).toContain(`href="${service.href}"`);
+    const positions = serviceOfferings.map((service) => markup.indexOf(`href="${service.href}"`));
+    expect(positions).toEqual([...positions].sort((a, b) => a - b));
+    expect(markup).toContain('href="/services/audit-et-cadrage"');
     expect(markup).not.toContain("/services/applications-mobiles");
     expect(markup).not.toContain("/services/saas-plateformes-metier");
     expect(markup).not.toContain("/services/refonte-sites-web");
     expect(markup).not.toContain("/services/maintenance-optimisation");
+    expect(markup).not.toContain("Maintenance et évolution");
   });
 
   it("retire Ressources et les promesses de conversion indisponibles", () => {

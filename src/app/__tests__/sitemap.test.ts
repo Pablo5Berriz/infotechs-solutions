@@ -3,10 +3,12 @@ import sitemap from "@/app/sitemap";
 import { portfolioProjects } from "@/lib/project-portfolio";
 import { serviceOfferings } from "@/lib/service-offerings";
 
-describe("sitemap des services 002C-R1", () => {
-  it("publie exactement les trois routes de service autorisées", () => {
+describe("sitemap des services 004C-2", () => {
+  it("publie exactement les quatre routes de service autorisées", () => {
     const serviceUrls = sitemap().map(({ url }) => url).filter((url) => url.includes("/services/"));
     expect(serviceUrls).toEqual(serviceOfferings.map(({ href }) => `https://infotechssolutions.ca${href}`));
+    expect(serviceUrls).toContain("https://infotechssolutions.ca/services/audit-et-cadrage");
+    expect(serviceUrls.join(" ")).not.toMatch(/maintenance/i);
   });
 
   it("retire les routes Ressources et Fondations du périmètre public", () => {

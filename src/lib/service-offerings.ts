@@ -1,10 +1,12 @@
 import type { LucideIcon } from "lucide-react";
-import { Bot, Code2, Globe2 } from "lucide-react";
+import { Bot, ClipboardCheck, Code2, Globe2 } from "lucide-react";
 
 export type ServiceProcessStep = { title: string; text: string };
+export type ServiceOfferingKind = "solution" | "entry";
 
 export type ServiceOffering = {
   id: string;
+  kind: ServiceOfferingKind;
   slug: string;
   label: string;
   eyebrow: string;
@@ -28,6 +30,7 @@ export type ServiceOffering = {
 export const serviceOfferings: ServiceOffering[] = [
   {
     id: "web",
+    kind: "solution",
     slug: "creation-sites-web",
     label: "Création de sites web",
     eyebrow: "Présence numérique",
@@ -55,6 +58,7 @@ export const serviceOfferings: ServiceOffering[] = [
   },
   {
     id: "automation",
+    kind: "solution",
     slug: "automatisation-ia",
     label: "Automatisation et IA",
     eyebrow: "Opérations plus fluides",
@@ -82,6 +86,7 @@ export const serviceOfferings: ServiceOffering[] = [
   },
   {
     id: "custom",
+    kind: "solution",
     slug: "applications-web-sur-mesure",
     label: "Applications web sur mesure",
     eyebrow: "Outils métier",
@@ -106,6 +111,34 @@ export const serviceOfferings: ServiceOffering[] = [
     technologies: ["React", "TypeScript"],
     status: "published",
     seo: { title: "Applications web sur mesure", description: "Conception d’applications métier, portails et outils internes adaptés aux opérations des PME et organisations." },
+  },
+  {
+    id: "audit",
+    kind: "entry",
+    slug: "audit-et-cadrage",
+    label: "Audit et cadrage",
+    eyebrow: "Clarifier avant de construire",
+    title: "Clarifier le besoin, les risques et la prochaine décision.",
+    summary: "Une analyse structurée pour comprendre l’existant, prioriser un périmètre utile et préparer une feuille de route sans présumer de la solution.",
+    description: "Nous réunissons les faits disponibles, les usages, les contraintes et les dépendances afin de formuler des constats vérifiables, des priorités et les prochaines décisions. Le mandat peut se conclure sans réalisation ultérieure.",
+    href: "/services/audit-et-cadrage",
+    icon: ClipboardCheck,
+    outcomes: ["Une situation actuelle mieux documentée", "Un périmètre priorisé et des limites explicites", "Une feuille de route adaptée au niveau de preuve disponible"],
+    capabilities: ["Audit de site existant", "Revue UX/UI et accessibilité de premier niveau", "Revue technique limitée", "Architecture de contenu", "Cartographie de processus", "Clarification fonctionnelle", "Priorisation MVP", "Estimation qualitative de complexité", "Recommandations de refonte"],
+    process: [
+      { title: "Définir", text: "Préciser la question, les sources et les limites du mandat." },
+      { title: "Recueillir", text: "Examiner les documents, interfaces et témoignages autorisés." },
+      { title: "Analyser", text: "Distinguer les faits, hypothèses, risques et dépendances." },
+      { title: "Prioriser", text: "Comparer les scénarios et le périmètre utile." },
+      { title: "Restituer", text: "Remettre les constats, décisions et feuille de route." },
+    ],
+    idealFor: ["Préparer une refonte sans périmètre clair", "Comprendre pourquoi un parcours ou processus fonctionne mal", "Prioriser un MVP avant la réalisation", "Comparer des scénarios sans engager immédiatement un développement"],
+    deliverables: ["Cadre de l’audit et inventaire des sources", "Constats classés et limites de preuve", "Architecture, parcours ou cartographie selon le mandat", "Périmètre et priorités recommandés", "Feuille de route et rapport de restitution"],
+    considerations: ["Les conclusions dépendent des accès et informations strictement nécessaires au mandat.", "Aucun audit de cybersécurité avancé ni avis juridique n’est inclus.", "La réalisation ultérieure n’est ni incluse ni garantie.", "Une estimation ferme exige un périmètre validé."],
+    relatedServiceIds: ["web", "automation", "custom"],
+    technologies: [],
+    status: "published",
+    seo: { title: "Audit et cadrage numérique", description: "Audit structuré de sites, parcours et processus pour clarifier les constats, prioriser un MVP et préparer une feuille de route." },
   },
 ];
 

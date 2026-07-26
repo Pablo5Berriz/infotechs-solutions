@@ -47,7 +47,7 @@ const contactFaq = [
   {
     question: "Quels projets réalisez-vous?",
     answer:
-      "Les offres publiées couvrent les sites web, les automatisations ciblées et les applications web sur mesure.",
+      "Les offres publiées couvrent trois solutions de réalisation — sites web, automatisations ciblées et applications web sur mesure — ainsi qu’un service transversal d’audit et de cadrage.",
   },
   {
     question: "Travaillez-vous uniquement au Québec?",
@@ -93,7 +93,7 @@ export default function ContactPage() {
           <aside className="border-l-2 border-copper-500 bg-bg-900/80 p-6 sm:p-8" aria-labelledby="contact-usage-title">
             <p className="font-mono text-xs uppercase tracking-[.2em] text-copper-500">Quand utiliser cette interface</p>
             <h2 id="contact-usage-title" className="mt-4 text-2xl font-semibold">Quand un besoin mérite d’être clarifié.</h2>
-            <p className="mt-4 leading-7 text-text-400">Utilisez ce formulaire pour transmettre une première demande liée à un site web, une automatisation ou une application web.</p>
+            <p className="mt-4 leading-7 text-text-400">Utilisez ce formulaire pour transmettre une première demande liée à un site web, une automatisation, une application web ou un besoin d’audit et de cadrage.</p>
           </aside>
         </div>
       </section>
