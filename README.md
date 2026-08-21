@@ -20,3 +20,36 @@ Fonctionnalités principales :
 
 Topics GitHub :
 startup-website, it-services, web-development, ai-automation, business-website, nextjs, tailwindcss, seo, ui-ux, digital-services
+
+## Développement
+
+Ce projet est une application Next.js (App Router, TypeScript, Tailwind CSS)
+configurée pour l'export statique. Voir `docs/architecture.md` pour le détail
+de la baseline technique et des règles d'architecture.
+
+### Prérequis
+
+* Node.js 22+
+* npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Développement local
+
+```bash
+npm run dev
+```
+
+### Vérifications
+
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
+
+Le build produit un export statique dans le dossier `out/`.
