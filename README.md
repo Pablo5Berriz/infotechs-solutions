@@ -25,7 +25,10 @@ startup-website, it-services, web-development, ai-automation, business-website, 
 
 Ce projet est une application Next.js (App Router, TypeScript, Tailwind CSS)
 configurée pour l'export statique. Voir `docs/architecture.md` pour le détail
-de la baseline technique et des règles d'architecture.
+de la baseline technique et des règles d'architecture, et
+`docs/product-v0.md` pour la spécification produit et l'architecture
+informationnelle de la V0 (routes dans `docs/routes-v0.md`, besoins de
+contenu dans `docs/content-requirements-v0.md`).
 
 ### Prérequis
 
