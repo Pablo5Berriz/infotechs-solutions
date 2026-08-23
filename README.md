@@ -11,6 +11,12 @@ Site web officiel de la startup informatique Infotechs Solutions, basé à Saint
 - React Hook Form + Zod
 - Lucide React
 
+## Gouvernance du dépôt
+
+Branche principale : `master`.
+
+Les contributions et workflows CI ciblent `master`.
+
 ## Lancement local
 
 ```bash
@@ -29,6 +35,8 @@ npm run dev
 npm run build
 npm run start
 npm run lint
+npm run typecheck
+npm run test
 ```
 
 ## Structure
