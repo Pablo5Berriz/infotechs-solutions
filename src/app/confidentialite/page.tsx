@@ -19,7 +19,7 @@ export default function PrivacyPage() {
   return (
     <div className="bg-bg-950 text-text-100">
       <article className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <p className="font-mono text-xs uppercase tracking-[.2em] text-copper-500">Confidentialité · renseignements personnels</p>
+        <p className="font-mono text-xs uppercase tracking-[.2em] text-purple-300">Confidentialité · renseignements personnels</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Politique de confidentialité</h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-text-400">
           Cette politique explique comment {site.name} traite les renseignements transmis par le formulaire Contact. Elle ne couvre aucune activité publicitaire ou analytique, car le site n’en utilise pas actuellement.
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
               {site.name} exploite le site et est responsable des renseignements personnels qu’elle détient. L’adresse publiée est une adresse d’affaires. Les visites se font uniquement sur rendez-vous.
             </p>
             <p className="mt-4">
-              Le titre de la fonction responsable est <strong className="text-text-100">Responsable de la protection des renseignements personnels</strong>. Toute question, demande d’exercice d’un droit ou plainte peut lui être adressée au moyen du <Link className="font-semibold text-copper-500 underline underline-offset-4" href="/contact#devis">formulaire Contact</Link>, en indiquant « Confidentialité » dans la description.
+              Le titre de la fonction responsable est <strong className="text-text-100">Responsable de la protection des renseignements personnels</strong>. Toute question, demande d’exercice d’un droit ou plainte peut lui être adressée au moyen du <Link className="font-semibold text-purple-300 underline underline-offset-4" href="/contact#devis">formulaire Contact</Link>, en indiquant « Confidentialité » dans la description.
             </p>
           </section>
 
@@ -98,7 +98,7 @@ export default function PrivacyPage() {
               Selon les règles applicables, vous pouvez demander l’accès aux renseignements qui vous concernent, leur rectification ou leur suppression, retirer votre consentement pour l’avenir et déposer une plainte sur leur traitement. Certaines restrictions légales ou obligations de conservation peuvent s’appliquer.
             </p>
             <p className="mt-4">
-              Adressez d’abord votre demande au Responsable de la protection des renseignements personnels par le <Link className="font-semibold text-copper-500 underline underline-offset-4" href="/contact#devis">formulaire Contact</Link>. Vous pouvez également vous informer auprès de la <a className="font-semibold text-copper-500 underline underline-offset-4" href="https://www.cai.gouv.qc.ca/" rel="noreferrer">Commission d’accès à l’information du Québec</a>.
+              Adressez d’abord votre demande au Responsable de la protection des renseignements personnels par le <Link className="font-semibold text-purple-300 underline underline-offset-4" href="/contact#devis">formulaire Contact</Link>. Vous pouvez également vous informer auprès de la <a className="font-semibold text-purple-300 underline underline-offset-4" href="https://www.cai.gouv.qc.ca/" rel="noreferrer">Commission d’accès à l’information du Québec</a>.
             </p>
           </section>
 

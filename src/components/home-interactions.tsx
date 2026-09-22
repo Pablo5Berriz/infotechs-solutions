@@ -81,10 +81,10 @@ export function ServiceTabs({ initialActive = 0 }: { initialActive?: number }) {
               if (event.key === "Home") { event.preventDefault(); selectWithKeyboard("home"); }
               if (event.key === "End") { event.preventDefault(); selectWithKeyboard("end"); }
             }}
-            className="flex min-h-14 items-center justify-between rounded-sm border border-bg-800 px-5 py-4 text-left font-display text-base font-semibold text-text-400 transition-colors hover:border-copper-500 hover:text-text-100 aria-selected:border-copper-500 aria-selected:bg-bg-900 aria-selected:text-text-100"
+            className="flex min-h-14 items-center justify-between rounded-sm border border-bg-800 px-5 py-4 text-left font-display text-base font-semibold text-text-400 transition-colors hover:border-purple-400 hover:text-text-100 aria-selected:border-purple-500 aria-selected:bg-bg-900 aria-selected:text-text-100"
           >
             <span>{item.label}</span>
-            <span className="font-mono text-xs text-copper-500">0{index + 1}</span>
+            <span className="font-mono text-xs text-purple-300">0{index + 1}</span>
           </button>
         ))}
       </div>
@@ -103,13 +103,13 @@ export function ServiceTabs({ initialActive = 0 }: { initialActive?: number }) {
             animate={{ opacity: isActive ? 1 : 0 }}
             transition={{ duration: reduceMotion ? 0 : 0.2 }}
           >
-            <PanelIcon className="h-7 w-7 text-copper-500" aria-hidden="true" />
+            <PanelIcon className="h-7 w-7 text-purple-300" aria-hidden="true" />
             <h3 className="mt-8 max-w-2xl text-2xl font-semibold leading-tight sm:text-3xl">{panel.title}</h3>
             <p className="mt-4 max-w-2xl leading-7 text-text-400">{panel.text}</p>
             <ul className="mt-8 grid gap-3 sm:grid-cols-3">
               {panel.points.map((point) => <li key={point} className="border-t border-bg-800 pt-3 text-sm text-text-100">{point}</li>)}
             </ul>
-            <Link href={panel.href} className="mt-8 inline-flex min-h-11 items-center gap-2 font-semibold text-copper-500 hover:text-text-100">
+            <Link href={panel.href} className="mt-8 inline-flex min-h-11 items-center gap-2 font-semibold text-purple-300 hover:text-text-100">
               Explorer ce service <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </motion.div>;
@@ -128,15 +128,15 @@ export function ProcessTimeline() {
   return (
     <div ref={sectionRef} className="relative mt-12">
       <div className="absolute bottom-0 left-[23px] top-0 w-px bg-bg-800 md:hidden" aria-hidden="true">
-        <motion.div className="h-full w-full origin-top bg-copper-500" style={{ scaleY: reduceMotion ? 1 : scale }} />
+        <motion.div className="h-full w-full origin-top bg-purple-600" style={{ scaleY: reduceMotion ? 1 : scale }} />
       </div>
       <div className="absolute left-0 right-0 top-[23px] hidden h-px bg-bg-800 md:block" aria-hidden="true">
-        <motion.div className="h-full w-full origin-left bg-copper-500" style={{ scaleX: reduceMotion ? 1 : scale }} />
+        <motion.div className="h-full w-full origin-left bg-purple-600" style={{ scaleX: reduceMotion ? 1 : scale }} />
       </div>
       <ol className="relative grid gap-8 md:grid-cols-5 md:gap-4">
         {processSteps.map(([number, title, text]) => (
           <li key={number} className="grid grid-cols-[48px_1fr] gap-4 md:block">
-            <span className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-copper-500 bg-bg-950 font-mono text-xs text-copper-500">{number}</span>
+            <span className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-purple-500 bg-bg-950 font-mono text-xs text-purple-300">{number}</span>
             <div className="md:mt-8">
               <h3 className="text-lg font-semibold">{title}</h3>
               <p className="mt-2 text-sm leading-6 text-text-400">{text}</p>

@@ -50,9 +50,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-header border-b border-bg-800 bg-bg-950/95 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-(--container-max) items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="inline-flex min-h-11 min-w-11 items-center gap-2 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-copper-500">
+        <Link href="/" className="inline-flex min-h-11 min-w-11 items-center gap-2 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-400">
           <span className="font-display text-base font-bold tracking-tight text-text-100">
-            Infotechs<span className="text-copper-500"> Solutions</span>
+            Infotechs<span className="text-purple-300"> Solutions</span>
           </span>
         </Link>
 
@@ -66,7 +66,7 @@ export function SiteHeader() {
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
                   "inline-flex min-h-11 min-w-11 items-center rounded-sm px-3 text-sm font-medium text-text-400 transition-colors duration-150 ease-out hover:text-text-100",
-                  isActive && "text-copper-500",
+                  isActive && "text-purple-300",
                 )}
               >
                 {item.label}
@@ -78,7 +78,7 @@ export function SiteHeader() {
         <div className="hidden items-center lg:flex">
           <Link
             href={siteConfig.primaryCta.href}
-            className="inline-flex h-(--button-md-height) items-center rounded-sm bg-copper-500 px-4 text-sm font-semibold text-[#14151a] transition-shadow duration-150 ease-out hover:shadow-[0_0_24px_rgba(226,121,61,0.25)]"
+            className="inline-flex h-(--button-md-height) items-center rounded-sm bg-purple-600 px-4 text-sm font-semibold text-[#f4f1ea] transition-shadow duration-150 ease-out hover:shadow-[0_0_24px_rgba(101,40,255,0.25)]"
           >
             {siteConfig.primaryCta.label}
           </Link>
@@ -87,7 +87,7 @@ export function SiteHeader() {
         <button
           ref={toggleButtonRef}
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-sm text-text-100 hover:bg-bg-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-copper-500 lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-sm text-text-100 hover:bg-bg-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-400 lg:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-controls={mobileMenuId}
@@ -111,7 +111,7 @@ export function SiteHeader() {
                   onClick={closeMenu}
                   className={cn(
                     "rounded-sm px-3 py-3 text-base font-medium text-text-400",
-                    isActive && "text-copper-500",
+                    isActive && "text-purple-300",
                   )}
                 >
                   {item.label}
@@ -121,7 +121,7 @@ export function SiteHeader() {
             <Link
               href={siteConfig.primaryCta.href}
               onClick={closeMenu}
-              className="mt-3 inline-flex h-(--button-md-height) items-center justify-center rounded-sm bg-copper-500 px-4 text-center text-sm font-semibold text-[#14151a]"
+              className="mt-3 inline-flex h-(--button-md-height) items-center justify-center rounded-sm bg-purple-600 px-4 text-center text-sm font-semibold text-[#f4f1ea]"
             >
               {siteConfig.primaryCta.label}
             </Link>

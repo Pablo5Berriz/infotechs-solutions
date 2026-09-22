@@ -19,7 +19,7 @@ export default function LegalPage() {
   return (
     <div className="bg-bg-950 text-text-100">
       <article className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <p className="font-mono text-xs uppercase tracking-[.2em] text-copper-500">Informations légales</p>
+        <p className="font-mono text-xs uppercase tracking-[.2em] text-purple-300">Informations légales</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Mentions légales</h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-text-400">Informations relatives à l’éditeur, aux contenus et à l’utilisation du site public Infotechs Solutions.</p>
 
@@ -29,7 +29,7 @@ export default function LegalPage() {
             <p className="mt-4">
               Le site est édité par {site.name}, entreprise de services informatiques offrant notamment la conception de sites web, d’automatisations ciblées et d’applications web. L’adresse publiée est une adresse d’affaires. Les visites se font uniquement sur rendez-vous.
             </p>
-            <p className="mt-4">Pour communiquer avec l’éditeur, utilisez le <Link className="font-semibold text-copper-500 underline underline-offset-4" href="/contact#devis">formulaire Contact</Link>.</p>
+            <p className="mt-4">Pour communiquer avec l’éditeur, utilisez le <Link className="font-semibold text-purple-300 underline underline-offset-4" href="/contact#devis">formulaire Contact</Link>.</p>
           </section>
 
           <section className={sectionClass}>
@@ -69,7 +69,7 @@ export default function LegalPage() {
 
           <section className={sectionClass}>
             <h2 className="text-2xl font-semibold text-text-100">Confidentialité</h2>
-            <p className="mt-4">Le traitement des renseignements transmis au moyen du formulaire est décrit dans la <Link className="font-semibold text-copper-500 underline underline-offset-4" href="/confidentialite">politique de confidentialité</Link>.</p>
+            <p className="mt-4">Le traitement des renseignements transmis au moyen du formulaire est décrit dans la <Link className="font-semibold text-purple-300 underline underline-offset-4" href="/confidentialite">politique de confidentialité</Link>.</p>
           </section>
 
           <section className={sectionClass}>

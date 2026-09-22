@@ -6,22 +6,22 @@ import { serviceOfferings } from "@/lib/service-offerings";
 export function SiteFooter() {
   const { contact } = siteConfig;
   return (
-    <footer className="bg-bg-950 text-text-100">
+    <footer className="bg-gradient-to-b from-bg-950 to-purple-950/20 text-text-100">
       <div className="mx-auto grid max-w-(--container-max) gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.3fr_0.7fr_0.9fr_0.9fr] lg:px-8">
         <div>
           <span className="font-display text-base font-bold tracking-tight text-text-100">
-            Infotechs<span className="text-copper-500"> Solutions</span>
+            Infotechs<span className="text-purple-300"> Solutions</span>
           </span>
           <p className="mt-5 max-w-md text-sm leading-6 text-text-400">
             Développement web, applications sur mesure, automatisation IA et accompagnement numérique pour PME en Montérégie et au Québec.
           </p>
           <div className="mt-6 grid gap-3 text-sm text-text-400">
             {contact.email ? (
-              <a href={`mailto:${contact.email}`} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-copper-500">
+              <a href={`mailto:${contact.email}`} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-purple-200">
                 <Mail className="h-4 w-4" aria-hidden="true" /> {contact.email}
               </a>
             ) : null}
-            <a href={contact.phone.href} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-copper-500">
+            <a href={contact.phone.href} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-purple-200">
               <Phone className="h-4 w-4" aria-hidden="true" /> {contact.phone.display}
             </a>
             <div className="flex gap-2 leading-6">
@@ -35,7 +35,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-copper-500">Navigation</h2>
+          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">Navigation</h2>
           <div className="mt-4 grid gap-3 text-sm text-text-400">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="inline-flex min-h-11 min-w-11 items-center rounded-sm hover:text-text-100">
@@ -45,7 +45,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-copper-500">Services</h2>
+          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">Services</h2>
           <div className="mt-4 grid gap-3 text-sm text-text-400">
             {serviceOfferings.map((service) => (
               <Link key={service.slug} href={service.href} className="inline-flex min-h-11 min-w-11 items-center rounded-sm hover:text-text-100">
@@ -55,13 +55,13 @@ export function SiteFooter() {
           </div>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-copper-500">Conversion</h2>
+          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">Conversion</h2>
           <p className="mt-4 text-sm leading-6 text-text-400">
             Présentez votre contexte, vos utilisateurs et vos priorités pour transmettre une demande à Infotechs Solutions.
           </p>
           <Link
             href={siteConfig.primaryCta.href}
-            className="mt-5 inline-flex h-(--button-md-height) items-center rounded-sm bg-copper-500 px-4 text-sm font-semibold text-[#14151a]"
+            className="mt-5 inline-flex h-(--button-md-height) items-center rounded-sm bg-purple-600 px-4 text-sm font-semibold text-[#f4f1ea]"
           >
             {siteConfig.primaryCta.label}
           </Link>
