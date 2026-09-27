@@ -1,10 +1,12 @@
 "use client";
 
-import Link from "next/link";
+import {useContent, useAppLocale} from "@/i18n/content";
+import {LanguageSwitcher} from "@/components/language-switcher";
+import Link from "@/components/localized-link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { navItems, siteConfig } from "@/lib/site-config";
+import {getSiteConfig} from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
 // Marque temporaire pour ce lot (INFOTECHS-DESIGN-IMPLEMENTATION-002A) :
@@ -14,6 +16,11 @@ import { cn } from "@/lib/utils";
 // Ne pas remplacer ce texte par une image sans validation explicite du logo officiel.
 
 export function SiteHeader() {
+ const locale=useAppLocale();
+ const siteConfig=getSiteConfig(locale);
+ const navItems=siteConfig.navigation;
+  const m = useContent();
+
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
@@ -56,7 +63,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label={m.navigation.mainNav}>
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -75,7 +82,8 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <div className="hidden items-center lg:flex">
+        <div className="hidden items-center gap-3 lg:flex">
+          <LanguageSwitcher />
           <Link
             href={siteConfig.primaryCta.href}
             className="inline-flex h-(--button-md-height) items-center rounded-sm bg-purple-600 px-4 text-sm font-semibold text-[#f4f1ea] transition-shadow duration-150 ease-out hover:shadow-[0_0_24px_rgba(101,40,255,0.25)]"
@@ -91,7 +99,7 @@ export function SiteHeader() {
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-controls={mobileMenuId}
-          aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-label={open ? m.navigation.mobileMenu.close : m.navigation.mobileMenu.open}
         >
           {open ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
         </button>
@@ -99,7 +107,7 @@ export function SiteHeader() {
 
       {open ? (
         <div id={mobileMenuId} className="border-t border-bg-800 bg-bg-950 px-4 py-4 lg:hidden">
-          <nav className="grid gap-1" aria-label="Navigation mobile">
+          <nav className="grid gap-1" aria-label={m.navigation.mobileMenu.nav}>
             {navItems.map((item, index) => {
               const isActive = pathname === item.href;
               return (
@@ -126,6 +134,7 @@ export function SiteHeader() {
               {siteConfig.primaryCta.label}
             </Link>
           </nav>
+          <LanguageSwitcher onSelect={closeMenu} />
         </div>
       ) : null}
     </header>

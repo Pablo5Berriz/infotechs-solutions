@@ -40,7 +40,7 @@ describe("consolidation des contenus 004A", () => {
   });
 
   it("alimente l’accueil depuis le portfolio canonique", () => {
-    const home = source("src/app/page.tsx");
+    const home = source("src/app/[locale]/page.tsx");
     expect(home).toContain('from "@/lib/project-portfolio"');
     expect(home).not.toMatch(/import\s*{[^}]*projects[^}]*}\s*from\s*"@\/lib\/data"/);
   });

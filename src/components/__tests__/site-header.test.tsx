@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderToStaticMarkup } from "@/test/render";
 import { describe, expect, it, vi } from "vitest";
 
 vi.mock("next/navigation", () => ({
@@ -59,6 +59,6 @@ describe("SiteHeader", () => {
   it("dérive les CTA desktop et mobile de la configuration", () => {
     expect(headerSource.match(/siteConfig\.primaryCta\.href/g)).toHaveLength(2);
     expect(headerSource.match(/siteConfig\.primaryCta\.label/g)).toHaveLength(2);
-    expect(headerSource).not.toContain('href="/contact#devis"');
+    expect(headerSource).not.toContain('href="/fr/contact#devis"');
   });
 });

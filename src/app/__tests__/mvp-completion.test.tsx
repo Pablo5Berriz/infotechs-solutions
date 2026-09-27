@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderToStaticMarkup } from "@/test/render";
 import { describe, expect, it, vi } from "vitest";
 
 vi.mock("next/link", () => ({
@@ -9,11 +9,13 @@ vi.mock("next/link", () => ({
   ),
 }));
 
-const { default: NotFound, metadata } = await import("@/app/not-found");
+const { default: NotFound } = await import("@/app/[locale]/not-found");
 
+const metadata=(await import('@/i18n/metadata')).notFoundMetadata('fr');
+const {default:ContactPage}=await import('@/app/[locale]/contact/page');
 const sourcePaths = [
-  "src/app/page.tsx",
-  "src/app/services/page.tsx",
+  "src/app/[locale]/page.tsx",
+  "src/app/[locale]/services/page.tsx",
   "src/components/project-experience.tsx",
   "src/components/service-experience.tsx",
   "src/components/site-footer.tsx",
@@ -30,13 +32,13 @@ describe("complétude structurelle du MVP 003A", () => {
     const markup = renderToStaticMarkup(<NotFound />);
     expect(markup.match(/<h1/g)).toHaveLength(1);
     expect(markup).toContain("Erreur 404");
-    for (const href of ["/", "/services", "/realisations"]) expect(markup).toContain(`href="${href}"`);
+    for (const href of ["/fr", "/fr/services", "/fr/realisations"]) expect(markup).toContain(`href="${href}"`);
     expect(markup).not.toMatch(/Courriel à confirmer|Téléphone à venir|Demander un devis|Planifier un appel/);
   });
 
   it("applique des métadonnées non indexables à la 404", () => {
     expect(metadata.title).toEqual({ absolute: "Page introuvable | Infotechs Solutions" });
-    expect(metadata.alternates).toEqual({ canonical: null });
+    expect(metadata.alternates).toMatchObject({ canonical: null });
     expect(metadata.openGraph).toMatchObject({ title: "Page introuvable | Infotechs Solutions" });
     expect(metadata.robots).toEqual({ index: false, follow: true });
   });
@@ -49,8 +51,8 @@ describe("complétude structurelle du MVP 003A", () => {
   });
 
   it("conserve Contact comme interface explicite de préparation", () => {
-    const contactSource = readFileSync(resolve(process.cwd(), "src/app/contact/page.tsx"), "utf8");
-    const formSource = readFileSync(resolve(process.cwd(), "src/components/contact-form.tsx"), "utf8");
+    const contactSource = renderToStaticMarkup(<ContactPage />);
+    const formSource = contactSource;
     expect(contactSource).toContain("Transmettre votre demande");
     expect(contactSource).toContain("Le formulaire transmet ces informations à Infotechs Solutions");
     expect(formSource).toContain("Transmettre la demande");

@@ -1,0 +1,115 @@
+{
+  "hero": {
+    "eyebrow": "About · a direct approach",
+    "title": "Digital solutions scoped around your real needs.",
+    "intro": "Infotechs Solutions supports small and medium businesses and organizations in designing websites, targeted automations, and business applications. Clarifying the need comes before the technology, and every step produces decisions you can verify.",
+    "ctaPresent": "Present your need",
+    "ctaMethod": "See the method",
+    "mapAlt": "Collaboration connects context, decisions, and a verifiable solution",
+    "mapContext": "Context",
+    "mapUsers": "Users",
+    "mapConstraints": "Constraints",
+    "mapDecisions": "Verifiable\ndecisions"
+  },
+  "purpose": {
+    "eyebrow": "Purpose",
+    "title": "Clarify the problem before expanding the solution.",
+    "p1": "A digital need often arrives with several ideas for features, tools, or integrations already attached. Starting with the technology can make a project more complex without solving the right problem.",
+    "p2": "Infotechs Solutions favors a present-focused approach: understand what's slowing operations down, choose a proportionate level of solution, then move forward through verifiable deliveries. Not every organization has the same usage, the same constraints, or needs the same system."
+  },
+  "principlesEyebrow": "Working principles",
+  "principlesTitle": "Principles translated into concrete behaviors.",
+  "principles": {
+    "understand": {
+      "title": "Understand before building",
+      "description": "Context, users, and constraints are clarified before choosing a technology or a feature."
+    },
+    "proportion": {
+      "title": "Choose the right level of solution",
+      "description": "Scope should stay proportionate to the problem: a website, a targeted automation, and a business tool don't answer the same needs."
+    },
+    "progress": {
+      "title": "Deliver progressively",
+      "description": "Short steps make choices verifiable, limit drift, and allow the next steps to be adjusted with concrete elements."
+    },
+    "visible": {
+      "title": "Make decisions visible",
+      "description": "Assumptions, priorities, limits, and validations are stated clearly so everyone understands what's been decided."
+    },
+    "document": {
+      "title": "Document what matters",
+      "description": "The elements useful for usage, maintenance, and evolution are recorded without producing needlessly heavy documentation."
+    },
+    "users": {
+      "title": "Design for real usage",
+      "description": "Journeys, content, and accessibility are assessed based on the people who will actually use the solution."
+    }
+  },
+  "methodEyebrow": "Collaboration method",
+  "methodTitle": "A readable path, with validation at every step.",
+  "methodIntro": "Clients can expect structured exchanges, documented decisions, and transparent communication about limits. A step is never presented as done before it's been verified.",
+  "method": {
+    "01": {
+      "title": "Context",
+      "description": "Understand the current situation, the users, and the known constraints."
+    },
+    "02": {
+      "title": "Objectives",
+      "description": "Define what the solution should let people do or understand better."
+    },
+    "03": {
+      "title": "Priorities",
+      "description": "Separate the essentials, the options, and the topics that need complementary expertise."
+    },
+    "04": {
+      "title": "Design",
+      "description": "Turn decisions into journeys, interfaces, and observable behavior."
+    },
+    "05": {
+      "title": "Validation",
+      "description": "Verify content, usage, technical quality, and limits in stages."
+    },
+    "06": {
+      "title": "Launch",
+      "description": "Prepare the transition to real use, documentation, and reasonable next steps."
+    }
+  },
+  "scopeEyebrow": "Responsible scope",
+  "scopeTitle": "What we can design — and what scoping needs to determine.",
+  "canDoTitle": "Infotechs Solutions can, among other things",
+  "canDo": [
+    "Design or redesign a clear, accessible website.",
+    "Structure a digital experience around specific users.",
+    "Automate a targeted process when the expected gain is verifiable.",
+    "Develop a web application adapted to a business workflow.",
+    "Organize a progressive delivery and document the solution."
+  ],
+  "needsScopingTitle": "Scoping needs to determine",
+  "needsScoping": [
+    "Legal needs and regulatory obligations.",
+    "Specialized security requirements and data sensitivity.",
+    "Integrations with third-party services or systems.",
+    "The expected level of hosting, maintenance, and availability.",
+    "Operational responsibilities after launch."
+  ],
+  "scopeNote": "Specialized needs aren't ruled out: they require an explicit assessment and, depending on the case, complementary expertise.",
+  "collab": {
+    "humanEyebrow": "A human collaboration",
+    "humanTitle": "Direct exchange, from scoping through launch.",
+    "humanText": "Availability, clarity of communication, and accountability for decisions matter more than an artificial team presentation. Follow-up focuses on what's been understood, decided, delivered, and still needs validation.",
+    "territoryEyebrow": "Territory",
+    "territoryTitle": "Based in Saint-Louis-de-Gonzague, Montérégie.",
+    "territoryText": "Infotechs Solutions builds digital solutions for small and medium businesses and organizations across Quebec. This location describes a home base; it doesn't claim a public-facing office or undocumented geographic coverage."
+  },
+  "proofEyebrow": "Available evidence",
+  "proofTitle": "Review the offer and the scenarios without confusing a demo with an engagement.",
+  "proofText": "The portfolio's demo concepts illustrate design methods and functional scenarios. They are not presented as client engagements.",
+  "seeServices": "See services",
+  "exploreConcepts": "Explore the concepts",
+  "cta": {
+    "title": "Let's start with your context, your users, and your priorities.",
+    "text": "Describe the problem, the known constraints, and what needs to be clarified. The solution comes next.",
+    "submit": "Present your need",
+    "reviewServices": "Review the services"
+  }
+}

@@ -5,9 +5,9 @@ import { serviceOfferings } from "@/lib/service-offerings";
 
 describe("sitemap des services 004C-2", () => {
   it("publie exactement les quatre routes de service autorisées", () => {
-    const serviceUrls = sitemap().map(({ url }) => url).filter((url) => url.includes("/services/"));
+    const serviceUrls = sitemap().map(({ url }) => url).filter((url) => url.includes("/fr/services/"));
     expect(serviceUrls).toEqual(serviceOfferings.map(({ href }) => `https://infotechssolutions.ca${href}`));
-    expect(serviceUrls).toContain("https://infotechssolutions.ca/services/audit-et-cadrage");
+    expect(serviceUrls).toContain("https://infotechssolutions.ca/fr/services/audit-et-cadrage");
     expect(serviceUrls.join(" ")).not.toMatch(/maintenance/i);
   });
 

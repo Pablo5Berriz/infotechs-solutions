@@ -1,4 +1,5 @@
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderToStaticMarkup } from "@/test/render";
+import { localizedPath } from "@/i18n/paths";
 import { describe, expect, it, vi } from "vitest";
 
 vi.mock("next/link", () => ({
@@ -16,10 +17,10 @@ const { serviceOfferings } = await import("@/lib/service-offerings");
 describe("SiteFooter", () => {
   it("links to the essential legal and navigation pages", () => {
     const markup = renderToStaticMarkup(<SiteFooter />);
-    expect(markup).toContain('href="/mentions-legales"');
-    expect(markup).toContain('href="/confidentialite"');
+    expect(markup).toContain('href="/fr/mentions-legales"');
+    expect(markup).toContain('href="/fr/confidentialite"');
     for (const item of navItems) {
-      expect(markup, `footer should link to ${item.href}`).toContain(`href="${item.href}"`);
+      expect(markup, `footer should link to ${item.href}`).toContain(`href="${localizedPath(item.href, "fr")}"`);
     }
   });
 
@@ -40,7 +41,7 @@ describe("SiteFooter", () => {
     for (const service of serviceOfferings) expect(markup).toContain(`href="${service.href}"`);
     const positions = serviceOfferings.map((service) => markup.indexOf(`href="${service.href}"`));
     expect(positions).toEqual([...positions].sort((a, b) => a - b));
-    expect(markup).toContain('href="/services/audit-et-cadrage"');
+    expect(markup).toContain('href="/fr/services/audit-et-cadrage"');
     expect(markup).not.toContain("/services/applications-mobiles");
     expect(markup).not.toContain("/services/saas-plateformes-metier");
     expect(markup).not.toContain("/services/refonte-sites-web");

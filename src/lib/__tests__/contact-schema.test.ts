@@ -2,18 +2,19 @@ import { describe, expect, it } from "vitest";
 import { contactNeedTypes, contactSchema } from "@/lib/contact-schema";
 
 const validPayload = {
+  locale: "fr",
   name: "Jean Tremblay",
   company: "Organisation exemple",
   email: "jean@example.com",
   phone: "4501234567",
-  projectType: "Site web" as const,
+  projectType: "web" as const,
   message: "Nous souhaitons clarifier un besoin numérique pour notre organisation.",
   consent: true,
 };
 
 describe("contactSchema", () => {
   it("accepte les cinq types de besoins compatibles avec 004C-2", () => {
-    expect(contactNeedTypes).toEqual(["Site web", "Automatisation", "Application web", "Audit et cadrage", "Autre besoin"]);
+    expect(contactNeedTypes).toEqual(["web", "automation", "custom", "audit", "other"]);
     for (const projectType of contactNeedTypes) {
       expect(contactSchema.safeParse({ ...validPayload, projectType }).success).toBe(true);
     }
@@ -21,6 +22,7 @@ describe("contactSchema", () => {
 
   it("accepte une demande sans organisation ni téléphone", () => {
     const minimalPayload = {
+      locale:validPayload.locale,
       name: validPayload.name,
       email: validPayload.email,
       projectType: validPayload.projectType,

@@ -1,0 +1,382 @@
+{
+  "checkedAt": "2026-09-23T05:48:23.310Z",
+  "sameBuild": "rMGZUJNDnBBpHmjvWqYSP",
+  "comparison": [
+    {
+      "listenHostname": "127.0.0.1",
+      "port": 3012,
+      "path": "/en/portfolio",
+      "status": 307,
+      "location": "/en/portfolio",
+      "rewrite": "http://localhost:3012/en/realisations"
+    },
+    {
+      "listenHostname": "127.0.0.1",
+      "port": 3012,
+      "path": "/en/about",
+      "status": 307,
+      "location": "/en/about",
+      "rewrite": "http://localhost:3012/en/a-propos"
+    },
+    {
+      "listenHostname": "127.0.0.1",
+      "port": 3012,
+      "path": "/en/legal-notice",
+      "status": 307,
+      "location": "/en/legal-notice",
+      "rewrite": "http://localhost:3012/en/mentions-legales"
+    },
+    {
+      "listenHostname": "127.0.0.1",
+      "port": 3012,
+      "path": "/en/privacy",
+      "status": 307,
+      "location": "/en/privacy",
+      "rewrite": "http://localhost:3012/en/confidentialite"
+    },
+    {
+      "listenHostname": "127.0.0.1",
+      "port": 3012,
+      "path": "/en/services",
+      "status": 200,
+      "location": null,
+      "rewrite": null
+    },
+    {
+      "listenHostname": "localhost",
+      "port": 3013,
+      "path": "/en/portfolio",
+      "status": 200,
+      "location": null,
+      "rewrite": "/en/realisations"
+    },
+    {
+      "listenHostname": "localhost",
+      "port": 3013,
+      "path": "/en/about",
+      "status": 200,
+      "location": null,
+      "rewrite": "/en/a-propos"
+    },
+    {
+      "listenHostname": "localhost",
+      "port": 3013,
+      "path": "/en/legal-notice",
+      "status": 200,
+      "location": null,
+      "rewrite": "/en/mentions-legales"
+    },
+    {
+      "listenHostname": "localhost",
+      "port": 3013,
+      "path": "/en/privacy",
+      "status": 200,
+      "location": null,
+      "rewrite": "/en/confidentialite"
+    },
+    {
+      "listenHostname": "localhost",
+      "port": 3013,
+      "path": "/en/services",
+      "status": 200,
+      "location": null,
+      "rewrite": null
+    }
+  ],
+  "canonical": [
+    {
+      "path": "/fr",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr"
+    },
+    {
+      "path": "/en",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en"
+    },
+    {
+      "path": "/fr/services",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/services"
+    },
+    {
+      "path": "/en/services",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/services"
+    },
+    {
+      "path": "/fr/realisations",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/realisations"
+    },
+    {
+      "path": "/en/portfolio",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/portfolio"
+    },
+    {
+      "path": "/fr/a-propos",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/a-propos"
+    },
+    {
+      "path": "/en/about",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/about"
+    },
+    {
+      "path": "/fr/contact",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/contact"
+    },
+    {
+      "path": "/en/contact",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/contact"
+    },
+    {
+      "path": "/fr/mentions-legales",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/mentions-legales"
+    },
+    {
+      "path": "/en/legal-notice",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/legal-notice"
+    },
+    {
+      "path": "/fr/confidentialite",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/confidentialite"
+    },
+    {
+      "path": "/en/privacy",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/privacy"
+    },
+    {
+      "path": "/fr/services/creation-sites-web",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/services/creation-sites-web"
+    },
+    {
+      "path": "/en/services/website-creation",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/services/website-creation"
+    },
+    {
+      "path": "/fr/services/automatisation-ia",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/services/automatisation-ia"
+    },
+    {
+      "path": "/en/services/ai-automation",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/services/ai-automation"
+    },
+    {
+      "path": "/fr/services/applications-web-sur-mesure",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/services/applications-web-sur-mesure"
+    },
+    {
+      "path": "/en/services/custom-web-applications",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/services/custom-web-applications"
+    },
+    {
+      "path": "/fr/services/audit-et-cadrage",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/services/audit-et-cadrage"
+    },
+    {
+      "path": "/en/services/audit-and-planning",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/services/audit-and-planning"
+    },
+    {
+      "path": "/fr/realisations/site-web-garage-local",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/realisations/site-web-garage-local"
+    },
+    {
+      "path": "/en/portfolio/local-garage-website",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/portfolio/local-garage-website"
+    },
+    {
+      "path": "/fr/realisations/plateforme-reservation",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/realisations/plateforme-reservation"
+    },
+    {
+      "path": "/en/portfolio/booking-platform",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/portfolio/booking-platform"
+    },
+    {
+      "path": "/fr/realisations/application-gestion-interne",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/realisations/application-gestion-interne"
+    },
+    {
+      "path": "/en/portfolio/internal-management-application",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/portfolio/internal-management-application"
+    },
+    {
+      "path": "/fr/realisations/automatisation-administrative",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/realisations/automatisation-administrative"
+    },
+    {
+      "path": "/en/portfolio/administrative-automation",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/portfolio/administrative-automation"
+    },
+    {
+      "path": "/fr/realisations/tableau-bord-pme",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/realisations/tableau-bord-pme"
+    },
+    {
+      "path": "/en/portfolio/business-dashboard",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/portfolio/business-dashboard"
+    },
+    {
+      "path": "/fr/realisations/application-mobile-service-local",
+      "status": 200,
+      "location": null,
+      "lang": "fr-CA",
+      "canonical": "https://infotechssolutions.ca/fr/realisations/application-mobile-service-local"
+    },
+    {
+      "path": "/en/portfolio/mobile-experience",
+      "status": 200,
+      "location": null,
+      "lang": "en-CA",
+      "canonical": "https://infotechssolutions.ca/en/portfolio/mobile-experience"
+    }
+  ],
+  "notFound": [
+    {
+      "path": "/fr/missing-i18n",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "expectedText": "Page introuvable",
+      "containsExpectedText": true,
+      "hasCanonical": false,
+      "noindex": true
+    },
+    {
+      "path": "/fr/missing.txt",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "expectedText": "Page introuvable",
+      "containsExpectedText": true,
+      "hasCanonical": false,
+      "noindex": true
+    },
+    {
+      "path": "/fr/services/missing-service",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "expectedText": "Page introuvable",
+      "containsExpectedText": true,
+      "hasCanonical": false,
+      "noindex": true
+    },
+    {
+      "path": "/en/missing-i18n",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "expectedText": "Page not found",
+      "containsExpectedText": true,
+      "hasCanonical": false,
+      "noindex": true
+    },
+    {
+      "path": "/en/missing.txt",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "expectedText": "Page not found",
+      "containsExpectedText": true,
+      "hasCanonical": false,
+      "noindex": true
+    },
+    {
+      "path": "/en/services/missing-service",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "expectedText": "Page not found",
+      "containsExpectedText": true,
+      "hasCanonical": false,
+      "noindex": true
+    }
+  ]
+}

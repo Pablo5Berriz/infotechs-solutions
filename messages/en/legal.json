@@ -1,0 +1,89 @@
+{
+  "legalNotice": {
+    "eyebrow": "Legal information",
+    "title": "Legal notice",
+    "intro": "Information about the publisher, content, and use of the Infotechs Solutions public website.",
+    "sections": [
+      { "heading": "Website publisher", "paragraphs": [
+        "The website is published by {siteName}, an IT services business offering services including website design, targeted automation, and web applications. The published address is a business address. Visits are by appointment only.",
+        "To contact the publisher, use the {contactLink}."
+      ]},
+      { "heading": "Nature of the content", "paragraphs": [
+        "The information on this website presents Infotechs Solutions' approach and services. It is general information and does not constitute professional advice tailored to a particular situation, a contractual offer, a guarantee of results, or a commitment to a deadline."
+      ]},
+      { "heading": "Portfolio and demonstration concepts", "paragraphs": [
+        "The projects currently published are demonstration concepts, not client engagements. They illustrate design assumptions and do not substantiate any business results, testimonials, deployed technologies, or relationships with real organizations."
+      ]},
+      { "heading": "Intellectual property", "paragraphs": [
+        "Unless otherwise stated, the website's original text, graphics, visual components, and editorial structure are protected by applicable intellectual property rules. Their reproduction or substantial adaptation requires authorization from the rights holder, subject to exceptions provided by law."
+      ]},
+      { "heading": "External links", "paragraphs": [
+        "Links to third-party websites are provided for information purposes. Infotechs Solutions does not control their availability, content, or privacy practices. Access to those websites is subject to the terms published by their operators."
+      ]},
+      { "heading": "Limitation of liability", "paragraphs": [
+        "Infotechs Solutions takes care to provide clear information, without guaranteeing that it will be free of omissions or interruptions. To the extent permitted by applicable rules, users remain responsible for their use of the website and for decisions based solely on its content."
+      ]},
+      { "heading": "Privacy", "paragraphs": [
+        "The handling of information submitted through the form is described in the {privacyLink}."
+      ]},
+      { "heading": "Applicable law", "paragraphs": [
+        "The website is operated from Quebec. Its use is governed by the Quebec and Canadian rules that apply to it, without limiting any mandatory rights users may have in their jurisdiction."
+      ]}
+    ],
+    "contactLinkText": "Contact form",
+    "privacyLinkText": "privacy policy"
+  },
+  "privacy": {
+    "eyebrow": "Privacy · personal information",
+    "title": "Privacy policy",
+    "intro": "This policy explains how {siteName} handles information submitted through the Contact form. It does not cover advertising or analytics activities, as the website does not currently use them.",
+    "effectiveDate": "Effective date and last updated: July 24, 2026.",
+    "sections": [
+      { "heading": "Operator and person responsible", "paragraphs": [
+        "{siteName} operates the website and is responsible for the personal information it holds. The published address is a business address. Visits are by appointment only.",
+        "The title of the responsible role is **Person responsible for the protection of personal information**. Questions, requests to exercise a right, or complaints may be addressed to that person through the {contactLink}, with ‘Privacy’ in the description."
+      ]},
+      { "heading": "Information collected", "paragraphs": [
+        "The form requests the following information:"
+      ], "list": [
+        "name — required;",
+        "organization — optional;",
+        "email address — required;",
+        "phone number — optional;",
+        "type of need — required;",
+        "description of the request — required;",
+        "consent to transmission and processing — required."
+      ], "paragraphsAfterList": [
+        "To limit abuse, a validated network identity or a conservative fallback identifier is used to generate a temporary hashed rate-limiting key. The raw network address is not retained in the rate limiter. An anti-bot honeypot field is also checked. These elements are not included in the email sent to Infotechs Solutions."
+      ]},
+      { "heading": "Purposes and consent", "paragraphs": [
+        "The information is used only to transmit, review, and process the request, to follow up where appropriate, and to protect the form against abuse. The consent requested before submission covers these purposes and the transmission described here.",
+        "It is not used for marketing, newsletters, profiling, advertising, audience measurement, or commercial sharing."
+      ]},
+      { "heading": "Transmission through Resend", "paragraphs": [
+        "The server transmits to Resend the name, organization when provided, email address, phone number when provided, type of need, and description. Resend acts as the technical email delivery provider. The message is intended only for authorized people at Infotechs Solutions who need to review or process it.",
+        "Consent, the hashed rate-limiting key, and the anti-bot field are not included in the email. No files, marketing data, advertising profiles, or analytics data are transmitted.",
+        "Resend states that its main processing operations take place in the United States and that it may use authorized subprocessors. Information may therefore be processed outside Quebec and Canada, where applicable rules may differ."
+      ]},
+      { "heading": "Storage and retention", "paragraphs": [
+        "The website does not retain a copy of the request in a database, CRM, or application file. However, the message and its metadata are processed in Resend's systems and in the recipient's email inbox.",
+        "Infotechs Solutions retains messages for the period needed to review and follow up on the request, then deletes or anonymizes them once the purposes have been fulfilled, subject to legal obligations or the need to establish, exercise, or defend a right. Resend applies its own retention criteria to provide its service and meet its obligations."
+      ]},
+      { "heading": "Protective measures", "paragraphs": [
+        "General measures include strict server-side validation, size limits, an anti-bot field, rate limiting, server-only secrets, a timeout for the provider call, and technical logs that do not include the full content of the request. However, no method of transmission or storage can guarantee absolute security."
+      ]},
+      { "heading": "Your rights and complaints", "paragraphs": [
+        "Depending on the applicable rules, you may request access to information about you, its correction or deletion, withdraw your consent for the future, and file a complaint about its processing. Certain legal restrictions or retention obligations may apply.",
+        "First address your request to the person responsible for the protection of personal information through the {contactLink}. You may also contact the {caiLink} for information."
+      ]},
+      { "heading": "Cookies and audience measurement", "paragraphs": [
+        "The website currently includes no analytics tool, advertising pixel, third-party CAPTCHA, or non-essential cookie. No consent banner is therefore displayed. This policy must be reassessed before adding tracking technology or a non-essential cookie."
+      ]},
+      { "heading": "Policy updates", "paragraphs": [
+        "This policy is reviewed when collection practices, providers, or applicable obligations change. The published version states its effective date and last update. Any significant change will be presented appropriately before it takes effect."
+      ]}
+    ],
+    "contactLinkText": "Contact form",
+    "caiLinkText": "Commission d’accès à l’information du Québec"
+  }
+}

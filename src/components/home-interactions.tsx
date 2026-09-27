@@ -1,40 +1,14 @@
 "use client";
 
+import {useContent} from "@/i18n/content";
 import { useRef, useState } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Bot, Code2, Workflow } from "lucide-react";
-import Link from "next/link";
-import { processSteps } from "@/lib/data";
+import Link from "@/components/localized-link";
 
-export const featuredServices = [
-  {
-    id: "web",
-    label: "Web & applications",
-    title: "Des expériences numériques rapides, crédibles et conçues pour évoluer.",
-    text: "Sites vitrines, applications métier et plateformes sur mesure : nous construisons le bon niveau de solution pour votre réalité.",
-    points: ["Architecture claire", "Performance et accessibilité", "Base technique maintenable"],
-    icon: Code2,
-    href: "/services/creation-sites-web",
-  },
-  {
-    id: "automation",
-    label: "Flux de travail",
-    title: "Moins de tâches répétitives. Plus de temps pour les décisions utiles.",
-    text: "Nous relions vos formulaires, documents et outils afin de fiabiliser les suivis et réduire la double saisie.",
-    points: ["Cartographie du processus", "Intégrations ciblées", "Documentation simple"],
-    icon: Workflow,
-    href: "/services/automatisation-ia",
-  },
-  {
-    id: "custom",
-    label: "Sur mesure",
-    title: "Une solution alignée sur vos opérations, pas l’inverse.",
-    text: "Portails, tableaux de bord et outils internes sont cadrés autour de vos utilisateurs, contraintes et priorités d’affaires.",
-    points: ["Analyse fonctionnelle", "Livraison progressive", "Accompagnement humain"],
-    icon: Bot,
-    href: "/services/applications-web-sur-mesure",
-  },
-] as const;
+
+const featuredIdentities = [{id:'web',icon:Code2,href:'/services/creation-sites-web'},{id:'automation',icon:Workflow,href:'/services/automatisation-ia'},{id:'custom',icon:Bot,href:'/services/applications-web-sur-mesure'}];
+export const featuredServices = featuredIdentities;
 
 export function nextServiceIndex(current: number, command: "next" | "previous" | "home" | "end" | number) {
   if (typeof command === "number") return Math.max(0, Math.min(featuredServices.length - 1, command));
@@ -45,6 +19,9 @@ export function nextServiceIndex(current: number, command: "next" | "previous" |
 }
 
 export function ServiceTabs({ initialActive = 0 }: { initialActive?: number }) {
+  const m = useContent();
+
+  const featuredServices = featuredIdentities.map((item,index)=>({...item,...m.home.featured[index]}));
   const [active, setActive] = useState(nextServiceIndex(0, initialActive));
   const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const reduceMotion = useReducedMotion();
@@ -57,7 +34,7 @@ export function ServiceTabs({ initialActive = 0 }: { initialActive?: number }) {
 
   return (
     <div className="mt-10 grid gap-6 lg:grid-cols-[0.72fr_1.28fr]">
-      <div role="tablist" aria-label="Services stratégiques" className="grid content-start gap-2">
+      <div role="tablist" aria-label={m.home.servicesSection.eyebrow} className="grid content-start gap-2">
         {featuredServices.map((item, index) => (
           <button
             key={item.id}
@@ -110,7 +87,7 @@ export function ServiceTabs({ initialActive = 0 }: { initialActive?: number }) {
               {panel.points.map((point) => <li key={point} className="border-t border-bg-800 pt-3 text-sm text-text-100">{point}</li>)}
             </ul>
             <Link href={panel.href} className="mt-8 inline-flex min-h-11 items-center gap-2 font-semibold text-purple-300 hover:text-text-100">
-              Explorer ce service <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              {m.common.exploreService} <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </motion.div>;
         })}
@@ -120,6 +97,9 @@ export function ServiceTabs({ initialActive = 0 }: { initialActive?: number }) {
 }
 
 export function ProcessTimeline() {
+  const m = useContent();
+
+  const processSteps = m.home.process.map((p,i)=>[String(i+1).padStart(2,"0"),p.title,p.text]);
   const sectionRef = useRef<HTMLDivElement>(null);
   const reduceMotion = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: sectionRef, offset: ["start 75%", "end 70%"] });

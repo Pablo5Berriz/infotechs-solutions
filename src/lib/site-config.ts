@@ -1,3 +1,11 @@
+import type {AppLocale} from '@/i18n/routing';
+import {localizedPath} from '@/i18n/paths';
+import frCommon from '../../messages/fr/common.json';
+import enCommon from '../../messages/en/common.json';
+import frNav from '../../messages/fr/navigation.json';
+import enNav from '../../messages/en/navigation.json';
+import frMeta from '../../messages/fr/metadata.json';
+import enMeta from '../../messages/en/metadata.json';
 export type NavigationItem = { label: string; href: string };
 
 export type BusinessHours = {
@@ -47,17 +55,8 @@ export type SiteConfig = {
 export const siteConfig: SiteConfig = {
   name: "Infotechs Solutions",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://infotechssolutions.ca",
-  description:
-    "Infotechs Solutions aide les PME du Québec à créer des sites web, applications, automatisations IA et outils numériques simples, performants et rentables.",
-  keywords: [
-    "création site web Québec",
-    "développement web Montérégie",
-    "agence web Saint-Louis-de-Gonzague",
-    "développeur web PME Québec",
-    "application web sur mesure Québec",
-    "automatisation IA PME",
-    "transformation numérique PME",
-  ],
+  description: frMeta.siteDescription,
+  keywords: frMeta.keywords,
   contact: {
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || undefined,
     phone: {
@@ -66,18 +65,18 @@ export const siteConfig: SiteConfig = {
       schema: "+15142083644",
     },
     address: {
-      natureLabel: "Adresse d’affaires — visites sur rendez-vous",
+      natureLabel: frCommon.contact.addressNatureLabel,
       streetAddress: "164 rue Principale",
       locality: "Saint-Louis-de-Gonzague",
-      localityLabel: "Saint-Louis-de-Gonzague (Québec)",
+      localityLabel: frCommon.contact.localityLabel,
       region: "Montérégie",
       regionCode: "QC",
       countryCode: "CA",
       appointmentOnly: true,
     },
     businessHours: {
-      daysLabel: "Lundi au vendredi",
-      hoursLabel: "9 h à 17 h",
+      daysLabel: frCommon.contact.businessHoursDaysLabel,
+      hoursLabel: frCommon.contact.businessHoursHoursLabel,
       schemaDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "09:00",
       closes: "17:00",
@@ -85,13 +84,9 @@ export const siteConfig: SiteConfig = {
     },
   },
   navigation: [
-    { label: "Accueil", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "Réalisations", href: "/realisations" },
-    { label: "À propos", href: "/a-propos" },
-    { label: "Contact", href: "/contact" },
+    {label:frNav.items.home,href:"/"},{label:frNav.items.services,href:"/services"},{label:frNav.items.portfolio,href:"/realisations"},{label:frNav.items.about,href:"/a-propos"},{label:frNav.items.contact,href:"/contact"}
   ],
-  primaryCta: { label: "Transmettre une demande", href: "/contact#devis" },
+  primaryCta:{label:frNav.primaryCta,href:"/contact#devis"},
   publishedTechnologies: ["Next.js", "React", "TypeScript"],
 };
 
@@ -103,3 +98,9 @@ export const site = {
 };
 
 export const navItems = siteConfig.navigation;
+
+export function getSiteConfig(locale:AppLocale='fr'):SiteConfig {
+ const c=locale==='en'?enCommon:frCommon,n=locale==='en'?enNav:frNav,m=locale==='en'?enMeta:frMeta;
+ const keys=['home','services','portfolio','about','contact'] as const;
+ return {...siteConfig, description:m.siteDescription, keywords:m.keywords, contact:{...siteConfig.contact,address:{...siteConfig.contact.address,natureLabel:c.contact.addressNatureLabel,localityLabel:c.contact.localityLabel},businessHours:{...siteConfig.contact.businessHours,daysLabel:c.contact.businessHoursDaysLabel,hoursLabel:c.contact.businessHoursHoursLabel}},navigation:siteConfig.navigation.map((item,i)=>({href:localizedPath(item.href,locale),label:n.items[keys[i]]})),primaryCta:{label:n.primaryCta,href:localizedPath(siteConfig.primaryCta.href,locale)}};
+}

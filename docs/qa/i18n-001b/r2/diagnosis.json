@@ -1,0 +1,235 @@
+{
+  "checkedAt": "2026-09-23T05:58:30.629Z",
+  "nextVersion": "16.3.4",
+  "applicationBuild": "rMGZUJNDnBBpHmjvWqYSP",
+  "application": [
+    {
+      "path": "/fr/missing-i18n",
+      "status": 404,
+      "headers": {
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-security-policy": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Wed, 23 Sep 2026 05:58:30 GMT",
+        "keep-alive": "timeout=5",
+        "link": "</_next/static/media/051742360c26797e-s.p.1bkzbscqrt8rl.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/c47649aa31f9e140-s.p.3lxpqujs87tck.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/fa0520225c6f3d07-s.p.33u8lzvd44aqk.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/chunks/1efjjgrf3vp5y.css>; rel=preload; as=\"style\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "set-cookie": "NEXT_LOCALE=fr; Path=/; Expires=Thu, 23 Sep 2027 05:58:30 GMT; Max-Age=31536000; SameSite=lax",
+        "transfer-encoding": "chunked",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      },
+      "htmlTag": "<html id=\"__next_error__\">",
+      "lang": null,
+      "title": "Infotechs Solutions",
+      "h1": null,
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex\"/>"
+      ],
+      "canonical": null
+    },
+    {
+      "path": "/fr/missing.txt",
+      "status": 404,
+      "headers": {
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-security-policy": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Wed, 23 Sep 2026 05:58:30 GMT",
+        "keep-alive": "timeout=5",
+        "link": "</_next/static/media/051742360c26797e-s.p.1bkzbscqrt8rl.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/c47649aa31f9e140-s.p.3lxpqujs87tck.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/fa0520225c6f3d07-s.p.33u8lzvd44aqk.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/chunks/1efjjgrf3vp5y.css>; rel=preload; as=\"style\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "set-cookie": "NEXT_LOCALE=fr; Path=/; Expires=Thu, 23 Sep 2027 05:58:30 GMT; Max-Age=31536000; SameSite=lax",
+        "transfer-encoding": "chunked",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      },
+      "htmlTag": "<html id=\"__next_error__\">",
+      "lang": null,
+      "title": "Infotechs Solutions",
+      "h1": null,
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex\"/>"
+      ],
+      "canonical": null
+    },
+    {
+      "path": "/fr/services/missing-service",
+      "status": 404,
+      "headers": {
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-security-policy": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Wed, 23 Sep 2026 05:58:30 GMT",
+        "etag": "\"bcl0cm8vyxpdl\"",
+        "keep-alive": "timeout=5",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "set-cookie": "NEXT_LOCALE=fr; Path=/; Expires=Thu, 23 Sep 2027 05:58:30 GMT; Max-Age=31536000; SameSite=lax",
+        "transfer-encoding": "chunked",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "x-nextjs-cache": "STALE",
+        "x-nextjs-prerender": "1",
+        "x-nextjs-stale-time": "300"
+      },
+      "htmlTag": "<html id=\"__next_error__\">",
+      "lang": null,
+      "title": "Infotechs Solutions",
+      "h1": null,
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex\"/>"
+      ],
+      "canonical": null
+    },
+    {
+      "path": "/en/missing-i18n",
+      "status": 404,
+      "headers": {
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-security-policy": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Wed, 23 Sep 2026 05:58:30 GMT",
+        "keep-alive": "timeout=5",
+        "link": "</_next/static/media/051742360c26797e-s.p.1bkzbscqrt8rl.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/c47649aa31f9e140-s.p.3lxpqujs87tck.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/fa0520225c6f3d07-s.p.33u8lzvd44aqk.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/chunks/1efjjgrf3vp5y.css>; rel=preload; as=\"style\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "set-cookie": "NEXT_LOCALE=en; Path=/; Expires=Thu, 23 Sep 2027 05:58:30 GMT; Max-Age=31536000; SameSite=lax",
+        "transfer-encoding": "chunked",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      },
+      "htmlTag": "<html id=\"__next_error__\">",
+      "lang": null,
+      "title": "Infotechs Solutions",
+      "h1": null,
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex\"/>"
+      ],
+      "canonical": null
+    },
+    {
+      "path": "/en/missing.txt",
+      "status": 404,
+      "headers": {
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-security-policy": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Wed, 23 Sep 2026 05:58:30 GMT",
+        "keep-alive": "timeout=5",
+        "link": "</_next/static/media/051742360c26797e-s.p.1bkzbscqrt8rl.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/c47649aa31f9e140-s.p.3lxpqujs87tck.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/fa0520225c6f3d07-s.p.33u8lzvd44aqk.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/chunks/1efjjgrf3vp5y.css>; rel=preload; as=\"style\"",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "set-cookie": "NEXT_LOCALE=en; Path=/; Expires=Thu, 23 Sep 2027 05:58:30 GMT; Max-Age=31536000; SameSite=lax",
+        "transfer-encoding": "chunked",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      },
+      "htmlTag": "<html id=\"__next_error__\">",
+      "lang": null,
+      "title": "Infotechs Solutions",
+      "h1": null,
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex\"/>"
+      ],
+      "canonical": null
+    },
+    {
+      "path": "/en/services/missing-service",
+      "status": 404,
+      "headers": {
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-security-policy": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Wed, 23 Sep 2026 05:58:30 GMT",
+        "etag": "\"o0i5vpgpr7oqj\"",
+        "keep-alive": "timeout=5",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "set-cookie": "NEXT_LOCALE=en; Path=/; Expires=Thu, 23 Sep 2027 05:58:30 GMT; Max-Age=31536000; SameSite=lax",
+        "transfer-encoding": "chunked",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "x-nextjs-cache": "STALE",
+        "x-nextjs-prerender": "1",
+        "x-nextjs-stale-time": "300"
+      },
+      "htmlTag": "<html id=\"__next_error__\">",
+      "lang": null,
+      "title": "Infotechs Solutions",
+      "h1": null,
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex\"/>"
+      ],
+      "canonical": null
+    }
+  ],
+  "minimal": [
+    {
+      "mode": "dynamic",
+      "port": 3014,
+      "path": "/en",
+      "status": 200,
+      "htmlTag": "<html lang=\"en-CA\">",
+      "h1": "Known page"
+    },
+    {
+      "mode": "dynamic",
+      "port": 3014,
+      "path": "/en/missing",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "h1": null
+    },
+    {
+      "mode": "dynamic",
+      "port": 3014,
+      "path": "/en/missing.txt",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "h1": null
+    },
+    {
+      "mode": "static",
+      "port": 3015,
+      "path": "/",
+      "status": 200,
+      "htmlTag": "<html lang=\"fr-CA\">",
+      "h1": "Known page"
+    },
+    {
+      "mode": "static",
+      "port": 3015,
+      "path": "/missing",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "h1": null
+    },
+    {
+      "mode": "static",
+      "port": 3015,
+      "path": "/missing.txt",
+      "status": 404,
+      "htmlTag": "<html id=\"__next_error__\">",
+      "h1": null
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+ M AGENTS.md
+ D docs/design/design-tokens.md
+ M docs/design/infotechs-design-review-001-report.md
+ M docs/qa/infotechs-qa-001-report.md
+ M next.config.ts
+ M package-lock.json
+ M package.json
+ M src/app/__tests__/home-page.test.tsx
+ M src/app/__tests__/mvp-completion.test.tsx
+ M src/app/__tests__/sitemap.test.ts
+ D src/app/a-propos/__tests__/a-propos-page.test.tsx
+ D src/app/a-propos/page.tsx
+ M src/app/api/contact/__tests__/route.test.ts
+ M src/app/api/contact/route.ts
+ D src/app/confidentialite/__tests__/privacy-contact.test.tsx
+ D src/app/confidentialite/page.tsx
+ D src/app/contact/__tests__/contact-page.test.tsx
+ D src/app/contact/page.tsx
+ D src/app/layout.tsx
+ D src/app/mentions-legales/__tests__/legal-page.test.tsx
+ D src/app/mentions-legales/page.tsx
+ D src/app/not-found.tsx
+ D src/app/page.tsx
+ D src/app/realisations/[slug]/page.tsx
+ D src/app/realisations/__tests__/realisation-detail-page.test.tsx
+ D src/app/realisations/__tests__/realisations-page.test.tsx
+ D src/app/realisations/page.tsx
+ D src/app/services/[slug]/page.tsx
+ D src/app/services/__tests__/service-detail-page.test.tsx
+ D src/app/services/__tests__/services-page.test.tsx
+ D src/app/services/page.tsx
+ M src/app/sitemap.ts
+ M src/components/__tests__/badge-concept.test.tsx
+ M src/components/__tests__/contact-form-integration.test.tsx
+ M src/components/__tests__/home-interactions.test.tsx
+ M src/components/__tests__/project-experience.test.tsx
+ M src/components/__tests__/reveal.test.tsx
+ M src/components/__tests__/service-experience.test.tsx
+ M src/components/__tests__/site-footer.test.tsx
+ M src/components/__tests__/site-header.test.tsx
+ M src/components/badge-concept.tsx
+ M src/components/button-link.tsx
+ M src/components/contact-form.tsx
+ M src/components/home-interactions.tsx
+ M src/components/project-experience.tsx
+ M src/components/service-experience.tsx
+ M src/components/site-footer.tsx
+ M src/components/site-header.tsx
+ M src/lib/__tests__/contact-schema.test.ts
+ M src/lib/__tests__/content-consolidation.test.ts
+ M src/lib/__tests__/project-portfolio.test.ts
+ M src/lib/__tests__/service-offerings.test.ts
+ M src/lib/about-content.ts
+ M src/lib/contact-delivery.ts
+ M src/lib/contact-schema.ts
+ M src/lib/data.ts
+ M src/lib/project-portfolio.ts
+ M src/lib/service-offerings.ts
+ M src/lib/site-config.ts
+ M vitest.config.ts
+?? "Claude outputs/"
+?? docs/governance/infotechs-tech-baseline-001-report.md
+?? docs/qa/i18n-001b/
+?? docs/qa/infotechs-i18n-001b-blocker-report.md
+?? docs/qa/infotechs-i18n-001b-final-implementation-report.md
+?? docs/qa/infotechs-qa-001-r1-report.md
+?? docs/qa/infotechs-security-corrective-002-report.md
+?? docs/qa/qa-001/
+?? docs/qa/security-corrective-002/
+?? docs/release/
+?? messages/
+?? src/app/[locale]/
+?? src/components/language-switcher.tsx
+?? src/components/legal-content.tsx
+?? src/components/localized-link.tsx
+?? src/i18n/
+?? src/proxy.ts
+?? src/test/

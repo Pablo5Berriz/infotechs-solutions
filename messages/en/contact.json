@@ -1,0 +1,131 @@
+{
+  "needTypes": {
+    "web": "Website",
+    "automation": "Automation",
+    "custom": "Web application",
+    "audit": "Audit and scoping",
+    "other": "Other need"
+  },
+  "page": {
+    "eyebrow": "Contact · scoping discussion",
+    "title": "Let's describe your need before choosing a solution.",
+    "intro": "Share your context, your users, and your goals so Infotechs Solutions can review your request. This step doesn't replace scoping or a tailored proposal.",
+    "ctaSubmit": "Send your request",
+    "ctaExplore": "Explore the services",
+    "usageEyebrow": "When to use this form",
+    "usageTitle": "When a need is worth clarifying.",
+    "usageText": "Use this form to send a first request related to a website, an automation, a web application, or an audit and scoping need.",
+    "prepEyebrow": "Useful information",
+    "prepTitle": "Prepare what helps us understand the need.",
+    "prepItems": [
+      "The context and the users involved",
+      "The goal to reach or the problem to solve",
+      "The tools, constraints, and deadlines already known"
+    ],
+    "businessAddressLabel": "Business address",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Hours",
+    "channelNote": "The form remains the recommended channel for a detailed request. Visits are by appointment only.",
+    "afterEyebrow": "What happens next",
+    "afterTitle": "After a request is received",
+    "nextSteps": [
+      {
+        "title": "Reviewing the need",
+        "text": "Context, users, and constraints serve as the starting point."
+      },
+      {
+        "title": "Clarification",
+        "text": "Areas of uncertainty are clarified before settling on a solution."
+      },
+      {
+        "title": "Next step",
+        "text": "A suitable next step can then be proposed, with no automatic response-time commitment."
+      }
+    ],
+    "faqEyebrow": "Before you start",
+    "faqTitle": "Questions before you begin",
+    "faq": [
+      {
+        "question": "What kinds of projects do you take on?",
+        "answer": "The published offerings cover three delivery solutions — websites, targeted automations, and custom web applications — plus a cross-cutting audit and scoping service."
+      },
+      {
+        "question": "Do you only work in Quebec?",
+        "answer": "Infotechs Solutions is based in Montérégie and serves small and medium businesses and organizations in Quebec. Any other scope is discussed based on context."
+      },
+      {
+        "question": "When does it make sense to talk about automation?",
+        "answer": "When a repetitive task, double entry, or a manual transfer is slowing down a clearly identified process."
+      },
+      {
+        "question": "Can we start with a small scope?",
+        "answer": "Yes. Scoping in particular helps isolate a first step that's useful, verifiable, and compatible with the known constraints."
+      }
+    ],
+    "finalKicker": "Starting point",
+    "finalTitle": "Context, users, goals, and constraints: start with the useful facts.",
+    "finalText": "The form sends this information to Infotechs Solutions for review, with no guaranteed response time or commercial outcome.",
+    "finalSubmit": "Send a request"
+  },
+  "form": {
+    "formTitleEyebrow": "Contact request",
+    "formTitle": "Share the broad strokes.",
+    "formIntro": "This information is sent to Infotechs Solutions through our email provider. It is not added to a CRM or stored in a database by this site.",
+    "honeypotLabel": "Leave this field blank",
+    "nameLabel": "Name",
+    "companyLabel": "Organization (optional)",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone (optional)",
+    "projectTypeLabel": "Type of need",
+    "projectTypePlaceholder": "Choose a type of need",
+    "messageLabel": "Description",
+    "messageHelp": "At least 20 characters.",
+    "messagePlaceholder": "Describe the context, the users, the goal, and any constraints already known.",
+    "consentText": "I consent to sending this information to Infotechs Solutions and to its use to review and process my request, in accordance with the {privacyLink}.",
+    "privacyLinkText": "privacy policy",
+    "noAutoReply": "No automatic response time is promised.",
+    "submitting": "Sending…",
+    "submit": "Send the request",
+    "genericError": "The submission failed.",
+    "networkError": "The submission failed. Check your connection and try again.",
+    "defaultSuccess": "Your request has been sent.",
+    "referenceSuffix": " Reference: {reference}."
+  },
+  "errors": {
+    "nameRequired": "Enter your name.",
+    "nameTooLong": "The name is too long.",
+    "companyTooLong": "The organization name is too long.",
+    "emailInvalid": "Enter a valid email.",
+    "emailTooLong": "The email is too long.",
+    "phoneInvalid": "Enter a valid number.",
+    "phoneTooLong": "The number is too long.",
+    "projectTypeRequired": "Choose a type of need.",
+    "messageTooShort": "Add at least 20 characters.",
+    "messageTooLong": "The description is too long.",
+    "consentRequired": "Consent is required.",
+    "localeInvalid": "Invalid language."
+  },
+  "email": {
+    "subject": "New request — {needType}",
+    "reference": "Reference: {reference}",
+    "name": "Name: {value}",
+    "company": "Organization: {value}",
+    "companyEmpty": "Not provided",
+    "email": "Email: {value}",
+    "phone": "Phone: {value}",
+    "phoneEmpty": "Not provided",
+    "needType": "Type of need: {value}",
+    "descriptionHeading": "Description:",
+    "locale": "Language: {value}",
+    "technicalType": "Technical type: {value}"
+  },
+  "api": {
+    "rateLimited": "Too many attempts. Please try again later.",
+    "tooLarge": "The request is too large.",
+    "unreadable": "The request could not be read.",
+    "invalid": "Check the information you entered.",
+    "filtered": "Your request has been sent.",
+    "unavailable": "Delivery is temporarily unavailable. Please try again.",
+    "success": "Your request has been sent. Infotechs Solutions can review it using the information provided."
+  }
+}

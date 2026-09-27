@@ -1,0 +1,2068 @@
+{
+  "comparedTo": "C:/Users/paulq/AppData/Local/Temp/infotechs-i18n-resume-TqZQ72",
+  "changed": [
+    {
+      "path": "docs/qa/i18n-001b/check-runtime.mjs",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "abd2fa94a1b6b27d879ca0589412c57204b1c1d23a0507fc6d50e02e1be3cfb1"
+    },
+    {
+      "path": "messages/en/about.json",
+      "state": "modified",
+      "initialSha256": "89303c03ec163228d74271d2e07ee6a8af5823e51682ce09884333ca582486e2",
+      "currentSha256": "76c8b0c6c6130a84dc2dbfcd9fbdb984db3ed791b6a2b2b8b699aa52fe03150d"
+    },
+    {
+      "path": "messages/en/common.json",
+      "state": "modified",
+      "initialSha256": "9b9e847454c028ae149539dc6d78ff477863c6fb9bb210e4d31dfbfa230dd09c",
+      "currentSha256": "e70736fd0c0df7dddf62d0be020773ded5fb1b7642307126e22721dacc58820f"
+    },
+    {
+      "path": "messages/en/contact.json",
+      "state": "modified",
+      "initialSha256": "5c59c6814c607853b2a8e5ffbbddb17162f8a6ba0820e1c684aed7e71b9db464",
+      "currentSha256": "757aae0d9fb98b3b3fd73aa713f0492505c0fbfa595b5c145c9f25ced55152a0"
+    },
+    {
+      "path": "messages/en/home.json",
+      "state": "modified",
+      "initialSha256": "07a92d36a5ea869d120166133629612b1e061707b2fb56ad821cf3c4aa4f1d72",
+      "currentSha256": "cb9cbee776eae7c938789178de49428943c422760e588ea2729a86d6648ba887"
+    },
+    {
+      "path": "messages/en/legal.json",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "b691bf29c5c1923b99dd6f5669e94b23e90e4d0cebee0f8e12e0861fecdd57c4"
+    },
+    {
+      "path": "messages/fr/common.json",
+      "state": "modified",
+      "initialSha256": "f0a9da1013831773a4efd8606e8cf0b2c440cbdc47985a332d4cd7b5ca7dbcbe",
+      "currentSha256": "db794d7959e599b487291bbd7060f88d7875e7e543773b89ad74b8b012d139c5"
+    },
+    {
+      "path": "messages/fr/contact.json",
+      "state": "modified",
+      "initialSha256": "76a90ea2da2db2edd7cba12d124cf3944d7cd10b5cc431ed4d8c936fa993d543",
+      "currentSha256": "5548825784c0528a8a651e881b5fddccd3c06d3ff622ac10e6271ba9571cd539"
+    },
+    {
+      "path": "messages/fr/home.json",
+      "state": "modified",
+      "initialSha256": "a66fc1c1536532a32887e31623149fa1cecdbc198f9bd6cf3a41fd4216c4a306",
+      "currentSha256": "bca4bcf279b719703e203b6c0e1a50a2c4ffeeb0381cd8a50ffa0f17739668b4"
+    },
+    {
+      "path": "messages/fr/portfolio.json",
+      "state": "modified",
+      "initialSha256": "ef00586a17bd40791aabe2b96f532992db51de03a4341e3d3f2626fcfb913276",
+      "currentSha256": "d8a731894fad2041c3e896c4f373991aeb77e2b7f5d177c4d53520d42471a1e8"
+    },
+    {
+      "path": "messages/fr/services.json",
+      "state": "modified",
+      "initialSha256": "582d115666c4684f717a5c82ecdc04fd6d0bc207365c2ce5879279788a4ee2c9",
+      "currentSha256": "8919012076d66e9347eac50d1ceebb75a066064246aed8fb82887a81bfcb6102"
+    },
+    {
+      "path": "src/app/[locale]/[...rest]/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "3297fe6b4230d72b9187d2b1eb5557033bddc8ec2bd6f745215ce5cd9a527057"
+    },
+    {
+      "path": "src/app/[locale]/a-propos/__tests__/a-propos-page.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "8402b435c11a827943ea907c3791fcc830d48d2c8d27cd866229894bb5bd3ec4"
+    },
+    {
+      "path": "src/app/[locale]/a-propos/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "72201c606bab94e4d44aa7f1b79bf7f9ef7f8862378851fb3ddbe3f34449e228"
+    },
+    {
+      "path": "src/app/[locale]/confidentialite/__tests__/privacy-contact.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "d553dfd6af1c57063d26472ade4c7b8d1a1f3712bc8a70f5b617032bca8bee99"
+    },
+    {
+      "path": "src/app/[locale]/confidentialite/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "83e55b54da20bbc561bc2b7946ed277f202b4a0ddd45eeeb37448e6dc9ab340d"
+    },
+    {
+      "path": "src/app/[locale]/contact/__tests__/contact-page.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "3655719d53c0468b2fba0c11e92fd1244f442eaafb2d01b1b2788c2023236adb"
+    },
+    {
+      "path": "src/app/[locale]/contact/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "b370f7cb284be69249d39f50e06292aa4a4acc19a8b3e0e3819d4f40ef43eeb5"
+    },
+    {
+      "path": "src/app/[locale]/layout.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "f109e7690f0362f9668613590a7b08080f374707b489f3fba3d0f9d28a3812a2"
+    },
+    {
+      "path": "src/app/[locale]/mentions-legales/__tests__/legal-page.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "34442d32f10f777e91d4bc37c43019cf5bcc2dc52c59df4094f8ff4766d33748"
+    },
+    {
+      "path": "src/app/[locale]/mentions-legales/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "f6bd971ae349a1aef71ca5a788bf006d9b6401e68cc2ce1b519cd26aa6e4210d"
+    },
+    {
+      "path": "src/app/[locale]/not-found.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "cfa308ac6a82fec6c26bfdcf289fe7233344401326541d585d91e428f99f8c51"
+    },
+    {
+      "path": "src/app/[locale]/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "141e4581ab40dad3674b5104963b9a804cd6f16ce1d6f94df4668a2697ef6469"
+    },
+    {
+      "path": "src/app/[locale]/realisations/[slug]/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "58cf750067be7266c6390f05f0c56c9249d3defffddff9594b7d37c0c180ffbc"
+    },
+    {
+      "path": "src/app/[locale]/realisations/__tests__/realisation-detail-page.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "b1a8da81f3f65c1d43ff07d3f05d9ebf26d6bcc61fcd1f988351064ed12674de"
+    },
+    {
+      "path": "src/app/[locale]/realisations/__tests__/realisations-page.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "46bdcb7076daa8b91bbe0ff4980103311ebcc16bc67941f8b417a6087d45f13c"
+    },
+    {
+      "path": "src/app/[locale]/realisations/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "b7aafa2e323977c15ed5c0f8edea2abe152fe100ff2dc02ca1d003444bda543b"
+    },
+    {
+      "path": "src/app/[locale]/services/[slug]/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "fc73c031084315b2817eeaada555b0f696cbec64c0b6ef21251dab70d659dc91"
+    },
+    {
+      "path": "src/app/[locale]/services/__tests__/service-detail-page.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "d131a6ef9015a334f8e42da15fec65341c1ed8916de17e60100021f248081022"
+    },
+    {
+      "path": "src/app/[locale]/services/__tests__/services-page.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "5728635a924165b05386711d59b730f331af50f2b8167fbab0a31f58492b759f"
+    },
+    {
+      "path": "src/app/[locale]/services/page.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "952e7789a46eaf9829794937c50dbeb0aef480cf278fe528f9245383d11198f6"
+    },
+    {
+      "path": "src/app/__tests__/home-page.test.tsx",
+      "state": "modified",
+      "initialSha256": "9b6b07c75e60a6ad51a4d4582df66ba57f7db16fbb8a4299eb88fdf2167a1551",
+      "currentSha256": "e2a01662df696ad94e4fd3fa9c910b260a8403510ee5a15f96de541df215eb0b"
+    },
+    {
+      "path": "src/app/__tests__/mvp-completion.test.tsx",
+      "state": "modified",
+      "initialSha256": "f7506ed9d2e00ac7e6ee327ae898c105f5fb5a6d04fbf02590cda71386fbae47",
+      "currentSha256": "ec794cf9c50935a62ee19b38d2e911f9b57e9117c4a65ace4a07f128bc18e8f6"
+    },
+    {
+      "path": "src/app/__tests__/sitemap.test.ts",
+      "state": "modified",
+      "initialSha256": "2fd1169f040edd27fdd445923a3937cbdbc9559a6a6f3d2e33f8c2841014c3e2",
+      "currentSha256": "9d8914c9056a333452886d7fbbed962a23d551abca18459391e619dfd3dc57b0"
+    },
+    {
+      "path": "src/app/a-propos/__tests__/a-propos-page.test.tsx",
+      "state": "removed",
+      "initialSha256": "bd7759fcdf8e818a620f7343a15b1d28882b1047b7f4ffc9a976222807561faa",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/a-propos/page.tsx",
+      "state": "removed",
+      "initialSha256": "f7202666e4c3a5bb4011683e37cdffef75dd8d6380ecb1302d6c4f0a5b292f67",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/api/contact/__tests__/route.test.ts",
+      "state": "modified",
+      "initialSha256": "68ced06625a2133e66e38df134310b9eead78a175db209689d7765740d92407c",
+      "currentSha256": "9e50eb0fb4eeb3528320dcf365843f37dbbf26395bc47772b07fe2d2142b230c"
+    },
+    {
+      "path": "src/app/api/contact/route.ts",
+      "state": "modified",
+      "initialSha256": "b28d3a10a5b225fe236075caec261dde6dbd36130e48ce2e4a22d9e8d4961021",
+      "currentSha256": "81afb08225206cf11ca151f8ba443b67126a0f3ef203afcd1c442f113efc04e3"
+    },
+    {
+      "path": "src/app/confidentialite/__tests__/privacy-contact.test.tsx",
+      "state": "removed",
+      "initialSha256": "5e277fd7a4658221e30fb8cc15309d089b20743117306c4eb3593205b9c14258",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/confidentialite/page.tsx",
+      "state": "removed",
+      "initialSha256": "5bf60fe10db2d54a29b28cb34a859bcc65cfb11cf46fc6ccadb8d7aaaf7630b6",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/contact/__tests__/contact-page.test.tsx",
+      "state": "removed",
+      "initialSha256": "f589853619b1970e8a98784ab006a44d9bf6a9506db435a95065a4838a885c36",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/contact/page.tsx",
+      "state": "removed",
+      "initialSha256": "9dbf213ee68e48fa45b4b598c04b24fed0409be2a53983968d350de847ca44d5",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "state": "removed",
+      "initialSha256": "496558ad645c677bd4f337536752ba9cafb66680776a994f97ffdea5ef30d7f3",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/mentions-legales/__tests__/legal-page.test.tsx",
+      "state": "removed",
+      "initialSha256": "563d16d796bf938d6c4d1c0b3e879dfd2ef1839ba2ef2c6f0585e22e8b2f19c1",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/mentions-legales/page.tsx",
+      "state": "removed",
+      "initialSha256": "e816394bcfdaa40ee742286f221984a943ed6c3e31b3e89a115ca67d974fe084",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "state": "removed",
+      "initialSha256": "eea3ff909a8f9a0d2fb52266a836438382d0d05ee97c3689d19200e71b114eef",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/page.tsx",
+      "state": "removed",
+      "initialSha256": "506bb4776821cd75db532f8fd74f667d8ac6efffab1dfcea02fe79296cb1e5da",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/realisations/[slug]/page.tsx",
+      "state": "removed",
+      "initialSha256": "8115d6d85b7e2effcf5318664a141fa5ea7e9f5e3daec27882db66a62183cef9",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/realisations/__tests__/realisation-detail-page.test.tsx",
+      "state": "removed",
+      "initialSha256": "e2598f046f502c3005e30e1da5865bfbc7e25a7b28b69ebfbe43ec71ead000d2",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/realisations/__tests__/realisations-page.test.tsx",
+      "state": "removed",
+      "initialSha256": "0c7e98adfed6cbe5b1f9ecdc0d5c9181a32595fee53c82f064ecec3b1dd6f617",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/realisations/page.tsx",
+      "state": "removed",
+      "initialSha256": "d973a0835989fb6ac4c067e25cb99204ecd9c6242e0c4f8bfee1c5fd2d5bde38",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/services/[slug]/page.tsx",
+      "state": "removed",
+      "initialSha256": "07484b41c4c1c0ad29ce8ea45dc04ad25b8004b3efd30cd4524bbf2aba2e4fab",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/services/__tests__/service-detail-page.test.tsx",
+      "state": "removed",
+      "initialSha256": "7c15d65e5564a0277a0e61f9b7d60f6db3a898f0fa512f6e556b08db44b7c8e0",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/services/__tests__/services-page.test.tsx",
+      "state": "removed",
+      "initialSha256": "351358603dcc8f331ea6e5b93dd11c7ff5eda89f18180b62f9575d810f743f23",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/services/page.tsx",
+      "state": "removed",
+      "initialSha256": "35a94f9733cc5036b7f875db74d1863ae790326b9c82dd8a00a469c3323259c4",
+      "currentSha256": null
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "state": "modified",
+      "initialSha256": "dcaefe5050b53c3160fa77dac405b9c186a8c46d39cd1993f3d0ea819cb9059c",
+      "currentSha256": "7466fd52f4bc1c60dff441c910a5d0b32fdfdbc69d23777757b2c3ac76b637b6"
+    },
+    {
+      "path": "src/components/__tests__/badge-concept.test.tsx",
+      "state": "modified",
+      "initialSha256": "348c0a97c08ceae046d9d8ab39493ba7830622eade2966764ae4a0b72abf8dfc",
+      "currentSha256": "149e9ebad5ca909f253e1f899ce4bb6113eaaf2a911b06f1e1ed1e531d371cbc"
+    },
+    {
+      "path": "src/components/__tests__/contact-form-integration.test.tsx",
+      "state": "modified",
+      "initialSha256": "9ad375c09dd24b3e5d2c91df64b454fb0bd028a96aa0e0c47e70520be4801af7",
+      "currentSha256": "2827048ef3705778dce843035b926eb9d49387f5c3cc4e8546cab97826d8c996"
+    },
+    {
+      "path": "src/components/__tests__/home-interactions.test.tsx",
+      "state": "modified",
+      "initialSha256": "2afb8b3d2066b7c7da1d0d11b47551783c8d03cc63d8a5b107e4ba23df48ad05",
+      "currentSha256": "cdeb070ca29cc566cd86b9f66f07cef99e2cef7e2b3f506e5dc4133ed0dcad93"
+    },
+    {
+      "path": "src/components/__tests__/project-experience.test.tsx",
+      "state": "modified",
+      "initialSha256": "14060fe82607479be3dc7583cf26449987a0cdae6811ea20c7e0bc6eccc3a0e7",
+      "currentSha256": "abd96ddccd2ad25fcfc26195a8f3fbbd7c42ea782b0b74a75433a4af2ad91997"
+    },
+    {
+      "path": "src/components/__tests__/reveal.test.tsx",
+      "state": "modified",
+      "initialSha256": "5b75641d8bc3fad5fea486b70d140efbd8afb7f99e4e818a49b178ea829de798",
+      "currentSha256": "a230ff9a5cc5bd9cf5754d8f3d0154a8f8f4efce4222cfd1e3d5346d7795ec20"
+    },
+    {
+      "path": "src/components/__tests__/service-experience.test.tsx",
+      "state": "modified",
+      "initialSha256": "2c9e046937189a38c8d9d52d0943bd59fdff953af0a20b64ececc7494ae06a56",
+      "currentSha256": "de7977d2a947496066ad15ea2680b7c904575bc4ed12f59e46adf5e311035b3a"
+    },
+    {
+      "path": "src/components/__tests__/site-footer.test.tsx",
+      "state": "modified",
+      "initialSha256": "4b4a59b96fac7593ea460f66871ec13d2e5ce2b530fe07d0ae55d2e73e1350da",
+      "currentSha256": "a45f9bd3cd67725e3a30b7971ac55443516d0e5318ee34f192fd1963388daa30"
+    },
+    {
+      "path": "src/components/__tests__/site-header.test.tsx",
+      "state": "modified",
+      "initialSha256": "b33676b63de53a37f9644261e59593198cc1b4bdee86d141d76088cab5844797",
+      "currentSha256": "df245ff3ebc99f08c9480c3423df6277c6d5f8aaeca10b89aef44138ff797b22"
+    },
+    {
+      "path": "src/components/badge-concept.tsx",
+      "state": "modified",
+      "initialSha256": "4f3db240c148d7427c95bdb6a28723fb0dfb504d78c920849683e05970164db4",
+      "currentSha256": "ca7033920b85f2ed3158a208099deb4dc85a1741968ea28c5dbdf609bda8d976"
+    },
+    {
+      "path": "src/components/button-link.tsx",
+      "state": "modified",
+      "initialSha256": "b568157edd972949c13e1557cf52cb4a589bfdfde0234e8064274fc547e877ef",
+      "currentSha256": "a1253b5ac252e7dc5237ce1e269e8cbfbd4f7b8fb26539b8f4a747dadd6f78a1"
+    },
+    {
+      "path": "src/components/contact-form.tsx",
+      "state": "modified",
+      "initialSha256": "af548b4cd6335a1b73a4cb5e8199c8d2f1af306cdb604552bc06d093863afb7e",
+      "currentSha256": "6090293c0f882cc4e21589240bb16cdc8a7b43157dc27328f4ac31bd1af21d71"
+    },
+    {
+      "path": "src/components/home-interactions.tsx",
+      "state": "modified",
+      "initialSha256": "c38d28bd2e87283d772918aef7f5713d526bc9bee59681e7ad4c1761aeeeb7dc",
+      "currentSha256": "4a5b2f1386a2d6dff5eec51afc0e25eeab880c36221fb58f8f3ce06b1145c4d7"
+    },
+    {
+      "path": "src/components/language-switcher.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "62a0a1cd2954e64850eeacd670f6b56ba95b1bc353414e6b78096910550ded2c"
+    },
+    {
+      "path": "src/components/legal-content.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "f7609c190bb5854906d4dd9ff668f1d9808ed8a534bfd1b886c8601c18e097c1"
+    },
+    {
+      "path": "src/components/localized-link.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "ab78eb6888960930b4fa5e9371395cf2dbe8a1cb8eafdfcda69c8c0919d6d17f"
+    },
+    {
+      "path": "src/components/project-experience.tsx",
+      "state": "modified",
+      "initialSha256": "76510da7dacb05cfe33ffd913b3c4b7ee4d2d8207e3c4aff46e4ee232fa17447",
+      "currentSha256": "0e485515a929b55d4043e9f47d589ccce21829c0001be66345a41633f781368e"
+    },
+    {
+      "path": "src/components/service-experience.tsx",
+      "state": "modified",
+      "initialSha256": "5642e7ce8e7a0589a871b447c12f99fb0d628bdefbbe66603d4e851f0728c550",
+      "currentSha256": "0cef37e1bba1f1f9b71d54e85d68b91f75d1108ddf8e541f213866d0f65bbd42"
+    },
+    {
+      "path": "src/components/site-footer.tsx",
+      "state": "modified",
+      "initialSha256": "f77144ef26192c2349463a6b30403aa08ef026bf200bb164e0e9e2fa649d3562",
+      "currentSha256": "bdfb39bce6dd77fadc0904a3183e9c7d44e43274b7e9772fe2bc1927de73023e"
+    },
+    {
+      "path": "src/components/site-header.tsx",
+      "state": "modified",
+      "initialSha256": "9a17103b5a1c756f517930ad75ca693a8a945ce44da66c7433f465f396d0276f",
+      "currentSha256": "6f994cfb35c0ebca417782647b1e6182e365f4ecf78163089cabbfd1396c4e1c"
+    },
+    {
+      "path": "src/i18n/__tests__/foundations.test.ts",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "647a90bb880694ffd4e9a4ee897ef320a888d05cd506d8d30471bc39cb5dab7a"
+    },
+    {
+      "path": "src/i18n/__tests__/public-interface.test.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "8576771a21ade1c790ee653c9d1a2159b4574190d94520714fdf1bd439413a1e"
+    },
+    {
+      "path": "src/i18n/content.ts",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "ad33bdac32e5b758953d26d45ca311efa6f09c53588340c709d6cc11a6a8905e"
+    },
+    {
+      "path": "src/i18n/metadata.ts",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "7488aee1fe8ddaed170809d13c4cf3cbbf47584d47c6d36b425cae0d913388a1"
+    },
+    {
+      "path": "src/i18n/paths.ts",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "1b57e65ed175e5d06392467f2a9e5d723d4c85f042f4417b70b3055d07e93568"
+    },
+    {
+      "path": "src/i18n/request.ts",
+      "state": "modified",
+      "initialSha256": "132fbf317f8b922bf055d6397c882c799201765d252f377e490a30e1d98a3d5c",
+      "currentSha256": "e219a2d3ff9abf13b64ef1e8057d6ef515d4e3b559d9f01e7836bc91f85852b2"
+    },
+    {
+      "path": "src/i18n/routing.ts",
+      "state": "modified",
+      "initialSha256": "93829b6a98dc2eb2194e65afb012ae3c37f42f1d1ce76e82a983504d5be78750",
+      "currentSha256": "986b29b6a51894bf80e2543c705caccc3f9fc6a87fff890fd08b76185111b094"
+    },
+    {
+      "path": "src/i18n/slugs.ts",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "aaf0af208343472ef0a080916abad282c425dd455ea4de95df32422c2b727929"
+    },
+    {
+      "path": "src/lib/__tests__/contact-schema.test.ts",
+      "state": "modified",
+      "initialSha256": "190b6b41e6e9052d866867426a7a81ed7de3b410c4fecef195afa181b01d141a",
+      "currentSha256": "2460d3f87e86cc43a0b43dc8724536f4d4db98f2d17082437d9c494591ae48ff"
+    },
+    {
+      "path": "src/lib/__tests__/content-consolidation.test.ts",
+      "state": "modified",
+      "initialSha256": "59861e9a3c3e357bf2f592990ce3877226b8687a51d05d6f8d1e74a7583a7ca7",
+      "currentSha256": "29356f56565b7543e7f5168adc0fe6437322258997838668cdf131ede44e57d5"
+    },
+    {
+      "path": "src/lib/__tests__/project-portfolio.test.ts",
+      "state": "modified",
+      "initialSha256": "537d1cdd46629b0161de032072e9dbcd7ca10a7054805f649575b2af338e6a7f",
+      "currentSha256": "84536918a765af586c14055774b3a2204bd644811c59ce210036c2657fa63d58"
+    },
+    {
+      "path": "src/lib/__tests__/service-offerings.test.ts",
+      "state": "modified",
+      "initialSha256": "fc885e2e4ef166e5e5c00b9840ac241a8d01446004e65973fc7ceb471bd91cfe",
+      "currentSha256": "6c9fe3d8f8b287de78d9eb8f8791eb67eee8739e453f20dd454132d3fb7c5b10"
+    },
+    {
+      "path": "src/lib/about-content.ts",
+      "state": "modified",
+      "initialSha256": "67fed70ba7fe01e2c85b4054c5d892fbbefe038d06fb0de13245f2945a83dcae",
+      "currentSha256": "2f81df411eb8ca7ec8a6f4137117253aedd970611fef14922b3003bb58a0fba6"
+    },
+    {
+      "path": "src/lib/contact-delivery.ts",
+      "state": "modified",
+      "initialSha256": "21c573badd3f932cb72884b5c0a327c1ad359e1dbb2b14bbe1ccc6009e58ec69",
+      "currentSha256": "b269f729f139377e1208cab68e455202b56a5b3f97fa3247ab4d35eaa6f41f50"
+    },
+    {
+      "path": "src/lib/contact-schema.ts",
+      "state": "modified",
+      "initialSha256": "41195c54cdde3b38ab02cfcb62e001957810a134a915306217b3ce1aebe7b895",
+      "currentSha256": "7fa58f317f8763a56b1beae17c4d2082d7f83ea606a624c6ae5e8b0ba1078ec0"
+    },
+    {
+      "path": "src/lib/data.ts",
+      "state": "modified",
+      "initialSha256": "6c391faaffb34694e129372ba92084a976c650ab0e77c927af5962a3996a0c4b",
+      "currentSha256": "e571409eb22b5f463e75c2e9aa0326b7311c82b86f92e87d4cebe374b6fd9ac8"
+    },
+    {
+      "path": "src/lib/project-portfolio.ts",
+      "state": "modified",
+      "initialSha256": "9658aa9f27a156f08ff944b7789224fe11c264c7fdfe62dffd0e8b99cca0b42c",
+      "currentSha256": "11a689ed60c051857533f755896ae01d9752f42df0358b27e7e7bb07074ec4f3"
+    },
+    {
+      "path": "src/lib/service-offerings.ts",
+      "state": "modified",
+      "initialSha256": "2ffe60138ee507e72f08b4ef8ece42df0a570de726652e838aeedec7824a665d",
+      "currentSha256": "961b53e706407774184e5b2bb8a37a86a5229b277e7224ad78b056cf75466f93"
+    },
+    {
+      "path": "src/lib/site-config.ts",
+      "state": "modified",
+      "initialSha256": "9d3971ead262d7aa5d77e4dcd0bb69678035579a6f2f8ca34ebdd38285e51056",
+      "currentSha256": "7c1aa4b6acdf71669519f9dfd14109385e53698e5abdd780ad44d667bd239070"
+    },
+    {
+      "path": "src/middleware.ts",
+      "state": "removed",
+      "initialSha256": "36ae2c4c2ea5655ce691d4043f7ea09c8b90fd58d1e309d081f649f055d32772",
+      "currentSha256": null
+    },
+    {
+      "path": "src/proxy.ts",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "36f22fa21103f21142e619b27549f081918d5d85b29d8bf107d692e9fb512471"
+    },
+    {
+      "path": "src/test/render.tsx",
+      "state": "added",
+      "initialSha256": null,
+      "currentSha256": "a8327cff15b0d1bb90677037055fd22f3cf9d8b4dc77f6a4bbced2c7b7e4a4e2"
+    },
+    {
+      "path": "vitest.config.ts",
+      "state": "modified",
+      "initialSha256": "d43e54ebc2a0ce42288d23f65892d400cb15a7c32ba4c114017ef4a5f2421902",
+      "currentSha256": "3cfa83daeeef85619cfffeee95eb0767de981e1980827eaa4b92c5ceabd6f92a"
+    }
+  ],
+  "preserved": [
+    {
+      "path": "Claude outputs/home-390-bottom.png",
+      "preserved": true
+    },
+    {
+      "path": "Claude outputs/home-390-top.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/governance/infotechs-tech-baseline-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/infotechs-i18n-001b-blocker-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/infotechs-qa-001-r1-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/infotechs-security-corrective-002-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/qa-001/logs/npm-audit.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/security-corrective-002/audit-full.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/security-corrective-002/audit-production.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/security-corrective-002/dependency-tree.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/security-corrective-002/installed-versions.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/security-corrective-002/package-changes.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/security-corrective-002/preservation.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/security-corrective-002/security-only-lockfile.diff",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/security-corrective-002/status-before.txt",
+      "preserved": true
+    },
+    {
+      "path": "docs/release/infotechs-rc-001-readiness-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/release/infotechs-staging-deploy-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": ".env.example",
+      "preserved": true
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "preserved": true
+    },
+    {
+      "path": ".gitignore",
+      "preserved": true
+    },
+    {
+      "path": "AGENTS.md",
+      "preserved": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "preserved": true
+    },
+    {
+      "path": "README.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/accessibility-audit.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/architecture-decision-hosting.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/assets-registry.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/audits/infotechs-dependency-security-006b-remediation.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/audits/infotechs-local-deep-audit-2026-08.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/audits/infotechs-repository-hardening-005a-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/infotechs-contact-integration-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-error-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-error-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-footer-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-footer-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-loading-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-loading-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-ready-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-ready-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-success-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/contact/screens/contact-integration-001/contact-success-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/deployment-vps.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/404-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/404-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/404-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/404-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/404-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/404-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/apropos-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/apropos-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/apropos-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/apropos-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/apropos-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/apropos-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-desktop-v2/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-desktop-v2/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-desktop-v2/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/article-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-desktop-v2/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-desktop-v2/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-desktop-v2/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/contact-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/home-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/home-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/home-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/home-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/home-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/home-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile-v2/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile-v2/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile-v2/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile-v3/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile-v3/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile-v3/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/legal-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-desktop-v2/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-desktop-v2/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-desktop-v2/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/privacy-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/ressources-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/ressources-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/ressources-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/ressources-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/ressources-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/ressources-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/services-desktop/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/services-desktop/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/services-desktop/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/services-mobile/DESIGN.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/services-mobile/code.html",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/_stitch-source/services-mobile/screen.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/animation-spec.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/assets-provenance-registry.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/completion-001a-status.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/design-tokens.md",
+      "preserved": true,
+      "note": "Preexisting deletion remains absent."
+    },
+    {
+      "path": "docs/design/implementation-002a-baseline.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/implementation-002a-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/implementation-002a-verification.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/implementation-002b-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/implementation-002c-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/implementation-002d-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/implementation-002e-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/implementation-002f-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/implementation-recommendations.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/infotechs-design-completion-003a-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/infotechs-design-palette-003a-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/infotechs-design-palette-003a-v1-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/infotechs-design-review-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/interaction-prototypes.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/logo-concepts/infotechs-logo-concept-A-preview.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/logo-concepts/infotechs-logo-concept-A-violet-refined.svg",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/logo-concepts/infotechs-logo-concept-B-brand-aligned.svg",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/logo-concepts/infotechs-logo-concept-B-preview.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/404-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/404-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/apropos-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/apropos-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/article-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/article-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/completion-003a/404-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/completion-003a/404-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/completion-003a/contact-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/completion-003a/contact-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/completion-003a/footer-no-resources-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/completion-003a/footer-no-resources-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/completion-003a/header-no-resources-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/completion-003a/header-no-resources-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/confidentialite-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/confidentialite-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/contact-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/contact-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/home-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/home-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/badge-concept-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/badge-concept-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/footer-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/footer-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/foundations-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/foundations-1440.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/foundations-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/foundations-768.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002a/mobile-menu-open-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-1440.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-768.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-concepts-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-concepts-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-cta-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-cta-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-hero-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-hero-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-process-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-process-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-services-tab-1-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-services-tab-2-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002b/home-services-tab-3-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-automation-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-automation-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-breadcrumb-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-custom-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-custom-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-final-cta-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-related-services-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-web-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/service-web-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/services-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/services-1440.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/services-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/services-768.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/services-cards-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002c/services-choice-guide-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-breadcrumb-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-detail-01-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-detail-01-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-detail-02-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-detail-02-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-detail-03-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-detail-03-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-final-cta-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-gallery-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-related-projects-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisation-status-badge-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisations-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisations-1440.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisations-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisations-768.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002d/realisations-cards-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-1440.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-768.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-final-cta-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-hero-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-hero-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-human-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-identity-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-method-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-principles-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-principles-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-proof-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-scope-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002e/a-propos-scope-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-1440.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-768.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-faq-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-faq-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-final-cta-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-final-cta-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-form-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-form-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-form-consent-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-hero-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-preparation-768.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-process-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/implementation-002f/contact-process-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/mentions-legales-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/mentions-legales-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/404-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/404-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/a-propos-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/a-propos-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/badge-concept.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/buttons-primary-secondary.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/confidentialite-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/confidentialite-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/contact-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/contact-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/contact-field-focus-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/contact-form.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/cta-final.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/footer.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/header-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/header-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/hero-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/hero-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/home-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/home-1440.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/home-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/home-768.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/mentions-legales-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/mentions-legales-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/mobile-menu-open.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/portfolio-cards.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/realisation-detail-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/realisation-detail-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/realisations-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/realisations-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/service-cards.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/service-detail-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/service-detail-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/services-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/palette-003a/services-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/ressources-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/ressources-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/services-desktop-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/screens/services-mobile-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/design/stitch-design-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/governance/infotechs-baseline-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/governance/infotechs-baseline-freeze-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/legal/infotechs-legal-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/legal/screens/infotechs-legal-001/confidentialite-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/legal/screens/infotechs-legal-001/confidentialite-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/legal/screens/infotechs-legal-001/contact-consent-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/legal/screens/infotechs-legal-001/contact-consent-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/legal/screens/infotechs-legal-001/mentions-legales-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/legal/screens/infotechs-legal-001/mentions-legales-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/operations-runbook.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/performance-audit.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/privacy-data-flow.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/product/infotechs-product-evolution-004a-content-consolidation.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/product/infotechs-product-evolution-004b-navigation-contact.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/product/infotechs-product-evolution-004c-service-portfolio-audit.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/product/infotechs-product-evolution-004c2-audit-cadrage-publication.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/product/infotechs-product-evolution-004c3-maintenance-operations.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/production-readiness-audit.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/axe/axe-results-1784949862559.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/interaction-summary.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/confidentialite-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/confidentialite-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/contact-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/contact-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/home-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/home-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/mentions-legales-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/mentions-legales-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/realisation-detail-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/realisation-detail-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/realisations-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/realisations-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/service-detail-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/service-detail-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/services-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/lighthouse/services-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/r1/axe/axe-results-1785005746485.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/r1/lighthouse/home-desktop.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/r1/lighthouse/home-mobile.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/exports/responsive-summary.json",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/infotechs-qa-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/404-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/404-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/confidentialite-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/confidentialite-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/contact-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/contact-error.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/contact-loading.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/contact-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/contact-success.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/cross-chrome-home-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/cross-edge-home-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/cross-firefox-home-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/cross-webkit-home-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/focus-menu.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/home-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/home-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/mentions-legales-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/mentions-legales-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/menu-mobile-open.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/r1/home-normal-motion-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/r1/home-normal-motion-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/r1/home-reduced-motion-1280.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/r1/home-reduced-motion-390.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/realisation-detail-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/realisation-detail-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/realisations-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/realisations-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/reduced-motion-home.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/service-detail-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/service-detail-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/services-desktop.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/services-mobile.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/qa/screens/validation-errors.png",
+      "preserved": true
+    },
+    {
+      "path": "docs/security/infotechs-security-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "docs/security/infotechs-security-corrective-001-report.md",
+      "preserved": true
+    },
+    {
+      "path": "eslint.config.mjs",
+      "preserved": true
+    },
+    {
+      "path": "next.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "package-lock.json",
+      "preserved": true
+    },
+    {
+      "path": "package.json",
+      "preserved": true
+    },
+    {
+      "path": "postcss.config.mjs",
+      "preserved": true
+    },
+    {
+      "path": "public/file.svg",
+      "preserved": true
+    },
+    {
+      "path": "public/globe.svg",
+      "preserved": true
+    },
+    {
+      "path": "public/images/Infotechs.png",
+      "preserved": true
+    },
+    {
+      "path": "public/images/hero-technology-workspace.png",
+      "preserved": true
+    },
+    {
+      "path": "public/next.svg",
+      "preserved": true
+    },
+    {
+      "path": "public/vercel.svg",
+      "preserved": true
+    },
+    {
+      "path": "public/window.svg",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.json",
+      "preserved": true
+    }
+  ]
+}

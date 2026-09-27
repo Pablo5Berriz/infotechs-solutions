@@ -1,0 +1,31 @@
+{
+  "items": {
+    "home": "Accueil",
+    "services": "Services",
+    "portfolio": "Réalisations",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "primaryCta": "Transmettre une demande",
+  "languageSwitcher": {
+    "label": "Changer de langue",
+    "fr": "FR",
+    "en": "EN",
+    "switchTo": "Passer en anglais"
+  },
+  "mobileMenu": {
+    "open": "Ouvrir le menu",
+    "close": "Fermer le menu",
+    "nav": "Navigation mobile"
+  },
+  "mainNav": "Navigation principale",
+  "footer": {
+    "navTitle": "Navigation",
+    "servicesTitle": "Services",
+    "conversionTitle": "Conversion",
+    "conversionText": "Présentez votre contexte, vos utilisateurs et vos priorités pour transmettre une demande à Infotechs Solutions.",
+    "copyright": "© {year} Infotechs Solutions. Tous droits réservés.",
+    "legalNotice": "Mentions légales",
+    "privacy": "Confidentialité"
+  }
+}

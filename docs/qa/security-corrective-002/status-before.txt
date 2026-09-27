@@ -1,0 +1,16 @@
+ M AGENTS.md
+ D docs/design/design-tokens.md
+ M docs/design/infotechs-design-review-001-report.md
+ M docs/qa/infotechs-qa-001-report.md
+ M next.config.ts
+ M package-lock.json
+ M package.json
+?? "Claude outputs/"
+?? docs/governance/infotechs-tech-baseline-001-report.md
+?? docs/qa/infotechs-i18n-001b-blocker-report.md
+?? docs/qa/infotechs-qa-001-r1-report.md
+?? docs/qa/qa-001/
+?? docs/release/
+?? messages/
+?? src/i18n/
+?? src/middleware.ts

@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderToStaticMarkup } from "@/test/render";
 import { describe, expect, it } from "vitest";
 import { ContactForm } from "@/components/contact-form";
 
@@ -18,7 +18,8 @@ describe("interface de transmission Contact", () => {
 
   it("prévoit chargement, double soumission, succès et erreur accessible", () => {
     expect(source).toContain("isSubmitting || submission.kind === \"success\"");
-    expect(source).toContain("Transmission…");
+    expect(source).toContain("m.contact.form.submitting");
+    expect(renderToStaticMarkup(<ContactForm />)).toContain("Transmettre la demande");
     expect(source).toContain('role="status"');
     expect(source).toContain('role="alert"');
   });
@@ -36,7 +37,7 @@ describe("interface de transmission Contact", () => {
 
   it("lie le consentement aux finalités et à la politique de confidentialité", () => {
     expect(markup).toContain("examiner et traiter ma demande");
-    expect(markup).toContain('href="/confidentialite"');
+    expect(markup).toContain('href="/fr/confidentialite"');
     expect(markup).not.toMatch(/marketing|infolettre|profilage|analytics|partage commercial/i);
   });
 });

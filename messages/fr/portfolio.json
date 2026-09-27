@@ -1,0 +1,272 @@
+{
+  "statusLabels": {
+    "concept": "CONCEPT DÉMONSTRATIF",
+    "client": "PROJET CLIENT"
+  },
+  "listing": {
+    "eyebrow": "Portfolio transparent",
+    "title": "Des concepts pour rendre les décisions numériques visibles.",
+    "intro": "Ce portfolio présente des scénarios de conception, pas des mandats clients. Chaque fiche distingue ce qui est exploré, démontré et encore à valider.",
+    "ctaPresent": "Présenter votre contexte",
+    "ctaExplore": "Explorer les concepts",
+    "sixScenariosEyebrow": "Six scénarios",
+    "sixScenariosTitle": "Une lecture honnête de ce que chaque concept démontre.",
+    "capabilityReadTitle": "Lecture par capacité",
+    "capabilities": [
+      "Interfaces métier",
+      "Gestion de données",
+      "Automatisation",
+      "Expériences mobiles",
+      "Architecture modulaire"
+    ],
+    "journeyTitle": "De l’hypothèse à une version vérifiable.",
+    "journeySteps": [
+      "Comprendre",
+      "Cadrer",
+      "Prototyper",
+      "Construire",
+      "Valider",
+      "Faire évoluer"
+    ],
+    "ctaTitle": "Votre projet commence par un contexte, pas par une démonstration.",
+    "ctaText": "Décrivez le problème, les utilisateurs et les priorités à clarifier.",
+    "exploreConcept": "Explorer le concept",
+    "seeConcept": "Voir le concept"
+  },
+  "detail": {
+    "presentNeed": "Présenter un besoin",
+    "allConcepts": "Tous les concepts",
+    "contextEyebrow": "Contexte du concept",
+    "contextTitle": "Un scénario de conception, pas un mandat client.",
+    "challengeTitle": "Problèmes explorés",
+    "approachTitle": "Approche proposée",
+    "deliverablesTitle": "Éléments démontrés",
+    "limitationsTitle": "Limites connues",
+    "relatedTitle": "Concepts associés",
+    "differentContext": "Votre contexte est différent",
+    "ctaTitle": "Présentez le problème, les utilisateurs et les priorités.",
+    "ctaSubmit": "Structurer votre projet"
+  },
+  "garage": {
+    "title": "Site web pour garage local",
+    "category": "Site web",
+    "summary": "Concept de site vitrine structurant les services, les demandes de rendez-vous et l’information locale.",
+    "description": "Un scénario de conception destiné à montrer comment une entreprise de services locale pourrait clarifier son offre et faciliter une première prise de contact.",
+    "challenge": [
+      "Présenter clairement des services variés.",
+      "Rendre la prise de contact simple sur mobile.",
+      "Organiser une information locale crédible sans faux avis ni chiffres."
+    ],
+    "approach": [
+      "Hiérarchie centrée sur les besoins des automobilistes.",
+      "Parcours court entre service et demande.",
+      "Composants responsive et contenus faciles à parcourir."
+    ],
+    "deliverables": [
+      "Architecture de pages",
+      "Écrans de service",
+      "Parcours de demande",
+      "Composants responsive"
+    ],
+    "capabilities": [
+      "Architecture web",
+      "Contenu structuré",
+      "Responsive",
+      "Formulaires"
+    ],
+    "limitations": [
+      "Concept non commandé par un garage.",
+      "Aucun résultat commercial mesuré.",
+      "Aucun contenu client réel intégré."
+    ],
+    "seo": {
+      "title": "Concept de site web pour garage local",
+      "description": "Concept démonstratif de site web pour un garage local, centré sur les services et la prise de contact."
+    }
+  },
+  "reservation": {
+    "title": "Plateforme de réservation",
+    "category": "Application web",
+    "summary": "Concept de plateforme réunissant disponibilités, demandes et confirmations dans un parcours cohérent.",
+    "description": "Ce concept explore une expérience de réservation destinée à réduire la dispersion des demandes entre téléphone et messages.",
+    "challenge": [
+      "Regrouper les disponibilités et les demandes.",
+      "Rendre les statuts compréhensibles.",
+      "Prévoir les exceptions sans alourdir le parcours."
+    ],
+    "approach": [
+      "Parcours organisé autour du choix d’un créneau.",
+      "États explicites pour les confirmations.",
+      "Séparation entre expérience publique et gestion interne."
+    ],
+    "deliverables": [
+      "Parcours de réservation",
+      "Calendrier conceptuel",
+      "États de confirmation",
+      "Vue de gestion"
+    ],
+    "capabilities": [
+      "UX transactionnelle",
+      "Interfaces métier",
+      "Gestion d’états",
+      "Responsive"
+    ],
+    "limitations": [
+      "Concept sans exploitant réel.",
+      "Aucune intégration de calendrier confirmée.",
+      "Aucune donnée d’usage disponible."
+    ],
+    "seo": {
+      "title": "Concept de plateforme de réservation",
+      "description": "Concept démonstratif d’une plateforme web de réservation et de gestion des disponibilités."
+    }
+  },
+  "gestion": {
+    "title": "Application de gestion interne",
+    "category": "Application web",
+    "summary": "Concept d’outil métier centralisant clients, tâches, documents et statuts opérationnels.",
+    "description": "Un scénario d’application interne conçu pour illustrer la structuration d’informations aujourd’hui dispersées.",
+    "challenge": [
+      "Réunir plusieurs sources d’information.",
+      "Différencier les rôles et responsabilités.",
+      "Maintenir un historique compréhensible."
+    ],
+    "approach": [
+      "Tableau de bord orienté actions.",
+      "Organisation par dossiers et statuts.",
+      "Accès et permissions à cadrer avant réalisation."
+    ],
+    "deliverables": [
+      "Tableau de bord",
+      "Fiches de suivi",
+      "Parcours par rôle",
+      "Historique conceptuel"
+    ],
+    "capabilities": [
+      "Outils métier",
+      "Gestion de données",
+      "Rôles",
+      "Tableaux de bord"
+    ],
+    "limitations": [
+      "Concept sans organisation cliente.",
+      "Modèle de données non validé sur le terrain.",
+      "Sécurité à spécifier selon les données réelles."
+    ],
+    "seo": {
+      "title": "Concept d’application de gestion interne",
+      "description": "Concept démonstratif d’une application métier pour centraliser tâches, documents et suivis."
+    }
+  },
+  "automation": {
+    "title": "Automatisation administrative",
+    "category": "Automatisation",
+    "summary": "Concept de flux reliant formulaire, classement, notification et tableau de suivi.",
+    "description": "Ce concept illustre comment un processus administratif répétitif pourrait être cartographié avant une automatisation encadrée.",
+    "challenge": [
+      "Éviter les doubles saisies.",
+      "Rendre les erreurs et exceptions visibles.",
+      "Conserver des validations humaines."
+    ],
+    "approach": [
+      "Cartographie du flux avant outillage.",
+      "Points de contrôle explicites.",
+      "Journal de suivi pour comprendre chaque étape."
+    ],
+    "deliverables": [
+      "Carte du processus",
+      "Scénarios de flux",
+      "Points de contrôle",
+      "Documentation conceptuelle"
+    ],
+    "capabilities": [
+      "Automatisation",
+      "Processus",
+      "Notifications",
+      "Documentation"
+    ],
+    "limitations": [
+      "Aucun gain de temps mesuré.",
+      "Aucun outil tiers confirmé.",
+      "Les décisions sensibles restent humaines."
+    ],
+    "seo": {
+      "title": "Concept d’automatisation administrative",
+      "description": "Concept démonstratif d’un flux administratif automatisé avec contrôles humains."
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de bord PME",
+    "category": "SaaS",
+    "summary": "Concept de tableau de bord donnant une lecture commune des demandes, tâches et indicateurs choisis.",
+    "description": "Une exploration d’interface pour aider une équipe à consulter ses activités sans présenter de données ou résultats réels.",
+    "challenge": [
+      "Prioriser peu d’indicateurs utiles.",
+      "Rendre les filtres compréhensibles.",
+      "Éviter une lecture trompeuse des données."
+    ],
+    "approach": [
+      "Hiérarchie par décision à prendre.",
+      "Filtres et états vides explicites.",
+      "Visualisations sobres et secondaires."
+    ],
+    "deliverables": [
+      "Vue synthèse",
+      "Filtres conceptuels",
+      "États de données",
+      "Structure modulaire"
+    ],
+    "capabilities": [
+      "Visualisation de données",
+      "SaaS",
+      "Filtres",
+      "Architecture modulaire"
+    ],
+    "limitations": [
+      "Aucune donnée d’entreprise utilisée.",
+      "Aucun indicateur de performance validé.",
+      "Concept sans produit commercialisé."
+    ],
+    "seo": {
+      "title": "Concept de tableau de bord pour PME",
+      "description": "Concept démonstratif de tableau de bord pour structurer le suivi d’activités d’une PME."
+    }
+  },
+  "mobile": {
+    "title": "Application mobile pour service local",
+    "category": "Application mobile",
+    "summary": "Concept mobile pour déposer une demande, consulter son statut et recevoir des informations utiles.",
+    "description": "Ce scénario explore une relation de service sur téléphone sans prétendre représenter une application publiée.",
+    "challenge": [
+      "Réduire les étapes d’une demande mobile.",
+      "Rendre le statut immédiatement compréhensible.",
+      "Prévoir les notifications sans dépendance excessive."
+    ],
+    "approach": [
+      "Navigation courte adaptée au pouce.",
+      "États et prochaines actions visibles.",
+      "Progression conçue pour les petits écrans."
+    ],
+    "deliverables": [
+      "Parcours mobile",
+      "Écrans de demande",
+      "Suivi de statut",
+      "États de notification"
+    ],
+    "capabilities": [
+      "UX mobile",
+      "Parcours de service",
+      "Notifications",
+      "Accessibilité"
+    ],
+    "limitations": [
+      "Prototype visuel non publié en boutique.",
+      "Aucun utilisateur client testé.",
+      "Aucune technologie mobile arrêtée."
+    ],
+    "seo": {
+      "title": "Concept d’application mobile de service local",
+      "description": "Concept démonstratif d’application mobile pour demandes et suivis d’un service local."
+    }
+  }
+}

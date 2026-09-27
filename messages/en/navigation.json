@@ -1,0 +1,31 @@
+{
+  "items": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "primaryCta": "Send a request",
+  "languageSwitcher": {
+    "label": "Switch language",
+    "fr": "FR",
+    "en": "EN",
+    "switchTo": "Switch to French"
+  },
+  "mobileMenu": {
+    "open": "Open menu",
+    "close": "Close menu",
+    "nav": "Mobile navigation"
+  },
+  "mainNav": "Main navigation",
+  "footer": {
+    "navTitle": "Navigation",
+    "servicesTitle": "Services",
+    "conversionTitle": "Get in touch",
+    "conversionText": "Share your context, your users, and your priorities to send a request to Infotechs Solutions.",
+    "copyright": "© {year} Infotechs Solutions. All rights reserved.",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy"
+  }
+}

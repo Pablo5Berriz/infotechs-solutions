@@ -2,11 +2,11 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 
-const source = readFileSync(resolve(process.cwd(), "src/app/page.tsx"), "utf8");
+const source = readFileSync(resolve(process.cwd(), "src/app/[locale]/page.tsx"), "utf8");
 
 describe("page d’accueil 002B", () => {
   it("affiche trois badges de concept", () => {
-    expect(source).toContain('import { portfolioProjects } from "@/lib/project-portfolio"');
+    expect(source).toContain('import { getPortfolioProjects } from "@/lib/project-portfolio"');
     expect(source).toContain("const projects = portfolioProjects");
     expect(source).toContain("projects.slice(0,3)");
     expect(source).toContain("<BadgeConcept />");

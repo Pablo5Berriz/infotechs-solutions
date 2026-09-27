@@ -1,0 +1,20 @@
+{
+  "brand": {
+    "namePrefix": "Infotechs",
+    "nameSuffix": " Solutions"
+  },
+  "contact": {
+    "addressNatureLabel": "Business address — visits by appointment",
+    "localityLabel": "Saint-Louis-de-Gonzague, Quebec",
+    "businessHoursDaysLabel": "Monday to Friday",
+    "businessHoursHoursLabel": "9 a.m. to 5 p.m."
+  },
+  "footerBlurb": "Web development, custom applications, AI automation, and digital support for small and medium businesses in Montérégie and across Quebec.",
+  "breadcrumb": "Breadcrumb",
+  "see": "View",
+  "projectVisual": "Abstract graphic of a connected digital system",
+  "exploreService": "Explore this service",
+  "decisions": "Verifiable",
+  "verifiable": "decisions",
+  "consentPrefix": "I consent to sending this information to Infotechs Solutions and to its use to review and process my request, in accordance with the"
+}

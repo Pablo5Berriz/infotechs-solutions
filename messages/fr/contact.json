@@ -1,0 +1,131 @@
+{
+  "needTypes": {
+    "web": "Site web",
+    "automation": "Automatisation",
+    "custom": "Application web",
+    "audit": "Audit et cadrage",
+    "other": "Autre besoin"
+  },
+  "page": {
+    "eyebrow": "Contact · discussion de cadrage",
+    "title": "Décrivons votre besoin avant de choisir une solution.",
+    "intro": "Transmettez votre contexte, vos utilisateurs et vos objectifs afin qu’Infotechs Solutions puisse examiner votre demande. Cette étape ne remplace ni le cadrage ni une proposition adaptée.",
+    "ctaSubmit": "Transmettre votre demande",
+    "ctaExplore": "Explorer les services",
+    "usageEyebrow": "Quand utiliser cette interface",
+    "usageTitle": "Quand un besoin mérite d’être clarifié.",
+    "usageText": "Utilisez ce formulaire pour transmettre une première demande liée à un site web, une automatisation, une application web ou un besoin d’audit et de cadrage.",
+    "prepEyebrow": "Informations utiles",
+    "prepTitle": "Préparez ce qui aide à comprendre le besoin.",
+    "prepItems": [
+      "Le contexte et les utilisateurs concernés",
+      "L’objectif à atteindre ou le problème à résoudre",
+      "Les outils, contraintes et échéances déjà connus"
+    ],
+    "businessAddressLabel": "Adresse d’affaires",
+    "phoneLabel": "Téléphone",
+    "hoursLabel": "Heures",
+    "channelNote": "Le formulaire reste le canal recommandé pour transmettre une demande détaillée. Les visites se font uniquement sur rendez-vous.",
+    "afterEyebrow": "Déroulement",
+    "afterTitle": "Après réception d’une demande",
+    "nextSteps": [
+      {
+        "title": "Lecture du besoin",
+        "text": "Le contexte, les utilisateurs et les contraintes servent de point de départ."
+      },
+      {
+        "title": "Clarification",
+        "text": "Les zones d’incertitude sont précisées avant de retenir une solution."
+      },
+      {
+        "title": "Prochaine étape",
+        "text": "Une suite adaptée peut ensuite être proposée, sans engagement de délai automatique."
+      }
+    ],
+    "faqEyebrow": "Repères",
+    "faqTitle": "Questions avant de commencer",
+    "faq": [
+      {
+        "question": "Quels projets réalisez-vous?",
+        "answer": "Les offres publiées couvrent trois solutions de réalisation — sites web, automatisations ciblées et applications web sur mesure — ainsi qu’un service transversal d’audit et de cadrage."
+      },
+      {
+        "question": "Travaillez-vous uniquement au Québec?",
+        "answer": "Infotechs Solutions est ancrée en Montérégie et s’adresse aux PME et organisations du Québec. Toute autre portée est discutée selon le contexte."
+      },
+      {
+        "question": "À quel moment parler d’automatisation?",
+        "answer": "Lorsqu’une tâche répétitive, une double saisie ou un transfert manuel ralentit un processus clairement identifié."
+      },
+      {
+        "question": "Peut-on commencer par un petit périmètre?",
+        "answer": "Oui. Le cadrage sert notamment à isoler une première étape utile, vérifiable et compatible avec les contraintes connues."
+      }
+    ],
+    "finalKicker": "Point de départ",
+    "finalTitle": "Contexte, utilisateurs, objectifs et contraintes : commencez par les faits utiles.",
+    "finalText": "Le formulaire transmet ces informations à Infotechs Solutions pour examen, sans garantir de délai de réponse ni de résultat commercial.",
+    "finalSubmit": "Transmettre une demande"
+  },
+  "form": {
+    "formTitleEyebrow": "Demande de contact",
+    "formTitle": "Transmettez les grandes lignes.",
+    "formIntro": "Les informations sont transmises à Infotechs Solutions par notre fournisseur courriel. Elles ne sont ni ajoutées à un CRM ni stockées dans une base de données par ce site.",
+    "honeypotLabel": "Ne pas remplir ce champ",
+    "nameLabel": "Nom",
+    "companyLabel": "Organisation (optionnel)",
+    "emailLabel": "Courriel",
+    "phoneLabel": "Téléphone (optionnel)",
+    "projectTypeLabel": "Type de besoin",
+    "projectTypePlaceholder": "Choisir un type de besoin",
+    "messageLabel": "Description",
+    "messageHelp": "Au moins 20 caractères.",
+    "messagePlaceholder": "Décrivez le contexte, les utilisateurs, l’objectif et les contraintes déjà connues.",
+    "consentText": "Je consens à transmettre ces informations à Infotechs Solutions et à leur utilisation pour examiner et traiter ma demande, conformément à la {privacyLink}.",
+    "privacyLinkText": "politique de confidentialité",
+    "noAutoReply": "Aucun délai de réponse automatique n’est promis.",
+    "submitting": "Transmission…",
+    "submit": "Transmettre la demande",
+    "genericError": "La transmission a échoué.",
+    "networkError": "La transmission a échoué. Vérifiez votre connexion et réessayez.",
+    "defaultSuccess": "Votre demande a été transmise.",
+    "referenceSuffix": " Référence : {reference}."
+  },
+  "errors": {
+    "nameRequired": "Indiquez votre nom.",
+    "nameTooLong": "Le nom est trop long.",
+    "companyTooLong": "Le nom de l’organisation est trop long.",
+    "emailInvalid": "Indiquez un courriel valide.",
+    "emailTooLong": "Le courriel est trop long.",
+    "phoneInvalid": "Indiquez un numéro valide.",
+    "phoneTooLong": "Le numéro est trop long.",
+    "projectTypeRequired": "Choisissez un type de besoin.",
+    "messageTooShort": "Ajoutez au moins 20 caractères.",
+    "messageTooLong": "La description est trop longue.",
+    "consentRequired": "Le consentement est requis.",
+    "localeInvalid": "Langue invalide."
+  },
+  "email": {
+    "subject": "Nouvelle demande — {needType}",
+    "reference": "Référence : {reference}",
+    "name": "Nom : {value}",
+    "company": "Organisation : {value}",
+    "companyEmpty": "Non indiquée",
+    "email": "Courriel : {value}",
+    "phone": "Téléphone : {value}",
+    "phoneEmpty": "Non indiqué",
+    "needType": "Type de besoin : {value}",
+    "descriptionHeading": "Description :",
+    "locale": "Langue : {value}",
+    "technicalType": "Type technique : {value}"
+  },
+  "api": {
+    "rateLimited": "Trop de tentatives. Réessayez plus tard.",
+    "tooLarge": "La demande est trop volumineuse.",
+    "unreadable": "La demande est illisible.",
+    "invalid": "Vérifiez les informations saisies.",
+    "filtered": "Votre demande a été transmise.",
+    "unavailable": "La transmission est temporairement indisponible. Vous pouvez réessayer.",
+    "success": "Votre demande a été transmise. Infotechs Solutions pourra l’examiner à partir des informations fournies."
+  }
+}

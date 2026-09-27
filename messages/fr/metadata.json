@@ -1,0 +1,15 @@
+{
+  "titleTemplate": "%s | Infotechs Solutions",
+  "siteDescription": "Infotechs Solutions aide les PME du Québec à créer des sites web, applications, automatisations IA et outils numériques simples, performants et rentables.",
+  "keywords": ["création site web Québec", "développement web Montérégie", "agence web Saint-Louis-de-Gonzague", "développeur web PME Québec", "application web sur mesure Québec", "automatisation IA PME", "transformation numérique PME"],
+  "ogLocale": "fr_CA",
+  "pages": {
+    "home": { "title": "Infotechs Solutions — Studio technologique québécois" },
+    "services": { "title": "Services web, automatisation et applications sur mesure", "description": "Découvrez trois solutions numériques pour PME et un service d’audit et de cadrage pour clarifier le besoin avant de construire.", "ogTitle": "Services numériques pour PME | Infotechs Solutions", "ogDescription": "Sites web, automatisation et applications métier conçus selon les besoins réels de votre organisation." },
+    "portfolio": { "title": "Concepts de projets numériques", "description": "Portfolio de concepts démonstratifs illustrant des architectures web, outils métier, automatisations et expériences mobiles.", "ogTitle": "Concepts de projets numériques | Infotechs Solutions", "ogDescription": "Six concepts clairement identifiés comme démonstratifs." },
+    "about": { "title": "À propos d’Infotechs Solutions", "description": "Découvrez l’approche d’Infotechs Solutions pour concevoir des sites web, automatisations et applications métier adaptés aux PME et organisations.", "ogDescription": "Une approche directe et progressive pour cadrer et concevoir des solutions numériques adaptées aux besoins réels." },
+    "contact": { "title": "Contact | Infotechs Solutions", "description": "Présentez votre contexte, vos utilisateurs et vos objectifs à Infotechs Solutions pour amorcer une discussion de cadrage.", "ogDescription": "Préparez les informations utiles pour structurer votre besoin numérique." },
+    "legalNotice": { "title": "Mentions légales | Infotechs Solutions", "description": "Informations légales et conditions générales d’utilisation du site Infotechs Solutions.", "ogDescription": "Éditeur, propriété intellectuelle, responsabilité et statut des concepts publiés." },
+    "privacy": { "title": "Politique de confidentialité | Infotechs Solutions", "description": "Politique de confidentialité du site et du formulaire de contact Infotechs Solutions.", "ogDescription": "Renseignements sur la collecte, la transmission et la protection des données du formulaire Contact." }
+  }
+}

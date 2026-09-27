@@ -1,0 +1,139 @@
+{
+  "listing": {
+    "eyebrow": "Digital services",
+    "title": "Choosing the right solution starts with clarifying the need.",
+    "intro": "Websites, automations, and business applications solve different problems. We help you define a useful scope before building anything.",
+    "ctaPresent": "Present your need",
+    "ctaExplore": "Explore services",
+    "solutionsEyebrow": "Our delivery solutions",
+    "solutionsTitle": "Three solutions to build a useful digital product.",
+    "solutionsIntro": "Websites, automations, and business applications address distinct delivery needs.",
+    "entryEyebrow": "Cross-cutting entry service",
+    "entryTitle": "Clarify before building.",
+    "entryIntro": "When the need, priorities, or scope remain uncertain, a separate engagement can document the facts and prepare the next decisions without guaranteeing a later build.",
+    "choiceGuideEyebrow": "Choosing a starting point",
+    "choiceGuideTitle": "Which starting point sounds like your situation?",
+    "choiceGuideSee": "See {label}",
+    "collaborationEyebrow": "Collaboration",
+    "collaborationTitle": "A shared method, adapted to each engagement.",
+    "collaborationSteps": ["Discovery", "Scoping", "Design", "Build", "Support"],
+    "principlesTitle": "Concrete principles that guide our choices.",
+    "principles": [
+      { "title": "Clarity", "text": "Decisions, deliverables, and limits that are easy to understand." },
+      { "title": "Accessibility", "text": "Journeys that work with a keyboard and on every screen." },
+      { "title": "Maintainability", "text": "A structured base that makes future changes easier." },
+      { "title": "Performance", "text": "Close attention to page weight, rendering, and stability." },
+      { "title": "Proportionate security", "text": "Measures scaled to the data and the actual usage." },
+      { "title": "Support", "text": "Ongoing communication from scoping through launch." }
+    ],
+    "choiceGuide": [
+      { "title": "A credible digital presence", "text": "Your offer needs to be better structured and presented online.", "id": "web" },
+      { "title": "Fewer repetitive tasks", "text": "Information gets copied or tracked manually across several tools.", "id": "automation" },
+      { "title": "A tool built for your operations", "text": "A website or a set of generic tools doesn't properly cover your business workflow.", "id": "custom" }
+    ],
+    "ctaTitle": "You don't need to pick a solution before explaining the problem.",
+    "ctaText": "The form lets you share the context and priorities so the request can be reviewed."
+  },
+  "detail": {
+    "presentNeed": "Present your need",
+    "allServices": "All services",
+    "discover": "Discover this service",
+    "outcomesEyebrow": "Intended outcomes",
+    "outcomesTitle": "What this engagement should make simpler.",
+    "capabilitiesEyebrow": "Capabilities",
+    "capabilitiesTitle": "A scope adapted to your context.",
+    "capabilitiesIntro": "Exact elements are confirmed during scoping. This list describes possible capabilities, not an automatic package.",
+    "processEyebrow": "Process",
+    "processTitle": "Moving forward through verifiable decisions.",
+    "deliverablesTitle": "What can be delivered",
+    "idealForTitle": "When this service fits",
+    "considerationsEyebrow": "To clarify",
+    "considerationsTitle": "The right limits are set during scoping.",
+    "relatedSolutions": "Possible solutions after scoping",
+    "relatedServices": "Related services",
+    "seeService": "See this service",
+    "ctaTitle": "Let's clarify the need before choosing a solution.",
+    "ctaText": "Share your context, your users, and your priorities so the request can be reviewed.",
+    "ctaSubmit": "Send your request"
+  },
+  "web": {
+    "label": "Website development",
+    "eyebrow": "Digital presence",
+    "title": "A professional website, clear and built to evolve.",
+    "summary": "To present your offer credibly and make it easier for visitors to reach out.",
+    "description": "We structure the content, interface, and technical foundation of showcase sites and redesigns for small and medium businesses and local organizations.",
+    "outcomes": ["An offer that's easier to understand", "A consistent experience on every screen", "A maintainable base for future changes"],
+    "capabilities": ["Showcase website", "Redesign", "Content architecture", "Responsive design", "Accessibility", "Technical optimization", "Forms", "Basic technical SEO", "Launch preparation"],
+    "process": [
+      { "title": "Discovery", "text": "Goals, audiences, existing content, and constraints." },
+      { "title": "Architecture", "text": "Page hierarchy, key messages, and priority journeys." },
+      { "title": "Design", "text": "Visual direction and components adapted to each screen." },
+      { "title": "Build", "text": "Development, integration, testing, and adjustments." },
+      { "title": "Launch", "text": "Launch preparation and handoff of useful references." }
+    ],
+    "idealFor": ["Creating a credible digital presence", "Replacing a website that's become hard to use", "Clarifying an offer or a content architecture", "Preparing a website for future changes"],
+    "deliverables": ["Page architecture", "Responsive interfaces", "Reusable components", "Integration of agreed content", "Forms planned during scoping", "Launch documentation"],
+    "considerations": ["The volume and state of the content need to be assessed.", "Specialized legal needs require outside validation.", "Search ranking also depends on content, market, and follow-up after launch."],
+    "seo": { "title": "Website development", "description": "Design and redesign of professional, accessible, and maintainable websites for small and medium businesses and organizations in Quebec." }
+  },
+  "automation": {
+    "label": "AI and automation",
+    "eyebrow": "Smoother operations",
+    "title": "Automating repetitive tasks with a clear method.",
+    "summary": "To reduce double entry, make tracking more reliable, and improve how information flows.",
+    "description": "We analyze a process before connecting forms, documents, notifications, and tools. AI is used only when it brings clear, controllable value.",
+    "outcomes": ["Fewer repetitive manual steps", "More consistent tracking", "Better visibility into each step of the process"],
+    "capabilities": ["Process mapping", "Automated tracking", "Structured form processing", "Assisted document generation", "API integration", "Data synchronization", "Dashboards", "Notifications", "Supervised internal assistants"],
+    "process": [
+      { "title": "Observe", "text": "Understand the real workflow, its volumes, and its exceptions." },
+      { "title": "Prioritize", "text": "Choose a stable automation worth testing first." },
+      { "title": "Prototype", "text": "Validate the rules, data, and human checkpoints." },
+      { "title": "Integrate", "text": "Connect the tools and document how it works." },
+      { "title": "Monitor", "text": "Measure, fix, and maintain the process over time." }
+    ],
+    "idealFor": ["Reducing recurring double entry", "Structuring form processing", "Automating notifications or follow-ups", "Connecting tools that exchange data poorly"],
+    "deliverables": ["Process map", "Validated rules and scenarios", "Configured automation", "Human checkpoints", "Usage documentation", "Maintenance plan"],
+    "considerations": ["Some decisions must remain human.", "Sensitive data requires specific analysis.", "Relevance depends on the process's volume, stability, and current cost."],
+    "seo": { "title": "AI and automation", "description": "Careful automation of processes, forms, documents, and tracking for small and medium businesses, with human validation and documentation." }
+  },
+  "custom": {
+    "label": "Custom web applications",
+    "eyebrow": "Business tools",
+    "title": "An application built around your operations.",
+    "summary": "For needs that a showcase website or a set of generic tools doesn't cover properly.",
+    "description": "We design portals, dashboards, and internal tools around the actual roles, data, and workflows of your organization.",
+    "outcomes": ["Operations brought together in one coherent tool", "Better-structured information", "A base that can evolve in stages"],
+    "capabilities": ["Functional analysis", "Prototyping", "Responsive interface", "Authentication", "Roles and permissions", "Dashboards", "Business workflows", "API", "Third-party integrations", "Documentation", "Launch support"],
+    "process": [
+      { "title": "Scope", "text": "Identify users, priorities, and constraints." },
+      { "title": "Prototype", "text": "Validate the journeys before committing to full development." },
+      { "title": "Build", "text": "Deliver priority features on a maintainable architecture." },
+      { "title": "Validate", "text": "Test with real usage and arbitrate adjustments." },
+      { "title": "Evolve", "text": "Plan maintenance and the next increments." }
+    ],
+    "idealFor": ["Replacing scattered files and trackers", "Creating a client or partner portal", "Managing business roles and data", "Delivering an internal tool progressively"],
+    "deliverables": ["Functional analysis", "Journey prototype", "Responsive application", "Planned access management", "Prioritized business features", "Documentation and launch plan"],
+    "considerations": ["The project requires explicit scoping and priorities.", "Functional choices involve trade-offs.", "Validation must be progressive.", "A maintenance plan must be defined."],
+    "seo": { "title": "Custom web applications", "description": "Design of business applications, portals, and internal tools adapted to the operations of small and medium businesses and organizations." }
+  },
+  "audit": {
+    "label": "Audit and scoping",
+    "eyebrow": "Clarify before building",
+    "title": "Clarifying the need, the risks, and the next decision.",
+    "summary": "A structured analysis to understand the current state, prioritize a useful scope, and prepare a roadmap without presuming the solution.",
+    "description": "We bring together the available facts, usage, constraints, and dependencies to produce verifiable findings, priorities, and the next decisions. The engagement can conclude without a later build.",
+    "outcomes": ["A better-documented current situation", "A prioritized scope and explicit limits", "A roadmap adapted to the available level of evidence"],
+    "capabilities": ["Existing website audit", "First-level UX/UI and accessibility review", "Limited technical review", "Content architecture", "Process mapping", "Functional clarification", "MVP prioritization", "Qualitative complexity estimate", "Redesign recommendations"],
+    "process": [
+      { "title": "Define", "text": "Clarify the question, the sources, and the engagement's limits." },
+      { "title": "Gather", "text": "Review authorized documents, interfaces, and accounts." },
+      { "title": "Analyze", "text": "Separate facts, assumptions, risks, and dependencies." },
+      { "title": "Prioritize", "text": "Compare scenarios and the useful scope." },
+      { "title": "Report", "text": "Hand off findings, decisions, and the roadmap." }
+    ],
+    "idealFor": ["Preparing a redesign without a clear scope", "Understanding why a journey or process performs poorly", "Prioritizing an MVP before building it", "Comparing scenarios without immediately committing to development"],
+    "deliverables": ["Audit framework and source inventory", "Classified findings and evidence limits", "Architecture, journeys, or mapping depending on the engagement", "Recommended scope and priorities", "Roadmap and findings report"],
+    "considerations": ["Conclusions depend on the access and information strictly necessary for the engagement.", "No advanced cybersecurity audit or legal opinion is included.", "A later build is neither included nor guaranteed.", "A firm estimate requires a validated scope."],
+    "seo": { "title": "Digital audit and scoping", "description": "Structured audit of websites, journeys, and processes to clarify findings, prioritize an MVP, and prepare a roadmap." }
+  }
+}

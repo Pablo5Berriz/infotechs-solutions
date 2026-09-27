@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "eyebrow": "À propos · approche directe",
+    "title": "Des solutions numériques cadrées autour de vos besoins réels.",
+    "intro": "Infotechs Solutions accompagne les PME et organisations dans la conception de sites web, d’automatisations ciblées et d’applications métier. La clarification précède la technologie, puis chaque étape produit des décisions que vous pouvez vérifier.",
+    "ctaPresent": "Présenter votre besoin",
+    "ctaMethod": "Voir la méthode",
+    "mapAlt": "La collaboration relie le contexte, les décisions et une solution vérifiable",
+    "mapContext": "Contexte", "mapUsers": "Utilisateurs", "mapConstraints": "Contraintes", "mapDecisions": "Décisions\nvérifiables"
+  },
+  "purpose": {
+    "eyebrow": "Raison d’être",
+    "title": "Clarifier le problème avant d’élargir la solution.",
+    "p1": "Un besoin numérique arrive souvent avec plusieurs idées de fonctionnalités, d’outils ou d’intégrations. Commencer par la technologie peut rendre le projet plus complexe sans résoudre le bon problème.",
+    "p2": "Infotechs Solutions privilégie une intention actuelle : comprendre ce qui freine les opérations, choisir un niveau de solution adapté, puis avancer par livraisons vérifiables. Toutes les organisations n’ont ni les mêmes usages, ni les mêmes contraintes, ni besoin du même système."
+  },
+  "principlesEyebrow": "Principes de travail",
+  "principlesTitle": "Des principes traduits en comportements concrets.",
+  "principles": {
+    "understand": { "title": "Comprendre avant de construire", "description": "Le contexte, les utilisateurs et les contraintes sont clarifiés avant de choisir une technologie ou une fonctionnalité." },
+    "proportion": { "title": "Choisir le bon niveau de solution", "description": "Le périmètre doit rester proportionné au problème : un site, une automatisation ciblée ou un outil métier ne répondent pas aux mêmes besoins." },
+    "progress": { "title": "Livrer progressivement", "description": "Les étapes courtes rendent les choix vérifiables, limitent les écarts et permettent d’ajuster la suite avec des éléments concrets." },
+    "visible": { "title": "Rendre les décisions visibles", "description": "Hypothèses, priorités, limites et validations sont formulées clairement afin que chacun comprenne ce qui est décidé." },
+    "document": { "title": "Documenter l’essentiel", "description": "Les éléments utiles à l’utilisation, à la maintenance et à l’évolution sont consignés sans produire une documentation inutilement lourde." },
+    "users": { "title": "Concevoir pour les usages réels", "description": "Les parcours, le contenu et l’accessibilité sont évalués selon les personnes qui utiliseront réellement la solution." }
+  },
+  "methodEyebrow": "Méthode de collaboration",
+  "methodTitle": "Un chemin lisible, avec des validations à chaque étape.",
+  "methodIntro": "Le client peut attendre des échanges structurés, des décisions documentées et une communication transparente sur les limites. Une étape n’est pas présentée comme acquise avant d’avoir été vérifiée.",
+  "method": {
+    "01": { "title": "Contexte", "description": "Comprendre la situation actuelle, les utilisateurs et les contraintes connues." },
+    "02": { "title": "Objectifs", "description": "Définir ce que la solution doit permettre de mieux faire ou de mieux comprendre." },
+    "03": { "title": "Priorités", "description": "Séparer l’essentiel, les options et les sujets qui demandent une expertise complémentaire." },
+    "04": { "title": "Conception", "description": "Transformer les décisions en parcours, interfaces et comportements observables." },
+    "05": { "title": "Validation", "description": "Vérifier par étapes le contenu, les usages, la qualité technique et les limites." },
+    "06": { "title": "Mise en service", "description": "Préparer le passage en usage, la documentation et les évolutions raisonnables." }
+  },
+  "scopeEyebrow": "Périmètre responsable",
+  "scopeTitle": "Ce que nous pouvons concevoir — et ce que le cadrage doit préciser.",
+  "canDoTitle": "Infotechs Solutions peut notamment",
+  "canDo": ["Concevoir ou refondre un site web clair et accessible.", "Structurer une expérience numérique autour d’utilisateurs précis.", "Automatiser un processus ciblé lorsque le gain attendu est vérifiable.", "Développer une application web adaptée à un flux métier.", "Organiser une livraison progressive et documenter la solution."],
+  "needsScopingTitle": "Le cadrage doit déterminer",
+  "needsScoping": ["Les besoins juridiques et les obligations réglementaires.", "Les exigences de sécurité spécialisées et la sensibilité des données.", "Les intégrations avec des services ou systèmes tiers.", "Le niveau d’hébergement, de maintenance et de disponibilité attendu.", "Les responsabilités opérationnelles après la mise en service."],
+  "scopeNote": "Les besoins spécialisés ne sont pas écartés : ils demandent une évaluation explicite et, selon le cas, des compétences complémentaires.",
+  "collab": {
+    "humanEyebrow": "Une collaboration humaine",
+    "humanTitle": "Un échange direct, du cadrage à la mise en service.",
+    "humanText": "La disponibilité, la clarté des échanges et la responsabilité sur les décisions priment sur une présentation d’équipe artificielle. Le suivi porte sur ce qui a été compris, décidé, livré et reste à valider.",
+    "territoryEyebrow": "Territoire",
+    "territoryTitle": "Ancrée à Saint-Louis-de-Gonzague, en Montérégie.",
+    "territoryText": "Infotechs Solutions développe des solutions numériques pour les PME et organisations du Québec. Cette localisation décrit un ancrage; elle ne prétend ni à un bureau ouvert au public ni à une couverture géographique non documentée."
+  },
+  "proofEyebrow": "Preuves disponibles",
+  "proofTitle": "Consulter l’offre et les scénarios sans confondre démonstration et mandat.",
+  "proofText": "Les concepts démonstratifs du portfolio illustrent des méthodes de conception et des scénarios fonctionnels. Ils ne sont pas présentés comme des mandats clients.",
+  "seeServices": "Voir les services",
+  "exploreConcepts": "Explorer les concepts",
+  "cta": {
+    "title": "Commençons par votre contexte, vos utilisateurs et vos priorités.",
+    "text": "Présentez le problème, les contraintes connues et ce qui doit être clarifié. La solution viendra ensuite.",
+    "submit": "Présenter votre besoin",
+    "reviewServices": "Revoir les services"
+  }
+}

@@ -1,3 +1,4 @@
+import {useContent} from "@/i18n/content";
 import { cn } from "@/lib/utils";
 
 // Composant réutilisable requis par INFOTECHS-DESIGN-IMPLEMENTATION-002A section 9.
@@ -15,6 +16,7 @@ type BadgeConceptProps = {
 };
 
 export function BadgeConcept({ className }: BadgeConceptProps) {
+  const m=useContent();
   return (
     <span
       className={cn(
@@ -22,7 +24,7 @@ export function BadgeConcept({ className }: BadgeConceptProps) {
         className,
       )}
     >
-      {BADGE_CONCEPT_TEXT}
+      {m.portfolio.statusLabels.concept}
     </span>
   );
 }

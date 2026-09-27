@@ -1,0 +1,16 @@
+{
+  "notFound": {
+    "title": { "absolute": "Page introuvable | Infotechs Solutions" },
+    "description": "La page demandée est introuvable. Revenez à l’accueil ou explorez les services et les réalisations d’Infotechs Solutions.",
+    "eyebrow": "Erreur 404",
+    "heading": "Cette page est introuvable.",
+    "text": "L’adresse a peut-être changé ou la page ne fait plus partie du site public. Utilisez l’un des liens ci-dessous pour poursuivre votre navigation.",
+    "home": "Retour à l’accueil",
+    "services": "Explorer les services",
+    "portfolio": "Voir les réalisations"
+  },
+  "aria": {
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  }
+}

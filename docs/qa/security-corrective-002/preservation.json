@@ -1,0 +1,12 @@
+{
+  "head": "7be38f40577960cc8b171a2928c2bfe2dc292333",
+  "initialEntries": 449,
+  "changedInitialFiles": [
+    "package-lock.json"
+  ],
+  "packageJsonBefore": "ce40f605c8542acfce946358a7b38028773fe6535320b6e18c23b4dcff062d75",
+  "packageJsonAfter": "ce40f605c8542acfce946358a7b38028773fe6535320b6e18c23b4dcff062d75",
+  "lockfileBefore": "a96baac99d94b169b551960daaeec8d5d08256dd5eb434bcb3c95c232f460507",
+  "lockfileAfter": "66c92cfb597fc08e68d0847139837cebe5e3affb51abbdf90b482fe31156c514",
+  "backupDirectory": "C:/Users/paulq/AppData/Local/Temp/infotechs-security-002-vA8miW"
+}

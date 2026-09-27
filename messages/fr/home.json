@@ -1,0 +1,123 @@
+{
+  "hero": {
+    "kicker": "Studio technologique québécois",
+    "title": "Nous concevons les systèmes numériques qui font avancer",
+    "titleHighlight": "votre entreprise.",
+    "intro": "Sites web, applications métier et automatisations utiles, conçus avec rigueur pour les PME du Québec.",
+    "ctaSubmit": "Transmettre votre besoin",
+    "ctaConcepts": "Voir les concepts",
+    "badges": [
+      "Architecture claire",
+      "Livraison vérifiable",
+      "Accompagnement local"
+    ],
+    "diagramAlt": "Schéma abstrait représentant un écosystème numérique connecté"
+  },
+  "valueProp": {
+    "eyebrow": "Proposition de valeur",
+    "title": "La technologie doit simplifier vos opérations — jamais les compliquer.",
+    "text": "Nous réunissons stratégie, conception et développement dans un même processus pour livrer des outils compréhensibles, performants et réellement utiles."
+  },
+  "whyUs": [
+    {
+      "title": "Clarté",
+      "text": "Des recommandations compréhensibles, des budgets lisibles et aucune complexité inutile."
+    },
+    {
+      "title": "Qualité technique",
+      "text": "Une base moderne, rapide, responsive et prête à évoluer."
+    },
+    {
+      "title": "Proximité",
+      "text": "Un accompagnement humain pour les PME, commerces et organisations locales."
+    },
+    {
+      "title": "Innovation utile",
+      "text": "De l'IA et de l'automatisation seulement quand elles créent une vraie valeur."
+    }
+  ],
+  "servicesSection": {
+    "eyebrow": "Services stratégiques",
+    "title": "Une expertise ciblée sur vos enjeux numériques."
+  },
+  "processSection": {
+    "eyebrow": "Processus",
+    "title": "Cinq étapes. Un parcours clair du besoin à la mise en ligne."
+  },
+  "process": [
+    {
+      "title": "Comprendre",
+      "text": "On clarifie vos objectifs, contraintes, utilisateurs et priorités d'affaires."
+    },
+    {
+      "title": "Structurer",
+      "text": "On propose une architecture simple, un périmètre réaliste et un plan de livraison."
+    },
+    {
+      "title": "Concevoir",
+      "text": "On crée les interfaces, contenus et parcours avec une attention forte à la conversion."
+    },
+    {
+      "title": "Développer",
+      "text": "On construit proprement, teste sur mobile et optimise performance, SEO et accessibilité."
+    },
+    {
+      "title": "Accompagner",
+      "text": "On documente, déploie et reste disponible pour les ajustements et l'évolution."
+    }
+  ],
+  "concepts": {
+    "eyebrow": "Concepts démonstratifs",
+    "title": "Des systèmes pensés autour de problèmes concrets.",
+    "allConcepts": "Tous les concepts",
+    "seeConcept": "Voir le concept"
+  },
+  "expertise": {
+    "eyebrow": "Expertise technique",
+    "title": "Des choix modernes, expliqués sans jargon inutile.",
+    "text": "Nous privilégions une architecture sobre, sécurisée et maintenable. Chaque technologie répond à un besoin précis plutôt qu’à une tendance.",
+    "securityTitle": "Sécurité raisonnée",
+    "securityText": "Accès, données et déploiement pensés dès l’architecture.",
+    "qualityTitle": "Qualité vérifiable",
+    "qualityText": "Tests, performance et accessibilité intégrés à la livraison."
+  },
+  "cta": {
+    "kicker": "Prochaine étape",
+    "title": "Transformons votre prochain défi numérique en système utile.",
+    "text": "Présentez le besoin et les priorités afin qu’Infotechs Solutions puisse examiner votre demande.",
+    "submit": "Transmettre votre demande",
+    "explore": "Explorer les services"
+  },
+  "featured": [
+    {
+      "label": "Web & applications",
+      "title": "Des expériences numériques rapides, crédibles et conçues pour évoluer.",
+      "text": "Sites vitrines, applications métier et plateformes sur mesure : nous construisons le bon niveau de solution pour votre réalité.",
+      "points": [
+        "Architecture claire",
+        "Performance et accessibilité",
+        "Base technique maintenable"
+      ]
+    },
+    {
+      "label": "Flux de travail",
+      "title": "Moins de tâches répétitives. Plus de temps pour les décisions utiles.",
+      "text": "Nous relions vos formulaires, documents et outils afin de fiabiliser les suivis et réduire la double saisie.",
+      "points": [
+        "Cartographie du processus",
+        "Intégrations ciblées",
+        "Documentation simple"
+      ]
+    },
+    {
+      "label": "Sur mesure",
+      "title": "Une solution alignée sur vos opérations, pas l’inverse.",
+      "text": "Portails, tableaux de bord et outils internes sont cadrés autour de vos utilisateurs, contraintes et priorités d’affaires.",
+      "points": [
+        "Analyse fonctionnelle",
+        "Livraison progressive",
+        "Accompagnement humain"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderToStaticMarkup } from "@/test/render";
 import { describe, expect, it } from "vitest";
 import { BADGE_CONCEPT_TEXT, BadgeConcept } from "@/components/badge-concept";
 

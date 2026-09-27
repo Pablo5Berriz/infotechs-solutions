@@ -1,17 +1,5 @@
-import type { MetadataRoute } from "next";
-import { site } from "@/lib/site-config";
-import { portfolioProjects } from "@/lib/project-portfolio";
-import { serviceOfferings } from "@/lib/service-offerings";
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/services", "/realisations", "/a-propos", "/contact", "/mentions-legales", "/confidentialite"];
-  const serviceRoutes = serviceOfferings.map((service) => service.href);
-  const projectRoutes = portfolioProjects.map((project) => project.href);
-
-  return [...staticRoutes, ...serviceRoutes, ...projectRoutes].map((route) => ({
-    url: `${site.url}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : 0.7,
-  }));
-}
+import type {MetadataRoute} from 'next';
+import {site} from '@/lib/site-config';
+import {publicPaths,localizedPath} from '@/i18n/paths';
+import {alternates} from '@/i18n/metadata';
+export default function sitemap():MetadataRoute.Sitemap {return publicPaths.flatMap(path=>(['fr','en'] as const).map(locale=>({url:site.url+localizedPath(path,locale),changeFrequency:path==='/'?'weekly' as const:'monthly' as const,priority:path==='/'?1:0.7,alternates:{languages:Object.fromEntries(Object.entries(alternates(path,locale).languages).map(([language,url])=>[language,site.url+url]))}})));}

@@ -1,3 +1,5 @@
+import {createTranslator} from "next-intl";
+import {getContactMessages} from "@/lib/contact-schema";
 import { randomUUID } from "node:crypto";
 import type { ContactFormValues } from "@/lib/contact-schema";
 
@@ -37,17 +39,7 @@ export async function deliverContactRequest(values: ContactFormValues, reference
   const configuredEndpoint = process.env.CONTACT_PROVIDER_API_URL?.trim();
   const endpoint = configuredEndpoint && /^http:\/\/127\.0\.0\.1:\d+\//.test(configuredEndpoint) ? configuredEndpoint : RESEND_ENDPOINT;
 
-  const lines = [
-    `Référence : ${reference}`,
-    `Nom : ${values.name}`,
-    `Organisation : ${values.company || "Non indiquée"}`,
-    `Courriel : ${values.email}`,
-    `Téléphone : ${values.phone || "Non indiqué"}`,
-    `Type de besoin : ${values.projectType}`,
-    "",
-    "Description :",
-    values.message,
-  ];
+  const email = buildContactEmail(values, reference);
 
   try {
     const response = await fetch(endpoint, {
@@ -62,8 +54,8 @@ export async function deliverContactRequest(values: ContactFormValues, reference
         from: config.from,
         to: [config.to],
         reply_to: values.email,
-        subject: `Nouvelle demande — ${values.projectType}`,
-        text: lines.join("\n"),
+        subject: email.subject,
+        text: email.text,
       }),
       signal: AbortSignal.timeout(10_000),
     });
@@ -78,4 +70,11 @@ export async function deliverContactRequest(values: ContactFormValues, reference
 
 export function createContactReference() {
   return randomUUID();
+}
+
+export function buildContactEmail(values:ContactFormValues,reference:string) {
+ const messages=getContactMessages(values.locale);
+ const t=createTranslator({locale:values.locale,messages:messages.email});
+ const label=messages.needTypes[values.projectType];
+ return {subject:t('subject',{needType:label}),text:[t('reference',{reference}),t('locale',{value:values.locale}),t('name',{value:values.name}),t('company',{value:values.company||messages.email.companyEmpty}),t('email',{value:values.email}),t('phone',{value:values.phone||messages.email.phoneEmpty}),t('needType',{value:label}),t('technicalType',{value:values.projectType}),'',t('descriptionHeading'),values.message].join('\n')};
 }

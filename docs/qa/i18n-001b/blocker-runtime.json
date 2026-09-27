@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-09-23T05:34:31.604Z",
+  "mode": "next start production build",
+  "records": [
+    {
+      "path": "/en/portfolio",
+      "hops": [
+        {
+          "url": "http://127.0.0.1:3012/en/portfolio",
+          "status": 307,
+          "location": "/en/portfolio"
+        },
+        {
+          "url": "http://127.0.0.1:3012/en/portfolio",
+          "status": 307,
+          "location": "/en/portfolio"
+        }
+      ]
+    },
+    {
+      "path": "/en/about",
+      "hops": [
+        {
+          "url": "http://127.0.0.1:3012/en/about",
+          "status": 307,
+          "location": "/en/about"
+        },
+        {
+          "url": "http://127.0.0.1:3012/en/about",
+          "status": 307,
+          "location": "/en/about"
+        }
+      ]
+    },
+    {
+      "path": "/en/legal-notice",
+      "hops": [
+        {
+          "url": "http://127.0.0.1:3012/en/legal-notice",
+          "status": 307,
+          "location": "/en/legal-notice"
+        },
+        {
+          "url": "http://127.0.0.1:3012/en/legal-notice",
+          "status": 307,
+          "location": "/en/legal-notice"
+        }
+      ]
+    }
+  ]
+}

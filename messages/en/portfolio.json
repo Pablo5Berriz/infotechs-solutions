@@ -1,0 +1,40 @@
+{
+  "statusLabels": { "concept": "DEMO CONCEPT", "client": "CLIENT PROJECT" },
+  "listing": {
+    "eyebrow": "Transparent portfolio",
+    "title": "Concepts that make digital decisions visible.",
+    "intro": "This portfolio shows design scenarios, not client engagements. Each entry clearly separates what's explored, what's demonstrated, and what's still to be validated.",
+    "ctaPresent": "Present your context",
+    "ctaExplore": "Explore the concepts",
+    "sixScenariosEyebrow": "Six scenarios",
+    "sixScenariosTitle": "An honest read of what each concept demonstrates.",
+    "capabilityReadTitle": "Browse by capability",
+    "capabilities": ["Business interfaces", "Data management", "Automation", "Mobile experiences", "Modular architecture"],
+    "journeyTitle": "From hypothesis to a verifiable version.",
+    "journeySteps": ["Understand", "Scope", "Prototype", "Build", "Validate", "Evolve"],
+    "ctaTitle": "Your project starts with a context, not a demo.",
+    "ctaText": "Describe the problem, the users, and the priorities to clarify.",
+    "exploreConcept": "Explore the concept",
+    "seeConcept": "See the concept"
+  },
+  "detail": {
+    "presentNeed": "Present a need",
+    "allConcepts": "All concepts",
+    "contextEyebrow": "Concept context",
+    "contextTitle": "A design scenario, not a client engagement.",
+    "challengeTitle": "Problems explored",
+    "approachTitle": "Proposed approach",
+    "deliverablesTitle": "What's demonstrated",
+    "limitationsTitle": "Known limitations",
+    "relatedTitle": "Related concepts",
+    "differentContext": "Your context is different",
+    "ctaTitle": "Describe the problem, the users, and the priorities.",
+    "ctaSubmit": "Structure your project"
+  },
+  "garage": { "title": "Website for a local garage", "category": "Website", "summary": "A showcase-website concept structuring services, appointment requests, and local information.", "description": "A design scenario showing how a local service business could clarify its offer and make a first contact easier.", "challenge": ["Clearly presenting a range of services.", "Making mobile contact simple.", "Organizing credible local information without fake reviews or numbers."], "approach": ["A hierarchy built around drivers' needs.", "A short path from service to request.", "Responsive components and easy-to-scan content."], "deliverables": ["Page architecture", "Service screens", "Request journey", "Responsive components"], "capabilities": ["Web architecture", "Structured content", "Responsive", "Forms"], "limitations": ["Concept not commissioned by a garage.", "No commercial results measured.", "No real client content included."], "seo": { "title": "Local garage website concept", "description": "A demo website concept for a local garage, focused on services and getting in touch." } },
+  "reservation": { "title": "Booking platform", "category": "Web application", "summary": "A platform concept bringing availability, requests, and confirmations into one coherent flow.", "description": "This concept explores a booking experience meant to reduce requests scattered across phone calls and messages.", "challenge": ["Bringing availability and requests together.", "Making statuses easy to understand.", "Planning for exceptions without overloading the flow."], "approach": ["A journey organized around picking a time slot.", "Explicit states for confirmations.", "A split between the public experience and internal management."], "deliverables": ["Booking journey", "Conceptual calendar", "Confirmation states", "Management view"], "capabilities": ["Transactional UX", "Business interfaces", "State management", "Responsive"], "limitations": ["Concept with no real operator.", "No confirmed calendar integration.", "No usage data available."], "seo": { "title": "Booking platform concept", "description": "A demo concept for a web booking and availability-management platform." } },
+  "gestion": { "title": "Internal management application", "category": "Web application", "summary": "A business-tool concept centralizing clients, tasks, documents, and operational statuses.", "description": "An internal-application scenario designed to show how information that's scattered today could be structured.", "challenge": ["Bringing together several sources of information.", "Distinguishing roles and responsibilities.", "Keeping an understandable history."], "approach": ["An action-oriented dashboard.", "Organization by folders and statuses.", "Access and permissions to be scoped before building."], "deliverables": ["Dashboard", "Tracking sheets", "Role-based journeys", "Conceptual history"], "capabilities": ["Business tools", "Data management", "Roles", "Dashboards"], "limitations": ["Concept with no client organization.", "Data model not validated in the field.", "Security to be specified based on real data."], "seo": { "title": "Internal management application concept", "description": "A demo concept for a business application centralizing tasks, documents, and tracking." } },
+  "automation": { "title": "Administrative automation", "category": "Automation", "summary": "A flow concept connecting a form, filing, notifications, and a tracking dashboard.", "description": "This concept shows how a repetitive administrative process could be mapped before a controlled automation.", "challenge": ["Avoiding double entry.", "Making errors and exceptions visible.", "Keeping human validation steps."], "approach": ["Mapping the flow before tooling it.", "Explicit checkpoints.", "A tracking log to understand each step."], "deliverables": ["Process map", "Flow scenarios", "Checkpoints", "Conceptual documentation"], "capabilities": ["Automation", "Process design", "Notifications", "Documentation"], "limitations": ["No time savings measured.", "No third-party tool confirmed.", "Sensitive decisions remain human."], "seo": { "title": "Administrative automation concept", "description": "A demo concept for an automated administrative flow with human checkpoints." } },
+  "dashboard": { "title": "SME dashboard", "category": "SaaS", "summary": "A dashboard concept giving a team a shared read of requests, tasks, and selected metrics.", "description": "An interface exploration meant to help a team review its activity, with no real company data or results shown.", "challenge": ["Prioritizing a small set of useful metrics.", "Making filters easy to understand.", "Avoiding a misleading read of the data."], "approach": ["A hierarchy organized by the decision to make.", "Explicit filters and empty states.", "Sober, secondary visualizations."], "deliverables": ["Summary view", "Conceptual filters", "Data states", "Modular structure"], "capabilities": ["Data visualization", "SaaS", "Filters", "Modular architecture"], "limitations": ["No company data used.", "No validated performance metric.", "Concept with no commercialized product."], "seo": { "title": "SME dashboard concept", "description": "A demo dashboard concept for structuring an SME's activity tracking." } },
+  "mobile": { "title": "Mobile app for a local service", "category": "Mobile application", "summary": "A mobile concept for submitting a request, checking its status, and receiving useful updates.", "description": "This scenario explores a phone-based service relationship, without claiming to represent a published app.", "challenge": ["Reducing the steps of a mobile request.", "Making status immediately clear.", "Planning notifications without excessive dependency."], "approach": ["Short navigation adapted to thumb use.", "Visible states and next actions.", "Progress designed for small screens."], "deliverables": ["Mobile journey", "Request screens", "Status tracking", "Notification states"], "capabilities": ["Mobile UX", "Service journey", "Notifications", "Accessibility"], "limitations": ["Visual prototype not published on any store.", "No client users tested.", "No mobile technology finalized."], "seo": { "title": "Local service mobile app concept", "description": "A demo concept for a mobile application handling requests and status tracking for a local service." } }
+}

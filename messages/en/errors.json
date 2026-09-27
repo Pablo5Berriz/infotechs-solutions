@@ -1,0 +1,16 @@
+{
+  "notFound": {
+    "title": { "absolute": "Page not found | Infotechs Solutions" },
+    "description": "The requested page could not be found. Return to the homepage or explore Infotechs Solutions' services and portfolio.",
+    "eyebrow": "Error 404",
+    "heading": "This page can't be found.",
+    "text": "The address may have changed, or the page is no longer part of the public site. Use one of the links below to keep browsing.",
+    "home": "Back to homepage",
+    "services": "Explore the services",
+    "portfolio": "See the portfolio"
+  },
+  "aria": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  }
+}

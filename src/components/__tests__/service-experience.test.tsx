@@ -1,4 +1,4 @@
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderToStaticMarkup } from "@/test/render";
 import { describe, expect, it } from "vitest";
 import { ServiceBreadcrumb, ServiceDetail, ServiceIndexCard } from "@/components/service-experience";
 import { serviceOfferings } from "@/lib/service-offerings";
@@ -17,7 +17,7 @@ describe("expérience des services 002C", () => {
   it("rend un fil d’Ariane sémantique avec la page courante", () => {
     const markup = renderToStaticMarkup(<ServiceBreadcrumb service={web} />);
     expect(markup).toContain('<nav aria-label="Fil d’Ariane">');
-    expect(markup).toContain('href="/services"');
+    expect(markup).toContain('href="/fr/services"');
     expect(markup).toContain('aria-current="page"');
     expect(markup).toContain(web.label);
   });
@@ -30,7 +30,7 @@ describe("expérience des services 002C", () => {
     expect(markup).toContain("Processus");
     expect(markup).toContain("Ce qui peut être livré");
     expect(markup).toContain("Services associés");
-    expect(markup).toContain('href="/contact#devis"');
+    expect(markup).toContain('href="/fr/contact#devis"');
   });
 
   it("rend exactement les deux offres associées et exclut l’offre active", () => {

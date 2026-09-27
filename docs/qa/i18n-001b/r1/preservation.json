@@ -1,0 +1,10 @@
+{
+  "backup": "C:/Users/paulq/AppData/Local/Temp/infotechs-i18n-r1-kzOI12",
+  "head": "7be38f40577960cc8b171a2928c2bfe2dc292333",
+  "branch": "master",
+  "changedExisting": [
+    "docs/qa/i18n-001b/check-runtime.mjs"
+  ],
+  "applicationSourcesPreserved": true,
+  "securityLockfilePreserved": true
+}

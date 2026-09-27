@@ -3,11 +3,12 @@ import { POST } from "@/app/api/contact/route";
 import { resetContactRateLimitForTests } from "@/lib/contact-rate-limit";
 
 const validPayload = {
+  locale: "fr",
   name: "Marie Tremblay",
   company: "PME Exemple",
   email: "marie@example.com",
   phone: "+1 450 555 0101",
-  projectType: "Site web",
+  projectType: "web",
   message: "Nous souhaitons clarifier et moderniser notre présence numérique.",
   consent: true,
   website: "",
@@ -22,6 +23,32 @@ function request(body: string | object, ip = "203.0.113.10", contentType = "appl
 }
 
 describe("POST /api/contact", () => {
+  it("localise le succès EN et le courriel sans envoi réel", async () => {
+    const provider = vi.spyOn(globalThis, "fetch").mockResolvedValue(new Response(JSON.stringify({ id: "email_en" }), { status: 200 }));
+    const response = await POST(request({ ...validPayload, locale: "en" }));
+    expect(response.status).toBe(202);
+    expect(await response.json()).toMatchObject({ok:true,message:expect.stringContaining("Your request has been sent")});
+    const email = JSON.parse(String(provider.mock.calls[0][1]?.body));
+    expect(email.subject).toMatch(/^New request/);
+    expect(email.text).toContain("Language: en");
+    expect(email.text).toContain(validPayload.message);
+  });
+
+  it("localise les erreurs EN et refuse une locale invalide sans fournisseur", async () => {
+    const provider = vi.spyOn(globalThis, "fetch");
+    const invalid = await POST(request({ ...validPayload, locale:"en", name:"" }));
+    expect(invalid.status).toBe(400);
+    expect(await invalid.json()).toMatchObject({issues:{name:["Enter your name."]}});
+    expect((await POST(request({...validPayload,locale:"de"}))).status).toBe(400);
+    expect(provider).not.toHaveBeenCalled();
+  });
+
+  it("localise une erreur avant parsing grâce à Accept-Language", async () => {
+    const response = await POST(new Request("http://localhost/api/contact", {method:"POST",headers:{"accept-language":"en-CA","content-type":"application/json"},body:"{"}));
+    expect(response.status).toBe(400);
+    expect(await response.json()).toMatchObject({message:"The request could not be read."});
+  });
+
   beforeEach(() => {
     resetContactRateLimitForTests();
     process.env.RESEND_API_KEY = "re_test_only";

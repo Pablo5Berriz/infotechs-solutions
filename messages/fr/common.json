@@ -1,0 +1,20 @@
+{
+  "brand": {
+    "namePrefix": "Infotechs",
+    "nameSuffix": " Solutions"
+  },
+  "contact": {
+    "addressNatureLabel": "Adresse d’affaires — visites sur rendez-vous",
+    "localityLabel": "Saint-Louis-de-Gonzague (Québec)",
+    "businessHoursDaysLabel": "Lundi au vendredi",
+    "businessHoursHoursLabel": "9 h à 17 h"
+  },
+  "footerBlurb": "Développement web, applications sur mesure, automatisation IA et accompagnement numérique pour PME en Montérégie et au Québec.",
+  "breadcrumb": "Fil d’Ariane",
+  "see": "Voir",
+  "projectVisual": "Abstraction graphique d’un système numérique connecté",
+  "exploreService": "Explorer ce service",
+  "decisions": "Décisions",
+  "verifiable": "vérifiables",
+  "consentPrefix": "Je consens à transmettre ces informations à Infotechs Solutions et à leur utilisation pour examiner et traiter ma demande, conformément à la"
+}

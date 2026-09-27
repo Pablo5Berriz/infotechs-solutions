@@ -1,0 +1,89 @@
+{
+  "legalNotice": {
+    "eyebrow": "Informations légales",
+    "title": "Mentions légales",
+    "intro": "Informations relatives à l’éditeur, aux contenus et à l’utilisation du site public Infotechs Solutions.",
+    "sections": [
+      { "heading": "Éditeur du site", "paragraphs": [
+        "Le site est édité par {siteName}, entreprise de services informatiques offrant notamment la conception de sites web, d’automatisations ciblées et d’applications web. L’adresse publiée est une adresse d’affaires. Les visites se font uniquement sur rendez-vous.",
+        "Pour communiquer avec l’éditeur, utilisez le {contactLink}."
+      ]},
+      { "heading": "Nature des contenus", "paragraphs": [
+        "Les informations du site présentent l’approche et les services d’Infotechs Solutions. Elles sont générales et ne constituent pas une recommandation professionnelle adaptée à une situation particulière, une offre contractuelle, une garantie de résultat ou un engagement de délai."
+      ]},
+      { "heading": "Portfolio et concepts démonstratifs", "paragraphs": [
+        "Les réalisations actuellement publiées sont des concepts démonstratifs, pas des mandats clients. Elles illustrent des hypothèses de conception et ne prouvent aucun résultat commercial, témoignage, technologie déployée ou relation avec une organisation réelle."
+      ]},
+      { "heading": "Propriété intellectuelle", "paragraphs": [
+        "Sauf indication contraire, les textes, éléments graphiques, composants visuels et structure éditoriale propres au site sont protégés par les règles applicables en matière de propriété intellectuelle. Leur reproduction ou adaptation substantielle nécessite l’autorisation du titulaire des droits, sous réserve des exceptions prévues par la loi."
+      ]},
+      { "heading": "Liens externes", "paragraphs": [
+        "Les liens vers des sites tiers sont fournis à titre informatif. Infotechs Solutions ne contrôle pas leur disponibilité, leur contenu ni leurs pratiques de confidentialité. Leur consultation relève des conditions publiées par leurs exploitants."
+      ]},
+      { "heading": "Limitation de responsabilité", "paragraphs": [
+        "Infotechs Solutions veille à la clarté des informations publiées, sans garantir qu’elles soient exemptes de toute omission ou interruption. Dans les limites permises par les règles applicables, l’utilisation du site et les décisions prises sur la seule base de ses contenus demeurent sous la responsabilité de l’utilisateur."
+      ]},
+      { "heading": "Confidentialité", "paragraphs": [
+        "Le traitement des renseignements transmis au moyen du formulaire est décrit dans la {privacyLink}."
+      ]},
+      { "heading": "Droit applicable", "paragraphs": [
+        "Le site est exploité depuis le Québec. Son utilisation est régie par les règles du Québec et du Canada qui lui sont applicables, sans limiter les droits impératifs dont un utilisateur peut bénéficier dans son territoire."
+      ]}
+    ],
+    "contactLinkText": "formulaire Contact",
+    "privacyLinkText": "politique de confidentialité"
+  },
+  "privacy": {
+    "eyebrow": "Confidentialité · renseignements personnels",
+    "title": "Politique de confidentialité",
+    "intro": "Cette politique explique comment {siteName} traite les renseignements transmis par le formulaire Contact. Elle ne couvre aucune activité publicitaire ou analytique, car le site n’en utilise pas actuellement.",
+    "effectiveDate": "Entrée en vigueur et dernière mise à jour : 24 juillet 2026.",
+    "sections": [
+      { "heading": "Exploitant et responsable", "paragraphs": [
+        "{siteName} exploite le site et est responsable des renseignements personnels qu’elle détient. L’adresse publiée est une adresse d’affaires. Les visites se font uniquement sur rendez-vous.",
+        "Le titre de la fonction responsable est **Responsable de la protection des renseignements personnels**. Toute question, demande d’exercice d’un droit ou plainte peut lui être adressée au moyen du {contactLink}, en indiquant « Confidentialité » dans la description."
+      ]},
+      { "heading": "Renseignements collectés", "paragraphs": [
+        "Le formulaire demande les renseignements suivants :"
+      ], "list": [
+        "nom — obligatoire;",
+        "organisation — facultative;",
+        "adresse courriel — obligatoire;",
+        "téléphone — facultatif;",
+        "type de besoin — obligatoire;",
+        "description de la demande — obligatoire;",
+        "consentement à la transmission et au traitement — obligatoire."
+      ], "paragraphsAfterList": [
+        "Pour limiter les abus, une identité réseau validée ou un identifiant conservateur de remplacement sert à produire une clé hachée temporaire de limitation de débit. L’adresse réseau brute n’est pas conservée dans le limiteur. Un champ piège anti-robot est également vérifié. Ces éléments ne sont pas ajoutés au courriel envoyé à Infotechs Solutions."
+      ]},
+      { "heading": "Finalités et consentement", "paragraphs": [
+        "Les renseignements servent uniquement à transmettre, examiner et traiter la demande, à y donner suite lorsque cela est approprié, ainsi qu’à protéger le formulaire contre les abus. Le consentement demandé avant l’envoi porte sur ces finalités et sur la transmission décrite ici.",
+        "Ils ne sont pas utilisés pour le marketing, une infolettre, le profilage, la publicité, la mesure d’audience ou le partage commercial."
+      ]},
+      { "heading": "Transmission par Resend", "paragraphs": [
+        "Le serveur transmet à Resend le nom, l’organisation lorsqu’elle est fournie, le courriel, le téléphone lorsqu’il est fourni, le type de besoin et la description. Resend agit comme fournisseur technique de transmission courriel. Le message est destiné uniquement aux personnes autorisées d’Infotechs Solutions qui doivent l’examiner ou le traiter.",
+        "Le consentement, la clé hachée du rate limit et le champ anti-robot ne sont pas inclus dans le courriel. Aucun fichier, donnée marketing, profil publicitaire ou donnée analytics n’est transmis.",
+        "Resend indique que ses principales opérations de traitement ont lieu aux États-Unis et qu’il peut recourir à des sous-traitants autorisés. Les renseignements peuvent donc être traités à l’extérieur du Québec et du Canada, où les règles applicables peuvent différer."
+      ]},
+      { "heading": "Stockage et conservation", "paragraphs": [
+        "Le site ne conserve aucune copie de la demande dans une base de données, un CRM ou un fichier applicatif. Le message et ses métadonnées sont toutefois traités dans les systèmes de Resend et dans la boîte courriel destinataire.",
+        "Infotechs Solutions conserve les messages pendant la période nécessaire à l’examen et au suivi de la demande, puis les supprime ou les anonymise lorsque les finalités sont accomplies, sous réserve des obligations légales ou de la nécessité d’établir, exercer ou défendre un droit. Resend applique ses propres critères de conservation pour fournir le service et respecter ses obligations."
+      ]},
+      { "heading": "Mesures de protection", "paragraphs": [
+        "Les mesures générales comprennent une validation serveur stricte, des limites de taille, un champ anti-robot, une limitation de débit, des secrets réservés au serveur, un délai maximal pour l’appel fournisseur et des journaux techniques qui n’incluent pas le contenu complet de la demande. Aucun moyen de transmission ou de conservation ne peut toutefois garantir une sécurité absolue."
+      ]},
+      { "heading": "Vos droits et plaintes", "paragraphs": [
+        "Selon les règles applicables, vous pouvez demander l’accès aux renseignements qui vous concernent, leur rectification ou leur suppression, retirer votre consentement pour l’avenir et déposer une plainte sur leur traitement. Certaines restrictions légales ou obligations de conservation peuvent s’appliquer.",
+        "Adressez d’abord votre demande au Responsable de la protection des renseignements personnels par le {contactLink}. Vous pouvez également vous informer auprès de la {caiLink}."
+      ]},
+      { "heading": "Cookies et mesure d’audience", "paragraphs": [
+        "Le site n’intègre actuellement aucun outil analytics, pixel publicitaire, CAPTCHA tiers ou cookie non essentiel. Aucune bannière de consentement n’est donc affichée. Cette politique devra être réévaluée avant l’ajout d’une technologie de suivi ou d’un cookie non essentiel."
+      ]},
+      { "heading": "Mise à jour de la politique", "paragraphs": [
+        "Cette politique est révisée lorsque les pratiques de collecte, les fournisseurs ou les obligations applicables changent. La version publiée indique sa date d’entrée en vigueur et sa dernière mise à jour. Un changement important sera présenté de manière appropriée avant son application."
+      ]}
+    ],
+    "contactLinkText": "formulaire Contact",
+    "caiLinkText": "Commission d’accès à l’information du Québec"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "hero": {
+    "kicker": "Quebec technology studio",
+    "title": "We design the digital systems that move",
+    "titleHighlight": "your business forward.",
+    "intro": "Websites, business applications, and useful automations, built with rigor for Quebec's small and medium businesses.",
+    "ctaSubmit": "Tell us what you need",
+    "ctaConcepts": "See the concepts",
+    "badges": [
+      "Clear architecture",
+      "Verifiable delivery",
+      "Local support"
+    ],
+    "diagramAlt": "Abstract diagram representing a connected digital ecosystem"
+  },
+  "valueProp": {
+    "eyebrow": "Value proposition",
+    "title": "Technology should simplify your operations — never complicate them.",
+    "text": "We bring strategy, design, and development into a single process to deliver tools that are understandable, high-performing, and genuinely useful."
+  },
+  "whyUs": [
+    {
+      "title": "Clarity",
+      "text": "Understandable recommendations, readable budgets, and no unnecessary complexity."
+    },
+    {
+      "title": "Technical quality",
+      "text": "A modern, fast, responsive base that's ready to evolve."
+    },
+    {
+      "title": "Closeness",
+      "text": "Hands-on support for small businesses, shops, and local organizations."
+    },
+    {
+      "title": "Useful innovation",
+      "text": "AI and automation only when they create real value."
+    }
+  ],
+  "servicesSection": {
+    "eyebrow": "Strategic services",
+    "title": "Expertise focused on your digital challenges."
+  },
+  "processSection": {
+    "eyebrow": "Process",
+    "title": "Five steps. A clear path from the need to going live."
+  },
+  "process": [
+    {
+      "title": "Understand",
+      "text": "We clarify your goals, constraints, users, and business priorities."
+    },
+    {
+      "title": "Structure",
+      "text": "We propose a simple architecture, a realistic scope, and a delivery plan."
+    },
+    {
+      "title": "Design",
+      "text": "We create the interfaces, content, and journeys with strong attention to conversion."
+    },
+    {
+      "title": "Develop",
+      "text": "We build cleanly, test on mobile, and optimize performance, SEO, and accessibility."
+    },
+    {
+      "title": "Support",
+      "text": "We document, deploy, and stay available for adjustments and future evolution."
+    }
+  ],
+  "concepts": {
+    "eyebrow": "Demo concepts",
+    "title": "Systems designed around concrete problems.",
+    "allConcepts": "All concepts",
+    "seeConcept": "See the concept"
+  },
+  "expertise": {
+    "eyebrow": "Technical expertise",
+    "title": "Modern choices, explained without unnecessary jargon.",
+    "text": "We favor a lean, secure, and maintainable architecture. Each technology answers a specific need rather than following a trend.",
+    "securityTitle": "Proportionate security",
+    "securityText": "Access, data, and deployment considered from the architecture stage onward.",
+    "qualityTitle": "Verifiable quality",
+    "qualityText": "Testing, performance, and accessibility built into delivery."
+  },
+  "cta": {
+    "kicker": "Next step",
+    "title": "Let's turn your next digital challenge into a useful system.",
+    "text": "Share the need and the priorities so Infotechs Solutions can review your request.",
+    "submit": "Send your request",
+    "explore": "Explore the services"
+  },
+  "featured": [
+    {
+      "label": "Web & applications",
+      "title": "Fast, credible digital experiences built to evolve.",
+      "text": "Business websites, operational applications, and custom platforms: we build the right level of solution for your needs.",
+      "points": [
+        "Clear architecture",
+        "Performance and accessibility",
+        "Maintainable technical foundation"
+      ]
+    },
+    {
+      "label": "Workflows",
+      "title": "Fewer repetitive tasks. More time for useful decisions.",
+      "text": "We connect your forms, documents, and tools to make follow-ups more reliable and reduce duplicate data entry.",
+      "points": [
+        "Process mapping",
+        "Targeted integrations",
+        "Clear documentation"
+      ]
+    },
+    {
+      "label": "Custom solutions",
+      "title": "A solution built around your operations, not the other way around.",
+      "text": "Portals, dashboards, and internal tools are scoped around your users, constraints, and business priorities.",
+      "points": [
+        "Functional analysis",
+        "Incremental delivery",
+        "Personal support"
+      ]
+    }
+  ]
+}

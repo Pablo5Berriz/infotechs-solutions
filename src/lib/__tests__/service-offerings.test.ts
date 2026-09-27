@@ -20,7 +20,7 @@ describe("catalogue des services 004C-2", () => {
     expect(new Set(serviceOfferings.map(({ href }) => href)).size).toBe(4);
     for (const service of serviceOfferings) {
       expect(service.status).toBe("published");
-      expect(service.href).toBe(`/services/${service.slug}`);
+      expect(service.href).toBe(`/fr/services/${service.slug}`);
       expect(getServiceOffering(service.slug)).toBe(service);
     }
   });
@@ -36,7 +36,7 @@ describe("catalogue des services 004C-2", () => {
 
   it("publie Audit et cadrage sans technologie ni promesse interdite", () => {
     const audit = getServiceOffering("audit-et-cadrage");
-    expect(audit).toMatchObject({ kind: "entry", status: "published", technologies: [], href: "/services/audit-et-cadrage" });
+    expect(audit).toMatchObject({ kind: "entry", status: "published", technologies: [], href: "/fr/services/audit-et-cadrage" });
     expect(audit?.relatedServiceIds).toEqual(["web", "automation", "custom"]);
     expect(audit?.considerations).toEqual(expect.arrayContaining([
       expect.stringContaining("Aucun audit de cybersécurité avancé ni avis juridique n’est inclus"),

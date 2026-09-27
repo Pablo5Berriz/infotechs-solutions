@@ -1,9 +1,16 @@
-import Link from "next/link";
+import {useContent, useAppLocale} from "@/i18n/content";
+import Link from "@/components/localized-link";
 import { Clock3, Mail, MapPin, Phone } from "lucide-react";
-import { navItems, siteConfig } from "@/lib/site-config";
-import { serviceOfferings } from "@/lib/service-offerings";
+import {getSiteConfig} from "@/lib/site-config";
+import { getServiceOfferings } from "@/lib/service-offerings";
 
 export function SiteFooter() {
+ const locale=useAppLocale();
+ const serviceOfferings=getServiceOfferings(locale);
+ const siteConfig=getSiteConfig(locale);
+ const navItems=siteConfig.navigation;
+  const m = useContent();
+
   const { contact } = siteConfig;
   return (
     <footer className="bg-gradient-to-b from-bg-950 to-purple-950/20 text-text-100">
@@ -13,8 +20,7 @@ export function SiteFooter() {
             Infotechs<span className="text-purple-300"> Solutions</span>
           </span>
           <p className="mt-5 max-w-md text-sm leading-6 text-text-400">
-            Développement web, applications sur mesure, automatisation IA et accompagnement numérique pour PME en Montérégie et au Québec.
-          </p>
+            {m.common.footerBlurb} </p>
           <div className="mt-6 grid gap-3 text-sm text-text-400">
             {contact.email ? (
               <a href={`mailto:${contact.email}`} className="inline-flex min-h-11 min-w-11 items-center gap-2 hover:text-purple-200">
@@ -35,7 +41,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">Navigation</h2>
+          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">{m.navigation.footer.navTitle}</h2>
           <div className="mt-4 grid gap-3 text-sm text-text-400">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="inline-flex min-h-11 min-w-11 items-center rounded-sm hover:text-text-100">
@@ -45,7 +51,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">Services</h2>
+          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">{m.navigation.items.services}</h2>
           <div className="mt-4 grid gap-3 text-sm text-text-400">
             {serviceOfferings.map((service) => (
               <Link key={service.slug} href={service.href} className="inline-flex min-h-11 min-w-11 items-center rounded-sm hover:text-text-100">
@@ -55,10 +61,9 @@ export function SiteFooter() {
           </div>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">Conversion</h2>
+          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-purple-300">{m.navigation.footer.conversionTitle}</h2>
           <p className="mt-4 text-sm leading-6 text-text-400">
-            Présentez votre contexte, vos utilisateurs et vos priorités pour transmettre une demande à Infotechs Solutions.
-          </p>
+            {m.navigation.footer.conversionText} </p>
           <Link
             href={siteConfig.primaryCta.href}
             className="mt-5 inline-flex h-(--button-md-height) items-center rounded-sm bg-purple-600 px-4 text-sm font-semibold text-[#f4f1ea]"
@@ -69,14 +74,12 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-bg-800">
         <div className="mx-auto flex max-w-(--container-max) flex-col gap-3 px-4 py-6 text-sm text-text-400 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} Infotechs Solutions. Tous droits réservés.</p>
+          <p>{m.navigation.footer.copyright.replace("{year}", String(new Date().getFullYear()))}</p>
           <div className="flex gap-4">
             <Link href="/mentions-legales" className="inline-flex min-h-11 min-w-11 items-center rounded-sm hover:text-text-100">
-              Mentions légales
-            </Link>
+              {m.navigation.footer.legalNotice} </Link>
             <Link href="/confidentialite" className="inline-flex min-h-11 min-w-11 items-center rounded-sm hover:text-text-100">
-              Confidentialité
-            </Link>
+              {m.navigation.footer.privacy} </Link>
           </div>
         </div>
       </div>
