@@ -14,55 +14,55 @@ export type PortfolioProject = {
 
 const identities = [
   {
-    "id": "garage",
+    "id": "comptaclems",
     "relatedProjectIds": [
-      "reservation",
-      "gestion"
+      "bilikFarm",
+      "eduquiz"
     ],
     "technologies": [],
     "status": "concept"
   },
   {
-    "id": "reservation",
+    "id": "bilikFarm",
     "relatedProjectIds": [
-      "garage",
-      "mobile"
+      "comptaclems",
+      "cosmechic"
     ],
     "technologies": [],
     "status": "concept"
   },
   {
-    "id": "gestion",
+    "id": "cosmechic",
     "relatedProjectIds": [
-      "reservation",
-      "dashboard"
+      "bilikFarm",
+      "forumSportif"
     ],
     "technologies": [],
     "status": "concept"
   },
   {
-    "id": "automation",
+    "id": "biketrip",
     "relatedProjectIds": [
-      "gestion",
-      "dashboard"
+      "eduquiz",
+      "forumSportif"
     ],
     "technologies": [],
     "status": "concept"
   },
   {
-    "id": "dashboard",
+    "id": "eduquiz",
     "relatedProjectIds": [
-      "gestion",
-      "automation"
+      "biketrip",
+      "comptaclems"
     ],
     "technologies": [],
     "status": "concept"
   },
   {
-    "id": "mobile",
+    "id": "forumSportif",
     "relatedProjectIds": [
-      "reservation",
-      "garage"
+      "cosmechic",
+      "biketrip"
     ],
     "technologies": [],
     "status": "concept"
@@ -71,7 +71,7 @@ const identities = [
 const localized:Partial<Record<AppLocale,PortfolioProject[]>>={};
 export function getPortfolioProjects(locale: AppLocale = 'fr'): PortfolioProject[] {
  const content = locale === 'en' ? en : fr;
- return localized[locale] ??= identities.map(identity => ({...identity, ...content[identity.id], locale, slug: projectSlugs[identity.id][locale], href: localizedPath('/realisations/'+projectSlugs[identity.id].fr,locale), technologies: [...identity.technologies], relatedProjectIds: [...identity.relatedProjectIds]}));
+ return localized[locale] ??= identities.map(identity => ({...identity, ...content[identity.id], locale, slug: projectSlugs[identity.id][locale], href: localizedPath('/realisations/'+projectSlugs[identity.id].fr,locale), technologies: [...(content[identity.id]?.technologies ?? identity.technologies)], relatedProjectIds: [...identity.relatedProjectIds]}));
 }
 export const portfolioProjects = getPortfolioProjects();
 export function getPortfolioProject(slug: string, locale: AppLocale = 'fr') { return getPortfolioProjects(locale).find(item=>item.slug===slug); }

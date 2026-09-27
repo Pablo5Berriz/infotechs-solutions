@@ -27,16 +27,16 @@ describe("buildLocalBusinessSchema", () => {
     expect(schema.telephone).toBe("+15142083644");
   });
 
-  it("publishes the canonical address and business hours without a postal code", () => {
+  it("publishes the canonical address and business hours with the postal code", () => {
     const schema = buildLocalBusinessSchema(baseSite);
     expect(schema.address).toEqual({
       "@type": "PostalAddress",
       streetAddress: "164 rue Principale",
       addressLocality: "Saint-Louis-de-Gonzague",
       addressRegion: "QC",
+      postalCode: "J0S 1T0",
       addressCountry: "CA",
     });
-    expect(schema.address).not.toHaveProperty("postalCode");
     expect(schema.openingHoursSpecification).toEqual({
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

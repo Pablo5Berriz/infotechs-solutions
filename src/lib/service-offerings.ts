@@ -4,7 +4,7 @@ import { localizedPath } from '@/i18n/paths';
 import fr from '../../messages/fr/services.json';
 import en from '../../messages/en/services.json';
 import type { LucideIcon } from "lucide-react";
-import { Bot, ClipboardCheck, Code2, Globe2 } from "lucide-react";
+import { Bot, ClipboardCheck, Code2, Database, Globe2, Server, Smartphone, Wrench } from "lucide-react";
 
 export type ServiceProcessStep = { title: string; text: string };
 export type ServiceOfferingKind = "solution" | "entry";
@@ -81,9 +81,65 @@ const identities = [
     ],
     "technologies": [],
     "status": "published"
+  },
+  {
+    "id": "mobile",
+    "kind": "solution",
+    "relatedServiceIds": [
+      "custom",
+      "backend"
+    ],
+    "technologies": [
+      "React Native",
+      "Expo",
+      "TypeScript"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "backend",
+    "kind": "solution",
+    "relatedServiceIds": [
+      "web",
+      "infra"
+    ],
+    "technologies": [
+      "Node.js",
+      "PostgreSQL",
+      "Prisma"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "infra",
+    "kind": "solution",
+    "relatedServiceIds": [
+      "backend",
+      "maintenance"
+    ],
+    "technologies": [
+      "Linux",
+      "Docker",
+      "Nginx",
+      "Proxmox"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "maintenance",
+    "kind": "solution",
+    "relatedServiceIds": [
+      "infra",
+      "audit"
+    ],
+    "technologies": [
+      "Git",
+      "GitHub Actions"
+    ],
+    "status": "published"
   }
 ] as const;
-const icons = {web: Globe2, automation: Bot, custom: Code2, audit: ClipboardCheck};
+const icons = {web: Globe2, automation: Bot, custom: Code2, audit: ClipboardCheck, mobile: Smartphone, backend: Database, infra: Server, maintenance: Wrench};
 const localized:Partial<Record<AppLocale,ServiceOffering[]>>={};
 export function getServiceOfferings(locale: AppLocale = 'fr'): ServiceOffering[] {
  const content = locale === 'en' ? en : fr;

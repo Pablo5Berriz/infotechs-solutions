@@ -2,22 +2,25 @@ import { describe, expect, it } from "vitest";
 import { getRelatedOfferings, getServiceOffering, serviceOfferings } from "@/lib/service-offerings";
 
 describe("catalogue des services 004C-2", () => {
-  it("déclare exactement les quatre offres publiées autorisées", () => {
+  it("déclare exactement les huit offres publiées autorisées", () => {
     expect(serviceOfferings.map(({ slug }) => slug)).toEqual([
       "creation-sites-web",
       "automatisation-ia",
       "applications-web-sur-mesure",
       "audit-et-cadrage",
+      "developpement-applications-mobiles",
+      "backend-api-bases-de-donnees",
+      "infrastructure-hebergement-devops",
+      "maintenance-monitoring-evolution",
     ]);
-    expect(serviceOfferings.filter(({ kind }) => kind === "solution")).toHaveLength(3);
+    expect(serviceOfferings.filter(({ kind }) => kind === "solution")).toHaveLength(7);
     expect(serviceOfferings.filter(({ kind }) => kind === "entry")).toHaveLength(1);
-    expect(serviceOfferings).not.toEqual(expect.arrayContaining([expect.objectContaining({ slug: expect.stringMatching(/maintenance/i) })]));
   });
 
   it("utilise des identifiants, slugs et routes uniques et cohérents", () => {
-    expect(new Set(serviceOfferings.map(({ id }) => id)).size).toBe(4);
-    expect(new Set(serviceOfferings.map(({ slug }) => slug)).size).toBe(4);
-    expect(new Set(serviceOfferings.map(({ href }) => href)).size).toBe(4);
+    expect(new Set(serviceOfferings.map(({ id }) => id)).size).toBe(8);
+    expect(new Set(serviceOfferings.map(({ slug }) => slug)).size).toBe(8);
+    expect(new Set(serviceOfferings.map(({ href }) => href)).size).toBe(8);
     for (const service of serviceOfferings) {
       expect(service.status).toBe("published");
       expect(service.href).toBe(`/fr/services/${service.slug}`);

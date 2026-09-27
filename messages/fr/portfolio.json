@@ -1,22 +1,22 @@
 {
   "statusLabels": {
-    "concept": "CONCEPT DÉMONSTRATIF",
-    "client": "PROJET CLIENT"
+    "concept": "Projet indépendant",
+    "client": "Projet client"
   },
   "listing": {
-    "eyebrow": "Portfolio transparent",
-    "title": "Des concepts pour rendre les décisions numériques visibles.",
-    "intro": "Ce portfolio présente des scénarios de conception, pas des mandats clients. Chaque fiche distingue ce qui est exploré, démontré et encore à valider.",
+    "eyebrow": "Portfolio",
+    "title": "Des projets réels pour comprendre ce que nous savons construire.",
+    "intro": "Ce portfolio présente des projets personnels et indépendants, développés de bout en bout : sites vitrines, CRM métier, applications mobiles et plateformes communautaires. Ce ne sont pas des mandats clients, mais du code réel, avec ses forces et ses limites assumées.",
     "ctaPresent": "Présenter votre contexte",
-    "ctaExplore": "Explorer les concepts",
-    "sixScenariosEyebrow": "Six scénarios",
-    "sixScenariosTitle": "Une lecture honnête de ce que chaque concept démontre.",
+    "ctaExplore": "Explorer les projets",
+    "sixScenariosEyebrow": "Six projets",
+    "sixScenariosTitle": "Une lecture honnête de ce que chaque projet démontre.",
     "capabilityReadTitle": "Lecture par capacité",
     "capabilities": [
       "Interfaces métier",
       "Gestion de données",
-      "Automatisation",
-      "Expériences mobiles",
+      "Applications mobiles",
+      "E-commerce",
       "Architecture modulaire"
     ],
     "journeyTitle": "De l’hypothèse à une version vérifiable.",
@@ -30,243 +30,189 @@
     ],
     "ctaTitle": "Votre projet commence par un contexte, pas par une démonstration.",
     "ctaText": "Décrivez le problème, les utilisateurs et les priorités à clarifier.",
-    "exploreConcept": "Explorer le concept",
-    "seeConcept": "Voir le concept"
+    "exploreConcept": "Explorer le projet",
+    "seeConcept": "Voir le projet"
   },
   "detail": {
     "presentNeed": "Présenter un besoin",
-    "allConcepts": "Tous les concepts",
-    "contextEyebrow": "Contexte du concept",
-    "contextTitle": "Un scénario de conception, pas un mandat client.",
-    "challengeTitle": "Problèmes explorés",
-    "approachTitle": "Approche proposée",
-    "deliverablesTitle": "Éléments démontrés",
+    "allConcepts": "Tous les projets",
+    "contextEyebrow": "Contexte du projet",
+    "contextTitle": "Un projet indépendant, pas un mandat client.",
+    "challengeTitle": "Problèmes adressés",
+    "approachTitle": "Approche technique",
+    "deliverablesTitle": "Éléments livrés",
     "limitationsTitle": "Limites connues",
-    "relatedTitle": "Concepts associés",
+    "relatedTitle": "Projets associés",
     "differentContext": "Votre contexte est différent",
     "ctaTitle": "Présentez le problème, les utilisateurs et les priorités.",
     "ctaSubmit": "Structurer votre projet"
   },
-  "garage": {
-    "title": "Site web pour garage local",
-    "category": "Site web",
-    "summary": "Concept de site vitrine structurant les services, les demandes de rendez-vous et l’information locale.",
-    "description": "Un scénario de conception destiné à montrer comment une entreprise de services locale pourrait clarifier son offre et faciliter une première prise de contact.",
+  "comptaclems": {
+    "title": "ComptaClems — plateforme de gestion comptable",
+    "category": "Plateforme de gestion comptable",
+    "summary": "Plateforme web indépendante pour centraliser la gestion des clients, documents et dossiers d’une agence de services comptables.",
+    "description": "ComptaClems structure trois espaces — public, client, administrateur — pour réduire les échanges manuels par courriel et offrir un suivi clair des dossiers comptables, des déclarations et des demandes administratives.",
     "challenge": [
-      "Présenter clairement des services variés.",
-      "Rendre la prise de contact simple sur mobile.",
-      "Organiser une information locale crédible sans faux avis ni chiffres."
+      "Centraliser des échanges aujourd’hui dispersés entre courriels et documents papier.",
+      "Distinguer clairement l’espace client de l’espace administrateur.",
+      "Prévoir une structure de données adaptée aux services comptables réels (tenue de livres, TPS/TVQ, paie)."
     ],
     "approach": [
-      "Hiérarchie centrée sur les besoins des automobilistes.",
-      "Parcours court entre service et demande.",
-      "Composants responsive et contenus faciles à parcourir."
+      "Cartographie des services comptables avant la conception des écrans.",
+      "Séparation stricte des rôles : public, client authentifié, administrateur.",
+      "Base de données PostgreSQL pensée pour les dossiers, documents et statuts de traitement."
     ],
-    "deliverables": [
-      "Architecture de pages",
-      "Écrans de service",
-      "Parcours de demande",
-      "Composants responsive"
-    ],
-    "capabilities": [
-      "Architecture web",
-      "Contenu structuré",
-      "Responsive",
-      "Formulaires"
-    ],
+    "deliverables": ["Espace client sécurisé", "Tableau de bord administrateur", "Suivi des demandes et statuts", "Gestion documentaire"],
+    "capabilities": ["Architecture multi-rôles", "Interfaces métier", "Gestion documentaire", "Base de données relationnelle"],
+    "technologies": ["Node.js", "PostgreSQL", "JavaScript", "HTML/CSS"],
     "limitations": [
-      "Concept non commandé par un garage.",
-      "Aucun résultat commercial mesuré.",
-      "Aucun contenu client réel intégré."
+      "Projet en développement : plusieurs fonctionnalités prévues restent à construire.",
+      "Aucune agence comptable cliente n’exploite la plateforme à ce jour.",
+      "Sécurité et conformité à valider avant tout usage réel de données fiscales."
     ],
     "seo": {
-      "title": "Concept de site web pour garage local",
-      "description": "Concept démonstratif de site web pour un garage local, centré sur les services et la prise de contact."
+      "title": "ComptaClems — plateforme de gestion comptable",
+      "description": "Projet indépendant de plateforme web pour agences comptables : gestion des clients, documents et déclarations."
     }
   },
-  "reservation": {
-    "title": "Plateforme de réservation",
-    "category": "Application web",
-    "summary": "Concept de plateforme réunissant disponibilités, demandes et confirmations dans un parcours cohérent.",
-    "description": "Ce concept explore une expérience de réservation destinée à réduire la dispersion des demandes entre téléphone et messages.",
+  "bilikFarm": {
+    "title": "Bilik Farm — site web et CRM agricole",
+    "category": "Site web et CRM agricole",
+    "summary": "Site vitrine et CRM interne pour une ferme intégrée combinant agriculture et élevage.",
+    "description": "Bilik Farm réunit une présentation publique de la ferme (activités, produits, vision) et un CRM interne pour suivre cultures, animaux, ventes, stocks et clients.",
     "challenge": [
-      "Regrouper les disponibilités et les demandes.",
-      "Rendre les statuts compréhensibles.",
-      "Prévoir les exceptions sans alourdir le parcours."
+      "Présenter une ferme aux activités multiples (culture et élevage) de façon claire.",
+      "Regrouper le suivi des ventes, des stocks et des clients dans un seul outil.",
+      "Séparer la vitrine publique de la gestion opérationnelle interne."
     ],
     "approach": [
-      "Parcours organisé autour du choix d’un créneau.",
-      "États explicites pour les confirmations.",
-      "Séparation entre expérience publique et gestion interne."
+      "Site vitrine distinct du CRM, avec authentification pour l’espace interne.",
+      "Tableau de bord orienté suivi des cultures, des animaux et des ventes.",
+      "Architecture Next.js modulaire pour ajouter des modules de gestion progressivement."
     ],
-    "deliverables": [
-      "Parcours de réservation",
-      "Calendrier conceptuel",
-      "États de confirmation",
-      "Vue de gestion"
-    ],
-    "capabilities": [
-      "UX transactionnelle",
-      "Interfaces métier",
-      "Gestion d’états",
-      "Responsive"
-    ],
+    "deliverables": ["Site vitrine de la ferme", "Tableau de bord CRM", "Suivi des ventes et des stocks", "Gestion des clients"],
+    "capabilities": ["Site vitrine métier", "CRM interne", "Gestion de stocks", "Tableaux de bord"],
+    "technologies": ["Next.js", "TypeScript", "CSS"],
     "limitations": [
-      "Concept sans exploitant réel.",
-      "Aucune intégration de calendrier confirmée.",
-      "Aucune donnée d’usage disponible."
+      "Projet indépendant : aucune ferme cliente ne l’exploite actuellement.",
+      "Rapports internes et indicateurs à valider avec un usage réel.",
+      "Aucune donnée de vente ou de rentabilité réelle intégrée."
     ],
     "seo": {
-      "title": "Concept de plateforme de réservation",
-      "description": "Concept démonstratif d’une plateforme web de réservation et de gestion des disponibilités."
+      "title": "Bilik Farm — site web et CRM agricole",
+      "description": "Projet indépendant de site vitrine et CRM pour une ferme intégrée agriculture et élevage."
     }
   },
-  "gestion": {
-    "title": "Application de gestion interne",
-    "category": "Application web",
-    "summary": "Concept d’outil métier centralisant clients, tâches, documents et statuts opérationnels.",
-    "description": "Un scénario d’application interne conçu pour illustrer la structuration d’informations aujourd’hui dispersées.",
+  "cosmechic": {
+    "title": "Cosmechic — boutique e-commerce",
+    "category": "Boutique e-commerce",
+    "summary": "Boutique en ligne dédiée aux produits cosmétiques pour peaux et cheveux afro, noirs et métissés.",
+    "description": "Cosmechic présente un catalogue de produits cosmétiques, la gestion des commandes et des clients, avec une interface pensée mobile-first pour ce marché spécifique.",
     "challenge": [
-      "Réunir plusieurs sources d’information.",
-      "Différencier les rôles et responsabilités.",
-      "Maintenir un historique compréhensible."
+      "Structurer un catalogue par catégories et types de soins.",
+      "Rendre le parcours d’achat simple sur mobile.",
+      "Prévoir une gestion des commandes et des stocks côté administrateur."
     ],
     "approach": [
-      "Tableau de bord orienté actions.",
-      "Organisation par dossiers et statuts.",
-      "Accès et permissions à cadrer avant réalisation."
+      "Catalogue et fiches produits organisés par besoin (peau, cheveux, routine).",
+      "Parcours panier-commande pensé pour un usage majoritairement mobile.",
+      "Espace administrateur séparé pour le suivi des commandes et du catalogue."
     ],
-    "deliverables": [
-      "Tableau de bord",
-      "Fiches de suivi",
-      "Parcours par rôle",
-      "Historique conceptuel"
-    ],
-    "capabilities": [
-      "Outils métier",
-      "Gestion de données",
-      "Rôles",
-      "Tableaux de bord"
-    ],
+    "deliverables": ["Catalogue produits", "Panier et tunnel de commande", "Espace administrateur", "Interface responsive"],
+    "capabilities": ["E-commerce", "Catalogue produits", "Interfaces responsive", "Gestion des commandes"],
+    "technologies": ["HTML/CSS", "JavaScript", "C#"],
     "limitations": [
-      "Concept sans organisation cliente.",
-      "Modèle de données non validé sur le terrain.",
-      "Sécurité à spécifier selon les données réelles."
+      "Projet indépendant sans boutique commercialisée à ce jour.",
+      "Paiement en ligne et logistique réelle non déployés en production.",
+      "Aucun volume de vente ou client réel."
     ],
     "seo": {
-      "title": "Concept d’application de gestion interne",
-      "description": "Concept démonstratif d’une application métier pour centraliser tâches, documents et suivis."
+      "title": "Cosmechic — boutique e-commerce",
+      "description": "Projet indépendant de boutique e-commerce de produits cosmétiques pour peaux et cheveux afro."
     }
   },
-  "automation": {
-    "title": "Automatisation administrative",
-    "category": "Automatisation",
-    "summary": "Concept de flux reliant formulaire, classement, notification et tableau de suivi.",
-    "description": "Ce concept illustre comment un processus administratif répétitif pourrait être cartographié avant une automatisation encadrée.",
-    "challenge": [
-      "Éviter les doubles saisies.",
-      "Rendre les erreurs et exceptions visibles.",
-      "Conserver des validations humaines."
-    ],
-    "approach": [
-      "Cartographie du flux avant outillage.",
-      "Points de contrôle explicites.",
-      "Journal de suivi pour comprendre chaque étape."
-    ],
-    "deliverables": [
-      "Carte du processus",
-      "Scénarios de flux",
-      "Points de contrôle",
-      "Documentation conceptuelle"
-    ],
-    "capabilities": [
-      "Automatisation",
-      "Processus",
-      "Notifications",
-      "Documentation"
-    ],
-    "limitations": [
-      "Aucun gain de temps mesuré.",
-      "Aucun outil tiers confirmé.",
-      "Les décisions sensibles restent humaines."
-    ],
-    "seo": {
-      "title": "Concept d’automatisation administrative",
-      "description": "Concept démonstratif d’un flux administratif automatisé avec contrôles humains."
-    }
-  },
-  "dashboard": {
-    "title": "Tableau de bord PME",
-    "category": "SaaS",
-    "summary": "Concept de tableau de bord donnant une lecture commune des demandes, tâches et indicateurs choisis.",
-    "description": "Une exploration d’interface pour aider une équipe à consulter ses activités sans présenter de données ou résultats réels.",
-    "challenge": [
-      "Prioriser peu d’indicateurs utiles.",
-      "Rendre les filtres compréhensibles.",
-      "Éviter une lecture trompeuse des données."
-    ],
-    "approach": [
-      "Hiérarchie par décision à prendre.",
-      "Filtres et états vides explicites.",
-      "Visualisations sobres et secondaires."
-    ],
-    "deliverables": [
-      "Vue synthèse",
-      "Filtres conceptuels",
-      "États de données",
-      "Structure modulaire"
-    ],
-    "capabilities": [
-      "Visualisation de données",
-      "SaaS",
-      "Filtres",
-      "Architecture modulaire"
-    ],
-    "limitations": [
-      "Aucune donnée d’entreprise utilisée.",
-      "Aucun indicateur de performance validé.",
-      "Concept sans produit commercialisé."
-    ],
-    "seo": {
-      "title": "Concept de tableau de bord pour PME",
-      "description": "Concept démonstratif de tableau de bord pour structurer le suivi d’activités d’une PME."
-    }
-  },
-  "mobile": {
-    "title": "Application mobile pour service local",
+  "biketrip": {
+    "title": "BikeTrip — application mobile pour cyclistes",
     "category": "Application mobile",
-    "summary": "Concept mobile pour déposer une demande, consulter son statut et recevoir des informations utiles.",
-    "description": "Ce scénario explore une relation de service sur téléphone sans prétendre représenter une application publiée.",
+    "summary": "Application mobile React Native pour préparer des sorties à vélo : pistes, météo, sécurité et suivi de sortie.",
+    "description": "BikeTrip aide les cyclistes à découvrir des pistes, suivre leurs sorties et échanger des signalements communautaires, avec un backend Supabase et une couverture de tests automatisés.",
     "challenge": [
-      "Réduire les étapes d’une demande mobile.",
-      "Rendre le statut immédiatement compréhensible.",
-      "Prévoir les notifications sans dépendance excessive."
+      "Centraliser découverte de pistes, météo et sécurité dans une seule application.",
+      "Garantir la fiabilité des données de sortie (distance, vitesse, dénivelé).",
+      "Sécuriser les données utilisateur avec des règles d’accès strictes."
     ],
     "approach": [
-      "Navigation courte adaptée au pouce.",
-      "États et prochaines actions visibles.",
-      "Progression conçue pour les petits écrans."
+      "Architecture React Native + Expo avec routage par fichiers.",
+      "Backend Supabase avec Row Level Security (RLS) pour l’isolation des données.",
+      "Suite de tests unitaires (Jest) et intégration continue GitHub Actions."
     ],
-    "deliverables": [
-      "Parcours mobile",
-      "Écrans de demande",
-      "Suivi de statut",
-      "États de notification"
-    ],
-    "capabilities": [
-      "UX mobile",
-      "Parcours de service",
-      "Notifications",
-      "Accessibilité"
-    ],
+    "deliverables": ["Authentification et profils", "Découverte de pistes", "Suivi de sortie", "Historique et favoris"],
+    "capabilities": ["Application mobile", "Géolocalisation", "Tests automatisés", "Intégration continue"],
+    "technologies": ["React Native", "Expo", "TypeScript", "Supabase (PostgreSQL)"],
     "limitations": [
-      "Prototype visuel non publié en boutique.",
-      "Aucun utilisateur client testé.",
-      "Aucune technologie mobile arrêtée."
+      "Statistiques GPS non encore validées sur appareil physique en conditions réelles.",
+      "Fonctionnement hors ligne et suivi GPS en arrière-plan non livrés.",
+      "Application non publiée sur les stores (EAS Build à venir)."
     ],
     "seo": {
-      "title": "Concept d’application mobile de service local",
-      "description": "Concept démonstratif d’application mobile pour demandes et suivis d’un service local."
+      "title": "BikeTrip — application mobile pour cyclistes",
+      "description": "Projet indépendant d’application mobile React Native pour la préparation de sorties à vélo."
+    }
+  },
+  "eduquiz": {
+    "title": "EduQuiz — plateforme éducative bilingue",
+    "category": "Plateforme éducative",
+    "summary": "Plateforme éducative bilingue FR/EN pour élèves québécois du primaire 3 à la secondaire 5, en monorepo Next.js.",
+    "description": "EduQuiz vise à aider les élèves à apprendre, réviser et pratiquer leurs leçons avec des quiz adaptés à leur niveau, sur une architecture technique complète (monorepo, authentification, conformité Loi 25).",
+    "challenge": [
+      "Construire une vitrine bilingue couvrant 10 matières et 9 niveaux scolaires.",
+      "Sécuriser l’authentification et les données d’élèves mineurs.",
+      "Prévoir dès la base la conformité (export Loi 25, suppression de compte)."
+    ],
+    "approach": [
+      "Monorepo Turborepo/pnpm avec packages partagés (UI, base de données, authentification, i18n).",
+      "Authentification Auth.js avec hachage Argon2id et limitation de débit Redis.",
+      "Journalisation d’audit et health checks pour la fiabilité applicative."
+    ],
+    "deliverables": ["Vitrine publique bilingue (38 écrans)", "Inscription et authentification sécurisées", "Espace compte avec export de données", "Journal d’audit"],
+    "capabilities": ["Architecture monorepo", "Authentification sécurisée", "Internationalisation", "Conformité des données"],
+    "technologies": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Turborepo"],
+    "limitations": [
+      "Moteur de quiz et progression pédagogique non encore livrés.",
+      "Tableau de bord parent et flux utilisateur mineur non complets.",
+      "Projet en développement actif ; phase 1 partiellement livrée."
+    ],
+    "seo": {
+      "title": "EduQuiz — plateforme éducative bilingue",
+      "description": "Projet indépendant de plateforme éducative bilingue pour élèves québécois, en monorepo Next.js."
+    }
+  },
+  "forumSportif": {
+    "title": "Forum Sportif — plateforme communautaire géolocalisée",
+    "category": "Plateforme communautaire",
+    "summary": "Forum communautaire pour trouver des lieux de pratique sportive par géolocalisation et échanger entre passionnés.",
+    "description": "Forum Sportif combine forum de discussion, recherche de lieux par sport et carte interactive pour aider les pratiquants à découvrir des terrains, clubs et espaces sportifs près d’eux.",
+    "challenge": [
+      "Croiser recherche géolocalisée et échanges communautaires dans un même produit.",
+      "Structurer des catégories sportives et des profils utilisateurs.",
+      "Permettre des avis et signalements sur les lieux référencés."
+    ],
+    "approach": [
+      "Carte interactive couplée à une recherche par sport et par zone.",
+      "Forum organisé par catégories sportives avec publications et commentaires.",
+      "Profils utilisateurs et système d’avis sur les lieux."
+    ],
+    "deliverables": ["Recherche de lieux géolocalisée", "Carte interactive", "Forum par catégories", "Profils utilisateurs"],
+    "capabilities": ["Géolocalisation", "Plateforme communautaire", "Carte interactive", "Modération de contenu"],
+    "technologies": ["HTML/CSS", "JavaScript", "C#"],
+    "limitations": [
+      "Projet indépendant, aucune communauté active déployée à ce jour.",
+      "Modération et avis à encadrer avant un usage public réel.",
+      "Couverture géographique et données de lieux non validées sur le terrain."
+    ],
+    "seo": {
+      "title": "Forum Sportif — plateforme communautaire géolocalisée",
+      "description": "Projet indépendant de forum sportif géolocalisé pour trouver des lieux de pratique et échanger entre passionnés."
     }
   }
 }

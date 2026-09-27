@@ -5,7 +5,7 @@
     "titleHighlight": "your business forward.",
     "intro": "Websites, business applications, and useful automations, built with rigor for Quebec's small and medium businesses.",
     "ctaSubmit": "Tell us what you need",
-    "ctaConcepts": "See the concepts",
+    "ctaConcepts": "See the projects",
     "badges": [
       "Clear architecture",
       "Verifiable delivery",
@@ -21,19 +21,19 @@
   "whyUs": [
     {
       "title": "Clarity",
-      "text": "Understandable recommendations, readable budgets, and no unnecessary complexity."
+      "text": "Every recommendation explains the need it solves; every budget line is itemized, with no technical line left unexplained."
     },
     {
       "title": "Technical quality",
-      "text": "A modern, fast, responsive base that's ready to evolve."
+      "text": "Automatically tested code, reviewed before delivery, on an architecture built to evolve without a full rebuild."
     },
     {
       "title": "Closeness",
-      "text": "Hands-on support for small businesses, shops, and local organizations."
+      "text": "Direct exchange with the person who designs and builds — no sales layer between you and the code."
     },
     {
       "title": "Useful innovation",
-      "text": "AI and automation only when they create real value."
+      "text": "AI and automation are added only when they reduce a specific, identified repetitive task — never for the sake of a demo."
     }
   ],
   "servicesSection": {
@@ -67,19 +67,51 @@
     }
   ],
   "concepts": {
-    "eyebrow": "Demo concepts",
-    "title": "Systems designed around concrete problems.",
-    "allConcepts": "All concepts",
-    "seeConcept": "See the concept"
+    "eyebrow": "Real projects",
+    "title": "Projects built to solve concrete problems.",
+    "allConcepts": "All projects",
+    "seeConcept": "See the project"
   },
   "expertise": {
     "eyebrow": "Technical expertise",
     "title": "Modern choices, explained without unnecessary jargon.",
-    "text": "We favor a lean, secure, and maintainable architecture. Each technology answers a specific need rather than following a trend.",
+    "text": "We favor a lean, secure, and maintainable architecture. Each technology answers a specific need rather than following a trend — and each one is used in at least one real project.",
     "securityTitle": "Proportionate security",
     "securityText": "Access, data, and deployment considered from the architecture stage onward.",
     "qualityTitle": "Verifiable quality",
-    "qualityText": "Testing, performance, and accessibility built into delivery."
+    "qualityText": "Testing, performance, and accessibility built into delivery.",
+    "categories": [
+      {
+        "title": "Web & Frontend",
+        "text": "Fast, responsive, accessible interfaces, built to stay maintainable as they evolve.",
+        "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "title": "Mobile applications",
+        "text": "iOS and Android apps from a single codebase, with authentication and synchronized data.",
+        "technologies": ["React Native", "Expo"]
+      },
+      {
+        "title": "Backend & data",
+        "text": "Relational databases and APIs built for security, data consistency, and the product's future growth.",
+        "technologies": ["Node.js", "PostgreSQL", "Prisma"]
+      },
+      {
+        "title": "Infrastructure & deployment",
+        "text": "Documented, reproducible Linux hosting, with per-service isolation and a reverse proxy.",
+        "technologies": ["Linux", "Docker", "Nginx", "Proxmox"]
+      },
+      {
+        "title": "DevOps, quality & observability",
+        "text": "Automated tests and continuous integration to catch regressions before launch.",
+        "technologies": ["Git", "GitHub Actions", "Vitest / Jest"]
+      },
+      {
+        "title": "Automation & AI",
+        "text": "Targeted API integrations and automations, used only when they reduce an identified repetitive task.",
+        "technologies": ["API integrations", "Workflow automation"]
+      }
+    ]
   },
   "cta": {
     "kicker": "Next step",

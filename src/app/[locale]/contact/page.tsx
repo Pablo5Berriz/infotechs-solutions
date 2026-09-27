@@ -114,7 +114,7 @@ const contactFaq = [
             <div className="mt-8 border-t border-bg-800 pt-6 text-sm leading-6 text-text-400">
               <p className="font-semibold text-text-100">{site.name}</p>
               <dl className="mt-4 grid gap-4">
-                <div><dt className="font-semibold text-text-100">{m.contact.page.businessAddressLabel}</dt><dd>{contact.address.streetAddress}<br />{contact.address.localityLabel}<br />{contact.address.natureLabel}</dd></div>
+                <div><dt className="font-semibold text-text-100">{m.contact.page.businessAddressLabel}</dt><dd>{contact.address.streetAddress}<br />{contact.address.localityLabel} {contact.address.postalCode}</dd></div>
                 <div><dt className="font-semibold text-text-100">{m.contact.page.phoneLabel}</dt><dd><a className="inline-flex min-h-11 items-center text-purple-300 hover:text-text-100" href={contact.phone.href}>{contact.phone.display}</a></dd></div>
                 <div><dt className="font-semibold text-text-100">{m.contact.page.hoursLabel}</dt><dd>{contact.businessHours.daysLabel}<br />{contact.businessHours.hoursLabel}</dd></div>
               </dl>

@@ -6,8 +6,8 @@
     "ctaPresent": "Present your need",
     "ctaExplore": "Explore services",
     "solutionsEyebrow": "Our delivery solutions",
-    "solutionsTitle": "Three solutions to build a useful digital product.",
-    "solutionsIntro": "Websites, automations, and business applications address distinct delivery needs.",
+    "solutionsTitle": "Seven solutions to build a useful digital product.",
+    "solutionsIntro": "Websites, mobile apps, backend, infrastructure, automation, business applications, and maintenance address distinct delivery needs.",
     "entryEyebrow": "Cross-cutting entry service",
     "entryTitle": "Clarify before building.",
     "entryIntro": "When the need, priorities, or scope remain uncertain, a separate engagement can document the facts and prepare the next decisions without guaranteeing a later build.",
@@ -135,5 +135,85 @@
     "deliverables": ["Audit framework and source inventory", "Classified findings and evidence limits", "Architecture, journeys, or mapping depending on the engagement", "Recommended scope and priorities", "Roadmap and findings report"],
     "considerations": ["Conclusions depend on the access and information strictly necessary for the engagement.", "No advanced cybersecurity audit or legal opinion is included.", "A later build is neither included nor guaranteed.", "A firm estimate requires a validated scope."],
     "seo": { "title": "Digital audit and scoping", "description": "Structured audit of websites, journeys, and processes to clarify findings, prioritize an MVP, and prepare a roadmap." }
+  },
+  "mobile": {
+    "label": "Mobile app development",
+    "eyebrow": "Mobile presence",
+    "title": "A mobile app built for real use, not a demo.",
+    "summary": "To offer a service accessible from the phone, with a smooth experience on iOS and Android.",
+    "description": "We build mobile apps with React Native and Expo: authentication, real-time data, geolocation, and notifications based on the project's real needs.",
+    "outcomes": ["An app usable on iOS and Android from a single codebase", "Reliably synchronized data", "A mobile journey designed for thumb-first use"],
+    "capabilities": ["React Native / Expo", "Authentication", "Geolocation", "Notifications", "Automated testing", "Continuous integration", "Data storage and sync", "App store submission preparation"],
+    "process": [
+      { "title": "Scoping", "text": "Mobile use cases, target platforms, and technical constraints." },
+      { "title": "Prototype", "text": "Key journeys and screens validated before full development." },
+      { "title": "Build", "text": "Development with automated tests and continuous integration." },
+      { "title": "Validate", "text": "Testing on real devices and adjustments." },
+      { "title": "Release", "text": "Build preparation and support for app store submission." }
+    ],
+    "idealFor": ["Offering a service accessible on the go", "Adding a mobile layer to an existing platform", "Building a mobile app end to end with a reliable backend", "Centralizing an experience currently limited to the web"],
+    "deliverables": ["Tested React Native app", "Authentication and account management", "Integration of required APIs", "Technical documentation", "Release build preparation"],
+    "considerations": ["App store submission depends on timelines and rules set by Apple and Google.", "Advanced native features (payments, complex notifications) need to be scoped upfront.", "A reliable backend is required for connected features."],
+    "seo": { "title": "Mobile app development", "description": "React Native mobile apps for small and medium businesses and organizations: authentication, real-time data, and notifications." }
+  },
+  "backend": {
+    "label": "Backend, API, and databases",
+    "eyebrow": "Technical foundations",
+    "title": "A database and API built to last.",
+    "summary": "To structure data, business logic, and exchanges between your tools reliably.",
+    "description": "We design relational databases and REST APIs built for security, data consistency, and the product's future growth.",
+    "outcomes": ["A clear, consistent data structure", "Documented, secure APIs", "A technical foundation ready for new features"],
+    "capabilities": ["Database modeling", "REST APIs", "Authentication and permissions", "Third-party integrations", "Migrations and schema versioning", "Logging and audit"],
+    "process": [
+      { "title": "Analysis", "text": "Entities, relationships, and business rules to model." },
+      { "title": "Modeling", "text": "Database schema and constraint choices." },
+      { "title": "Build", "text": "Development of the APIs and business logic." },
+      { "title": "Secure", "text": "Authentication, permissions, and data validation." },
+      { "title": "Document", "text": "Technical documentation for future maintenance." }
+    ],
+    "idealFor": ["Structuring data that's currently scattered", "Exposing data to a web or mobile app", "Replacing a fragile database or API", "Securing access currently managed informally"],
+    "deliverables": ["Database schema", "Documented API", "Authentication and permission management", "Migration scripts", "Technical documentation"],
+    "considerations": ["Data volume and sensitivity shape the security choices.", "Third-party integrations depend on the availability and documentation of those services.", "An existing database requires analysis before any migration."],
+    "seo": { "title": "Backend, API, and databases", "description": "Design of PostgreSQL databases and secure REST APIs for small and medium businesses and organizations." }
+  },
+  "infra": {
+    "label": "Infrastructure, hosting, and DevOps",
+    "eyebrow": "Operations",
+    "title": "Hosting under control, from deployment to follow-up.",
+    "summary": "To host and deploy your applications on a Linux infrastructure that's understood and documented.",
+    "description": "We deploy on Linux servers (containers, Proxmox), with an Nginx reverse proxy, TLS certificates, and reproducible deployment scripts.",
+    "outcomes": ["Documented, reproducible hosting", "A deployment that doesn't depend on a single person", "An isolated, secured environment per service"],
+    "capabilities": ["Linux servers", "Docker containers", "Proxmox / virtualization", "Nginx reverse proxy", "TLS certificates", "Deployment scripts", "Backups"],
+    "process": [
+      { "title": "Analysis", "text": "Hosting needs, criticality, and budget constraints." },
+      { "title": "Architecture", "text": "Choosing between container, VM, or managed service depending on the project." },
+      { "title": "Deploy", "text": "Setting up the environment, reverse proxy, and TLS." },
+      { "title": "Document", "text": "Deployment and restore procedures." },
+      { "title": "Monitor", "text": "Basic monitoring and a backup plan." }
+    ],
+    "idealFor": ["Hosting an application without depending on an opaque third-party service", "Taking over poorly documented hosting", "Preparing reproducible deployment for a new application", "Isolating several services on the same infrastructure"],
+    "deliverables": ["Configured deployment environment", "Reverse proxy and TLS certificates", "Deployment scripts or procedure", "Operations documentation", "Basic backup plan"],
+    "considerations": ["Guaranteed availability (SLA) depends on the chosen infrastructure and must be scoped explicitly.", "Advanced high availability requires dedicated architecture.", "Hosting security must be proportionate to data sensitivity."],
+    "seo": { "title": "Infrastructure, hosting, and DevOps", "description": "Linux, Docker, and Proxmox deployment and hosting for web applications of small and medium businesses and organizations." }
+  },
+  "maintenance": {
+    "label": "Maintenance, monitoring, and evolution",
+    "eyebrow": "Continuity",
+    "title": "Keeping a product reliable after launch.",
+    "summary": "To provide technical follow-up, fix issues, and evolve a product that's already live.",
+    "description": "We provide technical follow-up after delivery: fixes, security updates, basic monitoring, and planned evolutions.",
+    "outcomes": ["Issues caught and fixed before they affect users", "Dependencies kept up to date in a controlled way", "A prioritized evolution plan"],
+    "capabilities": ["Issue tracking", "Security updates", "Basic monitoring (uptime, errors)", "Regression testing", "Evolution plan", "Follow-up reports"],
+    "process": [
+      { "title": "Assessment", "text": "Checking technical state and known risks." },
+      { "title": "Follow-up plan", "text": "Update frequency and alert thresholds." },
+      { "title": "Ongoing follow-up", "text": "Fixes, updates, and basic monitoring." },
+      { "title": "Reporting", "text": "Regular communication on status and decisions to make." },
+      { "title": "Evolution", "text": "Prioritizing improvements based on real needs." }
+    ],
+    "idealFor": ["Taking over maintenance of an existing product", "Avoiding technical debt buildup after launch", "Planning evolutions without starting from scratch", "Securing a product ahead of a critical period"],
+    "deliverables": ["Maintenance plan", "Update and fix tracking", "Periodic follow-up report", "Evolution recommendations", "Incident and fix log"],
+    "considerations": ["Service level (response time, availability) must be scoped explicitly.", "Maintaining a third-party product depends on the access and documentation available.", "A major overhaul falls outside the scope of ongoing maintenance."],
+    "seo": { "title": "Maintenance, monitoring, and evolution", "description": "Technical follow-up, fixes, and planned evolutions for web applications already in production." }
   }
 }

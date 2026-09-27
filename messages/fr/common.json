@@ -4,12 +4,11 @@
     "nameSuffix": " Solutions"
   },
   "contact": {
-    "addressNatureLabel": "Adresse d’affaires — visites sur rendez-vous",
     "localityLabel": "Saint-Louis-de-Gonzague (Québec)",
     "businessHoursDaysLabel": "Lundi au vendredi",
     "businessHoursHoursLabel": "9 h à 17 h"
   },
-  "footerBlurb": "Développement web, applications sur mesure, automatisation IA et accompagnement numérique pour PME en Montérégie et au Québec.",
+  "footerBlurb": "Conception et développement de sites web, d’applications métier, d’applications mobiles et d’automatisations, pour des PME et organisations en Montérégie et au Québec.",
   "breadcrumb": "Fil d’Ariane",
   "see": "Voir",
   "projectVisual": "Abstraction graphique d’un système numérique connecté",

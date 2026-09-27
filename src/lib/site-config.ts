@@ -18,14 +18,13 @@ export type BusinessHours = {
 };
 
 export type BusinessAddress = {
-  natureLabel: string;
   streetAddress: string;
   locality: string;
   localityLabel: string;
   region: string;
   regionCode: "QC";
+  postalCode: string;
   countryCode: "CA";
-  appointmentOnly: true;
 };
 
 export type PublicPhone = {
@@ -65,14 +64,13 @@ export const siteConfig: SiteConfig = {
       schema: "+15142083644",
     },
     address: {
-      natureLabel: frCommon.contact.addressNatureLabel,
       streetAddress: "164 rue Principale",
       locality: "Saint-Louis-de-Gonzague",
       localityLabel: frCommon.contact.localityLabel,
       region: "Montérégie",
       regionCode: "QC",
+      postalCode: "J0S 1T0",
       countryCode: "CA",
-      appointmentOnly: true,
     },
     businessHours: {
       daysLabel: frCommon.contact.businessHoursDaysLabel,
@@ -102,5 +100,5 @@ export const navItems = siteConfig.navigation;
 export function getSiteConfig(locale:AppLocale='fr'):SiteConfig {
  const c=locale==='en'?enCommon:frCommon,n=locale==='en'?enNav:frNav,m=locale==='en'?enMeta:frMeta;
  const keys=['home','services','portfolio','about','contact'] as const;
- return {...siteConfig, description:m.siteDescription, keywords:m.keywords, contact:{...siteConfig.contact,address:{...siteConfig.contact.address,natureLabel:c.contact.addressNatureLabel,localityLabel:c.contact.localityLabel},businessHours:{...siteConfig.contact.businessHours,daysLabel:c.contact.businessHoursDaysLabel,hoursLabel:c.contact.businessHoursHoursLabel}},navigation:siteConfig.navigation.map((item,i)=>({href:localizedPath(item.href,locale),label:n.items[keys[i]]})),primaryCta:{label:n.primaryCta,href:localizedPath(siteConfig.primaryCta.href,locale)}};
+ return {...siteConfig, description:m.siteDescription, keywords:m.keywords, contact:{...siteConfig.contact,address:{...siteConfig.contact.address,localityLabel:c.contact.localityLabel},businessHours:{...siteConfig.contact.businessHours,daysLabel:c.contact.businessHoursDaysLabel,hoursLabel:c.contact.businessHoursHoursLabel}},navigation:siteConfig.navigation.map((item,i)=>({href:localizedPath(item.href,locale),label:n.items[keys[i]]})),primaryCta:{label:n.primaryCta,href:localizedPath(siteConfig.primaryCta.href,locale)}};
 }

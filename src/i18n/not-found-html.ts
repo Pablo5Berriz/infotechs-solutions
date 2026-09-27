@@ -1,8 +1,6 @@
 import type { AppLocale } from './routing';
 import frErrors from '../../messages/fr/errors.json';
 import enErrors from '../../messages/en/errors.json';
-import frNav from '../../messages/fr/navigation.json';
-import enNav from '../../messages/en/navigation.json';
 
 // Garde-fou SSR pour les URL publiques inconnues (INFOTECHS-I18N-001B-R2-FINAL).
 // Contourne le chemin defectueux de rendu notFound() de Next 16.3.x (shell
@@ -10,8 +8,16 @@ import enNav from '../../messages/en/navigation.json';
 // un document 404 HTML complet, valide sans JavaScript, depuis src/proxy.ts.
 //
 // SECURITE : tout le contenu provient de constantes applicatives controlees
-// (messages/*/errors.json, messages/*/navigation.json). Aucune donnee de
-// requete (pathname, query, headers) n'est interpolee dans le HTML.
+// (messages/*/errors.json). Aucune donnee de requete (pathname, query,
+// headers) n'est interpolee dans le HTML.
+//
+// PRESENTATION (INFOTECHS-404-PRESENTATION-001) : CSS inline uniquement,
+// sans dependance au bundle Next.js (ce garde doit rester independant de
+// l'hydratation React). Les tokens couleur ci-dessous sont une duplication
+// volontaire, sanctionnee par ce lot, du sous-ensemble "Graphite & Electric
+// Violet" de src/app/globals.css (lot INFOTECHS-DESIGN-PALETTE-003A) requis
+// par cette page autonome. Toute derive de ces valeurs par rapport a
+// globals.css doit etre signalee au rapport 003A.
 
 function escapeHtml(value: string): string {
   return value
@@ -24,7 +30,6 @@ function escapeHtml(value: string): string {
 
 export function renderNotFoundHtml(locale: AppLocale): Response {
   const errors = locale === 'en' ? enErrors : frErrors;
-  const nav = locale === 'en' ? enNav : frNav;
   const m = errors.notFound;
   const htmlLang = locale === 'fr' ? 'fr-CA' : 'en-CA';
   const homeHref = `/${locale}`;
@@ -36,7 +41,7 @@ export function renderNotFoundHtml(locale: AppLocale): Response {
   const heading = escapeHtml(m.heading);
   const text = escapeHtml(m.text);
   const homeLabel = escapeHtml(m.home);
-  const contactLabel = escapeHtml(nav.items.contact);
+  const contactLabel = escapeHtml(m.contact);
 
   const html = `<!DOCTYPE html>
 <html lang="${htmlLang}">
@@ -45,14 +50,132 @@ export function renderNotFoundHtml(locale: AppLocale): Response {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title}</title>
 <meta name="description" content="${description}">
+<style>
+  :root{color-scheme:dark;}
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px 24px;
+    background:#121316;
+    background-image:radial-gradient(circle at 50% 0%,rgba(101,40,255,0.22),rgba(18,19,22,0) 60%);
+    color:#f4f1ea;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    width:100%;
+    max-width:560px;
+    text-align:center;
+  }
+  .brand{
+    display:inline-block;
+    margin:0 0 40px;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    color:#f4f1ea;
+    text-decoration:none;
+    border-radius:6px;
+  }
+  .card{
+    position:relative;
+    padding:48px 32px;
+    border:1px solid #2a2d33;
+    border-radius:10px;
+    background:#1c1e22;
+    box-shadow:0 0 24px rgba(101,40,255,0.12);
+    overflow:hidden;
+  }
+  .card::before{
+    content:"";
+    position:absolute;
+    top:-60px;
+    right:-60px;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:radial-gradient(circle,rgba(101,40,255,0.35),rgba(101,40,255,0) 70%);
+    pointer-events:none;
+  }
+  .eyebrow{
+    position:relative;
+    margin:0 0 16px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:#b6a3ff;
+  }
+  h1{
+    position:relative;
+    margin:0 0 16px;
+    font-size:clamp(24px,5vw,32px);
+    line-height:1.25;
+    font-weight:700;
+    color:#f4f1ea;
+  }
+  p.text{
+    position:relative;
+    margin:0 0 32px;
+    font-size:16px;
+    line-height:1.6;
+    color:#9b9690;
+  }
+  .actions{
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:44px;
+    padding:12px 24px;
+    border-radius:6px;
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+    line-height:1.2;
+  }
+  .btn-primary{
+    background:#6528ff;
+    color:#f4f1ea;
+    border:1px solid #6528ff;
+  }
+  .btn-secondary{
+    background:transparent;
+    color:#f4f1ea;
+    border:1px solid #2a2d33;
+  }
+  a:focus-visible,
+  .btn:focus-visible{
+    outline:2px solid #9575ff;
+    outline-offset:2px;
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .btn{transition:opacity .15s ease;}
+  }
+</style>
 </head>
 <body>
 <main>
-<p>${eyebrow}</p>
+<a class="brand" href="${homeHref}">Infotechs Solutions</a>
+<div class="card">
+<p class="eyebrow">${eyebrow}</p>
 <h1>${heading}</h1>
-<p>${text}</p>
-<p><a href="${homeHref}">${homeLabel}</a></p>
-<p><a href="${contactHref}">${contactLabel}</a></p>
+<p class="text">${text}</p>
+<div class="actions">
+<a class="btn btn-primary" href="${homeHref}">${homeLabel}</a>
+<a class="btn btn-secondary" href="${contactHref}">${contactLabel}</a>
+</div>
+</div>
 </main>
 </body>
 </html>

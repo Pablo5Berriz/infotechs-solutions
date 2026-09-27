@@ -8,22 +8,20 @@ import { serviceOfferings } from "@/lib/service-offerings";
 const markup = renderToStaticMarkup(<ServicesPage />);
 
 describe("page index Services 004C-2", () => {
-  it("rend un seul titre principal et les quatre offres publiées", () => {
+  it("rend un seul titre principal et les huit offres publiées", () => {
     expect(markup.match(/<h1/g)).toHaveLength(1);
     for (const service of serviceOfferings) {
       expect(markup).toContain(service.label);
       expect(markup).toContain(`href="${service.href}"`);
     }
-    expect((markup.match(/Découvrir ce service/g) ?? [])).toHaveLength(4);
+    expect((markup.match(/Découvrir ce service/g) ?? [])).toHaveLength(8);
   });
 
-  it("sépare les trois solutions de réalisation du service transversal", () => {
+  it("sépare les solutions de réalisation du service transversal", () => {
     expect(markup).toContain("Nos solutions de réalisation");
-    expect(markup).toContain("Trois solutions pour construire un produit numérique utile");
     expect(markup).toContain("Service transversal d’entrée");
     expect(markup).toContain("Clarifier avant de construire");
     expect(markup.indexOf("Nos solutions de réalisation")).toBeLessThan(markup.indexOf("Service transversal d’entrée"));
-    expect(markup).not.toContain("Maintenance et évolution");
   });
 
   it("rend le guide de choix, la collaboration et le CTA final", () => {

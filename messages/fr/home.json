@@ -5,7 +5,7 @@
     "titleHighlight": "votre entreprise.",
     "intro": "Sites web, applications métier et automatisations utiles, conçus avec rigueur pour les PME du Québec.",
     "ctaSubmit": "Transmettre votre besoin",
-    "ctaConcepts": "Voir les concepts",
+    "ctaConcepts": "Voir les projets",
     "badges": [
       "Architecture claire",
       "Livraison vérifiable",
@@ -21,19 +21,19 @@
   "whyUs": [
     {
       "title": "Clarté",
-      "text": "Des recommandations compréhensibles, des budgets lisibles et aucune complexité inutile."
+      "text": "Chaque recommandation explique le besoin qu'elle résout ; chaque poste de budget est détaillé, sans ligne technique laissée sans explication."
     },
     {
       "title": "Qualité technique",
-      "text": "Une base moderne, rapide, responsive et prête à évoluer."
+      "text": "Code testé automatiquement, revu avant livraison, sur une architecture pensée pour évoluer sans tout reconstruire."
     },
     {
       "title": "Proximité",
-      "text": "Un accompagnement humain pour les PME, commerces et organisations locales."
+      "text": "Échange direct avec la personne qui conçoit et développe — pas d'intermédiaire commercial entre vous et le code."
     },
     {
       "title": "Innovation utile",
-      "text": "De l'IA et de l'automatisation seulement quand elles créent une vraie valeur."
+      "text": "Automatisation et IA intégrées seulement quand elles réduisent un travail répétitif identifié, jamais pour l'effet vitrine."
     }
   ],
   "servicesSection": {
@@ -67,19 +67,51 @@
     }
   ],
   "concepts": {
-    "eyebrow": "Concepts démonstratifs",
-    "title": "Des systèmes pensés autour de problèmes concrets.",
-    "allConcepts": "Tous les concepts",
-    "seeConcept": "Voir le concept"
+    "eyebrow": "Projets réels",
+    "title": "Des projets construits pour résoudre des problèmes concrets.",
+    "allConcepts": "Tous les projets",
+    "seeConcept": "Voir le projet"
   },
   "expertise": {
     "eyebrow": "Expertise technique",
     "title": "Des choix modernes, expliqués sans jargon inutile.",
-    "text": "Nous privilégions une architecture sobre, sécurisée et maintenable. Chaque technologie répond à un besoin précis plutôt qu’à une tendance.",
+    "text": "Nous privilégions une architecture sobre, sécurisée et maintenable. Chaque technologie répond à un besoin précis plutôt qu’à une tendance — et chacune est utilisée dans au moins un projet réel.",
     "securityTitle": "Sécurité raisonnée",
     "securityText": "Accès, données et déploiement pensés dès l’architecture.",
     "qualityTitle": "Qualité vérifiable",
-    "qualityText": "Tests, performance et accessibilité intégrés à la livraison."
+    "qualityText": "Tests, performance et accessibilité intégrés à la livraison.",
+    "categories": [
+      {
+        "title": "Web & Frontend",
+        "text": "Interfaces rapides, responsive et accessibles, construites pour rester maintenables au fil des évolutions.",
+        "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "title": "Applications mobiles",
+        "text": "Applications iOS et Android à partir d'une seule base de code, avec authentification et données synchronisées.",
+        "technologies": ["React Native", "Expo"]
+      },
+      {
+        "title": "Backend & données",
+        "text": "Bases de données relationnelles et API pensées pour la sécurité, la cohérence des données et l'évolution du produit.",
+        "technologies": ["Node.js", "PostgreSQL", "Prisma"]
+      },
+      {
+        "title": "Infrastructure & déploiement",
+        "text": "Hébergement Linux documenté et reproductible, avec isolation par service et reverse proxy.",
+        "technologies": ["Linux", "Docker", "Nginx", "Proxmox"]
+      },
+      {
+        "title": "DevOps, qualité & observabilité",
+        "text": "Tests automatisés et intégration continue pour détecter les régressions avant la mise en ligne.",
+        "technologies": ["Git", "GitHub Actions", "Vitest / Jest"]
+      },
+      {
+        "title": "Automatisation & IA",
+        "text": "Intégrations API et automatisations ciblées, mises en œuvre seulement quand elles réduisent un travail répétitif identifié.",
+        "technologies": ["Intégrations API", "Automatisation de workflows"]
+      }
+    ]
   },
   "cta": {
     "kicker": "Prochaine étape",

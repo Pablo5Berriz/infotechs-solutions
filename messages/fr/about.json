@@ -51,10 +51,10 @@
     "territoryText": "Infotechs Solutions développe des solutions numériques pour les PME et organisations du Québec. Cette localisation décrit un ancrage; elle ne prétend ni à un bureau ouvert au public ni à une couverture géographique non documentée."
   },
   "proofEyebrow": "Preuves disponibles",
-  "proofTitle": "Consulter l’offre et les scénarios sans confondre démonstration et mandat.",
-  "proofText": "Les concepts démonstratifs du portfolio illustrent des méthodes de conception et des scénarios fonctionnels. Ils ne sont pas présentés comme des mandats clients.",
+  "proofTitle": "Consulter l’offre et les projets sans confondre projet personnel et mandat.",
+  "proofText": "Le portfolio présente des projets personnels réels, construits de bout en bout. Ils illustrent une pratique du développement, pas des mandats clients.",
   "seeServices": "Voir les services",
-  "exploreConcepts": "Explorer les concepts",
+  "exploreConcepts": "Explorer les projets",
   "cta": {
     "title": "Commençons par votre contexte, vos utilisateurs et vos priorités.",
     "text": "Présentez le problème, les contraintes connues et ce qui doit être clarifié. La solution viendra ensuite.",

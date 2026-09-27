@@ -36,7 +36,7 @@ describe("SiteFooter", () => {
     expect(markup).not.toMatch(/facebook\.com|instagram\.com|linkedin\.com|twitter\.com|x\.com/i);
   });
 
-  it("links only to the four published service offerings in canonical order", () => {
+  it("links only to the eight published service offerings in canonical order", () => {
     const markup = renderToStaticMarkup(<SiteFooter />);
     for (const service of serviceOfferings) expect(markup).toContain(`href="${service.href}"`);
     const positions = serviceOfferings.map((service) => markup.indexOf(`href="${service.href}"`));
@@ -46,7 +46,6 @@ describe("SiteFooter", () => {
     expect(markup).not.toContain("/services/saas-plateformes-metier");
     expect(markup).not.toContain("/services/refonte-sites-web");
     expect(markup).not.toContain("/services/maintenance-optimisation");
-    expect(markup).not.toContain("Maintenance et évolution");
   });
 
   it("retire Ressources et les promesses de conversion indisponibles", () => {
@@ -63,12 +62,12 @@ describe("SiteFooter", () => {
     expect(markup).not.toContain("Téléphone à venir");
   });
 
-  it("publie les coordonnées validées avec des liens accessibles", () => {
+  it("publie les coordonnées validées avec des liens accessibles, incluant le code postal", () => {
     const markup = renderToStaticMarkup(<SiteFooter />);
-    for (const text of ["Adresse d’affaires — visites sur rendez-vous", "164 rue Principale", "Saint-Louis-de-Gonzague (Québec)", "514 208-3644", "Lundi au vendredi", "9 h à 17 h"]) {
+    for (const text of ["164 rue Principale", "Saint-Louis-de-Gonzague (Québec)", "J0S 1T0", "514 208-3644", "Lundi au vendredi", "9 h à 17 h"]) {
       expect(markup).toContain(text);
     }
+    expect(markup).not.toContain("Adresse d’affaires — visites sur rendez-vous");
     expect(markup).toContain('href="tel:+15142083644"');
-    expect(markup).not.toMatch(/\b[A-Z]\d[A-Z][ -]?\d[A-Z]\d\b/);
   });
 });

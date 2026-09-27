@@ -13,16 +13,21 @@ describe("consolidation des contenus 004A", () => {
     expect(new Set(serviceOfferings.map(({ href }) => href)).size).toBe(serviceOfferings.length);
   });
 
-  it("publie les trois solutions et l’offre d’entrée depuis la source canonique", () => {
+  it("publie le catalogue de huit services depuis la source canonique", () => {
     expect(serviceOfferings.map(({ slug }) => slug)).toEqual([
       "creation-sites-web",
       "automatisation-ia",
       "applications-web-sur-mesure",
       "audit-et-cadrage",
+      "developpement-applications-mobiles",
+      "backend-api-bases-de-donnees",
+      "infrastructure-hebergement-devops",
+      "maintenance-monitoring-evolution",
     ]);
-    expect(serviceOfferings.map(({ kind }) => kind)).toEqual(["solution", "solution", "solution", "entry"]);
+    expect(serviceOfferings.map(({ kind }) => kind)).toEqual([
+      "solution", "solution", "solution", "entry", "solution", "solution", "solution", "solution",
+    ]);
     expect(serviceOfferings.every(({ status }) => status === "published")).toBe(true);
-    expect(JSON.stringify(serviceOfferings)).not.toMatch(/maintenance et évolution/i);
   });
 
   it("ne conserve aucun prix ou délai dans le catalogue canonique", () => {

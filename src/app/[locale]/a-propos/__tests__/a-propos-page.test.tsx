@@ -22,9 +22,9 @@ describe("page À propos 002E", () => {
     expect(markup).toContain('href="/fr/realisations"');
   });
 
-  it("présente honnêtement les concepts du portfolio", () => {
-    expect(markup).toContain("concepts démonstratifs");
-    expect(markup).toContain("Ils ne sont pas présentés comme des mandats clients");
+  it("présente honnêtement les projets réels du portfolio", () => {
+    expect(markup).toContain("projets personnels réels");
+    expect(markup).toContain("pas des mandats clients");
   });
 
   it("n’invente ni équipe, portrait, preuve commerciale ou asset Stitch", () => {

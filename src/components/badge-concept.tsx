@@ -3,13 +3,15 @@ import { cn } from "@/lib/utils";
 
 // Composant réutilisable requis par INFOTECHS-DESIGN-IMPLEMENTATION-002A section 9.
 // Contraintes non négociables (voir docs/design/animation-spec.md) :
-// - texte exact "CONCEPT DÉMONSTRATIF", jamais reformulé ;
+// - texte piloté par messages/{locale}/portfolio.json -> statusLabels.concept
+//   (INFOTECHS-PRODUCT-CONTENT-002 : "Projet indépendant" / "Independent project",
+//   remplace l'ancien "CONCEPT DÉMONSTRATIF") ;
 // - statique : jamais animé, jamais masqué au survol ou par une transition ;
 // - palette lot INFOTECHS-DESIGN-PALETTE-003A : fond purple-950, bordure purple-500,
 //   texte purple-100 — contraste mesuré 13.87:1 (WCAG AA/AAA, voir rapport 003A) ;
 // - zone tactile compatible mobile (padding suffisant, pas de dépendance au hover).
 
-export const BADGE_CONCEPT_TEXT = "CONCEPT DÉMONSTRATIF";
+export const BADGE_CONCEPT_TEXT = "Projet indépendant";
 
 type BadgeConceptProps = {
   className?: string;

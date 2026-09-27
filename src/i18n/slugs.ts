@@ -15,31 +15,47 @@ export const serviceSlugs = {
   "audit": {
     "fr": "audit-et-cadrage",
     "en": "audit-and-planning"
+  },
+  "mobile": {
+    "fr": "developpement-applications-mobiles",
+    "en": "mobile-app-development"
+  },
+  "backend": {
+    "fr": "backend-api-bases-de-donnees",
+    "en": "backend-api-databases"
+  },
+  "infra": {
+    "fr": "infrastructure-hebergement-devops",
+    "en": "infrastructure-hosting-devops"
+  },
+  "maintenance": {
+    "fr": "maintenance-monitoring-evolution",
+    "en": "maintenance-monitoring-evolution"
   }
 } as const;
 export const projectSlugs = {
-  "garage": {
-    "fr": "site-web-garage-local",
-    "en": "local-garage-website"
+  "comptaclems": {
+    "fr": "comptaclems-plateforme-comptable",
+    "en": "comptaclems-accounting-platform"
   },
-  "reservation": {
-    "fr": "plateforme-reservation",
-    "en": "booking-platform"
+  "bilikFarm": {
+    "fr": "bilik-farm-site-crm-agricole",
+    "en": "bilik-farm-website-crm"
   },
-  "gestion": {
-    "fr": "application-gestion-interne",
-    "en": "internal-management-application"
+  "cosmechic": {
+    "fr": "cosmechic-boutique-e-commerce",
+    "en": "cosmechic-e-commerce-store"
   },
-  "automation": {
-    "fr": "automatisation-administrative",
-    "en": "administrative-automation"
+  "biketrip": {
+    "fr": "biketrip-application-mobile-velo",
+    "en": "biketrip-cycling-mobile-app"
   },
-  "dashboard": {
-    "fr": "tableau-bord-pme",
-    "en": "business-dashboard"
+  "eduquiz": {
+    "fr": "eduquiz-plateforme-educative",
+    "en": "eduquiz-education-platform"
   },
-  "mobile": {
-    "fr": "application-mobile-service-local",
-    "en": "mobile-experience"
+  "forumSportif": {
+    "fr": "forum-sportif-plateforme-communautaire",
+    "en": "forum-sportif-community-platform"
   }
 } as const;

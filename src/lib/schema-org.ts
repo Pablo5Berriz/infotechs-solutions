@@ -27,6 +27,7 @@ export function buildLocalBusinessSchema(site: SiteInfo) {
       streetAddress: site.contact.address.streetAddress,
       addressLocality: site.contact.address.locality,
       addressRegion: site.contact.address.regionCode,
+      postalCode: site.contact.address.postalCode,
       addressCountry: site.contact.address.countryCode,
     },
     openingHoursSpecification: {

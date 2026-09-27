@@ -34,13 +34,18 @@ describe("mentions légales du MVP", () => {
     for (const text of ["Propriété intellectuelle", "Limitation de responsabilité", "Droit applicable", "règles du Québec et du Canada qui lui sont applicables"]) expect(markup).toContain(text);
   });
 
-  it("qualifie exactement les concepts du portfolio", () => {
-    expect(markup).toContain("concepts démonstratifs, pas des mandats clients");
+  it("qualifie exactement les projets du portfolio", () => {
+    expect(markup).toContain("projets personnels et indépendants, pas des mandats clients");
     expect(markup).toContain("ne prouvent aucun résultat commercial");
   });
 
   it("retire les textes temporaires et contradictions du périmètre public", () => {
     expect(publicSources).not.toMatch(/courriel (sera|serait).+(ajouté|à venir)|téléphone à venir|Supabase|téléversement|Google Analytics|Plausible|devis automatique|réponse (sous|dans)/i);
     expect(publicSources).not.toContain('href="/ressources"');
+  });
+
+  it("ne présente plus le portfolio comme des concepts démonstratifs", () => {
+    expect(markup).not.toContain("visites se font uniquement sur rendez-vous");
+    expect(markup).not.toContain("concepts démonstratifs, pas des mandats clients");
   });
 });

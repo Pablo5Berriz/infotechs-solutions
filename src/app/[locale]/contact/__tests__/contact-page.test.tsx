@@ -67,7 +67,8 @@ describe("ContactPage", () => {
     expect(markup).toContain("Saint-Louis-de-Gonzague (Québec)");
     expect(markup).toContain("Lundi au vendredi");
     expect(markup).toContain("9 h à 17 h");
-    expect(markup).toContain("Adresse d’affaires — visites sur rendez-vous");
+    expect(markup).toContain("J0S 1T0");
+    expect(markup).not.toContain("Adresse d’affaires — visites sur rendez-vous");
   });
 
   it("présente les trois étapes et une FAQ limitée à quatre questions", () => {

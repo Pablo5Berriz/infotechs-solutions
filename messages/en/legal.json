@@ -5,14 +5,14 @@
     "intro": "Information about the publisher, content, and use of the Infotechs Solutions public website.",
     "sections": [
       { "heading": "Website publisher", "paragraphs": [
-        "The website is published by {siteName}, an IT services business offering services including website design, targeted automation, and web applications. The published address is a business address. Visits are by appointment only.",
+        "The website is published by {siteName}, an IT services business offering services including website design, custom web applications, mobile applications, and targeted automation. The published address is a business address.",
         "To contact the publisher, use the {contactLink}."
       ]},
       { "heading": "Nature of the content", "paragraphs": [
         "The information on this website presents Infotechs Solutions' approach and services. It is general information and does not constitute professional advice tailored to a particular situation, a contractual offer, a guarantee of results, or a commitment to a deadline."
       ]},
-      { "heading": "Portfolio and demonstration concepts", "paragraphs": [
-        "The projects currently published are demonstration concepts, not client engagements. They illustrate design assumptions and do not substantiate any business results, testimonials, deployed technologies, or relationships with real organizations."
+      { "heading": "Portfolio and independent projects", "paragraphs": [
+        "The projects currently published are personal, independent projects, not client engagements carried out for a third-party organization. They demonstrate real technical skills, built in real code, but do not substantiate any business results, testimonials, client satisfaction, or contractual relationship with a real organization."
       ]},
       { "heading": "Intellectual property", "paragraphs": [
         "Unless otherwise stated, the website's original text, graphics, visual components, and editorial structure are protected by applicable intellectual property rules. Their reproduction or substantial adaptation requires authorization from the rights holder, subject to exceptions provided by law."
@@ -40,7 +40,7 @@
     "effectiveDate": "Effective date and last updated: July 24, 2026.",
     "sections": [
       { "heading": "Operator and person responsible", "paragraphs": [
-        "{siteName} operates the website and is responsible for the personal information it holds. The published address is a business address. Visits are by appointment only.",
+        "{siteName} operates the website and is responsible for the personal information it holds. The published address is a business address.",
         "The title of the responsible role is **Person responsible for the protection of personal information**. Questions, requests to exercise a right, or complaints may be addressed to that person through the {contactLink}, with ‘Privacy’ in the description."
       ]},
       { "heading": "Information collected", "paragraphs": [

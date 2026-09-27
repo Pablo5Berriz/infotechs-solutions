@@ -4,7 +4,7 @@ import ServiceDetailPage, { generateMetadata, generateStaticParams } from "@/app
 import { serviceOfferings } from "@/lib/service-offerings";
 
 describe("routes détaillées des services 004C-2", () => {
-  it("pré-génère exactement les quatre routes autorisées", () => {
+  it("pré-génère exactement les huit routes autorisées", () => {
     expect(generateStaticParams({params:{locale:"fr"}})).toEqual(serviceOfferings.map(({ slug }) => ({ slug })));
     expect(generateStaticParams({params:{locale:"fr"}})).toContainEqual({ slug: "audit-et-cadrage" });
   });
@@ -26,7 +26,7 @@ describe("routes détaillées des services 004C-2", () => {
       service,
       metadata: await generateMetadata({ params: Promise.resolve({ locale:"fr", slug: service.slug }) }),
     })));
-    expect(new Set(results.map(({ metadata }) => metadata.title))).toHaveProperty("size", 4);
+    expect(new Set(results.map(({ metadata }) => metadata.title))).toHaveProperty("size", 8);
     for (const { service, metadata } of results) {
       expect(metadata.alternates).toMatchObject({ canonical: service.href });
       expect(metadata.description).toBe(service.seo.description);

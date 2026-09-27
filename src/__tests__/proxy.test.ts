@@ -109,18 +109,22 @@ describe("proxy — garde-fou 404 (R2-FINAL)", () => {
       "/fr/mentions-legales", "/fr/confidentialite",
       "/fr/services/creation-sites-web", "/fr/services/automatisation-ia",
       "/fr/services/applications-web-sur-mesure", "/fr/services/audit-et-cadrage",
-      "/fr/realisations/site-web-garage-local", "/fr/realisations/plateforme-reservation",
-      "/fr/realisations/application-gestion-interne", "/fr/realisations/automatisation-administrative",
-      "/fr/realisations/tableau-bord-pme", "/fr/realisations/application-mobile-service-local",
+      "/fr/services/developpement-applications-mobiles", "/fr/services/backend-api-bases-de-donnees",
+      "/fr/services/infrastructure-hebergement-devops", "/fr/services/maintenance-monitoring-evolution",
+      "/fr/realisations/comptaclems-plateforme-comptable", "/fr/realisations/bilik-farm-site-crm-agricole",
+      "/fr/realisations/cosmechic-boutique-e-commerce", "/fr/realisations/biketrip-application-mobile-velo",
+      "/fr/realisations/eduquiz-plateforme-educative", "/fr/realisations/forum-sportif-plateforme-communautaire",
     ];
     const knownEn = [
       "/en", "/en/services", "/en/portfolio", "/en/about", "/en/contact",
       "/en/legal-notice", "/en/privacy",
       "/en/services/website-creation", "/en/services/ai-automation",
       "/en/services/custom-web-applications", "/en/services/audit-and-planning",
-      "/en/portfolio/local-garage-website", "/en/portfolio/booking-platform",
-      "/en/portfolio/internal-management-application", "/en/portfolio/administrative-automation",
-      "/en/portfolio/business-dashboard", "/en/portfolio/mobile-experience",
+      "/en/services/mobile-app-development", "/en/services/backend-api-databases",
+      "/en/services/infrastructure-hosting-devops", "/en/services/maintenance-monitoring-evolution",
+      "/en/portfolio/comptaclems-accounting-platform", "/en/portfolio/bilik-farm-website-crm",
+      "/en/portfolio/cosmechic-e-commerce-store", "/en/portfolio/biketrip-cycling-mobile-app",
+      "/en/portfolio/eduquiz-education-platform", "/en/portfolio/forum-sportif-community-platform",
     ];
     for (const path of [...knownFr, ...knownEn]) {
       const res = await proxy(req(path));

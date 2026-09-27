@@ -32,7 +32,7 @@ export function SiteFooter() {
             </a>
             <div className="flex gap-2 leading-6">
               <MapPin className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
-              <span>{contact.address.natureLabel}<br />{contact.address.streetAddress}<br />{contact.address.localityLabel}</span>
+              <span>{contact.address.streetAddress}<br />{contact.address.localityLabel} {contact.address.postalCode}</span>
             </div>
             <div className="flex gap-2 leading-6">
               <Clock3 className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />

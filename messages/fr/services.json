@@ -6,8 +6,8 @@
     "ctaPresent": "Présenter votre besoin",
     "ctaExplore": "Explorer les services",
     "solutionsEyebrow": "Nos solutions de réalisation",
-    "solutionsTitle": "Trois solutions pour construire un produit numérique utile.",
-    "solutionsIntro": "Sites web, automatisations et applications métier répondent à des besoins de réalisation distincts.",
+    "solutionsTitle": "Sept solutions pour construire un produit numérique utile.",
+    "solutionsIntro": "Sites web, applications mobiles, backend, infrastructure, automatisation, applications métier et maintenance répondent à des besoins de réalisation distincts.",
     "entryEyebrow": "Service transversal d’entrée",
     "entryTitle": "Clarifier avant de construire.",
     "entryIntro": "Lorsque le besoin, les priorités ou le périmètre restent incertains, un mandat distinct peut documenter les faits et préparer les prochaines décisions sans garantir une réalisation ultérieure.",
@@ -366,5 +366,85 @@
       "title": "Audit et cadrage numérique",
       "description": "Audit structuré de sites, parcours et processus pour clarifier les constats, prioriser un MVP et préparer une feuille de route."
     }
+  },
+  "mobile": {
+    "label": "Développement d’applications mobiles",
+    "eyebrow": "Présence mobile",
+    "title": "Une application mobile pensée pour un usage réel, pas une démo.",
+    "summary": "Pour offrir un service accessible depuis le téléphone, avec une expérience fluide sur iOS et Android.",
+    "description": "Nous concevons des applications mobiles avec React Native et Expo : authentification, données en temps réel, géolocalisation et notifications selon les besoins réels du projet.",
+    "outcomes": ["Une application utilisable sur iOS et Android à partir d’une seule base de code", "Des données synchronisées de façon fiable", "Un parcours mobile pensé pour l’usage au pouce"],
+    "capabilities": ["React Native / Expo", "Authentification", "Géolocalisation", "Notifications", "Tests automatisés", "Intégration continue", "Stockage et synchronisation de données", "Préparation à la publication en boutique"],
+    "process": [
+      { "title": "Cadrage", "text": "Cas d’usage mobiles, plateformes ciblées et contraintes techniques." },
+      { "title": "Prototype", "text": "Parcours et écrans clés validés avant le développement complet." },
+      { "title": "Construction", "text": "Développement avec tests automatisés et intégration continue." },
+      { "title": "Validation", "text": "Tests sur appareils réels et ajustements." },
+      { "title": "Publication", "text": "Préparation du build et accompagnement pour la mise en boutique." }
+    ],
+    "idealFor": ["Offrir un service accessible en mobilité", "Ajouter une couche mobile à une plateforme existante", "Construire une application mobile de bout en bout avec un backend fiable", "Centraliser une expérience aujourd’hui limitée au web"],
+    "deliverables": ["Application React Native testée", "Authentification et gestion de compte", "Intégration des API nécessaires", "Documentation technique", "Préparation du build de publication"],
+    "considerations": ["La publication sur les stores dépend de délais et de règles propres à Apple et Google.", "Les fonctionnalités natives avancées (paiement, notifications complexes) doivent être cadrées en amont.", "Un backend fiable est requis pour les fonctionnalités connectées."],
+    "seo": { "title": "Développement d’applications mobiles", "description": "Applications mobiles React Native pour PME et organisations : authentification, données temps réel et notifications." }
+  },
+  "backend": {
+    "label": "Backend, API et bases de données",
+    "eyebrow": "Fondations techniques",
+    "title": "Une base de données et des API construites pour durer.",
+    "summary": "Pour structurer les données, la logique métier et les échanges entre vos outils de façon fiable.",
+    "description": "Nous concevons des bases de données relationnelles et des API REST pensées pour la sécurité, la cohérence des données et l’évolution du produit.",
+    "outcomes": ["Une structure de données claire et cohérente", "Des API documentées et sécurisées", "Une base technique prête pour de nouvelles fonctionnalités"],
+    "capabilities": ["Modélisation de base de données", "API REST", "Authentification et permissions", "Intégrations tierces", "Migrations et versionnement du schéma", "Journalisation et audit"],
+    "process": [
+      { "title": "Analyse", "text": "Entités, relations et règles métier à modéliser." },
+      { "title": "Modélisation", "text": "Schéma de base de données et choix des contraintes." },
+      { "title": "Construction", "text": "Développement des API et de la logique métier." },
+      { "title": "Sécurisation", "text": "Authentification, permissions et validation des données." },
+      { "title": "Documentation", "text": "Documentation technique pour la maintenance future." }
+    ],
+    "idealFor": ["Structurer des données aujourd’hui dispersées", "Exposer des données à une application web ou mobile", "Remplacer une base de données ou une API fragile", "Sécuriser des accès aujourd’hui gérés de façon informelle"],
+    "deliverables": ["Schéma de base de données", "API documentée", "Authentification et gestion des permissions", "Scripts de migration", "Documentation technique"],
+    "considerations": ["Le volume et la sensibilité des données influencent les choix de sécurité.", "Les intégrations tierces dépendent de la disponibilité et de la documentation de ces services.", "Une base de données existante nécessite une analyse avant toute migration."],
+    "seo": { "title": "Backend, API et bases de données", "description": "Conception de bases de données PostgreSQL et d’API REST sécurisées pour PME et organisations." }
+  },
+  "infra": {
+    "label": "Infrastructure, hébergement et DevOps",
+    "eyebrow": "Exploitation",
+    "title": "Un hébergement maîtrisé, du déploiement au suivi.",
+    "summary": "Pour héberger et déployer vos applications sur une infrastructure Linux comprise et documentée.",
+    "description": "Nous déployons sur des serveurs Linux (conteneurs, Proxmox), avec reverse proxy Nginx, certificats TLS et scripts de déploiement reproductibles.",
+    "outcomes": ["Un hébergement documenté et reproductible", "Un déploiement qui ne dépend pas d’une seule personne", "Un environnement isolé et sécurisé par service"],
+    "capabilities": ["Serveurs Linux", "Conteneurs Docker", "Proxmox / virtualisation", "Reverse proxy Nginx", "Certificats TLS", "Scripts de déploiement", "Sauvegardes"],
+    "process": [
+      { "title": "Analyse", "text": "Besoins d’hébergement, criticité et contraintes budgétaires." },
+      { "title": "Architecture", "text": "Choix entre conteneur, VM ou service géré selon le projet." },
+      { "title": "Déploiement", "text": "Mise en place de l’environnement, du reverse proxy et du TLS." },
+      { "title": "Documentation", "text": "Procédures de déploiement et de restauration." },
+      { "title": "Suivi", "text": "Surveillance de base et plan de sauvegarde." }
+    ],
+    "idealFor": ["Héberger une application sans dépendre d’un service tiers opaque", "Reprendre un hébergement mal documenté", "Préparer un déploiement reproductible pour une nouvelle application", "Isoler plusieurs services sur une même infrastructure"],
+    "deliverables": ["Environnement de déploiement configuré", "Reverse proxy et certificats TLS", "Scripts ou procédure de déploiement", "Documentation d’exploitation", "Plan de sauvegarde de base"],
+    "considerations": ["La disponibilité garantie (SLA) dépend de l’infrastructure choisie et doit être cadrée explicitement.", "Une haute disponibilité avancée nécessite une architecture dédiée.", "La sécurité de l’hébergement doit être proportionnée à la sensibilité des données."],
+    "seo": { "title": "Infrastructure, hébergement et DevOps", "description": "Déploiement et hébergement Linux, Docker et Proxmox pour applications web de PME et organisations." }
+  },
+  "maintenance": {
+    "label": "Maintenance, monitoring et évolution",
+    "eyebrow": "Continuité",
+    "title": "Garder un produit fiable après la mise en ligne.",
+    "summary": "Pour assurer le suivi technique, corriger les problèmes et faire évoluer un produit déjà en ligne.",
+    "description": "Nous assurons un suivi technique après livraison : correctifs, mises à jour de sécurité, surveillance de base et évolutions planifiées.",
+    "outcomes": ["Des anomalies détectées et corrigées avant qu’elles n’affectent les utilisateurs", "Des dépendances tenues à jour de façon contrôlée", "Un plan d’évolution priorisé"],
+    "capabilities": ["Suivi des anomalies", "Mises à jour de sécurité", "Surveillance de base (disponibilité, erreurs)", "Tests de non-régression", "Plan d’évolution", "Rapports de suivi"],
+    "process": [
+      { "title": "État des lieux", "text": "Vérification de l’état technique et des risques connus." },
+      { "title": "Plan de suivi", "text": "Fréquence des mises à jour et seuils d’alerte." },
+      { "title": "Suivi courant", "text": "Correctifs, mises à jour et surveillance de base." },
+      { "title": "Rapport", "text": "Communication régulière sur l’état et les décisions à prendre." },
+      { "title": "Évolution", "text": "Priorisation des améliorations selon les besoins réels." }
+    ],
+    "idealFor": ["Reprendre la maintenance d’un produit existant", "Éviter l’accumulation de dette technique après la mise en ligne", "Planifier des évolutions sans repartir de zéro", "Sécuriser un produit avant une période critique"],
+    "deliverables": ["Plan de maintenance", "Suivi des mises à jour et correctifs", "Rapport de suivi périodique", "Recommandations d’évolution", "Journal des incidents et correctifs"],
+    "considerations": ["Le niveau de service (délai de réponse, disponibilité) doit être cadré explicitement.", "La maintenance d’un produit tiers dépend de l’accès et de la documentation disponibles.", "Une refonte majeure sort du cadre d’une maintenance courante."],
+    "seo": { "title": "Maintenance, monitoring et évolution", "description": "Suivi technique, correctifs et évolutions planifiées pour des applications web déjà en ligne." }
   }
 }

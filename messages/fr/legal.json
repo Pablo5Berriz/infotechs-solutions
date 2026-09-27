@@ -5,14 +5,14 @@
     "intro": "Informations relatives à l’éditeur, aux contenus et à l’utilisation du site public Infotechs Solutions.",
     "sections": [
       { "heading": "Éditeur du site", "paragraphs": [
-        "Le site est édité par {siteName}, entreprise de services informatiques offrant notamment la conception de sites web, d’automatisations ciblées et d’applications web. L’adresse publiée est une adresse d’affaires. Les visites se font uniquement sur rendez-vous.",
+        "Le site est édité par {siteName}, entreprise de services informatiques offrant notamment la conception de sites web, d’applications sur mesure, d’applications mobiles et d’automatisations ciblées. L’adresse publiée est une adresse d’affaires.",
         "Pour communiquer avec l’éditeur, utilisez le {contactLink}."
       ]},
       { "heading": "Nature des contenus", "paragraphs": [
         "Les informations du site présentent l’approche et les services d’Infotechs Solutions. Elles sont générales et ne constituent pas une recommandation professionnelle adaptée à une situation particulière, une offre contractuelle, une garantie de résultat ou un engagement de délai."
       ]},
-      { "heading": "Portfolio et concepts démonstratifs", "paragraphs": [
-        "Les réalisations actuellement publiées sont des concepts démonstratifs, pas des mandats clients. Elles illustrent des hypothèses de conception et ne prouvent aucun résultat commercial, témoignage, technologie déployée ou relation avec une organisation réelle."
+      { "heading": "Portfolio et projets indépendants", "paragraphs": [
+        "Les réalisations actuellement publiées sont des projets personnels et indépendants, pas des mandats clients réalisés pour une organisation tierce. Elles illustrent des compétences techniques réelles, mises en œuvre dans du code réel, mais ne prouvent aucun résultat commercial, témoignage, satisfaction client ou relation contractuelle avec une organisation réelle."
       ]},
       { "heading": "Propriété intellectuelle", "paragraphs": [
         "Sauf indication contraire, les textes, éléments graphiques, composants visuels et structure éditoriale propres au site sont protégés par les règles applicables en matière de propriété intellectuelle. Leur reproduction ou adaptation substantielle nécessite l’autorisation du titulaire des droits, sous réserve des exceptions prévues par la loi."
@@ -40,7 +40,7 @@
     "effectiveDate": "Entrée en vigueur et dernière mise à jour : 24 juillet 2026.",
     "sections": [
       { "heading": "Exploitant et responsable", "paragraphs": [
-        "{siteName} exploite le site et est responsable des renseignements personnels qu’elle détient. L’adresse publiée est une adresse d’affaires. Les visites se font uniquement sur rendez-vous.",
+        "{siteName} exploite le site et est responsable des renseignements personnels qu’elle détient. L’adresse publiée est une adresse d’affaires.",
         "Le titre de la fonction responsable est **Responsable de la protection des renseignements personnels**. Toute question, demande d’exercice d’un droit ou plainte peut lui être adressée au moyen du {contactLink}, en indiquant « Confidentialité » dans la description."
       ]},
       { "heading": "Renseignements collectés", "paragraphs": [
