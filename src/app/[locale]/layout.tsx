@@ -10,6 +10,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { site } from "@/lib/site-config";
 import { buildLocalBusinessSchema } from "@/lib/schema-org";
+import { getServerTheme } from "@/lib/theme-server";
 import "../globals.css";
 
 // Direction "Graphite et cuivre numérique" (docs/design/design-tokens.md) :
@@ -52,15 +53,17 @@ export default async function RootLayout({
   const messages=await getMessages() as unknown as Content;
   const localizedSite=getSiteConfig(locale);
   const localBusinessSchema = buildLocalBusinessSchema({...site,...localizedSite,url:site.url+localizedPath('/',locale)});
+  const theme = await getServerTheme();
 
   return (
     <html
       lang={locale==='fr'?'fr-CA':'en-CA'}
+      data-theme={theme}
       className={`${hankenGrotesk.variable} ${publicSans.variable} ${jetbrainsMono.variable} scroll-smooth antialiased`}
     >
       <body className="flex min-h-screen flex-col bg-bg-950 text-text-100">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
-        <NextIntlClientProvider locale={locale} messages={{common:messages.common,navigation:messages.navigation,home:messages.home,contact:messages.contact}}><SiteHeader /></NextIntlClientProvider>
+        <NextIntlClientProvider locale={locale} messages={{common:messages.common,navigation:messages.navigation,home:messages.home,contact:messages.contact}}><SiteHeader initialTheme={theme} /></NextIntlClientProvider>
         <NextIntlClientProvider locale={locale} messages={{common:messages.common,navigation:messages.navigation,home:messages.home,contact:messages.contact}}><main className="flex-1">{children}</main></NextIntlClientProvider>
         <SiteFooter />
       </body>

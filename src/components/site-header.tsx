@@ -2,6 +2,8 @@
 
 import {useContent, useAppLocale} from "@/i18n/content";
 import {LanguageSwitcher} from "@/components/language-switcher";
+import {ThemeSwitcher} from "@/components/theme-switcher";
+import type {Theme} from "@/lib/theme";
 import Link from "@/components/localized-link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -15,7 +17,7 @@ import { cn } from "@/lib/utils";
 // commerciaux ne sont pas confirmés (voir docs/design/assets-provenance-registry.md).
 // Ne pas remplacer ce texte par une image sans validation explicite du logo officiel.
 
-export function SiteHeader() {
+export function SiteHeader({initialTheme}: {initialTheme: Theme}) {
  const locale=useAppLocale();
  const siteConfig=getSiteConfig(locale);
  const navItems=siteConfig.navigation;
@@ -84,6 +86,7 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <LanguageSwitcher />
+          <ThemeSwitcher initialTheme={initialTheme} />
           <Link
             href={siteConfig.primaryCta.href}
             className="inline-flex h-(--button-md-height) items-center rounded-sm bg-purple-600 px-4 text-sm font-semibold text-[#f4f1ea] transition-shadow duration-150 ease-out hover:shadow-[0_0_24px_rgba(101,40,255,0.25)]"
@@ -106,7 +109,7 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div id={mobileMenuId} className="border-t border-bg-800 bg-bg-950 px-4 py-4 lg:hidden">
+        <div id={mobileMenuId} className="fixed inset-x-0 top-16 z-overlay h-[calc(100dvh-4rem)] overflow-y-auto border-t border-bg-800 bg-bg-950 px-4 py-4 lg:hidden">
           <nav className="grid gap-1" aria-label={m.navigation.mobileMenu.nav}>
             {navItems.map((item, index) => {
               const isActive = pathname === item.href;
@@ -134,7 +137,10 @@ export function SiteHeader() {
               {siteConfig.primaryCta.label}
             </Link>
           </nav>
-          <LanguageSwitcher onSelect={closeMenu} />
+          <div className="mt-4 flex items-center justify-between border-t border-bg-800 pt-4">
+            <LanguageSwitcher onSelect={closeMenu} />
+            <ThemeSwitcher initialTheme={initialTheme} onSelect={closeMenu} />
+          </div>
         </div>
       ) : null}
     </header>

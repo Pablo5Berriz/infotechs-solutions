@@ -7,21 +7,36 @@
  * Ce fichier est la seule transcription CSS de ces tokens dans le dépôt.
  * Ne pas dupliquer ces valeurs ailleurs (ex. dans des styles inline ou un second
  * fichier de tokens) sans mettre à jour ce commentaire et le rapport 003A.
+ *
+ * THEMING (lot INFOTECHS-THEME-001) : les tokens de rôle ci-dessous
+ * (bg-950/900/800, text-100/400, purple-300 en usage texte, purple-400 en
+ * usage focus, error, success, field-border) sont désormais PARAMÉTRIQUES :
+ * leur valeur change selon l'attribut [data-theme] posé sur <html> par
+ * src/app/[locale]/layout.tsx (résolu depuis le cookie "theme", cf.
+ * src/lib/theme.ts). Le bloc :root ci-dessous est le thème LIGHT (par
+ * défaut produit pour un visiteur sans préférence enregistrée). Le bloc
+ * :root[data-theme="dark"] restaure les valeurs sombres d'origine. Cette
+ * indirection permet à l'ensemble des classes Tailwind existantes
+ * (bg-bg-950, text-text-100, text-purple-300, outline-purple-400, ...)
+ * de s'adapter aux deux thèmes sans modification des composants.
  */
 :root {
-  /* Couleurs — structure (graphite, inchangé) */
-  --color-bg-950: #121316;
-  --color-bg-900: #1c1e22;
-  --color-bg-800: #2a2d33;
-  --color-text-100: #f4f1ea;
-  --color-text-400: #9b9690;
+  /* Rôles sémantiques — thème LIGHT (défaut) */
+  --color-bg-950: #faf9fc;      /* background */
+  --color-bg-900: #ffffff;      /* surface / elevated */
+  --color-bg-800: #e1dcec;      /* border (décoratif) */
+  --color-text-100: #1a1720;    /* foreground */
+  --color-text-400: #5c5668;    /* foreground-muted */
+  --color-purple-300: #6528ff;  /* accent texte/icône sur surface (role "accent") */
+  --color-purple-400: #6528ff;  /* focus ring (role "focus") */
+  --color-error: #b3261e;
+  --color-success: #1e7a42;
+  --color-field-border: #8f88a0; /* bordure fonctionnelle des champs (>=3:1) */
 
-  /* Couleurs — échelle de marque Purple (Electric Violet), lot 003A */
+  /* Couleurs — échelle de marque Purple (Electric Violet), lot 003A — constante entre thèmes */
   --color-purple-50: #f4f2ff;
   --color-purple-100: #e9e4ff;
   --color-purple-200: #d3c7ff;
-  --color-purple-300: #b6a3ff;
-  --color-purple-400: #9575ff;
   --color-purple-500: #7b4dff;
   --color-purple-600: #6528ff;
   --color-purple-700: #5211e6;
@@ -40,7 +55,6 @@
 
   /* Couleurs héritées, conservées telles quelles (hors périmètre 003A) */
   --color-petrol-500: #2d6e7e;
-  --color-error: #ff6b5c;
 
   /* Typographie */
   --font-display: var(--font-hanken-grotesk), system-ui, sans-serif;
@@ -71,8 +85,8 @@
   --radius-lg: 16px;
 
   /* Ombres */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.14);
   --shadow-glow-purple: 0 0 24px rgba(101,40,255,0.35);
 
   /* Bordures */
@@ -101,6 +115,22 @@
   --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Thème DARK — restaure les valeurs sombres d'origine (DARK BEFORE ≈ DARK AFTER) */
+:root[data-theme="dark"] {
+  --color-bg-950: #121316;
+  --color-bg-900: #1c1e22;
+  --color-bg-800: #2a2d33;
+  --color-text-100: #f4f1ea;
+  --color-text-400: #9b9690;
+  --color-purple-300: #b6a3ff;
+  --color-purple-400: #9575ff;
+  --color-error: #ff6b5c;
+  --color-success: #4ade80;
+  --color-field-border: #6b6574;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
 @theme inline {
   --color-background: var(--color-bg-950);
   --color-foreground: var(--color-text-100);
@@ -122,6 +152,11 @@
   --color-purple-950: var(--color-purple-950);
   --color-petrol-500: var(--color-petrol-500);
   --color-error: var(--color-error);
+  --color-success: var(--color-success);
+  --color-field-border: var(--color-field-border);
+  --z-index-header: var(--z-header);
+  --z-index-overlay: var(--z-overlay);
+  --z-index-toast: var(--z-toast);
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
   --font-mono: var(--font-technical);
@@ -135,6 +170,7 @@ body {
   background: var(--color-bg-950);
   color: var(--color-text-100);
   font-family: var(--font-body);
+  transition: background-color var(--duration-fast) var(--ease-out), color var(--duration-fast) var(--ease-out);
 }
 
 h1,

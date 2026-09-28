@@ -3,6 +3,7 @@ import type {NextRequest} from 'next/server';
 import {routing} from './i18n/routing';
 import {isLocale, isKnownPath} from './i18n/paths';
 import {renderNotFoundHtml} from './i18n/not-found-html';
+import {THEME_COOKIE, isTheme, DEFAULT_THEME} from './lib/theme';
 
 const intlMiddleware = (request: NextRequest) =>
   createMiddleware({...routing, localeCookie:{...(typeof routing.localeCookie==='object'?routing.localeCookie:{}), secure:request.nextUrl.protocol==='https:'}})(request);
@@ -21,7 +22,9 @@ export default function proxy(request: NextRequest) {
       const locale = match[1];
       const rest = match[2] ?? '/';
       if (isLocale(locale) && !isKnownPath(locale, rest)) {
-        const response = renderNotFoundHtml(locale);
+        const cookieTheme = request.cookies.get(THEME_COOKIE)?.value;
+        const theme = isTheme(cookieTheme) ? cookieTheme : DEFAULT_THEME;
+        const response = renderNotFoundHtml(locale, theme);
         if (request.method === 'HEAD') {
           return new Response(null, {status: response.status, headers: response.headers});
         }

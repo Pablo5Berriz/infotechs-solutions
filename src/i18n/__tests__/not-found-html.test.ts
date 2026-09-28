@@ -31,6 +31,30 @@ describe('renderNotFoundHtml (INFOTECHS-404-PRESENTATION-001)', () => {
     expect(await renderNotFoundHtml('fr').text()).toBe(fr);
     expect(await renderNotFoundHtml('en').text()).toBe(en);
   });
+
+  it('defaults to LIGHT when no theme is given (section 3 default rule)', async () => {
+    const defaulted = await renderNotFoundHtml('fr').text();
+    const explicitLight = await renderNotFoundHtml('fr', 'light').text();
+    expect(defaulted).toBe(explicitLight);
+  });
+
+  it('renders a coherent dark presentation without breaking any invariant', async () => {
+    const response = renderNotFoundHtml('en', 'dark');
+    expect(response.status).toBe(404);
+    expect(response.headers.get('X-Robots-Tag')).toBe('noindex, nofollow, noarchive');
+    const html = await response.text();
+    expect(html).toContain('color-scheme:dark');
+    expect(html).toContain('#121316');
+    expect(html).not.toContain('__next_error__');
+    expect(html).not.toMatch(/rel="canonical"/);
+  });
+
+  it('light and dark render different backgrounds (visible theme distinction)', async () => {
+    const light = await renderNotFoundHtml('fr', 'light').text();
+    const dark = await renderNotFoundHtml('fr', 'dark').text();
+    expect(light).not.toBe(dark);
+    expect(light).toContain('color-scheme:light');
+  });
 });
 
 describe('proxy 404 guard regression (unchanged routing)', () => {
@@ -45,6 +69,21 @@ describe('proxy 404 guard regression (unchanged routing)', () => {
       const req = new NextRequest(`https://example.test/${locale}/missing.txt`);
       const res = await proxy(req);
       expect(res.status).toBe(404);
+    });
+
+    it(`${locale}: 404 guard honors a persisted dark theme cookie`, async () => {
+      const req = new NextRequest(`https://example.test/${locale}/missing.txt`, { headers: { cookie: 'theme=dark' } });
+      const res = await proxy(req);
+      expect(res.status).toBe(404);
+      const html = await res.text();
+      expect(html).toContain('color-scheme:dark');
+    });
+
+    it(`${locale}: 404 guard defaults to light with no theme cookie`, async () => {
+      const req = new NextRequest(`https://example.test/${locale}/missing.txt`);
+      const res = await proxy(req);
+      const html = await res.text();
+      expect(html).toContain('color-scheme:light');
     });
   }
 });

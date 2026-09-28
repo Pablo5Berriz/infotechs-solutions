@@ -17,7 +17,7 @@ describe('localized public interface',()=>{
   for(const locale of ['fr','en'] as const){
     it(`${locale}: header, footer and form retain the selected language`,()=>{
       state.pathname=localizedPath('/a-propos',locale);
-      const header=renderToStaticMarkup(<SiteHeader/>,locale);
+      const header=renderToStaticMarkup(<SiteHeader initialTheme="light"/>,locale);
       const footer=renderToStaticMarkup(<SiteFooter/>,locale);
       const form=renderToStaticMarkup(<ContactForm/>,locale);
       const activeLink=header.match(/<a\b[^>]*aria-current="page"[^>]*>/)?.[0];

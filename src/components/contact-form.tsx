@@ -9,7 +9,7 @@ import Link from "@/components/localized-link";
 import { contactNeedTypes, createContactSchema, type ContactFormValues } from "@/lib/contact-schema";
 
 const inputClass =
-  "mt-2 min-h-11 w-full rounded-sm border border-bg-800 bg-bg-900 px-4 py-3 text-sm text-text-100 outline-none transition placeholder:text-text-400 hover:border-text-400 focus-visible:border-purple-500 focus-visible:ring-2 focus-visible:ring-purple-400/30";
+  "mt-2 min-h-11 w-full rounded-sm border border-field-border bg-bg-900 px-4 py-3 text-sm text-text-100 outline-none transition placeholder:text-text-400 hover:border-text-400 focus-visible:border-purple-500 focus-visible:ring-2 focus-visible:ring-purple-400/30";
 
 export function ContactForm() {
   const m = useContent();
@@ -104,7 +104,7 @@ export function ContactForm() {
           <input type="checkbox" required aria-required="true" className="mt-1 h-5 w-5 shrink-0 accent-purple-500" aria-invalid={Boolean(errors.consent)} aria-describedby={errors.consent ? "consent-error" : undefined} {...register("consent")} />
           <span>{m.common.consentPrefix} <Link href="/confidentialite" className="font-semibold text-purple-300 underline underline-offset-4">{m.contact.form.privacyLinkText}</Link>.</span>
         </label>
-        {errors.consent ? <p id="consent-error" role="alert" className="mt-2 text-sm font-medium text-red-400">{errors.consent.message}</p> : null}
+        {errors.consent ? <p id="consent-error" role="alert" className="mt-2 text-sm font-medium text-error">{errors.consent.message}</p> : null}
       </div>
 
       <div className="mt-7 flex flex-col gap-4 border-t border-bg-800 pt-6 sm:flex-row sm:items-center sm:justify-between">
@@ -115,8 +115,8 @@ export function ContactForm() {
       </div>
 
       <div aria-live="polite" aria-atomic="true">
-        {submission.kind === "success" ? <p role="status" className="mt-5 border-l-2 border-emerald-500 bg-bg-950 px-4 py-3 text-sm leading-6 text-text-100">{submission.message}</p> : null}
-        {submission.kind === "error" ? <p role="alert" className="mt-5 border-l-2 border-red-400 bg-bg-950 px-4 py-3 text-sm leading-6 text-red-300">{submission.message}</p> : null}
+        {submission.kind === "success" ? <p role="status" className="mt-5 border-l-2 border-success bg-bg-950 px-4 py-3 text-sm leading-6 text-text-100">{submission.message}</p> : null}
+        {submission.kind === "error" ? <p role="alert" className="mt-5 border-l-2 border-error bg-bg-950 px-4 py-3 text-sm leading-6 text-error">{submission.message}</p> : null}
       </div>
     </form>
   );
@@ -130,7 +130,7 @@ function Field({ label, required, error, errorId, help, helpId, children, classN
       {label}{required ? <span className="ml-1 text-purple-300" aria-hidden="true">*</span> : null}
       {control}
       {help ? <span id={helpId} className="mt-2 block text-xs font-normal text-text-400">{help}</span> : null}
-      {error ? <span id={errorId} role="alert" className="mt-2 block text-sm font-medium text-red-400">{error}</span> : null}
+      {error ? <span id={errorId} role="alert" className="mt-2 block text-sm font-medium text-error">{error}</span> : null}
     </label>
   );
 }

@@ -13,6 +13,11 @@
     "en": "EN",
     "switchTo": "Passer en anglais"
   },
+  "themeSwitcher": {
+    "label": "Apparence",
+    "enableDark": "Activer le thème sombre",
+    "enableLight": "Activer le thème clair"
+  },
   "mobileMenu": {
     "open": "Ouvrir le menu",
     "close": "Fermer le menu",

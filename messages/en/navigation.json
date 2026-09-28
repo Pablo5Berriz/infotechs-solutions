@@ -13,6 +13,11 @@
     "en": "EN",
     "switchTo": "Switch to French"
   },
+  "themeSwitcher": {
+    "label": "Appearance",
+    "enableDark": "Switch to dark theme",
+    "enableLight": "Switch to light theme"
+  },
   "mobileMenu": {
     "open": "Open menu",
     "close": "Close menu",
