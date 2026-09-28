@@ -9,10 +9,10 @@
     "intro": "This portfolio presents personal, independent projects built end to end: showcase sites, business CRMs, mobile apps, and community platforms. These are not client engagements, but real code, with its strengths and its acknowledged limits.",
     "ctaPresent": "Present your context",
     "ctaExplore": "Explore the projects",
-    "sixScenariosEyebrow": "Six projects",
+    "sixScenariosEyebrow": "Eleven achievements",
     "sixScenariosTitle": "An honest read of what each project demonstrates.",
     "capabilityReadTitle": "Browse by capability",
-    "capabilities": ["Business interfaces", "Data management", "Mobile apps", "E-commerce", "Modular architecture"],
+    "capabilities": ["Web apps & SaaS", "Mobile apps", "E-commerce", "Community platforms", "Business management & automation"],
     "journeyTitle": "From hypothesis to a verifiable version.",
     "journeySteps": ["Understand", "Scope", "Prototype", "Build", "Validate", "Evolve"],
     "ctaTitle": "Your project starts with context, not a demo.",
@@ -35,9 +35,9 @@
     "ctaSubmit": "Structure your project"
   },
   "comptaclems": {
-    "title": "ComptaClems — accounting management platform",
-    "category": "Accounting management platform",
-    "summary": "Independent web platform project to centralize client, document, and file management for an accounting services firm.",
+    "title": "Comptaclems",
+    "category": "Tax return processing platform",
+    "summary": "Comptaclems is an independent web platform designed to simplify the processing and preparation of tax returns for individuals, self-employed workers, and small and medium-sized businesses. It centralizes client, tax document, and file management to give accounting professionals a structured, secure, and efficient environment to track every engagement from intake to completion.",
     "description": "ComptaClems structures three spaces — public, client, admin — to reduce manual email exchanges and give clear tracking of accounting files, tax filings, and administrative requests.",
     "challenge": [
       "Centralize exchanges currently scattered across email and paper documents.",
@@ -51,7 +51,7 @@
     ],
     "deliverables": ["Secure client space", "Administrator dashboard", "Request and status tracking", "Document management"],
     "capabilities": ["Multi-role architecture", "Business interfaces", "Document management", "Relational database"],
-    "technologies": ["Node.js", "PostgreSQL", "JavaScript", "HTML/CSS"],
+    "technologies": ["Node.js", "Express", "PostgreSQL", "JavaScript"],
     "limitations": [
       "In active development: several planned features are still being built.",
       "No accounting firm is using the platform in production yet.",
@@ -63,9 +63,9 @@
     }
   },
   "bilikFarm": {
-    "title": "Bilik Farm — farm website and CRM",
-    "category": "Farm website and CRM",
-    "summary": "Public website and internal CRM for an integrated farm combining crop and livestock operations.",
+    "title": "Bilik Farm",
+    "category": "Showcase website for an integrated farm",
+    "summary": "Bilik Farm is a professional showcase website designed to present and highlight the activities of an integrated farm combining crop and livestock operations. The platform also includes management features to centralize certain information related to farm operations, contacts, and administrative tracking.",
     "description": "Bilik Farm pairs a public showcase of the farm (activities, products, vision) with an internal CRM to track crops, animals, sales, inventory, and clients.",
     "challenge": [
       "Present a farm with multiple activities (crops and livestock) clearly.",
@@ -79,7 +79,7 @@
     ],
     "deliverables": ["Farm showcase website", "CRM dashboard", "Sales and inventory tracking", "Client management"],
     "capabilities": ["Business showcase site", "Internal CRM", "Inventory management", "Dashboards"],
-    "technologies": ["Next.js", "TypeScript", "CSS"],
+    "technologies": ["Next.js", "NestJS", "Prisma", "PostgreSQL", "TypeScript"],
     "limitations": [
       "Independent project: no farm currently uses it in production.",
       "Internal reports and indicators still need validation with real usage.",
@@ -91,9 +91,9 @@
     }
   },
   "cosmechic": {
-    "title": "Cosmechic — e-commerce store",
-    "category": "E-commerce store",
-    "summary": "Online store dedicated to cosmetic products for Black, mixed-heritage, and Afro skin and hair.",
+    "title": "Cosmechic",
+    "category": "E-commerce website for cosmetic products",
+    "summary": "Cosmechic is an online store specializing in cosmetic products for Afro, Black, and mixed-heritage skin and hair. The platform offers a modern shopping experience for discovering, searching, and ordering products suited to its customers' specific needs, including facial care, body care, hair care, and beauty.",
     "description": "Cosmechic presents a cosmetics catalog and order/client management, with a mobile-first interface built for this specific market.",
     "challenge": [
       "Structure a catalog by category and care type.",
@@ -107,7 +107,7 @@
     ],
     "deliverables": ["Product catalog", "Cart and checkout flow", "Admin space", "Responsive interface"],
     "capabilities": ["E-commerce", "Product catalog", "Responsive interfaces", "Order management"],
-    "technologies": ["HTML/CSS", "JavaScript", "C#"],
+    "technologies": ["C#", "ASP.NET Core", "Entity Framework Core", "SQL Server", "Stripe"],
     "limitations": [
       "Independent project, not yet operating as a commercial store.",
       "Online payment and real logistics not deployed in production.",
@@ -119,9 +119,9 @@
     }
   },
   "biketrip": {
-    "title": "BikeTrip — mobile app for cyclists",
-    "category": "Mobile application",
-    "summary": "React Native mobile app to plan bike rides: routes, weather, safety, and ride tracking.",
+    "title": "BikeTrip",
+    "category": "Mobile app for cyclists",
+    "summary": "BikeTrip is a mobile app designed to help cyclists prepare for and track their bike rides. It centralizes useful information such as bike paths, weather conditions, certain safety settings, and activity tracking to help users plan their routes and enjoy their rides under better conditions.",
     "description": "BikeTrip helps cyclists discover routes, track their rides, and share community reports, with a Supabase backend and automated test coverage.",
     "challenge": [
       "Bring route discovery, weather, and safety into a single app.",
@@ -147,9 +147,9 @@
     }
   },
   "eduquiz": {
-    "title": "EduQuiz — bilingual education platform",
-    "category": "Education platform",
-    "summary": "Bilingual FR/EN education platform for Quebec students from grade 3 to grade 11, built as a Next.js monorepo.",
+    "title": "EduQuiz",
+    "category": "Bilingual educational web platform",
+    "summary": "EduQuiz is a bilingual French-English education platform for Quebec students, from grade 3 of elementary school through grade 11 (secondary 5). It lets students practice through quizzes, exercises, and learning activities adapted to their grade level, while supporting review, self-directed learning, and reinforcement of what they learn in class.",
     "description": "EduQuiz aims to help students learn, review, and practice their lessons with quizzes adapted to their level, on a complete technical foundation (monorepo, authentication, Quebec privacy-law compliance).",
     "challenge": [
       "Build a bilingual showcase covering 10 subjects and 9 grade levels.",
@@ -175,9 +175,9 @@
     }
   },
   "forumSportif": {
-    "title": "Forum Sportif — geolocated community platform",
-    "category": "Community platform",
-    "summary": "Community forum to find sports venues by geolocation and connect with other enthusiasts.",
+    "title": "Forum Sportif",
+    "category": "Community platform dedicated to sports",
+    "summary": "Forum Sportif is a community platform designed to bring sports enthusiasts together around a space for discussion and discovery. Users can discuss sports news, share their opinions, take part in themed conversations, and use geolocation to discover nearby places to practice different sports.",
     "description": "Forum Sportif combines a discussion forum, location search by sport, and an interactive map to help people discover fields, gyms, clubs, and sports spaces nearby.",
     "challenge": [
       "Combine geolocated search and community discussion in one product.",
@@ -191,7 +191,7 @@
     ],
     "deliverables": ["Geolocated venue search", "Interactive map", "Category-based forum", "User profiles"],
     "capabilities": ["Geolocation", "Community platform", "Interactive map", "Content moderation"],
-    "technologies": ["HTML/CSS", "JavaScript", "C#"],
+    "technologies": ["C#", "ASP.NET Core", "Entity Framework Core", "SQL Server"],
     "limitations": [
       "Independent project, no active community deployed yet.",
       "Moderation and reviews need a framework before real public use.",
@@ -200,6 +200,139 @@
     "seo": {
       "title": "Forum Sportif — geolocated community platform",
       "description": "Independent geolocated sports forum project to find venues and connect with other enthusiasts."
+    }
+  },
+  "garageAutoGonzague": {
+    "title": "Garage Auto Gonzague",
+    "category": "Professional website for an auto garage",
+    "summary": "Garage Auto Gonzague is a showcase website designed to present the services, expertise, and practical information of an auto repair shop. The platform also includes management features that help facilitate appointment requests, customer tracking, and the organization of certain administrative operations for the garage.",
+    "description": "Garage Auto Gonzague combines a public site and an admin workspace for an auto garage: appointment management, tax-compliant invoicing, and automated customer communications.",
+    "challenge": [
+      "Combine a public showcase and operational garage management in a single application.",
+      "Generate invoices compliant with Quebec sales taxes (GST 5%, QST 9.975%).",
+      "Automate appointment reminders by SMS and email."
+    ],
+    "approach": [
+      "Next.js architecture with separate public and admin zones, NextAuth authentication.",
+      "PostgreSQL database via Prisma for customer, vehicle, and appointment records.",
+      "SMS (Vonage) and email (Resend) integrations for notifications, calendar (react-big-calendar) for scheduling."
+    ],
+    "deliverables": ["Public showcase site", "Admin workspace", "GST/QST invoicing", "Appointment booking and notifications"],
+    "capabilities": ["Business interfaces", "Quebec tax invoicing", "Automated notifications", "Relational database"],
+    "technologies": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "NextAuth"],
+    "limitations": [
+      "Independent reference demonstrator: no confirmed production deployment for a real garage to date.",
+      "Real appointment and invoicing volumes not validated under real conditions."
+    ],
+    "seo": {
+      "title": "Garage Auto Gonzague — CRM and showcase site for an auto garage",
+      "description": "Independent CRM and showcase site project for an auto garage, with GST/QST invoicing and appointment booking."
+    }
+  },
+  "logigest": {
+    "title": "Logigest",
+    "category": "Agricultural and livestock management SaaS",
+    "summary": "Logigest is a SaaS solution designed to help farmers and livestock keepers in sub-Saharan Africa manage their operations day to day. The platform centralizes tracking of animals, farm plots, inventory, expenses, revenue, and various operations to improve organization, traceability, and decision-making.",
+    "description": "Logigest aims to give farm operators a complete management tool usable offline, with automatic synchronization as soon as a connection becomes available again.",
+    "challenge": [
+      "Work reliably on entry-level Android phones without a stable internet connection.",
+      "Synchronize local data with the server without loss or conflict when coming back online.",
+      "Adapt the interface and flows for users with limited digital familiarity."
+    ],
+    "approach": [
+      "Offline local storage with Dexie.js and synchronization to Supabase PostgreSQL (RLS).",
+      "Next.js (App Router) monorepo with pnpm and Turborepo, Tailwind CSS and shadcn/ui interface.",
+      "Supabase Auth authentication, state management with Zustand and TanStack Query, internationalization via next-intl."
+    ],
+    "deliverables": ["Farm, animal, and plot management", "Financial and inventory tracking", "Offline mode with synchronization", "Multilingual interface"],
+    "capabilities": ["Offline-first application", "Monorepo architecture", "Agricultural management", "Internationalization"],
+    "technologies": ["Next.js", "TypeScript", "Supabase (PostgreSQL)", "Turborepo"],
+    "limitations": [
+      "Project in development: MVP under construction, no farm client uses it in production to date.",
+      "Large-scale offline synchronization not yet validated in the field."
+    ],
+    "seo": {
+      "title": "Logigest — offline agricultural management SaaS",
+      "description": "Independent offline-first SaaS project for agricultural and livestock management in sub-Saharan Africa."
+    }
+  },
+  "paroisseHub": {
+    "title": "ParoisseHub",
+    "category": "Digital platform for Quebec dioceses and parishes",
+    "summary": "ParoisseHub is a Christian community platform designed to modernize how Quebec dioceses, parishes, and churches share and provide access to their information. It lets religious communities publish and keep their information up to date, while worshippers can easily search for places of worship and check schedules, events, and useful information from a centralized, accessible platform.",
+    "description": "ParoisseHub (paroissehub.ca) centralizes parish and diocese information for the public. Developed in collaboration with Infotechs Solutions, with ongoing compliance work and data enrichment by diocese.",
+    "challenge": [
+      "Centralize parish information scattered across multiple sources and dioceses.",
+      "Bring the platform into compliance with Quebec’s Law 25 on personal information protection.",
+      "Improve the reliability of published data, diocese by diocese."
+    ],
+    "approach": [
+      "Next.js application with a PostgreSQL database via Prisma.",
+      "Automated testing (Vitest, Playwright) and continuous integration.",
+      "Ongoing audit and data-enrichment work, diocese by diocese, in a research environment before any production write."
+    ],
+    "deliverables": ["Public platform paroissehub.ca", "Parish and diocese search", "Law 25 compliance work in progress", "Data consolidation by diocese"],
+    "capabilities": ["Community platform", "Data compliance", "Relational database", "End-to-end automated testing"],
+    "technologies": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "NextAuth"],
+    "limitations": [
+      "Law 25 compliance and diocese data enrichment ongoing, not yet finalized for all of Quebec.",
+      "Exact commercial status (client mandate vs. collaboration) to be confirmed before broader public communication."
+    ],
+    "seo": {
+      "title": "ParoisseHub — platform for parishes and dioceses",
+      "description": "Independent community platform project for Quebec parishes and dioceses, developed in collaboration with Infotechs Solutions."
+    }
+  },
+  "slgTech": {
+    "title": "SLG TECH",
+    "category": "E-commerce website for computer equipment",
+    "summary": "SLG TECH is an online store specializing in the sale of computer hardware, equipment, and accessories. The platform lets users browse different product categories, review their specifications, and complete their purchases through a modern, clear e-commerce experience suited to both individuals and professionals.",
+    "description": "SLG TECH is a Node.js e-commerce store with session-based authentication, Stripe payment, and an admin CRM to manage catalog, orders, reviews, and statistics.",
+    "challenge": [
+      "Offer a complete purchase journey (catalog, cart, payment) for electronic products.",
+      "Give the team an admin panel to manage products, orders, customers, and reviews.",
+      "Secure online authentication and payment."
+    ],
+    "approach": [
+      "Node.js/Express backend with dedicated routes (authentication, products, orders, customers, reviews, statistics).",
+      "Session-based authentication with bcrypt hashing and JWT tokens.",
+      "Stripe integration for payment and Nodemailer for transactional emails."
+    ],
+    "deliverables": ["Catalog and product pages", "Cart and checkout flow", "Admin CRM panel", "Stripe payment and transactional emails"],
+    "capabilities": ["E-commerce", "Admin panel", "Secure authentication", "Online payment"],
+    "technologies": ["Node.js", "Express", "MySQL", "Stripe", "JWT"],
+    "limitations": [
+      "Data storage layer (JSON files vs. MySQL database, both present in the code) to be clarified.",
+      "Independent project: no store commercialized to date, no real sales volume."
+    ],
+    "seo": {
+      "title": "SLG TECH — online electronics store",
+      "description": "Independent e-commerce project for an electronics store with admin panel."
+    }
+  },
+  "weatherWise": {
+    "title": "WeatherWise",
+    "category": "Weather web application",
+    "summary": "WeatherWise is a weather web application that lets users quickly check current weather conditions for a searched city or their geographic location. It provides detailed information such as temperature, humidity, wind speed, and sunrise and sunset times, for a clear and accessible view of local weather conditions.",
+    "description": "WeatherWise queries the OpenWeatherMap API to display current weather conditions for a searched city or the user’s location, with a season estimate based on temperature.",
+    "challenge": [
+      "Display reliable weather conditions from a city search or browser geolocation.",
+      "Present complete data (feels-like temperature, humidity, wind, precipitation, visibility, sunrise/sunset) in a readable way."
+    ],
+    "approach": [
+      "Flask (Python) backend exposing an endpoint that queries the OpenWeatherMap API.",
+      "JavaScript frontend using browser geolocation with a fallback to manual city search."
+    ],
+    "deliverables": ["Weather search by city", "Location detection via geolocation", "Detailed current conditions", "Real-time clock"],
+    "capabilities": ["Weather application", "Browser geolocation", "External API integration"],
+    "technologies": ["Python", "Flask", "JavaScript", "OpenWeatherMap API"],
+    "limitations": [
+      "Displays only current conditions; no multi-day forecast confirmed in the current code.",
+      "Independent project, small-scale demonstration application."
+    ],
+    "seo": {
+      "title": "WeatherWise — weather application",
+      "description": "Independent weather application project displaying current conditions by city or geolocation."
     }
   }
 }

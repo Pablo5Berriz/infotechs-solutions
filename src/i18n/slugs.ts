@@ -57,5 +57,25 @@ export const projectSlugs = {
   "forumSportif": {
     "fr": "forum-sportif-plateforme-communautaire",
     "en": "forum-sportif-community-platform"
+  },
+  "garageAutoGonzague": {
+    "fr": "garage-auto-gonzague-crm-site-vitrine",
+    "en": "garage-auto-gonzague-crm-website"
+  },
+  "logigest": {
+    "fr": "logigest-saas-agricole",
+    "en": "logigest-agricultural-saas"
+  },
+  "paroisseHub": {
+    "fr": "paroissehub-plateforme-paroisses",
+    "en": "paroissehub-parish-platform"
+  },
+  "slgTech": {
+    "fr": "slg-tech-boutique-electronique",
+    "en": "slg-tech-electronics-store"
+  },
+  "weatherWise": {
+    "fr": "weatherwise-application-meteo",
+    "en": "weatherwise-weather-app"
   }
 } as const;

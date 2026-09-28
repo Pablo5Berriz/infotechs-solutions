@@ -52,11 +52,11 @@ describe('localized public interface',()=>{
       }
     });
   }
-  it('sitemap contains exactly 42 unique URLs with reciprocal alternates',()=>{
+  it('sitemap contains exactly 52 unique URLs with reciprocal alternates',()=>{
     const entries=sitemap();
-    expect(entries).toHaveLength(42);
+    expect(entries).toHaveLength(52);
     const urls=new Set(entries.map(entry=>entry.url));
-    expect(urls.size).toBe(42);
+    expect(urls.size).toBe(52);
     for(const entry of entries){
       const languages=entry.alternates?.languages;
       expect(languages).toHaveProperty('x-default',languages?.['fr-CA']);

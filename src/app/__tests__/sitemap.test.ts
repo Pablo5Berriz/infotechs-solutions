@@ -17,9 +17,9 @@ describe("sitemap des services 004C-2", () => {
     expect(urls).not.toContain("https://infotechssolutions.ca/fondations");
   });
 
-  it("publie exactement les six réalisations de la source canonique", () => {
+  it("publie exactement les onze réalisations de la source canonique", () => {
     const projectUrls = sitemap().map(({ url }) => url).filter((url) => url.includes("/realisations/"));
     expect(projectUrls).toEqual(portfolioProjects.map(({ href }) => `https://infotechssolutions.ca${href}`));
-    expect(projectUrls).toHaveLength(6);
+    expect(projectUrls).toHaveLength(11);
   });
 });
